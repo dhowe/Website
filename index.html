@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!DOCTYPE HTML PUBLIC"-//IETF//DTD HTML 3.0//EN">
 <html>
 
 <head>
@@ -22,8 +22,8 @@ howe, howe,  artist, e-literature, literature, writing, digital writing,  natura
   <script language="JavaScript">
     function openNewWindow(URLtoOpen, windowName, windowFeatures)
     {
-      win = window.open(URLtoOpen, windowName, windowFeatures);
-    } //-->
+      window.open(URLtoOpen, windowName, windowFeatures);
+    }
   </script>
 
 </head>
@@ -56,26 +56,27 @@ The homepage for Daniel C. Howe: artist,  writer, hacker, musician, educator
           </tr>
           <tr>
             <td width=30>&nbsp;</td>
-            <td class=nav title="Selected Projects">PROJECTS &nbsp; &nbsp; &nbsp; <img src="img/arrow.gif"></td>
+            <td class="nav" title="Selected Projects">PROJECTS &nbsp; &nbsp; &nbsp; <img src="img/arrow.gif"></td>
           </tr>
 
-          <!--tr><td><p>&nbsp;</p></td><td class=nav><a href="http://rednoise.org/~dhowe/sketch.html" class=nav>SKETCHPAD</a></td></tr-->
+          <!--tr><td><p>&nbsp;</p></td><td class="nav"><a href="http://rednoise.org/~dhowe/sketch.html" class="nav">SKETCHPAD</a></td></tr-->
           <tr>
             <td>&nbsp;</td>
-            <td class=nav><a href="pubs.html" class=nav>PUBLICATIONS</a></td>
+            <td class="nav"><a href="pubs.html" class="nav">PUBLICATIONS</a></td>
           </tr>
 
           <tr>
             <td width=20>&nbsp;</td>
-            <td class=nav><a href=javascript:openNewWindow( 'info.html', 'win', 'height=300,width=480,toolbar=no,scrollbars=no,resizable=yes,resizeable=yes,alwaysRaised=yes'); class=nav>BIO / CONTACT</a></td>
+            <td class="nav">
+              <a href="javascript:openNewWindow( 'info.html', 'win', 'height=300,width=480,toolbar=no,scrollbars=no,resizable=yes,resizeable=yes,alwaysRaised=yes');" class="nav">BIO / CONTACT</a></td>
           </tr>
           <tr>
             <td width=20>&nbsp;</td>
-            <td class=nav><a href='daniel/refs.html' class=nav>REFERENCES</a></td>
+            <td class="nav"><a href="refs.html" class="nav">REFERENCES</a></td>
           </tr>
           <tr>
             <td width=20>&nbsp;</td>
-            <td class=nav><a class="nav" href="javascript:openNewWindow('http://pgp.mit.edu/pks/lookup?op=get&search=0x6718B041C5B27A0B','win','height=700,width=600,toolbar=no,scrollbars=no,resizable=yes,resizeable=yes,alwaysRaised=yes');">GPG-KEY</a></td>
+            <td class="nav"><a class="nav" href="javascript:openNewWindow( 'http://pgp.mit.edu/pks/lookup?op=get&search=0x6718B041C5B27A0B', 'win', 'height=700,width=600,toolbar=no,scrollbars=no,resizable=yes,resizeable=yes,alwaysRaised=yes');">GPG-KEY</a></td>
           </tr>
 
           <tr>
@@ -150,7 +151,7 @@ is a conceptual novel and algorithmic provocation against the overreaches of cop
                 </td>
                 <td align="right" valign="top">
                   <div align="center">
-                    <a href="daniel.html"><img src="img/hiiict130x85.jpg" alt="How It Is" border="0" width=130 height=90></a>
+                    <a href="http://thereadersproject.org/?hiiict2012"><img src="img/hiiict130x85.jpg" alt="How It Is" border="0" width=130 height=90></a>
                     <br>
                   </div>
                 </td>
@@ -162,7 +163,7 @@ is a conceptual novel and algorithmic provocation against the overreaches of cop
                 <td colspan=2>
                   <table border=0>
                     <tr>
-                      <td class=titles width=190><a class=titles href="http://rednoise.org/~dhowe/automatype.html">Automatype</a>
+                      <td class=titles width=190><a class="titles" href="http://rednoise.org/~dhowe/automatype">Automatype</a>
                         <td/>
                         <td class=tyear width=105>&nbsp;&nbsp;</td>
                         <td class=tinfo></td>
@@ -173,13 +174,14 @@ is a conceptual novel and algorithmic provocation against the overreaches of cop
               </tr>
               <tr>
                 <td valign="top"><font SIZE=1 FACE="verdana, helvetica, arial">
-                    <i>Automatype</i> is a a networked installation (built with analog TV monitors & Raspberry PI microcomputers) that provides a demonstration of some of the powers of the <a href="rita.1.html"><font color="#000000" face="verdana, helvetica, arial" size="1">RiTa</font></a>
-                  toolkit, as it uses algorithms to find the bridges between English words, Six-Degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. Spend 2 minutes or 2 hours with the piece and you will see
-                  either a bunch of random words, or occasionally, if not always, engaging samples of minimalist poetry...
+                    <i>Automatype</i> is a a networked installation (built with analog TV monitors & Raspberry PI microcomputers) that provides a demonstration of some of the powers of the <a href="rita.1.html"><font color="#000000" face="verdana,
+                  helvetica, arial" size="1">RiTa</font></a>
+                  toolkit, as it uses algorithms to find the bridges between English words, Six-Degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. Spend 2 minutes or 2 hours with the piece and you will see either a bunch of
+                  random words, or occasionally, if not always, engaging samples of minimalist poetry...
                 </td>
                 <td align="right" valign="top">
                   <div align="center">
-                    <a href="http://rednoise.org/~dhowe/automatype.html"><img src="img/autothumb.jpg" alt="automatype" border="0" width="130" height=95></a>
+                    <a href="http://rednoise.org/~dhowe/automatype"><img src="img/autothumb.jpg" alt="automatype" border="0" width="130" height=95></a>
                     </font>
                   </div>
                   <br/>
@@ -201,8 +203,7 @@ is a conceptual novel and algorithmic provocation against the overreaches of cop
                   <td valign="top"><font SIZE=1 FACE="verdana, helvetica, arial">
                     <i>The Engine of Engines</i> is a generative sound & video installation that responds in real-time to network traffic in the local environment.  In the Hong Kong debut (see video), sixteen self-contained nodes, each comprised of a screen, processing-unit, audio output, and flash memory, are suspended in space by connective wire.  Together these nodes react dynamically to the nearly one thousand computers in the School of Creative Media's labs, offices, and classrooms.
 &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="http://rednoise.org/eoe/documentation.html"><font color="#000000" face="verdana,
-helvetica, arial" size="1">watch video</a></font>
+<a href="http://rednoise.org/eoe/documentation.html"><font color="#000000" face="verdana, helvetica, arial" size="1">watch video</a></font>
 </td>
                     <td align="right" valign="top">
                         <div align="center"><a
@@ -228,14 +229,14 @@ helvetica, arial" size="1">watch video</a></font>
                   <td/>
               </tr>
               <tr>
-                <td valign="top"><font SIZE=1 FACE="verdana, helvetica, arial">
+                <td valign="top"><font SIZE=1 FACE="verdana, helvetica, arial
+                 ">
                     <i>Minor Distance </i> (available from Cotton Goods Records) is a
-musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and  recordings while travelling separately - in effect making for an album recorded between North Carolina, Seoul, Bremen, Frankfurt, Berlin, Hong Kong, Thailand, mainland China and  New York - covering a bit more than the "Minor Distances" referred to in the title. The recordings began life with Howe's improvised guitar recordings, played live-to-tape through his own custom software, and  Seaman's simple piano loops ...<p></font>
+musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and  recordings while travelling separately - in effect making for an album recorded between North Carolina, Seoul, Bremen, Frankfurt, Berlin, Hong Kong, Thailand, mainland China and  New York - covering a bit more than the"Minor Distances" referred to in the title. The recordings began life with Howe's improvised guitar recordings, played live-to-tape through his own custom software, and  Seaman's simple piano loops ...<p></font>
                 </td>
                 <td align="right" valign="top">
                   <div align="center">
-                    <a href="http://boomkat.com/cds/1026475-howe-seama
-n-minor-distance"><img src="img/mdthumb7.jpg" alt="Minor Distance" border="0" width=140></a>
+                    <a href="http://boomkat.com/cds/1026475-howe-seama n-minor-distance"><img src="img/mdthumb7.jpg" alt="Minor Distance" border="0" width=140></a>
                   </div>
                 </td>
               </tr>
@@ -277,7 +278,7 @@ n-minor-distance"><img src="img/mdthumb7.jpg" alt="Minor Distance" border="0" wi
                 <td colspan=2>
                   <table>
                     <tr>
-                      <td class=titles width=200><a class=titles href="rita.1.html">RiTa</a>&nbsp;&nbsp;
+                      <td class=titles width=200><a class=titles href="http://rednoise.org/rita">RiTa</a>&nbsp;&nbsp;
                         <td/>
                         <td class=tyear width=105>&nbsp;&nbsp;</td>
                         <td class=tinfo></td>
@@ -293,7 +294,7 @@ literature, the <i>RiTa</i> library (for Java, JavaScript, and NodeJS) provides 
                 </td>
                 <td align="right" valign="top">
                   <div align="center">
-                    <a href="rita.1.html" target=_blank><img src="img/rita_thumb.gif" alt="the RiTa project" border="0" width="125"></a>
+                    <a href="http://rednoise.org/rita" target=_blank><img src="img/rita_thumb.gif" alt="the RiTa project" border="0" width="125"></a>
                   </div>
                   <br/>
                 </td>
@@ -304,7 +305,7 @@ literature, the <i>RiTa</i> library (for Java, JavaScript, and NodeJS) provides 
                 <td colspan=2>
                   <table border=0>
                     <tr>
-                      <td class=titles width=340><a class=titles href="AoA/index.html">Architecture of Association</a>
+                      <td class=titles width=340><a class=titles href="http://rednoise.org/~dhowe/AoA">Architecture of Association</a>
                         <td/>
                         <td class=tyear width=105>&nbsp;&nbsp;</td>
                         <td class=tinfo>w' bill seaman</td>
@@ -320,7 +321,7 @@ multi-media databases to 'discover' unexpected linkages between disparate
 items.  An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.
                   </td>
                     <td align="right" valign="top">
-                        <div align="center"><a href="AoA/index.html"><img src="img/aoa150x110b.jpg" width=130 alt="AoA" border="0"></a></div><br/>
+                        <div align="center"><a href="http://rednoise.org/~dhowe/AoA"><img src="img/aoa150x110b.jpg" width=130 alt="AoA" border="0"></a></div><br/>
                     </td>
              </tr>
         <!-- ===========================  tmn =========================== -->
@@ -360,7 +361,7 @@ Yahoo & Bing. Users' real searches, lost in a cloud of false data, are hidden in
       <td colspan=2>
         <table>
           <tr>
-            <td class=titles><a class=titles href="textcurtain/index.html">Text.Curtain</a>&nbsp;&nbsp;
+            <td class=titles><a class=titles href="http://rednoise.org/~dhowe/textcurtain">Text.Curtain</a>&nbsp;&nbsp;
               <td/>
               <td class=tyear width=100>&nbsp;&nbsp;</td>
               <td class=titles><font size=-1></font></td>
@@ -383,9 +384,10 @@ Yahoo & Bing. Users' real searches, lost in a cloud of false data, are hidden in
 
       </td>
       <td align="right" valign="top">
-        <div align="center"><img src="img/textcurtain150.jpg" alt="Text.Curtain" border="0" width="130">
+        <div align="center">
+          <a href="http://rednoise.org/~dhowe/textcurtain"><img src="img/textcurtain150.jpg" alt="Text.Curtain" border="0" width="130"></a>
           <br>
-          <!--a href="" target="_blank"><font color="#000000" face="verdana, helvetica, arial" size="1">Project Documentation</font>--></div>
+        </div>
       </td>
     </tr>
   </table>
