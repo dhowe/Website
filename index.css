@@ -1,0 +1,112 @@
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+table.solid {
+	border-width: 5px 5px 5px 5px;
+	border-style: solid solid solid solid;
+	border-color: #aaaab6 #aaaab6 #aaaab6 #aaaab6;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.image {
+	border-width: 2px 2px 2px 2px;
+	border-style: solid solid solid solid;
+	border-color: #aaaac0 #aaaac0 #aaaac0 #aaaac0;
+	border-collapse: collapse;
+	background-color: white;
+}
+.header {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 27px;  
+  font-weight: plain;
+  line-height: 18px;
+}
+
+.as220head {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 56px;  
+  font-weight: plain;
+  line-height: 36px;
+}
+
+.as220cat {
+  color: #000000;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 12px;  
+  font-weight: plain;
+}
+
+.nav {
+  color: #aaaab6;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 16px;  
+  font-weight: bold;
+  line-height: 35px;  
+}
+
+.micro {
+  color: #aaaab6;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 6px;  
+  line-height: 6px;  
+}
+
+.address1 {
+  font-variant : small-caps;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 13px;  
+  line-height: 13px;  
+}
+
+.address {
+  font-variant : small-caps;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 11px;  
+  line-height: 11px;  
+}
+
+.titles {
+  font-variant : small-caps;
+  color: #666666;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 14px;  
+  font-weight: bold;
+}
+
+.tinfo {  
+  font-variant : small-caps;
+  color: #555555;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 13px;   
+}
+
+
+.tyear {  
+  font-variant : small-caps;
+  color: #555555;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 12px;  
+  font-weight: bold;
+}
+
+}
+
+
