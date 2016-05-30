@@ -2,4 +2,4 @@
 
 cp *.html ../
 cp *.css ../
-cp img/*s ../img/
+cp img/* ../img/
