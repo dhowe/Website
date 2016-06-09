@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cp *.html ../
-cp *.css ../
+cp *.css ../css/
 cp img/* ../img/
