@@ -1,0 +1,194 @@
+[
+    {
+      "img": "img/pollys_thumb.jpg",
+      "url": "http://www.rapunsel.org/",
+      "description": "link to the RAPUNSEL project homepage",
+      "smallwin": true
+    },
+    {
+      "img": "img/xflowers_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/ph",
+      "description": "a collection of algorithmically processed digital stills",
+      "smallwin": true
+    },
+    {
+      "img": "img/bugout_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/bugout",
+      "description": "an interactive sonification of reversible computation with partitioned automata[req. java/jsyn]",
+      "smallwin": true
+    },
+    {
+      "img": "img/lineflock_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/lines3d",
+      "description": "a line animation study with generative algorithms[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/organs_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/pubs.html",
+      "description": "link to list of selected writing",
+      "smallwin": true
+    },
+    {
+      "img": "img/pub_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/pubs.html",
+      "description": "link to list of selected publications",
+      "smallwin": true
+    },
+    {
+      "img": "img/noisemesh_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/noisemesh",
+      "description": "an interactive simulation of a 2d grid perturbed by noise[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/textkite_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/textkite",
+      "description": "a visualization of web searches as they occur in real-time[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/kiteworm_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/kiteworm",
+      "description": "an animated 3dcharacter study for RAPUNSEL[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/tango_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/tango2",
+      "description": "dynamic image filters: prototype for a real-time video installation[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/textcurtain_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/textcurtain/",
+      "description": "link to text-curtain, an interactive physics-inspired poetry project",
+      "smallwin": true
+    },
+    {
+      "img": "img/amata_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/audiomata/intro.html",
+      "description": "an interactive sonification of cellular automata patterns[req. java/jsyn]",
+      "smallwin": true
+    },
+    {
+      "img": "img/noteflock_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/noteflock",
+      "description": "an interactive sound simulation based on flocking behavior[in progress / java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/geopeep_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/geopeep",
+      "description": "a procedurally animated 3dcharacter study for RAPUNSEL[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/baby_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/baby",
+      "description": "a dynamic image filter based on Perlin noise[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/fugue_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/fugue",
+      "description": "a 3-part interactive fugue generator w' real-time synthesis[req. java/jsyn/ie/pc]",
+      "smallwin": true
+    },
+    {
+      "img": "img/cellpix_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/cellpix",
+      "description": "an interactive sonification of the life algorithm over an image grid[req. java/jsyn]",
+      "smallwin": true
+    },
+    {
+      "img": "img/something_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/stwa/showPage.html",
+      "description": "short work of illustrated fiction[w' heidi nielson]",
+      "smallwin": true
+    },
+    {
+      "img": "img/open_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/open.ended",
+      "description": "link to 'open.ended', a spatial poetry installation based on 3d geometries",
+      "smallwin": true
+    },
+    {
+      "img": "img/alg_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/nlgen/",
+      "description": "a toolkit for affective natural language/poetry generation",
+      "smallwin": true
+    },
+    {
+      "img": "img/blackbird_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/blackbird",
+      "description": "an early inter-active visualization of a Wallace Stevens poem[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/autocity_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/autocity",
+      "description": "a prototype of automata used to generate architectural forms[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/origami_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/origami",
+      "description": "an origami-inspired visualization of intersecting polygons[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/roto_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/artbots2004/htm",
+      "description": "link to the 'ornithoids' project page [artbots 2004]",
+      "smallwin": false
+    },
+    {
+      "img": "img/geomacles_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/geomacles",
+      "description": "a line animation study employing flocking algorithms[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/tmn_thumb4.jpg",
+      "url": "http://rednoise.org/~dhowe/TrackMeNot",
+      "description": "link to the TrackMeNot project site",
+      "smallwin": false
+    },
+    {
+      "img": "img/recube_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/recube",
+      "description": "'recube', a recombinant sound/poetry work for the Brown Cave[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/sound_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/sound.html",
+      "description": "link to a collection of interactive sound projects",
+      "smallwin": false
+    },
+    {
+      "img": "img/font3d_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/font3d",
+      "description": "algorithmically generated 3dtypeface [still images & applet]",
+      "smallwin": true
+    },
+    {
+      "img": "img/singlestitch_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/stitch",
+      "description": "an interactive 'kite' sketch based on a favorite letter[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/text3d_thumb2.jpg",
+      "url": "http://rednoise.org/~dhowe/text3d",
+      "description": "animated custom font design in 3d (featured on the 'processing' site)[requires java]",
+      "smallwin": true
+    },
+    {
+      "img": "img/jazzer_thumb.jpg",
+      "url": "http://rednoise.org/~dhowe/elmusico",
+      "description": "a 3d musician that 'plays along' with arbitrary audio tracks[req. javajsyn]",
+      "smallwin": true
+    }
+]
