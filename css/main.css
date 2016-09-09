@@ -75,11 +75,60 @@ nav>ul>li>a:hover{
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
 }
-:hover{
-
+.showInMobile{
+    display: none;
 }
 /****** End of Header ******/
 
+
+/****** Footer ******/
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #39465A;
+    color:#DDD;
+    height: 150px;
+    padding:2em 0;
+    font-size: 90%;
+    z-index: 15;
+}
+.footer img, .bioPhoto{
+  width:90px; 
+  float:left;
+  margin:0 20px; 
+}
+.bioPhoto{
+  margin-top: 1em;
+}
+.footer p{
+  margin:0 1em;
+}
+.footer ul{
+    margin: 0px !important;
+    padding:0 !important;
+}
+.footer ul>li{
+    line-height: 1.6em;
+    letter-spacing: .05em;
+}
+.footer a{
+    text-decoration: none;
+    color:inherit;
+}
+.footer a:hover{
+    text-decoration:underline;
+}
+.space{
+    width:100%;
+    margin-top: 5em;
+    padding:2em 0;
+    float:left;
+}
+/****** End of Footer ******/
+
+/****** Projects ******/
 #projects{
     margin-top:60px;  
     height: 100%;
@@ -91,6 +140,10 @@ nav>ul>li>a:hover{
     padding:1% 3%;
     width:25%;
     float:left;
+}
+.project h5,.projectlong h5{
+    font-size: 1.15em;
+    color:#39465A;
 }
 .project:hover{
     background-color: rgba(57,70,90,.06);
@@ -107,6 +160,7 @@ nav>ul>li>a:hover{
 .collaborators{
     text-transform: uppercase;
     color:#2E3C51;
+    font-size: 10px;
 }
 .maxH{
     height:auto;
@@ -166,10 +220,7 @@ nav>ul>li>a:hover{
     float:right;
 }
 
-#about .biophoto{
-    margin-left: 0!important;
-}
-/****** links ******/
+/* links */
 .projectlong a,.bottomNav p a,#about a{
     color:#006B8F;
     text-decoration: none;
@@ -182,61 +233,30 @@ nav>ul>li>a:hover{
 }
 
 
+/****** End of Projects ******/
 
 
-/****** End of Footer ******/
-.footer{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    background-color: #39465A;
-    color:#DDD;
-    height: 150px;
-    padding:2em 0;
-    font-size: 90%;
-    z-index: 15;
+
+/****** Other Pages ******/
+
+#about .biophoto{
+    margin-left: 0!important;
 }
-.footer img, .bioPhoto{
-  width:90px; 
-  float:left;
-  margin:0 20px; 
-}
-.bioPhoto{
-  margin-top: 1em;
-}
-.footer p{
-  margin:0 1em;
-}
-.footer ul{
-    margin: 0px !important;
-    padding:0 !important;
-}
-.footer ul>li{
-    line-height: 1.6em;
-    letter-spacing: .05em;
-}
-.footer a{
-    text-decoration: none;
-    color:inherit;
-}
-.footer a:hover{
-    text-decoration:underline;
-}
-.space{
-    width:100%;
-    margin-top: 5em;
-    padding:2em 0;
-    float:left;
-}
-/****** End of Footer ******/
-.showInMobile{
-    display: none;
+canvas{
+    z-index: 1;
+    position:absolute;
+    top:60px;
 }
 
 #reference ul{
     list-style:disc;
 }
+
+/****** End of Other Pages ******/
+
+
+
+
 /* ==========================================================================
    General Template
    ========================================================================== */
