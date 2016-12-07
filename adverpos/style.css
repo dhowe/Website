@@ -23,36 +23,32 @@ body{
 }
 
 .container{
-	width:60%;
+	width:700px;
+	margin:0 auto;
 	padding:1%;	
 }
 .txt{
-	min-height: 500px;
-	min-width:780px;
+	min-height: 420px;
+	min-width:700px;
 }
 
 h5{
-	width:600px;
 	font-size:18px;
 	line-height: 1.6;
 }
 
 p{  
-	width:600px;
 	font-size:14px;
 	text-align: justify;
 	line-height: 1.4;
 }
 
-.gallery, h5, p{
-	float:right;
-}
 .gallery{
-	margin-right:-20px;
+	margin:0 -10px 0 -5px;
 }
 .gallery img,video{
 	height:120px;
-	margin:10px;
+	margin:5px;
 	border:#CCC;
 	border-style:solid;
 	border-width:1px;
