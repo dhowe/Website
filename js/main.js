@@ -51,7 +51,7 @@ function createDetail( projects ) {
      html += "<ul>LINKS";
      for(var j = 0;j < projects[i].links.length;j++){
        //<li><a href="">XXX</a></li>
-       html += "<li><a href='" + projects[i].links[j].target + "'>" + projects[i].links[j].name + "</a></li>";
+       html += "<li><a target='_blank' href='" + projects[i].links[j].target + "'>" + projects[i].links[j].name + "</a></li>";
      }
      html += "</ul>";
   }
