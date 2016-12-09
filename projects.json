@@ -200,14 +200,6 @@
   "image": "img/adlipo_l.jpg",
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page."
 }, {
-  "shorttitle": "Redacto",
-  "thumb": "img/redacto_s.png",
-  "shortdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed.",
-
-  "longtitle": "Redacto",
-  "image": "img/redacto_l.png",
-  "longdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed. <br><br />To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager."
-}, {
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
   "shortdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
@@ -215,4 +207,12 @@
   "longtitle": "ChinaEye",
   "image": "img/chinaeye_l.png",
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well."
+}, {
+  "shorttitle": "Redacto",
+  "thumb": "img/redacto_s.png",
+  "shortdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed.",
+
+  "longtitle": "Redacto",
+  "image": "img/redacto_l.png",
+  "longdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed. <br><br />To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager."
 }]
