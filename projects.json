@@ -14,20 +14,18 @@
   "thumb": "img/adn_s.png",
   "shortdesc": "AdNauseam is a free browser addon that attempts to simultaneously protect users from tracking by advertising networks and to subvert the economic system that drives it.",
   "collaborators": "NISSENBAUM & ZER-AVIV",
-
   "longtitle": "AdNauseam",
   "image": "img/adn_l.jpg",
   "longdesc": "AdNauseam (ADN) is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, ADN hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, ADN creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
   "links": [
-
     {
       "name": "Project Home Page (& video)",
-      "target": "http://dhowe.github.io/AdNauseam/"
+      "target": "https://adnauseam.io"
     }, {
       "name": "Interview: Canadian Public Radio",
       "target": "../spark/"
     }, {
-      "name": "Recent Talk at HopeX 2014 (video)",
+      "name": "Talk at HopeX 2014 (video)",
       "target": "https://www.youtube.com/watch?v=Po593tV-vAg"
     }, {
       "name": "The AdNauseam/Obfuscation Paper",
@@ -45,12 +43,10 @@
   "thumb": "img/hiiict_s.jpg",
   "shortdesc": "How It Is in Common Tongues (HIIiCT)  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
   "collaborators": "John Cayley",
-
   "longtitle": "How It Is in Common Tongues",
   "image": "img/hiiict_l.jpg",
   "longdesc": "How It Is in Common Tongues is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
   "links": [
-
     {
       "name": "The Readers Project (parent project)",
       "target": "http://thereadersproject.org"
@@ -76,7 +72,6 @@
   "thumb": "img/reader_s.jpg",
   "shortdesc": "The Readers Project is an aesthetically-oriented system of software entities designed to explore the culture of human reading in the face of ubiquitous algorithmic & networked services.",
   "collaborators": "John Cayley",
-
   "longtitle": "The Readers Project",
   "image": "img/reader_l.jpg",
   "longdesc": "The Readers Project (an ongoing collaboration with John Cayley) is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
@@ -97,7 +92,6 @@
   "shorttitle": "Automatype",
   "thumb": "img/auto_s.jpg",
   "shortdesc": "Automatype is a a networked installation that uses algorithms to find the bridges between English words, Six-Degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. ",
-
   "longtitle": "Automatype",
   "image": "img/auto_l.jpg",
   "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br><br />The project is built with RiTa, my software toolkit for algorithmic creative writing. Combining natural language processing, computational stylistics, and data visualization techniques, the open-source RiTa project provides state-of-the-art natural language techniques to creative writers and language artists.",
@@ -128,12 +122,10 @@
   "thumb": "img/md_s.jpg",
   "shortdesc": "Minor Distance is a musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and recordings while travelling separately.",
   "collaborators": "Bill Seaman",
-
   "longtitle": "Minor Distance",
   "image": "img/md_l.jpg",
   "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his own custom software, and Seaman's simple piano loops... <br><br />'[T]he uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.'  -Gregory Taylor <br><br />'Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies...' -Steve Fore ",
   "links": [
-
     {
       "name": "Listen...",
       "target": "http://rednoise.org/minordistance/tracks.html"
@@ -152,12 +144,10 @@
   "shorttitle": "RiTa",
   "thumb": "img/RiTa_s.png",
   "shortdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. ",
-
   "longtitle": "RiTa",
   "image": "img/ritapen.jpg",
   "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to text-mining, text-to-speech, & animation. RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
   "links": [
-
     {
       "name": "The RiTa paper (with A.B. Soderman)",
       "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
@@ -170,7 +160,6 @@
   "shorttitle": "text.curtain",
   "thumb": "img/textcurtain_s.jpg",
   "shortdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. ",
-
   "longtitle": "text.curtain",
   "image": "img/textcurtain_l.png",
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response."
@@ -179,7 +168,6 @@
   "thumb": "img/tmn_s.jpg",
   "shortdesc": "TrackMeNot blends software tool and 'artware' intervention in a browser extension designed to protect users from surreptitious data profiling and to interpose in the power dynamic between searchers & the corporations controlling our data.",
   "collaborators": "Helen Nissenbaum",
-
   "longtitle": "TrackMeNot",
   "image": "img/tmn_l.jpg",
   "longdesc": "TrackMeNot blends software tool and 'artware' intervention in a browser extension designed to protect users from surreptitious data profiling and to interpose in the power dynamic between searchers & the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation. Running as a background process, TMN periodically issues algorithmically-generated decoy queries to search engines like Google, Yahoo & Bing. Users' real searches, lost in a cloud of false data, are hidden in plain view."
@@ -187,7 +175,6 @@
   "shorttitle": "Architecture of Association",
   "thumb": "img/aoa_s.jpg",
   "shortdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time via a cluster of networked computers and databases.",
-
   "longtitle": "Architecture of Association",
   "image": "img/aoa_l.jpg",
   "longdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive & computer science, etc.) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris."
@@ -195,7 +182,6 @@
   "shorttitle": "AdLiPo",
   "thumb": "img/adlipo_s.jpg",
   "shortdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
-
   "longtitle": "AdLiPo",
   "image": "img/adlipo_l.jpg",
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page."
@@ -203,7 +189,6 @@
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
   "shortdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
-
   "longtitle": "ChinaEye",
   "image": "img/chinaeye_l.png",
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well."
@@ -211,7 +196,6 @@
   "shorttitle": "Redacto",
   "thumb": "img/redacto_s.png",
   "shortdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed.",
-
   "longtitle": "Redacto",
   "image": "img/redacto_l.png",
   "longdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed. <br><br />To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager."
