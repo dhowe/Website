@@ -3,7 +3,7 @@ function createGrid(projects) {
 
   // create grid in html
   for (var i = 0; i < projects.length; i++) {
-    var html = "<a href='detail.html#" + i + "'> <div class='project'>";
+    var html = "<a href='detail.html#" + detailUrl(projects[i].shorttitle) + "'> <div class='project'>";
     html += "<h5>" + projects[i].shorttitle + "</h5>";
     html += "<img src=" + projects[i].thumb + ">";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -20,13 +20,17 @@ function createGrid(projects) {
     $('#projects .grid').append("<div class='space' style='height:" + $('.footer').outerHeight() + "'></div>");
 }
 
+function detailUrl(title) {
+  return title.toLowerCase().replace(/[ .-]+/g,'');
+}
+
 function createDetail(projects) {
 
   // create long text
   var html = "";
   for (var i = 0; i < projects.length; i++) {
 
-    html += "<div class='projectlong' id='" + i + "'><div class='grid pad-sl'>";
+    html += "<div class='projectlong' id='" + detailUrl(projects[i].shorttitle) + "'><div class='grid pad-sl'>";
 
     html += "<div class='content'><div class='col-1-12'></div><div class='col-7-12 mobile-col-1-1'>";
     html += "<h5>" + projects[i].longtitle + "</h5>";
@@ -78,6 +82,7 @@ function displayCurrent() {
   var URL = $(location).attr('href');
   var id = URL.split("#")[1];
   var selector = '.projectlong#' + id;
+  console.log('displayCurrent:'+id,selector);
   $(".projectlong").css("display", "none");
   $(selector).css("display", "block");
 }
