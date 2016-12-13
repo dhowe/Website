@@ -15,7 +15,7 @@
     height:100%;
     font-size: 1.618em;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding:.8em 20px .3em; 
+    padding:.8em 20px .3em;
     color:white;
     background-color: #2E3C51;
     left:0;
@@ -93,9 +93,9 @@ nav>ul>li>a:hover{
     z-index: 15;
 }
 .footer img, .bioPhoto{
-  width:90px; 
+  width:90px;
   float:left;
-  margin:0 20px; 
+  margin:0 20px;
 }
 .bioPhoto{
   margin-top: 1em;
@@ -128,7 +128,7 @@ nav>ul>li>a:hover{
 
 /****** Projects ******/
 #projects{
-    margin-top:60px;  
+    margin-top:60px;
     height: 100%;
 }
 #publication,#reference{
@@ -172,7 +172,7 @@ nav>ul>li>a:hover{
     padding-top: 60px;
     height:100vh;
     width:100%;
-    z-index: 1;    
+    z-index: 1;
 }
 .projectlong img{
     margin:20px;
@@ -227,6 +227,9 @@ nav>ul>li>a:hover{
 }
 .bottomNav p a{
     display: block;
+}
+.links {
+    margin-top: 50px;
 }
 
 
@@ -454,7 +457,7 @@ body {
 }
 
 .col-7-12 {
-    width: 58.33%
+    width: 45.33%
 }
 
 
@@ -467,7 +470,7 @@ body {
         margin-right: 0px;
     }
 
-    
+
     [class*='col-'] {
         width: auto;
         float: none;
@@ -478,10 +481,10 @@ body {
         padding-left: 0px;
         padding-right: 10px; /* column-space */
     }
-    
-    
+
+
     /* Mobile Layout */
-    
+
     [class*='mobile-col-'] {
         float: left;
         margin-left: 0px;
@@ -492,7 +495,7 @@ body {
         padding-right: 10px; /* column-space */
         padding-bottom: 0px;
     }
-    
+
     .mobile-col-1-1 {
         width: 100%;
     }
@@ -565,7 +568,7 @@ body {
     .mobile-col-7-12 {
         width: 58.33%
     }
-    
+
     .hide-on-mobile {
         display: none !important;
         width: 0;
@@ -580,16 +583,16 @@ body {
 }
 
 /* The Percentage-based grid, akin to bootstrap */
-.gd-1, 
-.gd-2, 
-.gd-3, 
-.gd-4, 
-.gd-5, 
-.gd-6, 
-.gd-7, 
-.gd-8, 
-.gd-9, 
-.gd-10, 
+.gd-1,
+.gd-2,
+.gd-3,
+.gd-4,
+.gd-5,
+.gd-6,
+.gd-7,
+.gd-8,
+.gd-9,
+.gd-10,
 .gd-11,
 .gd-12 {
     position: relative;
@@ -688,16 +691,16 @@ html, body {
     width: 96%;
     margin: 0 2%;
 }
-.col1, 
-.col2, 
-.col3, 
-.col4, 
-.col5, 
-.col6, 
-.col7, 
-.col8, 
-.col9, 
-.col10, 
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
 .col11,
 .col12 {
     margin-left: 0;
