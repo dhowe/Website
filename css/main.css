@@ -58,7 +58,6 @@ nav a {
     text-align: center;
     opacity:.5;
 }
-
 nav>ul>li>a{
     text-transform: uppercase;
 }
@@ -75,6 +74,10 @@ nav>ul>li>a:hover{
 }
 .showInMobile{
     display: none;
+}
+
+.refhead{
+  font-size: 1.8em;
 }
 /****** End of Header ******/
 
