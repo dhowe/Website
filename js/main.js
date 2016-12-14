@@ -3,24 +3,43 @@ function createGrid(projects) {
 
   // create grid in html
   for (var i = 0; i < projects.length; i++) {
-    var html = "<a href='detail.html#" + detailUrl(projects[i].shorttitle) + "'> <div class='project'>";
+
+    var html = "<a href='detail.html#" + detailUrl(projects[i].shorttitle) + "'>";
+    html += "<div class='project'>";
     html += "<h5>" + projects[i].shorttitle + "</h5>";
     html += "<img src=" + projects[i].thumb + ">";
     html += "<p>" + projects[i].shortdesc + "</p>";
-    if (projects[i].collaborators) html += "<p class='collaborators'> W' " + projects[i].collaborators + "</p>";
+    if (projects[i].collaborators) {
+      html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
+    }
     html += "</div></a>";
+
     $('#projects .grid').append(html);
   }
 
   $('.project img').css("height", $('.project img').width() * 0.65);
   adjustHeight(projects);
 
+  // navigation
+  var $navlist = $('#navlist');
+  if (location.href.indexOf('mit') > -1) {
+    $navlist.append('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
+  }
+  else {
+    $navlist.append('<li><a class="current" href="index.html">Projects</a></li>');
+    $navlist.append('<li><a href="pubs.html">Publications</a></li>');
+    $navlist.append('<!--li><a href="sketchpad/index.html">Sketchpad</a></li-->');
+    $navlist.append('<li><a class="showInMobile" href="about.html">About</a></li>');
+  }
+
   // footer space
-  if ($('.footer').css("display") != "none")
+  if ($('.footer').css("display") != "none") {
     $('#projects .grid').append("<div class='space' style='height:" + $('.footer').outerHeight() + "'></div>");
+  }
 }
 
 function detailUrl(title) {
+
   return title.toLowerCase().replace(/[ .-]+/g,'');
 }
 
@@ -51,10 +70,11 @@ function createDetail(projects) {
     html += "<div class='bottomNav'>";
 
     if (i != 0)
-      html += "<p><span>previous</span><a href='#" + (i - 1) + "'>" + projects[i - 1].longtitle + "</a></p>";
+      html += "<p><span>previous</span><a href='#" + detailUrl(projects[i-1].shorttitle) + "'>" + projects[i-1].longtitle + "</a></p>";
 
-    if (i != projects.length - 1)
-      html += "<p class='nextPage'><span>next</span><a href='#" + (i + 1) + "'>" + projects[i + 1].longtitle + "</a></p>";
+    if (i != projects.length - 1) {
+      html += "<p class='nextPage'><span>next</span><a href='#" + detailUrl(projects[i+1].shorttitle) + "'>" + projects[i+1].longtitle + "</a></p>";
+    }
 
     html += "</div></div></div>";
   }
