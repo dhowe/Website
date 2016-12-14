@@ -3,36 +3,75 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Advertisement </title>
+    <title>Advertising Positions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script src="../js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
 </head>
 
 <body>
     <div class="top">
-        <img src="imgs/combined.jpg" alt="models">
-       <!--  <div id="left"> <img src="imgs/female.jpg" alt="female model print"></div>
-        <div id="right"> <img src="imgs/male.jpg" alt="male model print"></div> -->
+        <img src="imgs/combined.png" alt="models">
+        <a href="nicole.html"><div class="button">go to gallery</div></a>
     </div>
     <div class="container">
-        <div class="txt">
-            <h5>Advertising Positions, 2017 <br>
+            <h5>
+            Advertising Positions, 2017 <br>
             Animations / Mixed-media Installation<br>
             Daniel C. Howe</h5>
-            <p>These works begin with robots; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.
-                <p>
-                    Special thanks to Sally Chen, Leoson Cheong, and Dorothy Chen for their extensive contributions to this work. Thanks also to Miu Ling Lam, Diane To, Tobias Klein, Tamas Waliczky, and Eddie Leung for their feedback and assistance.</p>
-            </p>
+            <p>
+            There was a time, however brief, when the web was a space almost entirely free of
+            commerce and capitalism. Today, however, our every online action is tracked by
+            sophisticated automated systems (“robots”) which mine our most personal data to analyze,
+            predict, and finally, determine our behavior. While this vast surveillance architecture has
+            indeed been used by governments as a means of control, its unchecked growth is due
+            largely to corporations whose only motivation is profit. Human users are rarely asked to
+            consent to such tracking, but must instead accept it as the necessary cost of access for the
+            “free” information and services we feel unable to live without.</p>
+            <p>
+            The works in this exhibition also begin with “robots”, though with a different agenda. Rather
+            than tracking humans, these robots are trained to search the web as if they were human,
+            following specific user profiles they have been assigned (age, gender, location, interests
+            and the like). Each trained robot is then turned loose on the web, driving a modified version
+            of the Chrome browser, to periodically visit websites that it “likes”, and to click on weblinks it
+            chooses, which then bring it to still further websites. This process continues over several
+            weeks, during which time the robot collects and saves each of the advertisements (ads) it
+            has been targeted with (generally several thousand or more). The specific ads shown are
+            determined by real-time auctions, generally occurring within the time it takes a page to load,
+            in which the robot's growing data profile is sold to the highest corporate bidder, who then
+            injects one or more ads into the page content. The robot, rather than using these ads to
+            make purchases, instead uses each as the texture for a single polygon on its virtual mesh
+            body. The training period concludes when the robot’s new skin, which you see here for the
+            first time, is complete.</p>
+            <div class="side">
+                <a class="fancybox" rel="group" href="imgs/reference.png"><img src="imgs/referenceThumb.png" alt="" /></a>
+                <a class="fancybox" rel="group" href="imgs/texture.jpg"><img src="imgs/textureThumb.jpg" alt="" /></a>
+            </div>
+            <p>
+            Special thanks to Sally Chen, Leoson Cheong, and Dorothy Chen for their extensive contributions to this work. Thanks also to Miu Ling Lam, Diane To, Tobias Klein, Tamas Waliczky, and Eddie Leung for their feedback and assistance.</p>
+            
+ 
+        <div class="citation">
+            <b>Portraiture for the blemished flesh of browsing beings.</b>
+            <q>Advertising Positions by Daniel C. Howe is a fully-articulated conceptual art intervention with an aesthetic outcome (glossy luminous and radiant rendered portraits to satisfy the narcissistic instincts of the commodified psychometric market) that at the same time operates as an engaged computationally-sophisticated (programmatic generative bot-art) and polemical intervention against the ubiquitous networked advertising that permeates and ideologically colonizes cognitive space with visual trash: portraiture for the blemished flesh of browsing beings.</q>
+            <p style="text-align:right;">-- Dr. David Johnston</p>
         </div>
+
         <div class="gallery">
-            <img src="imgs/reference.png" alt="arrow reference">
-            <img src="imgs/texture.jpg" alt="texture">
-            <img src="imgs/detail.jpg" alt="detail">
-            <video controls preload="auto" id="animation" loop>
-                <source src="animation.webm" type="video/webm">
-                <source src="animation.mp4" type="video/mp4">
-            </video>
+            <a class="fancybox" rel="group" href="imgs/installationshot1.jpg"><img src="imgs/installationshot1.jpg" alt="installation shot" /></a>
+            <a class="fancybox" rel="group" href="imgs/installationshot3.jpg"><img src="imgs/installationshot3.jpg" alt="installation shot" /></a>
+            <a class="fancybox" rel="group" href="imgs/installationshot2.jpg"><img src="imgs/installationshot2.jpg" alt="installation shot" /></a>
         </div>
+
+        
     </div>
+
 </body>
 
 </html>

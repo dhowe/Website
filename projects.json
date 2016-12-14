@@ -12,7 +12,7 @@
 }, {
   "shorttitle": "AdNauseam",
   "thumb": "img/adn_s.png",
-  "shortdesc": "AdNauseam is a free browser addon that attempts to simultaneously protect users from tracking by advertising networks and to subvert the economic system that drives it.",
+  "shortdesc": "<i>AdNauseam</i> is a free browser addon that attempts to simultaneously protect users from tracking by advertising networks and to subvert the economic system that drives it.",
   "collaborators": "NISSENBAUM & ZER-AVIV",
   "longtitle": "AdNauseam",
   "image": "img/adn_l.jpg",
@@ -41,7 +41,7 @@
 }, {
   "shorttitle": "How It Is...",
   "thumb": "img/hiiict_s.jpg",
-  "shortdesc": "How It Is in Common Tongues (HIIiCT)  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
+  "shortdesc": "<i>How It Is in Common Tongues (HIIiCT)</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
   "collaborators": "John Cayley",
   "longtitle": "How It Is in Common Tongues",
   "image": "img/hiiict_l.jpg",
@@ -70,7 +70,7 @@
 }, {
   "shorttitle": "The Readers Project",
   "thumb": "img/reader_s.jpg",
-  "shortdesc": "The Readers Project is an aesthetically-oriented system of software entities designed to explore the culture of human reading in the face of ubiquitous algorithmic & networked services.",
+  "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities designed to explore the culture of human reading in the face of ubiquitous algorithmic & networked services.",
   "collaborators": "John Cayley",
   "longtitle": "The Readers Project",
   "image": "img/reader_l.jpg",
@@ -91,7 +91,7 @@
 }, {
   "shorttitle": "Automatype",
   "thumb": "img/auto_s.jpg",
-  "shortdesc": "Automatype is a a networked installation that uses algorithms to find the bridges between English words, Six-Degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. ",
+  "shortdesc": "<i>Automatype</i> is a a networked installation that uses algorithms to find the bridges between English words, Six-Degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. ",
   "longtitle": "Automatype",
   "image": "img/auto_l.jpg",
   "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br><br />The project is built with RiTa, my software toolkit for algorithmic creative writing. Combining natural language processing, computational stylistics, and data visualization techniques, the open-source RiTa project provides state-of-the-art natural language techniques to creative writers and language artists.",
@@ -120,7 +120,7 @@
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
-  "shortdesc": "Minor Distance is a musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and recordings while travelling separately.",
+  "shortdesc": "<i>Minor Distance</i> is a musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and recordings while travelling separately.",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
   "image": "img/md_l.jpg",
@@ -143,7 +143,7 @@
 }, {
   "shorttitle": "RiTa",
   "thumb": "img/RiTa_s.png",
-  "shortdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. ",
+  "shortdesc": "Designed to support the creation of novel works of generative literature, the <i>RiTa</i> library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. ",
   "longtitle": "RiTa",
   "image": "img/ritapen.jpg",
   "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to text-mining, text-to-speech, & animation. RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
@@ -159,7 +159,7 @@
 }, {
   "shorttitle": "text.curtain",
   "thumb": "img/textcurtain_s.jpg",
-  "shortdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. ",
+  "shortdesc": "<i>text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. ",
   "longtitle": "text.curtain",
   "image": "img/textcurtain_l.png",
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response."
@@ -174,28 +174,28 @@
 }, {
   "shorttitle": "Architecture of Association",
   "thumb": "img/aoa_s.jpg",
-  "shortdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time via a cluster of networked computers and databases.",
+  "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring mechanisms of associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time via a cluster of networked computers and databases.",
   "longtitle": "Architecture of Association",
   "image": "img/aoa_l.jpg",
   "longdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive & computer science, etc.) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris."
 }, {
   "shorttitle": "AdLiPo",
   "thumb": "img/adlipo_s.jpg",
-  "shortdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
+  "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, <i>AdLiPo</i> not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
   "longtitle": "AdLiPo",
   "image": "img/adlipo_l.jpg",
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page."
 }, {
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
-  "shortdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
+  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. <i>ChinaEye</i> hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
   "longtitle": "ChinaEye",
   "image": "img/chinaeye_l.png",
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well."
 }, {
   "shorttitle": "Redacto",
   "thumb": "img/redacto_s.png",
-  "shortdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed.",
+  "shortdesc": "<i>Redacto</i> redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed.",
   "longtitle": "Redacto",
   "image": "img/redacto_l.png",
   "longdesc": "Redacto redacts all the information on the Internet, just like your favorite oppressive regime. By simply adjusting a few CSS properties, all the distracting text and images on your favorite website are removed. <br><br />To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager."
