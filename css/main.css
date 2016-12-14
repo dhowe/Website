@@ -281,7 +281,9 @@ p {
     font-size: 1em;
     margin-bottom: 1.2em;
 }
-
+i{
+    font-weight: 200;
+}
 ul{
     list-style: none;
 }
