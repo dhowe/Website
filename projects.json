@@ -120,11 +120,11 @@
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
-  "shortdesc": "<i>Minor Distance</i> is a musical collaboration between Seaman and Howe that came about after the pair exchanged ideas and recordings while travelling separately.",
+  "shortdesc": "<i>Minor Distance</i> is a album of generative music created with Howe's bespoke <i>Pataclysm</i> software, a real-time probablistic sampler. The collaboration came about after Howe and Seaman exchanged ideas and recordings while travelling separately.",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
   "image": "img/md_l.jpg",
-  "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his own custom software, and Seaman's simple piano loops... <br><br />'[T]he uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.'  -Gregory Taylor <br><br />'Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies...' -Steve Fore ",
+  "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops... <br/><br/>'[T]he uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.'  -Gregory Taylor <br><br />'Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies...' -Steve Fore ",
   "links": [
     {
       "name": "Listen...",
@@ -157,16 +157,16 @@
     }
   ]
 }, {
-  "shorttitle": "text.curtain",
+  "shorttitle": "Text.curtain",
   "thumb": "img/textcurtain_s.jpg",
-  "shortdesc": "<i>text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. ",
+  "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. ",
   "longtitle": "text.curtain",
   "image": "img/textcurtain_l.png",
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response."
 }, {
   "shorttitle": "TrackMeNot",
   "thumb": "img/tmn_s.jpg",
-  "shortdesc": "TrackMeNot blends software tool and 'artware' intervention in a browser extension designed to protect users from surreptitious data profiling and to interpose in the power dynamic between searchers & the corporations controlling our data.",
+  "shortdesc": "<i>TrackMeNot</i> blends software tool and 'artware' intervention in a browser extension designed to protect users from surreptitious data profiling and to interpose in the power dynamic between searchers & the corporations controlling our data.",
   "collaborators": "Helen Nissenbaum",
   "longtitle": "TrackMeNot",
   "image": "img/tmn_l.jpg",
@@ -181,14 +181,14 @@
 }, {
   "shorttitle": "AdLiPo",
   "thumb": "img/adlipo_s.jpg",
-  "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, <i>AdLiPo</i> not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
+  "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
   "longtitle": "AdLiPo",
   "image": "img/adlipo_l.jpg",
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page."
 }, {
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
-  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. <i>ChinaEye</i> hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
+  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
   "longtitle": "ChinaEye",
   "image": "img/chinaeye_l.png",
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well."
