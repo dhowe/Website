@@ -117,7 +117,7 @@ q{
 }
 .modelView{
 	position:relative;
-	max-width:1500px;
+/*	max-width:1500px;*/
 	margin:0 auto;
 }
 video{
