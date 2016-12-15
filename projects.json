@@ -55,11 +55,11 @@
 }, {
   "shorttitle": "How It Is...",
   "thumb": "img/hiiict_s.jpg",
-  "shortdesc": "<i>How It Is in Common Tongues (HIIiCT)</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
+  "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
   "collaborators": "John Cayley",
   "longtitle": "How It Is in Common Tongues",
   "images": ["img/hiiict_l.jpg"],
-  "longdesc": "How It Is in Common Tongues is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
+  "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
   "exhibitions": [{
     "text": "UbuWeb: Contemporaries. Online exhibit. Posted Oct 3, 2013",
     "target": "http://www.ubu.com/contemp/cayley/index.html"
