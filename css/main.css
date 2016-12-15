@@ -144,6 +144,9 @@ nav>ul>li>a:hover {
 #publication, #reference {
   margin-left: 20px;
 }
+#publist {
+  max-width: 800px;
+}
 .project {
   padding: 1% 3%;
   width: 25%;
