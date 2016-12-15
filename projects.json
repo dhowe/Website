@@ -1,11 +1,11 @@
 [{
   "shorttitle": "Advertising Positions",
   "thumb": "img/ap_s.jpg",
-  "shortdesc": "This series begins with 'robots' we train to search the web, according to profiles they are assigned (age, gender, location, interests, etc.) Each robot collects the ads it gets (based on its profile) and applies them, one-by-one, to the mesh of its virtual avatar.",
+  "shortdesc": "This series begins with 'robots' we train to search the web, according to profiles they are assigned (age, gender, location, interests, etc.) Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to create the mesh skin of its own virtual avatar.",
   "longtitle": "Advertising Positions",
   "images": [
-     "img/ap_l.jpg"
- ],
+    "img/ap_l.jpg"
+  ],
   "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
     "text": "Montage Express, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
@@ -18,14 +18,14 @@
   "shorttitle": "AdNauseam",
   "thumb": "img/adn_s.png",
   "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from surveillance by advertising networks and attempts , by clicking ever ad it hides, to subvert the economic system that drives it.",
-  "collaborators": "NISSENBAUM & ZER-AVIV",
+  "collaborators": "Nissenbaum & Zer-Aviv",
   "longtitle": "AdNauseam",
   "images": [
-     "img/adn_l.jpg"
+    "img/adn_l.jpg"
   ],
   "longdesc": "AdNauseam (ADN) is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, ADN hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, ADN creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
   "exhibitions": [{
-    "text": "Follow, Foundation for Art and Creative Technology(FACT), Liverpool, England. Dec 11–Feb 16, 2016 "
+    "text": "Follow, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11–Feb 16, 2016 "
   }, {
     "text": "SECRET, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
     "target": "https://dublin.sciencegallery.com/secret/exhibits/adnauseum/"
@@ -123,6 +123,9 @@
   "exhibitions": [{
     "text": "Hold the Light, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
     "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
+  },{
+    "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
+    "target": "http://glia.ca/2014/db/"
   }]
 }, {
   "shorttitle": "Automatype",
@@ -180,7 +183,7 @@
   "shortdesc": "<i>Minor Distance</i> is a album of generative music, published by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures...",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
-  "images": ["img/md_l.jpg","img/md_more.jpg"],
+  "images": ["img/md_l.jpg", "img/md_more.jpg"],
   "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops...",
   "quotes": [{
     "text": "The uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.",
@@ -189,27 +192,27 @@
     "text": "Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies...",
     "from": "Steve Fore"
   }],
-  "exhibitions":[{
-       "text": "<i>Theoretical Architectures</i> in 2nd International Exhibition on Music Video and Sound Art, the Czong Institute for Contemporary Art (CICA). Gyeonggi-do, Korea, Nov 25–Dec 11, 2016"
-       }, {
-           "text": "<i>Theoretical Architectures</i> in Hidden Door Film Festival. Edinburgh, Scotland. May 27–Jun 4, 2016",
-           "target": "http://www.alchemyfilmfestival.org.uk/2016/hidden-door-31-may-2016-7pm/"
-       }, {
-           "text": "<i>Theoretical Architectures</i> in Alchemy Film Festival. Hawick, Scotland. Apr 14–Apr 17, 2016",
-           "target": "http://joshgibsonfilms.com/Theoretical-Architectures"
-       }, {
-           "text": "<i>Theoretical Architectures</i> in Black Maria Film Festival. Jersey City, New Jersey, USA. Feb 5–May 13, 2015",
-           "target": "http://www.cddc.vt.edu/journals/newriver/08Spring/"
-       }, {
-           "text": "<i>Theoretical Architectures</i> in Telluride Film Festival. Telluride, Colorado, USA. Aug 29–Sep1, 2014",
-           "target": "http://www.telluridefilmfestival.org/assets/guides/41st_TFF_program_guide_FINAL.pdf"
-       }, {
-           "text": "<i>Theoretical Architectures</i> in PROJECTIONS, the New York Film Festival 52, New York, USA. Oct 3, 2014",
-           "target": "http://www.filmlinc.org/daily/nyff-sets-63-film-and-videos-for-its-projections-lineup/"
-       }, {
-           "text": "Cotton Goods, Durham, NC, USA. Jun 15, 2016 (album release)",
-           "target": "https://boomkat.com/products/minor-distance-special-edition-2e3a9bb5-13dd-4329-8267-d8f39e8c8252"
-       }],
+  "exhibitions": [{
+    "text": "<i>Theoretical Architectures</i> in 2nd International Exhibition on Music Video and Sound Art, the Czong Institute for Contemporary Art (CICA). Gyeonggi-do, Korea, Nov 25–Dec 11, 2016"
+  }, {
+    "text": "<i>Theoretical Architectures</i> in Hidden Door Film Festival. Edinburgh, Scotland. May 27–Jun 4, 2016",
+    "target": "http://www.alchemyfilmfestival.org.uk/2016/hidden-door-31-may-2016-7pm/"
+  }, {
+    "text": "<i>Theoretical Architectures</i> in Alchemy Film Festival. Hawick, Scotland. Apr 14–Apr 17, 2016",
+    "target": "http://joshgibsonfilms.com/Theoretical-Architectures"
+  }, {
+    "text": "<i>Theoretical Architectures</i> in Black Maria Film Festival. Jersey City, New Jersey, USA. Feb 5–May 13, 2015",
+    "target": "http://www.cddc.vt.edu/journals/newriver/08Spring/"
+  }, {
+    "text": "<i>Theoretical Architectures</i> in Telluride Film Festival. Telluride, Colorado, USA. Aug 29–Sep1, 2014",
+    "target": "http://www.telluridefilmfestival.org/assets/guides/41st_TFF_program_guide_FINAL.pdf"
+  }, {
+    "text": "<i>Theoretical Architectures</i> in PROJECTIONS, the New York Film Festival 52, New York, USA. Oct 3, 2014",
+    "target": "http://www.filmlinc.org/daily/nyff-sets-63-film-and-videos-for-its-projections-lineup/"
+  }, {
+    "text": "Cotton Goods, Durham, NC, USA. Jun 15, 2016 (album release)",
+    "target": "https://boomkat.com/products/minor-distance-special-edition-2e3a9bb5-13dd-4329-8267-d8f39e8c8252"
+  }],
   "links": [{
     "name": "Listen...",
     "target": "http://rednoise.org/minordistance/tracks.html"
@@ -230,48 +233,41 @@
   "longtitle": "RiTa",
   "images": ["img/ritapen.jpg"],
   "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
-  "projects" : [
-   {
-      "name": "Roulette",
-      "target": "#roulette"
-    }, {
-      "name": "The Readers Project",
-      "target": "#thereadersproject"
-    },
-     {
-      "name": "How It Is in Common Tongues",
-      "target": "#howitis"
-    }, {
-      "name": "Automatype",
-      "target": "#automatype"
-    },
-     {
-      "name": "Architecture of Association",
-      "target": "#architectureofassociation"
-    }, {
-      "name": "text.curtain",
-      "target": "#textcurtain"
-    },
-     {
-      "name": "AdLiPo",
-      "target": "#adlipo"
-    }, {
-      "name": "NoTimeMachine",
-      "target": "http://archive.turbulence.org/Works/notime/about.html"
-    },{
-      "name": "open.ended",
-      "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
-    }
-  ],
-  "links": [
-    {
-      "name": "The RiTa paper (with A.B. Soderman)",
-      "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
-    }, {
-      "name": "The RiTa HomePage",
-      "target": "http://rednoise.org/rita/"
-    }
-  ]
+  "projects": [{
+    "name": "Roulette",
+    "target": "#roulette"
+  }, {
+    "name": "The Readers Project",
+    "target": "#thereadersproject"
+  }, {
+    "name": "How It Is in Common Tongues",
+    "target": "#howitis"
+  }, {
+    "name": "Automatype",
+    "target": "#automatype"
+  }, {
+    "name": "Architecture of Association",
+    "target": "#architectureofassociation"
+  }, {
+    "name": "Text.curtain",
+    "target": "#textcurtain"
+  }, {
+    "name": "AdLiPo",
+    "target": "#adlipo"
+  }, {
+    "name": "NoTimeMachine",
+    "target": "http://archive.turbulence.org/Works/notime/about.html"
+  }, {
+    "name": "Open.ended",
+    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
+  }],
+  "links": [{
+    "name": "The RiTa paper (with A.B. Soderman)",
+    "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
+  }, {
+    "name": "The RiTa HomePage",
+    "target": "http://rednoise.org/rita/"
+  }]
 }, {
   "shorttitle": "Roulette",
   "thumb": "img/rl_s.png",
@@ -327,7 +323,7 @@
   "images": ["img/tmn_l.jpg"],
   "longdesc": "TrackMeNot blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
   "quotes": [{
-    "text": "<i>TrackMeNot</i>  uses obfuscation rather than encryption, or circumvention to defend against government surveillance and corporate data mining. Developed by tech activists at New York University, TrackMeNot is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design. Such values include ‘transparency in interface, function, code, and strategy; personal autonomy, where users need not rely on third parties; social protection of privacy with distributed/community-oriented action; minimal resource consumption... and usability’. TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
+    "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design... TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
     "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
   }],
   "exhibitions": [{
@@ -340,7 +336,7 @@
     "text": "SpeedShow, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
     "target": "http://speedshow.ideacritik.com/"
   }]
-},{
+}, {
   "shorttitle": "Text.curtain",
   "thumb": "img/textcurtain_s.jpg",
   "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
@@ -349,7 +345,7 @@
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
     "text": "Text.curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
-    "from": "Professor Brian Kim Stefans"
+    "from": "Brian Kim Stefans"
   }],
   "exhibitions": [{
     "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
@@ -372,7 +368,7 @@
     "text": "E–Fest 2006. Providence, RI, USA. Mar 22–24, 2006",
     "target": "http://www.arras.net/?p=18"
   }]
-},  {
+}, {
   "shorttitle": "Architecture of Association",
   "thumb": "img/aoa_s.jpg",
   "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and evolving databases.",
@@ -380,24 +376,25 @@
   "longtitle": "Architecture of Association",
   "images": [
     "img/aoa_l.jpg",
-    "img/aoa_press.jpg"],
+    "img/aoa_press.jpg"
+  ],
   "longdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
   "exhibitions": [{
-       "text": "The Age of Experience, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
-   }, {
-       "text": "Futures of Digital Studies. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
-       "target": "http://www.english.ufl.edu/fds/exhibit.html"
-    },{
-      "text": "C.H.A.T. 2010. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
-      },{
-      "text": "Selected for the Duke Permanent Collection. Perkins Library, Duke University, Raleigh, North Carolina, USA. May 15, 2009"
-      },{
-       "text": "Dans la nuit, des images. Grand Palais, Paris, France. Dec 18–31, 2008",
-       "target": "http://dukemagazine.duke.edu/article/dans-la-nuit"
-    },{
-       "text": "Commissioned for the Museu da Imagem e do Som, São Paulo, Brazil. Aug 9–Oct 5, 2008",
-       "target": " http://www.mis-sp.org.br/about"
-    }]
+    "text": "The Age of Experience, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
+  }, {
+    "text": "Futures of Digital Studies. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
+    "target": "http://www.english.ufl.edu/fds/exhibit.html"
+  }, {
+    "text": "C.H.A.T. 2010. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
+  }, {
+    "text": "Selected for the Duke Permanent Collection. Perkins Library, Duke University, Raleigh, North Carolina, USA. May 15, 2009"
+  }, {
+    "text": "Dans la nuit, des images. Grand Palais, Paris, France. Dec 18–31, 2008",
+    "target": "http://dukemagazine.duke.edu/article/dans-la-nuit"
+  }, {
+    "text": "Commissioned for the Museu da Imagem e do Som, São Paulo, Brazil. Aug 9–Oct 5, 2008",
+    "target": " http://www.mis-sp.org.br/about"
+  }]
 }, {
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
