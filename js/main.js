@@ -32,7 +32,7 @@ function selectNavigation() {
 
   var $navlist = $('#navlist');
   if (location.href.indexOf('mit') > -1) {
-    console.log("FOUND MIT");
+    // console.log("FOUND MIT");
     $navlist.append('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
   }
   else {
@@ -114,12 +114,11 @@ function createDetail(projects) {
     html += "</div>";
 
     //IMAGES
-    // <a class="fancybox" rel="group" href="imgs/installationshot1.jpg"><img src="imgs/installationshot1.jpg" alt="installation shot"/></a>
-    html += "<div class='col-1-3 mobile-col-1-1'>";
+     html += "<div class='col-1-3 mobile-col-1-1'>";
     for (var j = 0; j < projects[i].images.length; j++) {
       var bestImage = projects[i].images[j].slice(0, projects[i].images[j].length-4) + "@2x" + projects[i].images[j].slice(projects[i].images[j].length-4, projects[i].images[j].length);
 
-      if(!imageExists(bestImage)) bestImage = projects[i].images[j];
+      // if(!imageExists(bestImage)) bestImage = projects[i].images[j];
       // console.log(bestImage);
       html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + projects[i].images[j] + "></a>";
     }
