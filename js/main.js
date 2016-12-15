@@ -68,7 +68,7 @@ function createDetail(projects) {
        html += "<div class='quotes'>";
       for (var j = 0; j < projects[i].quotes.length; j++) {
         //<li><a href="">XXX</a></li>
-          html += "<p>&quot" + projects[i].quotes[j].text + "&quot";
+          html += "<p>&quot<i>" + projects[i].quotes[j].text + "</i>&quot";
           html += "<span>- " + projects[i].quotes[j].from + "</span></p>";
       }
       html += "</div>";
@@ -88,6 +88,18 @@ function createDetail(projects) {
       html += "</ul>";
     }
 
+    if (projects[i].projects) {
+
+      html += "<ul class='projects'>PROJECTS";
+      for (var j = 0; j < projects[i].projects.length; j++) {
+ 
+          html += "<li><a target='_blank' href='" + projects[i].projects[j].target + "'>" + projects[i].projects[j].name + "</a></li>";
+
+      }
+      html += "</ul>";
+    }
+
+
     // LINKS
     if (projects[i].links) {
 
@@ -100,9 +112,22 @@ function createDetail(projects) {
     }
 
     html += "</div>";
-    html += "<div class='col-1-3 mobile-col-1-1'><img src=" + projects[i].image + "></div></div></div>";
-    html += "<div class='bottomNav'>";
 
+    //IMAGES
+    // <a class="fancybox" rel="group" href="imgs/installationshot1.jpg"><img src="imgs/installationshot1.jpg" alt="installation shot"/></a>
+    html += "<div class='col-1-3 mobile-col-1-1'>";
+    for (var j = 0; j < projects[i].images.length; j++) {
+      var bestImage = projects[i].images[j].slice(0, projects[i].images[j].length-4) + "@2x" + projects[i].images[j].slice(projects[i].images[j].length-4, projects[i].images[j].length);
+
+      if(!imageExists(bestImage)) bestImage = projects[i].images[j];
+      // console.log(bestImage);
+      html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + projects[i].images[j] + "></a>";
+    }
+    
+    html += "</div></div></div>";
+    
+
+    html += "<div class='bottomNav'>";
     if (i != 0) {
         html += "<p><span>previous</span><a href='#" + detailUrl(projects[i - 1].shorttitle) + "'>" +
           projects[i - 1].longtitle + "</a></p>";
@@ -148,6 +173,17 @@ function displayCurrent() {
 function openNewWindow(URLtoOpen, windowName, windowFeatures) {
 
   window.open(URLtoOpen, windowName, windowFeatures);
+}
+
+function imageExists(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+
 }
 
 $(document).ready(function () {

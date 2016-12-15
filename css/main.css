@@ -178,16 +178,18 @@ nav>ul>li>a:hover{
     width:100%;
     z-index: 1;
 }
+.longdesc, .quotes{
+    max-width: 500px;
+}
 .longdesc, .quotes, .exhibitions, .links{
     margin-bottom: 40px;
 }
 .quotes span{
-    display: inline-block;
     margin-top: 5px;
 }
 .projectlong img{
     margin:20px;
-    max-width:300px;
+    max-width:400px;
     width:100%;
     background-color: #EEE;
 }
@@ -200,7 +202,11 @@ nav>ul>li>a:hover{
 }
 .projectlong ul li{
     letter-spacing: 0;
-    line-height: 1.6em;
+    line-height: 1.5em;
+}
+.projectlong ul.exhibitions li{
+    margin-bottom: 0.3em;
+    line-height: 1.4em !important;
 }
 .projectlong ul.exhibitions a{
     color:black !important;
@@ -216,6 +222,7 @@ nav>ul>li>a:hover{
 }
 .bottomNav{
     position:absolute;
+    background-color: white;
     bottom:0;
     left:0;
     width:100%;
@@ -297,7 +304,7 @@ h5 {
 p {
     font-size: 1em;
     margin-bottom: 1.2em;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 i{
     font-weight: 200;
@@ -701,10 +708,18 @@ body {
   Responsible Design, breakpoint according to bootstrap
    ========================================================================== */
 
-/*Large Devices Large Desktop 992-1200*/
-@media only screen and (min-width: 1200px) {
-
-
+/*Supoer Large Display*/
+@media only screen and (min-height: 720px) {
+/*.footer{
+    bottom:0;
+    position:absolute;
+}
+#detail{
+    position:static;
+}
+.bottomNav{
+    bottom:150px;
+}*/
 }
 
 /*Small Devices Tablet 768-992*/
