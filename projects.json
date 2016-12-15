@@ -249,6 +249,9 @@
        "text": "NT2: Nouvelles echnologies, Nouvelles Textualities. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
        "target": "http://nt2.uqam.ca/en/repertoire/roulette"
    }, {
+     "text": "Electronic Literature Collection Vol. 2. Cambridge, Massachusetts: Electronic Literature Organization.",
+     "target": "http://collection.eliterature.org/2/works/howe_roulette.html"
+   }, {
        "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
        "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
    }, {
@@ -259,7 +262,7 @@
        "target": "http://www.cddc.vt.edu/journals/newriver/08Spring/"
    }],
   "links": [{
-    "name": "The Project",
+    "name": "Project page (ELC Vol 2)",
     "target": "http://collection.eliterature.org/2/works/howe_roulette.html"
   }]
 }, {
