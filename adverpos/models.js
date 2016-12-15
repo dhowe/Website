@@ -49,6 +49,11 @@ $(document).ready(function() {
             this.setAttribute("controls", "controls")
         }
     })
+    
+    $('.items li').click(function() {
+       $('.items li').removeClass("current");
+       $(this).addClass("current");
+    });
 
     $('#still').click(function() {
       $('#imageDisplay').removeClass().addClass(current + "Still");
