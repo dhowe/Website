@@ -121,13 +121,13 @@ q{
 	margin:0 auto;
 }
 video{
-	width:320px;
+	width:500px;
 	display:none;
 	top:-50%;
 }
 #video{
 	margin:0 auto;
-	width:320px;	
+	width:500px;	
 }
 .middle{
 	display: table-cell;
@@ -151,6 +151,7 @@ video{
     opacity: 1;
   }
 }
+
 .nicoleStill{
     background-image:url("imgs/nicole_still.jpg");
 }
@@ -186,7 +187,12 @@ video{
 	width:100px;
 	display: none;
 }
-
+.current:before{
+	content: '-';
+    display: inline-block;
+    margin:0 2px -3px -12px;
+    padding-right: -4px;
+}
 .menu{
 	position:absolute;
 	height:50px;

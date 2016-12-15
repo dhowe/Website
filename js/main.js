@@ -47,17 +47,43 @@ function createDetail(projects) {
 
   // create long text
   var html = "";
+  var nav = "";
   for (var i = 0; i < projects.length; i++) {
 
-    html += "<div class='projectlong' id='" + detailUrl(projects[i].shorttitle) + "'><div class='grid pad-sl'>";
+    html += "<div class='projectlong' id='" + detailUrl(projects[i].shorttitle) + "'><div class='grid'>";
 
-    html += "<div class='content'><div class='col-1-12'></div><div class='col-7-12 mobile-col-1-1'>";
+    html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
     html += "<h5>" + projects[i].longtitle + "</h5>";
-    html += "<p>" + projects[i].longdesc + "</p>";
+    html += "<p class='longdesc'>" + projects[i].longdesc + "</p>";
+    
+    //QUOTE
+    if (projects[i].quotes) {
+       html += "<div class='quotes'>";
+      for (var j = 0; j < projects[i].quotes.length; j++) {
+        //<li><a href="">XXX</a></li>
+          html += "<p>&quot" + projects[i].quotes[j].text + "&quot";
+          html += "<span>- " + projects[i].quotes[j].from + "</span></p>";
+      }
+      html += "</div>";
+    }
+    //EXHIBITION RECORD
+    if (projects[i].exhibitions) {
 
+      html += "<ul class='exhibitions'>EXHIBITIONS";
+      for (var j = 0; j < projects[i].exhibitions.length; j++) {
+        //<li><a href="">XXX</a></li>
+        if(projects[i].exhibitions[j].target)
+          html += "<li><a target='_blank' href='" + projects[i].exhibitions[j].target + "'>" + projects[i].exhibitions[j].text + "</a></li>";
+        else
+          html += "<li>" + projects[i].exhibitions[j].text + "</li>";
+      }
+      html += "</ul>";
+    }
+
+    //LINKS
     if (projects[i].links) {
 
-      html += "<ul>LINKS";
+      html += "<ul class='links'>LINKS";
       for (var j = 0; j < projects[i].links.length; j++) {
         //<li><a href="">XXX</a></li>
         html += "<li><a target='_blank' href='" + projects[i].links[j].target + "'>" + projects[i].links[j].name + "</a></li>";
@@ -66,17 +92,17 @@ function createDetail(projects) {
     }
 
     html += "</div>";
-    html += "<div class='col-1-3 mobile-col-1-1'><img src=" + projects[i].image + "></div></div>";
-    html += "<div class='bottomNav'>";
+    html += "<div class='col-1-3 mobile-col-1-1'><img src=" + projects[i].image + "></div></div></div>";
+   
 
+    html += "<div class='bottomNav'>";
     if (i != 0)
-      html += "<p><span>previous</span><a href='#" + detailUrl(projects[i-1].shorttitle) + "'>" + projects[i-1].longtitle + "</a></p>";
+        html += "<p><span>previous</span><a href='#" + detailUrl(projects[i - 1].shorttitle) + "'>" + projects[i - 1].longtitle + "</a></p>";
 
     if (i != projects.length - 1) {
-      html += "<p class='nextPage'><span>next</span><a href='#" + detailUrl(projects[i+1].shorttitle) + "'>" + projects[i+1].longtitle + "</a></p>";
+        html += "<p class='nextPage'><span>next</span><a href='#" + detailUrl(projects[i + 1].shorttitle) + "'>" + projects[i + 1].longtitle + "</a></p>";
     }
-
-    html += "</div></div></div>";
+    html += "</div></div>";
   }
   $('#detail').append(html);
 

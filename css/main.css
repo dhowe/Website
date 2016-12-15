@@ -83,9 +83,6 @@ nav>ul>li>a:hover{
 
 /****** Footer ******/
 .footer{
-    position:fixed;
-    bottom:0;
-    left:0;
     width:100%;
     background-color: #39465A;
     color:#DDD;
@@ -170,14 +167,23 @@ nav>ul>li>a:hover{
 }
 #detail{
   position:relative;
-  margin-bottom:90px;
+  min-height: 530px;
+}
+.projectlong .col-8-12{
+    width: 60% !important;
 }
 .projectlong{
     display: none;
     padding-top: 60px;
-    height:100vh;
     width:100%;
     z-index: 1;
+}
+.longdesc, .quotes, .exhibitions, .links{
+    margin-bottom: 40px;
+}
+.quotes span{
+    display: inline-block;
+    margin-top: 5px;
 }
 .projectlong img{
     margin:20px;
@@ -187,6 +193,17 @@ nav>ul>li>a:hover{
 }
 .projectlong ul{
     padding:0;
+}
+.projectlong ul{
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+}
+.projectlong ul li{
+    letter-spacing: 0;
+    line-height: 1.6em;
+}
+.projectlong ul.exhibitions a{
+    color:black !important;
 }
 #close{
     display:none;
@@ -198,11 +215,10 @@ nav>ul>li>a:hover{
     z-index:30;
 }
 .bottomNav{
-    position:fixed;
-    bottom:150px;
+    position:absolute;
+    bottom:0;
     left:0;
     width:100%;
-    background-color: white;
     border-top: solid 2px #39465A;
     z-index: 15;
     height:80px;
@@ -221,6 +237,9 @@ nav>ul>li>a:hover{
 .bottomNav .nextPage{
     float:right;
 }
+.bottomNav p a{
+    display: block;
+}
 
 /* links */
 .projectlong a,.bottomNav p a,#about a{
@@ -230,13 +249,6 @@ nav>ul>li>a:hover{
 .projectlong a:hover,.bottomNav p a:hover,#about a:hover{
     text-decoration: underline;
 }
-.bottomNav p a{
-    display: block;
-}
-.links {
-    margin-top: 50px;
-}
-
 
 /****** End of Projects ******/
 
@@ -285,6 +297,7 @@ h5 {
 p {
     font-size: 1em;
     margin-bottom: 1.2em;
+    line-height: 1.5em;
 }
 i{
     font-weight: 200;
@@ -331,6 +344,27 @@ fieldset {
     padding: 0;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
 /*
   Simple Grid
   Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
@@ -370,13 +404,12 @@ body {
     min-width: 755px;
     margin: 0 auto 0;
     overflow: hidden;
-    margin-bottom: 70px;
-
 }
 .content{
     width:100%;
     height: 100%;
     padding:0 20px;
+    margin-bottom: 80px
 }
 
 /*.grid:after {
@@ -684,9 +717,7 @@ body {
     width:33%;
     float:left;
 }
-#detail{
-  margin-bottom:130px;
-}
+
 }
 /*Extra Small Devices Mobile<768*/
 @media only screen and (max-width: 768px) {
@@ -733,9 +764,7 @@ html, body {
 .bottomNav{
     bottom:0;
 }
-#detail{
-    margin-bottom: 100px;
-}
+
 .project {
     padding:4%;
     width:50%;
