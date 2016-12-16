@@ -32,8 +32,11 @@ function createGrid(projects) {
 function selectNavigation() {
 
   var $navlist = $('#navlist');
-  if (location.href.indexOf('mit') > -1) {
+  if (location.href.indexOf('/mit/') > -1) {
     $navlist.append('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
+  }
+  else if (location.href.indexOf('/saic/') > -1) {
+    $navlist.append('<li><a class="current" href="index.html">SAIC: Selected Projects</a></li>');
   }
   else {
     $navlist.append('<li><a class="current" href="index.html">Projects</a></li>');
