@@ -148,18 +148,14 @@ function createDetail(projects) {
   displayCurrent();
 }
 
-function adjustHeight(projects) {
-
-  //adjust the height of each project
-  var maxH = 0;
-  for (var i = 0; i < projects.length; i++) {
-    var current = $('.project').eq(i).outerHeight();
-    // console.log(current);
-    if (current > maxH) maxH = current;
-  }
-  // console.log(maxH);
-  $('.project').addClass('maxH');
-  $('.maxH').css("height", maxH);
+function adjustDetailContentHeight() {
+    var status = $('.footer').css('position');
+    var newH = window.innerHeight - 290;
+    console.log(status);
+    if (status == "fixed"){
+      console.log("adjust", newH);
+       $('.content').css("height", newH + 'px');
+    }
 }
 
 function displayCurrent() {
@@ -194,6 +190,7 @@ $(document).ready(function () {
   $('.name.showInMobile').click(function () {
     $('nav').slideToggle();
   });
+
 });
 
 $(document).on('click', '.bottomNav a', function () {
@@ -219,6 +216,6 @@ var projects, processJSON = $.getJSON("projects.json", function (json) {
 });
 
 processJSON.done(function (projects) {
-  if ($('#projects').length) createGrid(projects);
-  if ($('#detail').length) createDetail(projects);
+  if ($('#projects').length > 0) createGrid(projects);
+  if ($('#detail').length > 0) createDetail(projects);
 });

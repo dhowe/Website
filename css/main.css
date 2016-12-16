@@ -665,16 +665,35 @@ body {
 /*Supoer Large Display*/
 
 @media only screen and (min-height: 720px) {
-  /*.footer{
+.footer{
     bottom:0;
-    position:absolute;
+    position:fixed;
+}
+#projects{
+  margin-bottom:50px;
+}
+#publication{
+  margin-bottom:150px;
+}
+#reference{
+  margin-bottom:100px;
+}
+.content{
+  margin-bottom: 200px;
+  overflow-y: scroll;
 }
 #detail{
     position:static;
 }
 .bottomNav{
+  position:fixed;
     bottom:150px;
-}*/
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 }
 
 /*Small Devices Tablet 768-992*/
