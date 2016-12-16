@@ -25,7 +25,7 @@
   ],
   "longdesc": "AdNauseam (ADN) is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, ADN hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, ADN creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
   "exhibitions": [{
-    "text": "Follow, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11–Feb 16, 2016 "
+    "text": "Follow, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
   }, {
     "text": "SECRET, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
     "target": "https://dublin.sciencegallery.com/secret/exhibits/adnauseum/"
@@ -100,6 +100,11 @@
   "longtitle": "The Readers Project",
   "images": ["img/reader_l.jpg"],
   "longdesc": "The Readers Project (an ongoing collaboration with John Cayley) is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
+  "exhibitions":[{
+     "text": "List of Exhibitions",
+     "target": "http://thereadersproject.org/outcomes.html#CV"
+  }
+  ],
   "links": [{
     "name": "The Real Story of Ah-Q",
     "target": "http://thereadersproject.org/index.php?p=installation/HK2014/wmc.html"
@@ -288,7 +293,7 @@
     "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
   }, {
-    "text": "for Counterpath Press Electronic Literature Special Edition. Online exhibit. Apr 4, 2009",
+    "text": "Counterpath Press Electronic Literature Special Edition. Online exhibit. Apr 4, 2009",
     "target": "http://counterpathpress.org/elitpath/"
   }, {
     "text": "New River Journal. Online exhibit. Apr 7, 2008",
@@ -308,7 +313,7 @@
   "longdesc": "Engine of Engines is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
   "exhibitions": [{
     "text": "The Burning Edge. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
-    "target": "http://www.gardensco.com/clients/scm/download/faculty_brochure_FINAL_online2.pdf"
+    "target": "http://www.gardens-co.com/clients/scm/download/faculty_brochure_FINAL_online2.pdf"
   }],
   "links": [{
     "name": "The Project Website (& video)",
@@ -357,7 +362,7 @@
     "text": "POESIS : Language Games. Academy of the Arts, Berlin, Germany. Jun 27–Jul 5, 2009",
     "target": "http://www.haus-fuer-poesie.org/en/poesiefestival-berlin/archive-poesiefestivalberlin/archiv-2009/poesis-sprachspiele/"
   }, {
-    "text": "commissioned for the Rhode Island School of Design. Center for Integrated Technology. Providence, RI. USA. Dec 1–Mar 31, 2007"
+    "text": "Commissioned for the Rhode Island School of Design. Center for Integrated Technology. Providence, RI. USA. Dec 1–Mar 31, 2007"
   }, {
     "text": "Pixilerations [v.3]. 191 Westminster. Providence, RI, USA. Sept 29–Oct 14, 2006",
     "target": "http://www.arts.ri.gov/blogs/?p=1187"

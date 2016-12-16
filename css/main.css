@@ -141,8 +141,14 @@ nav>ul>li>a:hover {
   margin-top: 60px;
   height: 100%;
 }
-#publication, #reference {
+#publication, #reference{
   margin-left: 20px;
+}
+#publication + .footer>.grid, #reference + .footer>.grid{
+  margin:0 0 0 20px;
+}
+#publication + .footer img,#reference + .footer img{
+  margin-left:0px;
 }
 #publist {
   max-width: 800px;
@@ -167,6 +173,9 @@ nav>ul>li>a:hover {
   width: 100%;
   margin-bottom: 5%;
   background-color: black;
+  border-style: solid;
+  border-color:#DDD;
+  border-width: 1px;
 }
 .collaborators {
   text-transform: uppercase;
