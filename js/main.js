@@ -194,6 +194,9 @@ $(document).ready(function () {
   $('.name.showInMobile').click(function () {
     $('nav').slideToggle();
   });
+
+  $(window).trigger('resize');
+
 });
 
 $(document).on('click', '.bottomNav a', function () {
@@ -210,6 +213,7 @@ $(window).resize(function () {
 
   $('.project img').css("height", $('.project img').width() * 0.65);
   $('.space').css("height", $('.footer').outerHeight());
+
 });
 
 // lets run some code...
@@ -219,6 +223,6 @@ var projects, processJSON = $.getJSON("projects.json", function (json) {
 });
 
 processJSON.done(function (projects) {
-  if ($('#projects').length) createGrid(projects);
-  if ($('#detail').length) createDetail(projects);
+  if ($('#projects').length > 0) createGrid(projects);
+  if ($('#detail').length > 0) createDetail(projects);
 });

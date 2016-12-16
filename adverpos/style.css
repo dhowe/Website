@@ -1,3 +1,21 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+
 body{
 	margin:0;
     font-family: 'Andale Mono', monospace;
@@ -30,16 +48,45 @@ a{
 	height:38vh;
 	overflow: hidden;
 	background-color:#DDD;
+	position:relative;
+	padding-bottom:40px;
+}
+.top .center{
+	width:1200px;
+	margin:10px auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top .topImage {
+    /*  position:absolute;*/
+    height: 200px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #AAA;
+    margin: 50px 3%;
+    float: left;
+    background-size: cover;
 }
 .top #left{
-   float:left;
-   width:62%;
-   height:100%;
+   background-position: 0px;
+   width:25%;
+   background-image:url("imgs/nicole_thumbnail.jpg");
+
+}
+.top #middle{
+   width:17%;
+   background-position: 80%;
+   background-image:url("imgs/wilson_thumbnail.jpg");
 }
 .top #right{
-   float:left;
-   width:38%;
-   height:100%;
+   width:25%;
+   height:155px;
+   background-image:url("imgs/nicole_adCollection_thumbnail.jpg");
 }
 .top img{
 	min-width:950px;
@@ -51,9 +98,11 @@ a{
 .button{
 	padding:10px;
     max-width:180px;
-    width:15%;
+    width:210px;
+    height:18px;
     min-width:130px;
 	font-size: 18px;
+	line-height: 18px;
 	text-transform: uppercase;
 	text-align: center;
 	color:#80807F;
@@ -63,9 +112,10 @@ a{
 	transition: 1s;
 	-webkit-animation-timing-function: ease;
 }
-.button:hover{
+.top:hover > .button{
     opacity:1;
 }
+
 .container{
 	padding-top:50px; 
 	width:600px;
