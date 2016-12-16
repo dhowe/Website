@@ -148,14 +148,18 @@ function createDetail(projects) {
   displayCurrent();
 }
 
-function adjustDetailContentHeight() {
-    var status = $('.footer').css('position');
-    var newH = window.innerHeight - 290;
-    console.log(status);
-    if (status == "fixed"){
-      console.log("adjust", newH);
-       $('.content').css("height", newH + 'px');
-    }
+function adjustHeight(projects) {
+
+  //adjust the height of each project
+  var maxH = 0;
+  for (var i = 0; i < projects.length; i++) {
+    var current = $('.project').eq(i).outerHeight();
+    // console.log(current);
+    if (current > maxH) maxH = current;
+  }
+  // console.log(maxH);
+  $('.project').addClass('maxH');
+  $('.maxH').css("height", maxH);
 }
 
 function displayCurrent() {
@@ -191,6 +195,8 @@ $(document).ready(function () {
     $('nav').slideToggle();
   });
 
+  $(window).trigger('resize');
+
 });
 
 $(document).on('click', '.bottomNav a', function () {
@@ -207,6 +213,7 @@ $(window).resize(function () {
 
   $('.project img').css("height", $('.project img').width() * 0.65);
   $('.space').css("height", $('.footer').outerHeight());
+
 });
 
 // lets run some code...
