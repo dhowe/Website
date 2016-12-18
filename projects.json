@@ -8,7 +8,7 @@
   ],
   "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
-    "text": "Montage Express, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
+    "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
   }],
   "links": [{
     "name": "Project Home Page",
@@ -23,14 +23,18 @@
   "images": [
     "img/adn_l.jpg"
   ],
+  "videos": [{
+    "src":"video/adn",
+    "poster": "img/adn_poster.jpg"
+ }],
   "longdesc": "AdNauseam (ADN) is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, ADN hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, ADN creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
   "exhibitions": [{
-    "text": "Follow, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
+    "text": "<i>Follow</i>, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
   }, {
-    "text": "SECRET, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
+    "text": "<i>SECRET</i>, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
     "target": "https://dublin.sciencegallery.com/secret/exhibits/adnauseum/"
   }, {
-    "text": "Involuntary Resources, DIAS Digital Interactive Art Space. Copenhagen, Denmark. Mar 20–Jun 7, 2015",
+    "text": "<i>Involuntary Resources</i>, DIAS Digital Interactive Art Space. Copenhagen, Denmark. Mar 20–Jun 7, 2015",
     "target": "http://kopenhagen.dk/artguide/single/article/involuntary-resources/"
   }],
   "links": [{
@@ -61,13 +65,13 @@
   "images": ["img/hiiict_l.jpg"],
   "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
   "exhibitions": [{
-    "text": "UbuWeb: Contemporaries. Online exhibit. Posted Oct 3, 2013",
+    "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
     "target": "http://www.ubu.com/contemp/cayley/index.html"
   }, {
-    "text": "Library of the Printed Web. New York Book Art Fair. Table Q47, NY, USA. Sept.19–22, 2013",
+    "text": "<i>Library of the Printed Web</i>. New York Book Art Fair. Table Q47, NY, USA. Sept.19–22, 2013",
     "target": "http://libraryoftheprintedweb.tumblr.com/post/43578206217/cayleyjohn-and-daniel-c-howe-how-it-is-in"
   }, {
-    "text": "Selected for the Chercher le text. Paragraph Laboratory of the University of Paris 8, the Excellence Arts–H2H Lab, Paris, France. Sept 23–28, 2013",
+    "text": "Selected for the <i>Chercher le text</i>. Paragraph Laboratory of the University of Paris 8, the Excellence Arts–H2H Lab, Paris, France. Sept 23–28, 2013",
     "target": "http://gallery.dddl.eu/en/gallery/how_it_is_in_common_tongues/"
   }, {
     "text": "Commission for 'New Media Scotland', at the Inspace gallery, Edinburgh, Scotland. Nov 1–17, 2012",
@@ -126,7 +130,7 @@
   "images": ["img/adlipo_l.jpg"],
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page.",
   "exhibitions": [{
-    "text": "Hold the Light, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
+    "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
     "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
   },{
     "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
@@ -138,26 +142,30 @@
   "shortdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running bespoke software) that uses algorithms to find the bridges between English words, 6-degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense but composed of normative English. ",
   "longtitle": "Automatype",
   "images": ["img/auto_l.jpg"],
+  "videos": [{
+    "src":"video/automatype",
+    "poster": "img/automatype_poster.jpg"
+  }],
   "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br><br />The project is built with RiTa, my software toolkit for algorithmic creative writing. Combining natural language processing, computational stylistics, and data visualization techniques, the open-source RiTa project provides state-of-the-art natural language techniques to creative writers and language artists.",
   "exhibitions": [{
-    "text": "Art2Code, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
+    "text": "<i>Art2Code</i>, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
     "target": "http://v1b3.com/daniel-howe-automatype/"
   }, {
-    "text": "INTERRUPT, Granoff Center's Living Room Spaces at Brown University, Providence, RI, USA. Mar 12–Apr 10, 2015",
+    "text": "<i>INTERRUPT</i>, Granoff Center's Living Room Spaces at Brown University, Providence, RI, USA. Mar 12–Apr 10, 2015",
     "target": "http://www.irq3.interrupt.xyz/?page_id=79"
   }, {
-    "text": "Input / Output Warehouse, Kwun Tong, Hong Kong. Nov 13, 2013–Sep 7, 2014",
+    "text": "<i>Input / Output Warehouse</i>, Kwun Tong, Hong Kong. Nov 13, 2013–Sep 7, 2014",
     "target": "https://engb.facebook.com/input.output.733"
   }, {
     "text": "Information Day, School of Creative Media, Kowloon Tong, Hong Kong. Oct 10–Nov 5, 2012"
   }, {
-    "text": "Electrifying Literature: Affordances and Constraints, the ELO Media Art Show. West Virginia University, Morgantown , WV, USA. Jun 22, 2012",
+    "text": "<i>Electrifying Literature: Affordances and Constraints</i>, the ELO Media Art Show. West Virginia University, Morgantown , WV, USA. Jun 22, 2012",
     "target": "https://elmcip.net/node/3839"
   }, {
-    "text": "NT2: Nouvelles echnologies, Nouvelles Textualities. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
+    "text": "<i>NT2: Nouvelles echnologies, Nouvelles Textualities</i>. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
     "target": "http://nt2.uqam.ca/en/repertoire/automatype"
   }, {
-    "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
+    "text": "<i>Open Space</i>. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
   }],
   "links": [{
@@ -189,6 +197,10 @@
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
   "images": ["img/md_l.jpg", "img/md_more.jpg"],
+  "videos": [{
+    "src": "video/theoreticalArchitecture",
+    "poster": "img/ta_poster.jpg"
+  }],
   "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops...",
   "quotes": [{
     "text": "The uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.",
@@ -215,7 +227,7 @@
     "text": "<i>Theoretical Architectures</i> in PROJECTIONS, the New York Film Festival 52, New York, USA. Oct 3, 2014",
     "target": "http://www.filmlinc.org/daily/nyff-sets-63-film-and-videos-for-its-projections-lineup/"
   }, {
-    "text": "Cotton Goods, Durham, NC, USA. Jun 15, 2016 (album release)",
+    "text": "<i>Cotton Goods</i>, Durham, NC, USA. Jun 15, 2016 (album release)",
     "target": "https://boomkat.com/products/minor-distance-special-edition-2e3a9bb5-13dd-4329-8267-d8f39e8c8252"
   }],
   "links": [{
@@ -282,21 +294,21 @@
   "images": ["img/rl_l.jpg"],
   "longdesc": "Roulette is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "exhibitions": [{
-    "text": "The Age of Experience, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
+    "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
   }, {
-    "text": "NT2: Nouvelles echnologies, Nouvelles Textualities. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
+    "text": "<i>NT2: Nouvelles echnologies</i>, Nouvelles Textualities. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
     "target": "http://nt2.uqam.ca/en/repertoire/roulette"
   }, {
-    "text": "Electronic Literature Collection Vol. 2. Cambridge, Massachusetts: Electronic Literature Organization.",
+    "text": "<i>Electronic Literature Collection Vol. 2</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
     "target": "http://collection.eliterature.org/2/works/howe_roulette.html"
   }, {
-    "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
+    "text": "<i>Open Space</i>. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
   }, {
-    "text": "Counterpath Press Electronic Literature Special Edition. Online exhibit. Apr 4, 2009",
+    "text": "<i>Counterpath Press Electronic Literature Special Edition</i>. Online exhibit. Apr 4, 2009",
     "target": "http://counterpathpress.org/elitpath/"
   }, {
-    "text": "New River Journal. Online exhibit. Apr 7, 2008",
+    "text": "<i>New River Journal</i>. Online exhibit. Apr 7, 2008",
     "target": "http://www.cddc.vt.edu/journals/newriver/08Spring/"
   }],
   "links": [{
@@ -310,9 +322,13 @@
   "collaborators": "Bill Seaman",
   "longtitle": "Engine of Engines",
   "images": ["img/eoe_l.jpg"],
+  "videos": [{
+    "src":"video/eoe480p",
+    "poster": "img/eoe_poster.jpg"
+  }],
   "longdesc": "Engine of Engines is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
   "exhibitions": [{
-    "text": "The Burning Edge. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
+    "text": "<i>The Burning Edge</i>. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
     "target": "http://www.gardens-co.com/clients/scm/download/faculty_brochure_FINAL_online2.pdf"
   }],
   "links": [{
@@ -332,13 +348,13 @@
     "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
   }],
   "exhibitions": [{
-    "text": "Design My Privacy. Z33, House of Contemporary Art, Hasselt, The Netherlands. Mar 27– May 29, 2016",
+    "text": "<i>Design My Privacy</i>. Z33, House of Contemporary Art, Hasselt, The Netherlands. Mar 27– May 29, 2016",
     "target": "http://www.z33.be/en/projects/design-my-privacy"
   }, {
-    "text": "Design My Privacy: The Crypto Design Exhibition. Museum of the Image (MOTI), Breda, The Netherlands. Sept 26–Mar 13, 2016",
+    "text": "<i>Design My Privacy: The Crypto Design Exhibition</i>. Museum of the Image (MOTI), Breda, The Netherlands. Sept 26–Mar 13, 2016",
     "target": "http://www.motimuseum.nl/en/tentoonstelling/design-myprivacy/"
   }, {
-    "text": "SpeedShow, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
+    "text": "<i>SpeedShow</i>, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
     "target": "http://speedshow.ideacritik.com/"
   }]
 }, {
@@ -346,28 +362,30 @@
   "thumb": "img/textcurtain_s.jpg",
   "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
   "longtitle": "text.curtain",
-  "images": ["img/textcurtain_l.png"],
+  "videos": [{
+    "src":"video/textCurtain"
+  }],
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
     "text": "Text.curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
     "from": "Brian Kim Stefans"
   }],
   "exhibitions": [{
-    "text": "Open Space. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
+    "text": "<i>Open Space</i>. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
   }, {
-    "text": "Left to Chance: Accident and intentionality in the work of eight contemporary artists from the United States and Europe. Firehouse 13 Gallery / Providence, RI, USA. Nov 20–28, 2009",
+    "text": "<i>Left to Chance: Accident and intentionality in the work of eight contemporary artists from the United States and Europe</i>. Firehouse 13 Gallery / Providence, RI, USA. Nov 20–28, 2009",
     "target": "http://rednoise.org/daniel/ftp/Left-To-Chance-FH13.pdf"
   }, {
-    "text": "POESIS : Language Games. Academy of the Arts, Berlin, Germany. Jun 27–Jul 5, 2009",
+    "text": "<i>POESIS : Language Games</i>. Academy of the Arts, Berlin, Germany. Jun 27–Jul 5, 2009",
     "target": "http://www.haus-fuer-poesie.org/en/poesiefestival-berlin/archive-poesiefestivalberlin/archiv-2009/poesis-sprachspiele/"
   }, {
     "text": "Commissioned for the Rhode Island School of Design. Center for Integrated Technology. Providence, RI. USA. Dec 1–Mar 31, 2007"
   }, {
-    "text": "Pixilerations [v.3]. 191 Westminster. Providence, RI, USA. Sept 29–Oct 14, 2006",
+    "text": "<i>Pixilerations [v.3]</i>. 191 Westminster. Providence, RI, USA. Sept 29–Oct 14, 2006",
     "target": "http://www.arts.ri.gov/blogs/?p=1187"
   }, {
-    "text": "AU70START. Kelly Writers House. Philadelphia, PA. USA. Oct 26–27, 2006",
+    "text": "<i>AU70START</i>. Kelly Writers House. Philadelphia, PA. USA. Oct 26–27, 2006",
     "target": "http://www.writing.upenn.edu/wh/involved/series/machine/autostart_bios.html"
   }, {
     "text": "E–Fest 2006. Providence, RI, USA. Mar 22–24, 2006",
@@ -383,22 +401,31 @@
     "img/aoa_l.jpg",
     "img/aoa_press.jpg"
   ],
+  "videos": [{
+    "src": "video/aoa_paris",
+    "poster": "img/aoa_poster.jpg"
+  }
+  ],
   "longdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
   "exhibitions": [{
-    "text": "The Age of Experience, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
+    "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
   }, {
-    "text": "Futures of Digital Studies. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
+    "text": "<i>Futures of Digital Studies</i>. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
     "target": "http://www.english.ufl.edu/fds/exhibit.html"
   }, {
-    "text": "C.H.A.T. 2010. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
+    "text": "<i>C.H.A.T. 2010</i>. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
   }, {
     "text": "Selected for the Duke Permanent Collection. Perkins Library, Duke University, Raleigh, North Carolina, USA. May 15, 2009"
   }, {
-    "text": "Dans la nuit, des images. Grand Palais, Paris, France. Dec 18–31, 2008",
+    "text": "<i>Dans la nuit, des images</i>. Grand Palais, Paris, France. Dec 18–31, 2008",
     "target": "http://dukemagazine.duke.edu/article/dans-la-nuit"
   }, {
     "text": "Commissioned for the Museu da Imagem e do Som, São Paulo, Brazil. Aug 9–Oct 5, 2008",
     "target": " http://www.mis-sp.org.br/about"
+  }],
+  "links": [{
+    "name": "catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
+    "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
   }]
 }, {
   "shorttitle": "ChinaEye",
