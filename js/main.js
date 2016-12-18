@@ -121,31 +121,44 @@ function createDetail(projects) {
     
      html += "<div class='col-1-3 mobile-col-1-1'>";
 
-    // IMAGES
-    if (projects[i].images) {
-      for (var j = 0; j < projects[i].images.length; j++) {
+    // MAIN IMAGE
+  if (projects[i].images) {
+
+          var bestImage = projects[i].images[0].slice(0, projects[0].images[0].length - 3) +
+              "@2x" + projects[i].images[0].slice(projects[i].images[0].length - 4, projects[i].images[0].length);
+
+          // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
+          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + projects[i].images[0] + "></a>";
+  }
+
+  //VIDEO
+          if (projects[i].videos) {
+              for (var j = 0; j < projects[i].videos.length; j++) {
+                  html += "<a class='fancybox' href='#single-video'>";
+                  html += "<img src='" + projects[i].videos[j].poster + "' /> </a>";
+                  html += '<div id="single-video" class="fancybox-video"><video controls width="100%" height="auto"><source src="' + projects[i].videos[j].src + '.mp4" type="video/mp4">  </video></div>'
+
+                  // html += "<div class='video'><video preload='auto' class='animation' loop controls='controls' "
+                  // if (projects[i].videos[j].poster)
+                  //     html += "poster='" + projects[i].videos[j].poster;
+                  // html += "''>";
+
+                  // html += " <source src='" + projects[i].videos[j].src + ".webm' type='video/webm'>";
+                  // html += " <source src='" + projects[i].videos[j].src + ".mp4' type='video/mp4'></video>";
+                  // html += "<div class='playpause'></div> </div>";
+              }
+          }
+   
+//OTHER IMAGES
+if (projects[i].images) {
+      for (var j = 1; j < projects[i].images.length; j++) {
           var bestImage = projects[i].images[j].slice(0, projects[i].images[j].length - 4) +
               "@2x" + projects[i].images[j].slice(projects[i].images[j].length - 4, projects[i].images[j].length);
 
           // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
           html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + projects[i].images[j] + "></a>";
       }
-    }
-
-    //VIDEO
-    if (projects[i].videos) {
-      for (var j = 0; j < projects[i].videos.length; j++) {
-        html += "<div class='video'><video preload='auto' class='animation' loop controls='controls' "
-        if(projects[i].videos[j].poster)
-         html  += "poster='" + projects[i].videos[j].poster;
-        html += "''>";
-
-        html += " <source src='" + projects[i].videos[j].src + ".webm' type='video/webm'>";
-        html += " <source src='" + projects[i].videos[j].src + ".mp4' type='video/mp4'></video>";
-        html += "<div class='playpause'></div> </div>";
-      }
-    }
-
+  }
 
     html += "</div></div></div>";
 
@@ -243,10 +256,8 @@ $(document).on('click', '.bottomNav a', function () {
 });
 
 $(window).resize(function () {
-
   $('.project img').css("height", $('.project img').width() * 0.65);
   $('.space').css("height", $('.footer').outerHeight());
-
 });
 
 // lets run some code...

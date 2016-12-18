@@ -304,6 +304,11 @@ canvas {
   list-style: disc;
 }
 
+.fancybox-video {
+  display: none;
+}
+
+
 /****** End of Other Pages ******/
 
 

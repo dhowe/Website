@@ -20,9 +20,14 @@
   <!-- ********* Fancy Box *****************-->
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
   <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="fancybox/fancy_video.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-      $(".fancybox").fancybox();
+      $(".fancybox").fancybox({
+         afterShow: function() {
+          this.content.find('video').trigger('play');
+         }
+      });
   });
   </script>
  <!--**************************** -->
