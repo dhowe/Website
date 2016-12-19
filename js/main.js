@@ -244,14 +244,11 @@ $(document).ready(function () {
 });
 
 
-//
-$(document).on('click', '.bottomNav a', function () {
-
-  var id = getCurrentIdFromUrl($(this).attr("href"));
-  createDetail(projects, id);
-
-});
-
+window.onhashchange = function() { 
+   console.log("change?");
+    var id = getCurrentIdFromUrl($(location).attr('href'));
+    createDetail(projects, id);
+}
 
 $(window).resize(function () {
   $('.project img').css("height", $('.project img').width() * 0.65);
