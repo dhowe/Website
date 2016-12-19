@@ -1,3 +1,4 @@
+var projects;
 
 function createGrid(projects) {
 
@@ -32,18 +33,14 @@ function createGrid(projects) {
 function selectNavigation() {
 
   var $navlist = $('#navlist');
+
   if (location.href.indexOf('/mit/') > -1) {
-    $navlist.append('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
+    $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
   }
   else if (location.href.indexOf('/saic/') > -1) {
-    $navlist.append('<li><a class="current" href="index.html">SAIC: Portfolio</a></li>');
+    $navlist.html('<li><a class="current" href="index.html">SAIC: Portfolio</a></li>');
   }
-  else {
-    $navlist.append('<li><a class="current" href="index.html">Projects</a></li>');
-    $navlist.append('<li><a href="pubs.html">Publications</a></li>');
-    $navlist.append('<!--li><a href="sketchpad/index.html">Sketchpad</a></li-->');
-    $navlist.append('<li><a class="showInMobile" href="about.html">About</a></li>');
-  }
+
 }
 
 function detailUrl(title) {
@@ -51,122 +48,148 @@ function detailUrl(title) {
   return title.toLowerCase().replace(/[ .-]+/g,'');
 }
 
-function createDetail(projects) {
+function createDetail(projects, id) {
 
   selectNavigation();
+  //hide the previous
+  $('.projectlong').hide();
 
-  // LONG TEXT
-  var html = "", nav = "";
+  var current, idk = 0;
+
   for (var i = 0; i < projects.length; i++) {
+    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+      if ( title === id) { 
+        current = projects[i]
+        idk = i; 
+        break;
+      };
+  }
+  
+  //if the div is already created, show the div
+  if ($('.projectlong#' + id).length > 0){
+    $('.projectlong#' + id).show();
+    return;
+  }
+  
+  //if not, create the div
+  /***************************** CREATE *****************************/
 
+
+    var html = "", nav = "";
     html += "<div class='projectlong' id='" +
-      detailUrl(projects[i].shorttitle) + "'><div class='grid'>";
-
+    detailUrl(current.shorttitle) + "'><div class='grid'>";
     html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
-    html += "<h5>" + projects[i].longtitle + "</h5>";
-    html += "<p class='longdesc'>" + projects[i].longdesc + "</p>";
+    html += "<h5>" + current.longtitle + "</h5>";
+
+      // LONG TEXT
+    html += "<p class='longdesc'>" + current.longdesc + "</p>";
 
     // QUOTES
-    if (projects[i].quotes) {
+    if (current.quotes) {
        html += "<div class='quotes'>";
-      for (var j = 0; j < projects[i].quotes.length; j++) {
+      for (var j = 0; j < current.quotes.length; j++) {
         //<li><a href="">XXX</a></li>
-          html += "<p>&quot<i>" + projects[i].quotes[j].text + "</i>&quot";
-          html += "<span>- " + projects[i].quotes[j].from + "</span></p>";
+          html += "<p>&quot<i>" + current.quotes[j].text + "</i>&quot";
+          html += "<span>- " + current.quotes[j].from + "</span></p>";
       }
       html += "</div>";
     }
 
+    // EXHIBITIONS
+    if (current.exhibitions) {
+
+      html += "<ul class='exhibitions'>EXHIBITIONS";
+      for (var j = 0; j < current.exhibitions.length; j++) {
+        html += "<li class='hanging'>";
+        if (current.exhibitions[j].target)
+          html += "<a target='_blank' href='" + current.exhibitions[j].target
+            + "'>" + current.exhibitions[j].text + "</a></li>";
+        else
+          html += current.exhibitions[j].text + "</li>";
+      }
+      html += "</ul>";
+    }
+
     // LINKS
-    if (projects[i].links) {
+    if (current.links) {
 
       html += "<ul class='links'>LINKS";
-      for (var j = 0; j < projects[i].links.length; j++) {
+      for (var j = 0; j < current.links.length; j++) {
         html += "<li><a target='_blank' href='" + projects[i].links[j].target +
-          "'>" + projects[i].links[j].name + "</a></li>";
+          "'>" + current.links[j].name + "</a></li>";
       }
       html += "</ul>";
     }
 
     // RELATED PROJECTS
-    if (projects[i].projects) {
+    if (current.projects) {
 
       html += "<ul class='projects'>PROJECTS";
-      for (var j = 0; j < projects[i].projects.length; j++) {
+      for (var j = 0; j < current.projects.length; j++) {
 
-          html += "<li><a target='_blank' href='" + projects[i].projects[j].target
-            + "'>" + projects[i].projects[j].name + "</a></li>";
+          html += "<li><a target='_blank' href='" + current.projects[j].target
+            + "'>" + current.projects[j].name + "</a></li>";
 
       }
       html += "</ul>";
     }
 
-    // EXHIBITIONS
-    if (projects[i].exhibitions) {
-
-      html += "<ul class='exhibitions'>EXHIBITIONS";
-      for (var j = 0; j < projects[i].exhibitions.length; j++) {
-        html += "<li class='hanging'>";
-        if (projects[i].exhibitions[j].target)
-          html += "<a target='_blank' href='" + projects[i].exhibitions[j].target
-            + "'>" + projects[i].exhibitions[j].text + "</a></li>";
-        else
-          html += projects[i].exhibitions[j].text + "</li>";
-      }
-      html += "</ul>";
-    }
 
     html += "</div>";
+    html += "<div class='col-1-3 mobile-col-1-1'>";
 
-    
-     html += "<div class='col-1-3 mobile-col-1-1'>";
+    // MAIN IMAGE
+  if (current.images) {
 
-    // IMAGES
-    if (projects[i].images) {
-      for (var j = 0; j < projects[i].images.length; j++) {
-          var bestImage = projects[i].images[j].slice(0, projects[i].images[j].length - 4) +
-              "@2x" + projects[i].images[j].slice(projects[i].images[j].length - 4, projects[i].images[j].length);
+          var bestImage = getBestImage(current.images[0].src);
+          var altInfo = current.images[0].title? current.images[0].title : current.longtitle;
+          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='" + current.images[0].src + "' alt='" + altInfo + "' ></a>";
+  }
 
-          // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
-          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + projects[i].images[j] + "></a>";
+  //VIDEO
+  if (current.videos) {
+      for (var j = 0; j < current.videos.length; j++) {
+          var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+
+          html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
+          html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
+          if(current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
+          html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + current.videos[j].src + '.mp4" type="video/mp4">  </video></div>';
+
       }
+  }
+   
+  //OTHER IMAGES
+  if (current.images) {
+        for (var j = 1; j < current.images.length; j++) {
+            var bestImage = getBestImage(current.images[j].src);
+            var altInfo = current.images[j].title ? current.images[j].title : current.longtitle;
+            html += "<a class='fancybox' href='" + bestImage + "'><img src='" + current.images[j].src  + "' alt='" + altInfo + "' ></a>";
+        }
     }
-
-    //VIDEO
-    if (projects[i].videos) {
-      for (var j = 0; j < projects[i].videos.length; j++) {
-        html += "<div class='video'><video preload='auto' class='animation' loop controls='controls' "
-        if(projects[i].videos[j].poster)
-         html  += "poster='" + projects[i].videos[j].poster;
-        html += "''>";
-
-        html += " <source src='" + projects[i].videos[j].src + ".webm' type='video/webm'>";
-        html += " <source src='" + projects[i].videos[j].src + ".mp4' type='video/mp4'></video>";
-        html += "<div class='playpause'></div> </div>";
-      }
-    }
-
 
     html += "</div></div></div>";
 
-
+    //DETAIL PAGE: BOTTOM NAV
     html += "<div class='bottomNav'>";
     if (i != 0) {
         html += "<p><span>previous</span><a href='#" +
-          detailUrl(projects[i - 1].shorttitle) + "'>" +
-          projects[i - 1].longtitle + "</a></p>";
+          detailUrl(projects[idk - 1].shorttitle) + "'>" +
+          projects[idk - 1].longtitle + "</a></p>";
     }
 
     html += "<p class='nextPage'><span>next</span><a href='#" +
-      detailUrl(projects[(i + 1) % projects.length].shorttitle) +
-      "'>" + projects[(i + 1) % projects.length].longtitle + "</a></p>";
+      detailUrl(projects[(idk + 1) % projects.length].shorttitle) +
+      "'>" + projects[(idk + 1) % projects.length].longtitle + "</a></p>";
 
     html += "</div></div>";
-  }
+
 
   $('#detail').append(html);
+}
 
-  displayCurrent();
+function getBestImage(img){
+  return img.slice(0, img.length - 4) + "@2x" + img.slice(img.length - 4, img.length);
 }
 
 function adjustHeight(projects) {
@@ -183,30 +206,19 @@ function adjustHeight(projects) {
   $('.maxH').css("height", maxH);
 }
 
-function displayCurrent() {
-
-  var URL = $(location).attr('href');
-  var id = URL.split("#")[1];
-  var selector = '.projectlong#' + id;
-  //console.log('displayCurrent:'+id,selector);
-  $(".projectlong").css("display", "none");
-  $(selector).css("display", "block");
+function getCurrentIdFromUrl(url) {
+  return url.split("#")[1];
 }
 
 function openNewWindow(URLtoOpen, windowName, windowFeatures) {
-
   window.open(URLtoOpen, windowName, windowFeatures);
 }
 
 function imageExists(image_url){
-
     var http = new XMLHttpRequest();
-
     http.open('HEAD', image_url, false);
     http.send();
-
     return http.status != 404;
-
 }
 
 $(document).ready(function () {
@@ -217,10 +229,9 @@ $(document).ready(function () {
   });
 
   $(window).trigger('resize');
-       console.log("load");
+
   //control bar for videos
    $('video').hover(function toggleControls() {
-     console.log("hover");
         if (this.hasAttribute("controls")) {
             this.removeAttribute("controls");
         } else {
@@ -228,25 +239,17 @@ $(document).ready(function () {
             
         }
     })
-  
+
 });
 
-
-$(document).on('click', '.bottomNav a', function () {
-
-  var link = $(this).attr("href");
-  //console.log(link);
-  var id = link.split("#")[1];
-  var selector = '.projectlong#' + id;
-  $(".projectlong").css("display", "none");
-  $(selector).css("display", "block");
-});
+window.onhashchange = function() { 
+    var id = getCurrentIdFromUrl($(location).attr('href'));
+    createDetail(projects, id);
+}
 
 $(window).resize(function () {
-
   $('.project img').css("height", $('.project img').width() * 0.65);
   $('.space').css("height", $('.footer').outerHeight());
-
 });
 
 // lets run some code...
@@ -255,7 +258,9 @@ var projects, processJSON = $.getJSON("projects.json", function (json) {
   projects = json.cells;
 });
 
-processJSON.done(function (projects) {
+
+processJSON.done(function (projs) {
+  projects = projs;
   if ($('#projects').length > 0) createGrid(projects);
-  if ($('#detail').length > 0) createDetail(projects);
+  if ($('#detail').length > 0) createDetail(projects, getCurrentIdFromUrl($(location).attr('href')));
 });
