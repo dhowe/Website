@@ -193,7 +193,6 @@ nav>ul>li>a:hover {
   width: 60% !important;
 }
 .projectlong {
-  display: none;
   padding-top: 60px;
   width: 100%;
   z-index: 1;
@@ -273,9 +272,8 @@ nav>ul>li>a:hover {
   position:relative;
 }
 video{
-  max-width:400px;
+  max-width:640px;
   width:100%;
-  margin: 20px;
 }
 /* links */
 
@@ -306,6 +304,7 @@ canvas {
 
 .fancybox-video {
   display: none;
+  width:640px;
 }
 
 
