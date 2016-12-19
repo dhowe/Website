@@ -94,22 +94,7 @@ function createDetail(projects, id) {
       }
       html += "</div>";
     }
-
-    // EXHIBITIONS
-    if (current.exhibitions) {
-
-      html += "<ul class='exhibitions'>EXHIBITIONS";
-      for (var j = 0; j < current.exhibitions.length; j++) {
-        html += "<li class='hanging'>";
-        if (current.exhibitions[j].target)
-          html += "<a target='_blank' href='" + current.exhibitions[j].target
-            + "'>" + current.exhibitions[j].text + "</a></li>";
-        else
-          html += current.exhibitions[j].text + "</li>";
-      }
-      html += "</ul>";
-    }
-
+    
     // LINKS
     if (current.links) {
 
@@ -134,6 +119,21 @@ function createDetail(projects, id) {
       html += "</ul>";
     }
 
+
+    // EXHIBITIONS
+    if (current.exhibitions) {
+
+      html += "<ul class='exhibitions'>EXHIBITIONS";
+      for (var j = 0; j < current.exhibitions.length; j++) {
+        html += "<li class='hanging'>";
+        if (current.exhibitions[j].target)
+          html += "<a target='_blank' href='" + current.exhibitions[j].target
+            + "'>" + current.exhibitions[j].text + "</a></li>";
+        else
+          html += current.exhibitions[j].text + "</li>";
+      }
+      html += "</ul>";
+    }
 
     html += "</div>";
     html += "<div class='col-1-3 mobile-col-1-1'>";
