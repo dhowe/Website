@@ -232,7 +232,6 @@ $(document).ready(function () {
 
   //control bar for videos
    $('video').hover(function toggleControls() {
-     console.log("hover");
         if (this.hasAttribute("controls")) {
             this.removeAttribute("controls");
         } else {
@@ -243,9 +242,7 @@ $(document).ready(function () {
 
 });
 
-
 window.onhashchange = function() { 
-   console.log("change?");
     var id = getCurrentIdFromUrl($(location).attr('href'));
     createDetail(projects, id);
 }
