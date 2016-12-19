@@ -1,5 +1,6 @@
 [{
   "shorttitle": "Advertising Positions",
+  "id": "",
   "thumb": "img/ap_s.jpg",
   "shortdesc": "This series begins with 'robots' we train to search the web, according to profiles they are assigned (age, gender, location, interests, etc.) Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to create the mesh skin of its own virtual avatar.",
   "longtitle": "Advertising Positions",
@@ -392,7 +393,8 @@
   "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
   "longtitle": "text.curtain",
   "videos": [{
-    "src": "video/textCurtain"
+    "src":"video/textCurtain",
+    "poster":"img/textcurtain_poster.jpg"
   }],
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
@@ -456,7 +458,7 @@
     "target": " http://www.mis-sp.org.br/about"
   }],
   "links": [{
-    "name": "catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
+    "name": "Catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
     "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
   }]
 }, {
