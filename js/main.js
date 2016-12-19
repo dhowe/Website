@@ -51,6 +51,9 @@ function detailUrl(title) {
 function createDetail(projects, id) {
 
   selectNavigation();
+  //hide the previous
+  $('.projectlong').hide();
+
   var current, idk = 0;
 
   for (var i = 0; i < projects.length; i++) {
@@ -61,6 +64,16 @@ function createDetail(projects, id) {
         break;
       };
   }
+  
+  //if the div is already created, show the div
+  console.log($('.projectlong#' + id));
+  if ($('.projectlong#' + id).length > 0){
+    $('.projectlong#' + id).show();
+    return;
+  }
+  
+  //if not, create the div
+  /***************************** CREATE *****************************/
 
   // LONG TEXT
   var html = "", nav = "";
@@ -82,6 +95,21 @@ function createDetail(projects, id) {
           html += "<span>- " + current.quotes[j].from + "</span></p>";
       }
       html += "</div>";
+    }
+
+    // EXHIBITIONS
+    if (current.exhibitions) {
+
+      html += "<ul class='exhibitions'>EXHIBITIONS";
+      for (var j = 0; j < current.exhibitions.length; j++) {
+        html += "<li class='hanging'>";
+        if (current.exhibitions[j].target)
+          html += "<a target='_blank' href='" + current.exhibitions[j].target
+            + "'>" + current.exhibitions[j].text + "</a></li>";
+        else
+          html += current.exhibitions[j].text + "</li>";
+      }
+      html += "</ul>";
     }
 
     // LINKS
@@ -108,70 +136,45 @@ function createDetail(projects, id) {
       html += "</ul>";
     }
 
-    // EXHIBITIONS
-    if (current.exhibitions) {
-
-      html += "<ul class='exhibitions'>EXHIBITIONS";
-      for (var j = 0; j < current.exhibitions.length; j++) {
-        html += "<li class='hanging'>";
-        if (current.exhibitions[j].target)
-          html += "<a target='_blank' href='" + current.exhibitions[j].target
-            + "'>" + current.exhibitions[j].text + "</a></li>";
-        else
-          html += current.exhibitions[j].text + "</li>";
-      }
-      html += "</ul>";
-    }
 
     html += "</div>";
-
-    
-     html += "<div class='col-1-3 mobile-col-1-1'>";
+    html += "<div class='col-1-3 mobile-col-1-1'>";
 
     // MAIN IMAGE
   if (projects[i].images) {
 
           var bestImage = current.images[0].slice(0, current.images[0].length - 4) +
               "@2x" + current.images[0].slice(current.images[0].length - 4, current.images[0].length);
-
           // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
           html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + current.images[0] + "></a>";
   }
 
   //VIDEO
-          if (projects[i].videos) {
-              for (var j = 0; j < current.videos.length; j++) {
-                  var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+  if (projects[i].videos) {
+      for (var j = 0; j < current.videos.length; j++) {
+          var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
 
-                  html += "<a class='fancybox video' href='#" + id + "_video'>";
-                  html += "<img src='" + current.videos[j].poster + "' /> </a>";
-                  html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + projects[i].videos[j].src + '.mp4" type="video/mp4">  </video></div>'
+          html += "<a class='fancybox video' href='#" + id + "_video'>";
+          html += "<img src='" + current.videos[j].poster + "' /> </a>";
+          html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + projects[i].videos[j].src + '.mp4" type="video/mp4">  </video></div>';
 
-                  // html += "<div class='video'><video preload='auto' class='animation' loop controls='controls' "
-                  // if (projects[i].videos[j].poster)
-                  //     html += "poster='" + projects[i].videos[j].poster;
-                  // html += "''>";
-
-                  // html += " <source src='" + projects[i].videos[j].src + ".webm' type='video/webm'>";
-                  // html += " <source src='" + projects[i].videos[j].src + ".mp4' type='video/mp4'></video>";
-                  // html += "<div class='playpause'></div> </div>";
-              }
-          }
-   
-//OTHER IMAGES
-if (current.images) {
-      for (var j = 1; j < current.images.length; j++) {
-          var bestImage = current.images[j].slice(0, current.images[j].length - 4) +
-              "@2x" + current.images[j].slice(current.images[j].length - 4, current.images[j].length);
-
-          // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
-          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + current.images[j] + "></a>";
       }
   }
+   
+//OTHER IMAGES
+  if (current.images) {
+        for (var j = 1; j < current.images.length; j++) {
+            var bestImage = current.images[j].slice(0, current.images[j].length - 4) +
+                "@2x" + current.images[j].slice(current.images[j].length - 4, current.images[j].length);
+
+            // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
+            html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + current.images[j] + "></a>";
+        }
+    }
 
     html += "</div></div></div>";
 
-
+    //DETAIL PAGE: BOTTOM NAV
     html += "<div class='bottomNav'>";
     if (i != 0) {
         html += "<p><span>previous</span><a href='#" +
