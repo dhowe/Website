@@ -66,7 +66,6 @@ function createDetail(projects, id) {
   }
   
   //if the div is already created, show the div
-  console.log($('.projectlong#' + id));
   if ($('.projectlong#' + id).length > 0){
     $('.projectlong#' + id).show();
     return;
@@ -75,15 +74,14 @@ function createDetail(projects, id) {
   //if not, create the div
   /***************************** CREATE *****************************/
 
-  // LONG TEXT
-  var html = "", nav = "";
-  
 
+    var html = "", nav = "";
     html += "<div class='projectlong' id='" +
-      detailUrl(current.shorttitle) + "'><div class='grid'>";
-
+    detailUrl(current.shorttitle) + "'><div class='grid'>";
     html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
     html += "<h5>" + current.longtitle + "</h5>";
+
+      // LONG TEXT
     html += "<p class='longdesc'>" + current.longdesc + "</p>";
 
     // QUOTES
@@ -113,7 +111,7 @@ function createDetail(projects, id) {
     }
 
     // LINKS
-    if (projects[i].links) {
+    if (current.links) {
 
       html += "<ul class='links'>LINKS";
       for (var j = 0; j < current.links.length; j++) {
@@ -141,34 +139,32 @@ function createDetail(projects, id) {
     html += "<div class='col-1-3 mobile-col-1-1'>";
 
     // MAIN IMAGE
-  if (projects[i].images) {
+  if (current.images) {
 
-          var bestImage = current.images[0].slice(0, current.images[0].length - 4) +
-              "@2x" + current.images[0].slice(current.images[0].length - 4, current.images[0].length);
-          // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
-          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + current.images[0] + "></a>";
+          var bestImage = getBestImage(current.images[0].src);
+          var altInfo = current.images[0].title? current.images[0].title : current.longtitle;
+          html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='" + current.images[0].src + "' alt='" + altInfo + "' ></a>";
   }
 
   //VIDEO
-  if (projects[i].videos) {
+  if (current.videos) {
       for (var j = 0; j < current.videos.length; j++) {
           var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
 
-          html += "<a class='fancybox video' href='#" + id + "_video'>";
-          html += "<img src='" + current.videos[j].poster + "' /> </a>";
-          html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + projects[i].videos[j].src + '.mp4" type="video/mp4">  </video></div>';
+          html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
+          html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
+          if(current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
+          html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + current.videos[j].src + '.mp4" type="video/mp4">  </video></div>';
 
       }
   }
    
-//OTHER IMAGES
+  //OTHER IMAGES
   if (current.images) {
         for (var j = 1; j < current.images.length; j++) {
-            var bestImage = current.images[j].slice(0, current.images[j].length - 4) +
-                "@2x" + current.images[j].slice(current.images[j].length - 4, current.images[j].length);
-
-            // if(!imageExists(bestImage)) bestImage = projects[i].images[j];console.log(bestImage);
-            html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src=" + current.images[j] + "></a>";
+            var bestImage = getBestImage(current.images[j].src);
+            var altInfo = current.images[j].title ? current.images[j].title : current.longtitle;
+            html += "<a class='fancybox' href='" + bestImage + "'><img src='" + current.images[j].src  + "' alt='" + altInfo + "' ></a>";
         }
     }
 
@@ -192,6 +188,10 @@ function createDetail(projects, id) {
   $('#detail').append(html);
 }
 
+function getBestImage(img){
+  return img.slice(0, img.length - 4) + "@2x" + img.slice(img.length - 4, img.length);
+}
+
 function adjustHeight(projects) {
 
   //adjust the height of each project
@@ -207,25 +207,18 @@ function adjustHeight(projects) {
 }
 
 function getCurrentIdFromUrl(url) {
-
-  var id = url.split("#")[1];
-  return id;
+  return url.split("#")[1];
 }
 
 function openNewWindow(URLtoOpen, windowName, windowFeatures) {
-
   window.open(URLtoOpen, windowName, windowFeatures);
 }
 
 function imageExists(image_url){
-
     var http = new XMLHttpRequest();
-
     http.open('HEAD', image_url, false);
     http.send();
-
     return http.status != 404;
-
 }
 
 $(document).ready(function () {
@@ -236,7 +229,7 @@ $(document).ready(function () {
   });
 
   $(window).trigger('resize');
-       console.log("load");
+
   //control bar for videos
    $('video').hover(function toggleControls() {
      console.log("hover");
@@ -251,12 +244,14 @@ $(document).ready(function () {
 });
 
 
+//
 $(document).on('click', '.bottomNav a', function () {
 
   var id = getCurrentIdFromUrl($(this).attr("href"));
   createDetail(projects, id);
 
 });
+
 
 $(window).resize(function () {
   $('.project img').css("height", $('.project img').width() * 0.65);
@@ -268,6 +263,7 @@ $(window).resize(function () {
 var projects, processJSON = $.getJSON("projects.json", function (json) {
   projects = json.cells;
 });
+
 
 processJSON.done(function (projs) {
   projects = projs;

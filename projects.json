@@ -4,9 +4,9 @@
   "thumb": "img/ap_s.jpg",
   "shortdesc": "This series begins with 'robots' we train to search the web, according to profiles they are assigned (age, gender, location, interests, etc.) Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to create the mesh skin of its own virtual avatar.",
   "longtitle": "Advertising Positions",
-  "images": [
-    "img/ap_l.jpg"
-  ],
+  "images": [{
+     "src": "img/ap_l.jpg"
+  }],
   "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
     "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
@@ -21,9 +21,9 @@
   "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from surveillance by advertising networks and attempts , by clicking ever ad it hides, to subvert the economic system that drives it.",
   "collaborators": "Nissenbaum & Zer-Aviv",
   "longtitle": "AdNauseam",
-  "images": [
-    "img/adn_l.jpg"
-  ],
+  "images": [{
+    "src":  "img/adn_l.jpg"
+  }],
   "videos": [{
     "src": "video/adn",
     "poster": "img/adn_poster.jpg"
@@ -63,7 +63,13 @@
   "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
   "collaborators": "John Cayley",
   "longtitle": "How It Is in Common Tongues",
-  "images": ["img/hiiict_l.jpg", "img/lcp.jpg", "img/hiiiict.jpg"],
+  "images": [{
+    "src": "img/hiiict_l.jpg"
+    }, {
+    "src": "img/lcp.jpg"
+    }, {
+    "src": "img/hiiiict.jpg"
+  }],
   "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
   "exhibitions": [{
     "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
@@ -100,7 +106,9 @@
   "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities designed to explore the culture of human reading in the face of ubiquitous algorithmic and networked services.",
   "collaborators": "John Cayley",
   "longtitle": "The Readers Project",
-  "images": ["img/reader_l.jpg"],
+  "images": [{
+    "src": "img/reader_l.jpg"
+  }],
   "longdesc": "The Readers Project (an ongoing collaboration with John Cayley) is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
   "exhibitions": [{
     "text": "Full list of exhibitions",
@@ -131,7 +139,9 @@
   "thumb": "img/adlipo_s.jpg",
   "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
   "longtitle": "AdLiPo",
-  "images": ["img/adlipo_l.jpg"],
+  "images": [{
+    "src": "img/adlipo_l.jpg"
+  }],
   "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page.",
   "exhibitions": [{
     "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
@@ -145,7 +155,9 @@
   "thumb": "img/auto_s.jpg",
   "shortdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that uses algorithms to find the bridges between English words, 6-degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense, but composed of normative English...",
   "longtitle": "Automatype",
-  "images": ["img/auto_l.jpg"],
+  "images": [{
+    "src": "img/auto_l.jpg"
+  }],
   "videos": [{
     "src": "video/automatype",
     "poster": "img/automatype_poster.jpg"
@@ -200,10 +212,15 @@
   "shortdesc": "<i>Minor Distance</i> is a album of generative music, published by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures...",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
-  "images": ["img/md_l.jpg", "img/md_more.jpg"],
+  "images": [{
+    "src": "img/md_l.jpg"
+    }, {
+    "src": "img/md_more.jpg"
+  }],
   "videos": [{
     "src": "video/theoreticalArchitecture",
-    "poster": "img/ta_poster.jpg"
+    "poster": "img/ta_poster.jpg",
+    "title": "<i>Theoretical Architectures</i>, directed by Josh Gibson, is one of several videos created for the album, Minor Distance"
   }],
   "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops...",
   "quotes": [{
@@ -252,7 +269,9 @@
   "thumb": "img/RiTa_s.png",
   "shortdesc": "Designed to support the creation of novel works of computational literature, <i>RiTa</i> is a free and open-source, natural language toolkit (for Java, JavaScript, Android, and Node) that provides a unique set of tools for artists, writers and digital humanists working with programmable media. ",
   "longtitle": "RiTa",
-  "images": ["img/ritapen.jpg"],
+  "images": [{
+    "src": "img/ritapen.jpg"
+    }],
   "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
   "projects": [{
     "name": "Roulette",
@@ -295,7 +314,15 @@
   "shortdesc": "Lu Xun's revolutionary 'The Real Story of Ah-Q' is read by an algorithmic process that finds phrases written by others, but not written by or about Lu Xun. Each phrase is sent to a search engine, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship...",
   "collaborators": "John Cayley",
   "longtitle": "The Real Story of Ah-Q",
-  "images": ["img/reader_l.jpg", "img/ahq_l3.jpg",  "img/ahq_l2.jpg", "img/ahq_l.jpg"],
+  "images": [{
+    "src": "img/reader_l.jpg"
+    }, {
+    "src": "img/ahq_l3.jpg"
+    }, {  
+    "src": "img/ahq_l2.jpg"
+    }, {
+    "src": "img/ahq_l.jpg"
+  }],
   "longdesc": "Lu Xun's revolutionary 'The Real Story of Ah-Q' is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' Read for Us (為我們看書) engine by which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases (and perhaps also encountering occasional problems of access to related results and associated topics.) A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work demonstrates contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep' as opposed to 'hyper' attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
   "exhibitions": [{
     "text": "<i>TRACING DATA: What you Read is Not What we Write</i>, Connecting Spaces Hong Kong – Zurich. Hong Kong, Oct 9–22. 2014",
@@ -314,7 +341,9 @@
   "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "collaborators": "Bebe Molina",
   "longtitle": "Roulette",
-  "images": ["img/rl_l.jpg"],
+  "images": [{
+    "src": "img/rl_l.jpg"
+  }],
   "longdesc": "Roulette is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "exhibitions": [{
     "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
@@ -344,7 +373,9 @@
   "shortdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen self-contained computational nodes, each of which reacts in real-time to changes in the type and quantity of information being exchanged over the networks of the building in which it is installed.",
   "collaborators": "Bill Seaman",
   "longtitle": "Engine of Engines",
-  "images": ["img/eoe_l.jpg"],
+  "images": [{
+    "src": "img/eoe_l.jpg"
+    }],
   "videos": [{
     "src": "video/eoe480p",
     "poster": "img/eoe_poster.jpg"
@@ -364,7 +395,9 @@
   "shortdesc": "<i>TrackMeNot</i> is a browser extension and artware provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other  technologies of resistance, TrackMeNot self-consciously integrates values into its design...",
   "collaborators": "Helen Nissenbaum",
   "longtitle": "TrackMeNot",
-  "images": ["img/tmn_l.jpg"],
+  "images": [{
+    "src": "img/tmn_l.jpg"
+    }],
   "longdesc": "TrackMeNot blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
   "quotes": [{
     "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design... TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
@@ -432,10 +465,11 @@
   "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and evolving databases.",
   "collaborators": "Bill Seaman",
   "longtitle": "Architecture of Association",
-  "images": [
-    "img/aoa_l.jpg",
-    "img/aoa_press.jpg"
-  ],
+  "images": [{
+     "src": "img/aoa_l.jpg"
+  }, {
+    "src": "img/aoa_press.jpg"
+  }],
   "videos": [{
     "src": "video/aoa_paris",
     "poster": "img/aoa_poster.jpg"
@@ -466,7 +500,9 @@
   "thumb": "img/chinaeye_s.jpg",
   "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
   "longtitle": "ChinaEye",
-  "images": ["img/chinaeye_l.png"],
+  "images": [{
+    "src": "img/chinaeye_l.png"
+    }],
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
   "links": [{
     "name": "ChinaEye on Github",
@@ -477,7 +513,9 @@
   "thumb": "img/redacto_s.png",
   "shortdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.",
   "longtitle": "Redacto",
-  "images": ["img/redacto_l.png"],
+  "images": [{
+    "src": "img/redacto_l.png"
+    }],
   "longdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
     "name": "Redacto for Chrome",

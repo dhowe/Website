@@ -22,8 +22,17 @@
   <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-    $(".fancybox").fancybox();
+    //all fancyboxes
+    $(".fancybox").fancybox({
+        beforeShow : function() {
+        var alt = this.element.find('img').attr('alt');
+        this.inner.find('img').attr('alt', alt);
+        this.title = alt;
+        }
+    });
+    //only for video
     $(".fancybox.video").fancybox({
+
        afterShow: function() {
         this.content.find('video').trigger('play');
        }
