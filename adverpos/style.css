@@ -69,6 +69,11 @@ a {
   float: left;
   background-size: cover;
 }
+.topImage a{
+  display: block;
+  width:100%;
+  height:100%;
+}
 .top #left {
   background-position: 0px;
   width: 25%;
@@ -109,7 +114,8 @@ a {
   transition: 1s;
   -webkit-animation-timing-function: ease;
 }
-.top:hover > .button {
+
+.button:hover{
   opacity: 1;
 }
 .container {
