@@ -6,10 +6,12 @@
     <title>Advertising Positions</title>
     <link rel="stylesheet" href="style.css">
     <script src="../js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="models.js" type="text/javascript"></script>
+    <script src="js/models.js" type="text/javascript"></script>
+
 </head>
 
 <body>
+
     <div class="modelView" id="nicole">
         <ul class="items">
             <li id="still" class="current">still
@@ -21,7 +23,9 @@
             <li id="animation">animation
             </li>
         </ul>
+        <img src='imgs/nicole_adCollection_detail.png' class='zoom' width='100%'>
         <div id="imageDisplay" class="nicoleStill">
+            
             <div class="middle">
                 <div id="video">
                     <video preload="auto" class="animation" loop="" autoplay>
@@ -30,6 +34,7 @@
                     </video>
                 </div>
             </div>
+
         </div>
         <div class="menu">
             <p><a href="index.html">homepage</a></p>
@@ -39,6 +44,11 @@
             <p><span>Nicole</span> is a 28-year-old pregnant female residing in the Netherlands, with interests in literature, film, education and marital subject matters. She was active online for much of November 2016, before being decommissioned at 4:30pm on November 29.</p>
         </div>
     </div>
+
+<script src="js/wheelzoom.js" type="text/javascript"></script>
+    <script>
+          wheelzoom(document.querySelector('img.zoom'));
+    </script>
 </body>
 
 </html>

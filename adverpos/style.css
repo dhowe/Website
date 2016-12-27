@@ -195,6 +195,12 @@ video {
   display: table;
   background-size: cover;
 }
+.zoom{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 20;
+}
 @keyframes fadeto {
   0% {
     opacity: 1;
@@ -253,6 +259,7 @@ video {
   bottom: 70px;
   left: 20px;
   opacity: .7;
+  z-index: 100;
 }
 .menu:hover {
   opacity: 1;
