@@ -2,7 +2,7 @@
   "shorttitle": "Advertising Positions",
   "id": "",
   "thumb": "img/ap_s.jpg",
-  "shortdesc": "<i>Advertising Positions</i> begins with a group of 'robots' trained to search the web according to specific profiles (age, gender, location, interests, etc). Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to the polygons of its own virtual body.",
+  "shortdesc": "<i>Advertising Positions</i> begins with a set of 'robots' trained to search the web according to specific profiles (age, gender, location, interests, etc). Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to the polygons of its own virtual body.",
   "longtitle": "Advertising Positions",
   "images": [{
      "src": "img/ap_l.jpg"
