@@ -17,7 +17,7 @@
   }]
 }, {
   "shorttitle": "AdNauseam",
-  "thumb": "img/adn_s.png",
+  "thumb": "img/adn_s.jpg",
   "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from surveillance by advertising networks and attempts , by clicking ever ad it hides, to subvert the economic system that drives it.",
   "collaborators": "Nissenbaum & Zer-Aviv",
   "longtitle": "AdNauseam",
@@ -335,7 +335,7 @@
   }]
 }, {
   "shorttitle": "Roulette",
-  "thumb": "img/rl_s.png",
+  "thumb": "img/rl_s.jpg",
   "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "collaborators": "Bebe Molina",
   "longtitle": "Roulette",
@@ -388,6 +388,24 @@
     "target": "http://rednoise.org/eoe/"
   }]
 }, {
+  "shorttitle": "Read For Us",
+  "thumb": "img/rfu_s.jpg",
+  "shortdesc": "A software entity reads through Adam Smith’s An Inquiry into the Nature and Causes of the Wealth of Nations (1776), highlighting phrases, up to six words in length, that might have been written by any of us.",
+  "collaborators": "John Cayley",
+  "longtitle": "Read For Us",
+  "images": [{
+    "src": "img/rfu_l.jpg"
+    }],
+  "longdesc": "A software entity reads through Adam Smith’s An Inquiry into the Nature and Causes of the Wealth of Nations (1776), highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another client entity, a puppet not unlike ourselves, who re-searches and re-reads these phrases on Google and other portals, seeking to discover another nature and other causes of the wealth of nations now.",
+  "links": [{
+    "name": "Project Home Page",
+    "target": "http://thereadersproject.org/installations/rfu.html#rfu"
+  }],
+  "exhibitions": [{
+    "text": "Brown Faculty Triennial. The David Winton Bell gallery. Providence, RI, USA. Dec 4 2010–Feb 13 2011",
+    "target": "https://www.brown.edu/campus-life/arts/bellgallery/exhibitions/faculty-triennial-exhibition-2010"
+  }]  
+  }, {
   "shorttitle": "TrackMeNot",
   "thumb": "img/tmn_s.jpg",
   "shortdesc": "<i>TrackMeNot</i> is a browser extension and artware provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other  technologies of resistance, TrackMeNot self-consciously integrates values into its design...",
@@ -499,7 +517,7 @@
   "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
   "longtitle": "ChinaEye",
   "images": [{
-    "src": "img/chinaeye_l.png"
+    "src": "img/chinaeye_l.jpg"
     }],
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
   "links": [{
@@ -512,7 +530,7 @@
   "shortdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.",
   "longtitle": "Redacto",
   "images": [{
-    "src": "img/redacto_l.png"
+    "src": "img/redacto_l.jpg"
     }],
   "longdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
