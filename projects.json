@@ -70,7 +70,7 @@
     }, {
     "src": "img/hiiiict.jpg"
   }],
-  "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of the Readers Project(see below). This long-term project, in collaboration with John Cayley, is an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
+  "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project<i/> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
   "exhibitions": [{
     "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
     "target": "http://www.ubu.com/contemp/cayley/index.html"
@@ -103,7 +103,7 @@
 }, {
   "shorttitle": "The Readers Project",
   "thumb": "img/reader_s.jpg",
-  "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities designed to explore the culture of human reading in the face of ubiquitous algorithmic and networked services.",
+  "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities engineered to explore the culture of human reading (and writing) in the face of ubiquitous algorithmic and networked services.",
   "collaborators": "John Cayley",
   "longtitle": "The Readers Project",
   "images": [{
@@ -162,7 +162,7 @@
     "src": "video/automatype",
     "poster": "img/automatype_poster.jpg"
   }],
-  "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br><br />The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
+  "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
   "exhibitions": [{
     "text": "<i>Art2Code</i>, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
     "target": "http://v1b3.com/daniel-howe-automatype/"
@@ -321,7 +321,7 @@
     }, {
     "src": "img/ahq_l.jpg"
   }],
-  "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' Read for Us (為我們看書) engine by which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases (and perhaps also encountering occasional problems of access to related results and associated topics.) A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work demonstrates contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep' as opposed to 'hyper' attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
+  "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
   "exhibitions": [{
     "text": "<i>TRACING DATA: What you Read is Not What we Write</i>, Connecting Spaces Hong Kong – Zurich. Hong Kong, Oct 9–22. 2014",
     "target": "http://www.connectingspaces.ch/projects/art/tracing-data-what-you-read-is-not-what-we-write/"
@@ -390,13 +390,13 @@
 }, {
   "shorttitle": "Read For Us",
   "thumb": "img/rfu_s.jpg",
-  "shortdesc": "A software entity reads through Adam Smith’s An Inquiry into the Nature and Causes of the Wealth of Nations (1776), highlighting phrases, up to six words in length, that might have been written by any of us.",
+  "shortdesc": "A set of algorithms reads through Adam Smith’s <i>Wealth of Nations</i>, highlighting the longest phrases written by others, that is, found on web pages unconnected with Smith or his book. Each phrase is then re-read via a Google search, showing how they would be read now, in real-time, complete with images and advertising.",
   "collaborators": "John Cayley",
   "longtitle": "Read For Us",
   "images": [{
     "src": "img/rfu_l.jpg"
     }],
-  "longdesc": "A software entity reads through Adam Smith’s An Inquiry into the Nature and Causes of the Wealth of Nations (1776), highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another client entity, a puppet not unlike ourselves, who re-searches and re-reads these phrases on Google and other portals, seeking to discover another nature and other causes of the wealth of nations now.",
+  "longdesc": "A algorithmic process reads through Adam Smith’s <i>An Inquiry into the Nature and Causes of the Wealth of Nations (1776)</i>, highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another process which re-searches and re-reads these phrases on Google and other portals, seeking to discover other causes for the wealth of nations now.",
   "links": [{
     "name": "Project Home Page",
     "target": "http://thereadersproject.org/installations/rfu.html#rfu"
@@ -404,7 +404,7 @@
   "exhibitions": [{
     "text": "Brown Faculty Triennial. The David Winton Bell gallery. Providence, RI, USA. Dec 4 2010–Feb 13 2011",
     "target": "https://www.brown.edu/campus-life/arts/bellgallery/exhibitions/faculty-triennial-exhibition-2010"
-  }]  
+  }]
   }, {
   "shorttitle": "TrackMeNot",
   "thumb": "img/tmn_s.jpg",
@@ -527,12 +527,12 @@
 }, {
   "shorttitle": "Redacto",
   "thumb": "img/redacto_s.png",
-  "shortdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.",
+  "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.",
   "longtitle": "Redacto",
   "images": [{
     "src": "img/redacto_l.jpg"
     }],
-  "longdesc": "<i>Redacto</i> redacts all the information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all the distracting text and images so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
+  "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
     "name": "Redacto for Chrome",
     "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
