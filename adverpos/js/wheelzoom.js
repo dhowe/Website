@@ -136,6 +136,24 @@ window.wheelzoom = (function(){
 			document.addEventListener('mouseup', removeDrag);
 		}
 
+		function getCoverSize(width, height) {
+
+		    var w,h,
+		        div = document.getElementsByTagName("body")[0],
+		        divStyle = window.getComputedStyle(div, null),
+		        bodyWidth = parseInt(divStyle.width, 10),
+		        bodyHeight = parseInt(divStyle.height, 10);
+
+		    if (bodyWidth > bodyHeight * width / height) {
+		        w = bodyWidth;
+		        h = bodyWidth * height / width;
+		    } else {
+		        h = bodyHeight;
+		        w = bodyHeight * width / height;
+		    }
+		    return [w, h];
+		}
+
 		function load() {
 			if (img.src === cachedDataUrl) return;
 
@@ -143,6 +161,10 @@ window.wheelzoom = (function(){
 
 			width = parseInt(computedStyle.width, 10);
 			height = parseInt(computedStyle.height, 10);
+			var actualSize = getCoverSize(width, height);
+			width = actualSize[0];
+			height = actualSize[1];
+
 			bgWidth = width;
 			bgHeight = height;
 			bgPosX = 0;
@@ -150,7 +172,7 @@ window.wheelzoom = (function(){
 
 			setSrcToBackground(img);
 
-			img.style.backgroundSize =  width+'px '+height+'px';
+			img.style.backgroundSize =  width +'px '+ height +'px';
 			img.style.backgroundPosition = '0 0';
 			img.addEventListener('wheelzoom.reset', reset);
 

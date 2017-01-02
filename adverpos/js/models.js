@@ -50,7 +50,6 @@ $(document).ready(function() {
        $('img.zoom').css("visibility","visible");
       
        if ($('body').height() > 630) {
-           $('img.zoom').width($('body').width());
            $('img.zoom').height($('body').height());
        }
        else $('img.zoom').height(630);
