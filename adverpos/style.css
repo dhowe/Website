@@ -66,8 +66,6 @@ a {
   /*  position:absolute;*/
   height: 200px;
   overflow: hidden;
-  border-style: solid;
-  border-color: #AAA;
   margin: 40px 3%;
   float: left;
   background-size: cover;
@@ -88,8 +86,8 @@ a {
   background-image: url("imgs/wilson_thumbnail.jpg");
 }
 .top #right {
+  background-position: 0px;
   width: 25%;
-  height: 155px;
   background-image: url("imgs/nicole_adCollection_thumbnail.jpg");
 }
 .top img {
