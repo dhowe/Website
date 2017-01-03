@@ -82,7 +82,7 @@ a {
 }
 .top #middle {
   width: 220px;
-  background-position: 80%;
+  background-position: 50%;
   background-image: url("imgs/wilson_thumbnail.jpg");
 }
 .top #right {
