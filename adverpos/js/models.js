@@ -1,3 +1,4 @@
+var zoomMode = false;
 
 $(document).ready(function() {
     var current =  $('.modelView').attr('id')
@@ -36,7 +37,8 @@ $(document).ready(function() {
       $('video').hide();
       $('.items').css("color", "#EEE");
       $('.intro').css("background-color", "rgba(16,60,83,.8)");
-      $('img.zoom').css("visibility","hidden");
+      if(!zoomMode) $('img.zoom').css("visibility","hidden");
+      else $('img.zoom').css("visibility","visible");
     })
     $('#animation').click(function() {
       $('#imageDisplay').removeClass();
@@ -55,7 +57,20 @@ $(document).ready(function() {
        else $('img.zoom').height(630);
     
     })
+    
+    if (!zoomMode) {
+        $('#imageDisplay').on('mousemove', function(e) {
+            $('#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection').click(function() {
+                $('#hint').css("display", "none");
+                zoomMode = true;
+            });
 
+            $('#hint').css({
+                left: e.pageX - 130,
+                top: e.pageY - 40
+            });
+        });
+    }
 
     if(document.location.hash != undefined){
       $(document.location.hash).trigger("click");
