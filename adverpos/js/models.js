@@ -70,22 +70,6 @@ $(document).ready(function() {
                 top: e.pageY - 40
             });
         });
-    } else {
-
-        $("#imageDisplay")
-            .mousedown(function() {
-                console.log("drag");
-            })
-            .mousemove(function() {
-                isDragging = true;
-            })
-            .mouseup(function() {
-                var wasDragging = isDragging;
-                isDragging = false;
-                if (!wasDragging) {
-                    $("#throbble").toggle();
-                }
-            });
     }
 
     if(document.location.hash != undefined){
