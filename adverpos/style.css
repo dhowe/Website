@@ -198,11 +198,31 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection{
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
 .zoom{
   visibility: hidden;
   position:fixed;
   top:0;
   left:0;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.zoom:active{
+  cursor: move;
+}
+#hint{
+  width:120px;
+  padding:5px;
+  background-color:rgba(0,0,0,.7); 
+  margin:0 auto;
+  display:none;
+  position:absolute;
+}
+#imageDisplay.nicoleAdCollection:hover #hint,#imageDisplay.wilsonAdCollection:hover #hint{
+  display: block;
 }
 @keyframes fadeto {
   0% {
@@ -246,6 +266,7 @@ video {
   z-index: 10;
   text-transform: uppercase;
   text-shadow: 0 0 10px black;
+  cursor:pointer;
 }
 .items img {
   width: 100px;
