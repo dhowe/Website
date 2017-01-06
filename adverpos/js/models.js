@@ -1,4 +1,4 @@
-var zoomMode = false, isDragging = false;
+var zoomMode = false;
 
 $(document).ready(function() {
     var current =  $('.modelView').attr('id')
