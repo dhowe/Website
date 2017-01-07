@@ -33,14 +33,12 @@ function createGrid(projects) {
 function selectNavigation() {
 
   var $navlist = $('#navlist');
-
-  if (location.href.indexOf('/mit/') > -1) {
+  if (location.href.indexOf('/mit/') > -1)
     $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
-  }
-  else if (location.href.indexOf('/saic/') > -1) {
+  else if (location.href.indexOf('/saic/') > -1)
     $navlist.html('<li><a class="current" href="index.html">SAIC: Portfolio</a></li>');
-  }
-
+  else if (location.href.indexOf('/sjsu/') > -1)
+    $navlist.html('<li><a class="current" href="index.html">SJSU: Portfolio</a></li>');
 }
 
 function detailUrl(title) {
