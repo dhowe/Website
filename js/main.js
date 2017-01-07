@@ -33,14 +33,12 @@ function createGrid(projects) {
 function selectNavigation() {
 
   var $navlist = $('#navlist');
-
-  if (location.href.indexOf('/mit/') > -1) {
+  if (location.href.indexOf('/mit/') > -1)
     $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
-  }
-  else if (location.href.indexOf('/saic/') > -1) {
+  else if (location.href.indexOf('/saic/') > -1)
     $navlist.html('<li><a class="current" href="index.html">SAIC: Portfolio</a></li>');
-  }
-
+  else if (location.href.indexOf('/sjsu/') > -1)
+    $navlist.html('<li><a class="current" href="index.html">SJSU: Portfolio</a></li>');
 }
 
 function detailUrl(title) {
@@ -58,19 +56,19 @@ function createDetail(projects, id) {
 
   for (var i = 0; i < projects.length; i++) {
     var title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
-      if ( title === id) { 
+      if ( title === id) {
         current = projects[i]
-        idk = i; 
+        idk = i;
         break;
       };
   }
-  
+
   //if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0){
     $('.projectlong#' + id).show();
     return;
   }
-  
+
   //if not, create the div
   /***************************** CREATE *****************************/
 
@@ -94,7 +92,7 @@ function createDetail(projects, id) {
       }
       html += "</div>";
     }
-    
+
     // LINKS
     if (current.links) {
 
@@ -158,7 +156,7 @@ function createDetail(projects, id) {
 
       }
   }
-   
+
   //OTHER IMAGES
   if (current.images) {
         for (var j = 1; j < current.images.length; j++) {
@@ -236,13 +234,13 @@ $(document).ready(function () {
             this.removeAttribute("controls");
         } else {
             this.setAttribute("controls", "controls");
-            
+
         }
     })
 
 });
 
-window.onhashchange = function() { 
+window.onhashchange = function() {
     var id = getCurrentIdFromUrl($(location).attr('href'));
     createDetail(projects, id);
 }
