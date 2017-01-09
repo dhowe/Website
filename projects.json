@@ -339,8 +339,9 @@
   "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "collaborators": "Bebe Molina",
   "longtitle": "Roulette",
-  "images": [{
-    "src": "img/rl_l.jpg"
+  "videos": [{
+    "src": "video/roulette",
+    "poster": "img/roulette_poster.jpg"
   }],
   "longdesc": "Roulette is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "exhibitions": [{
