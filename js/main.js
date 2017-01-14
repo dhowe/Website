@@ -39,6 +39,8 @@ function selectNavigation() {
     $navlist.html('<li><a class="current" href="index.html">SAIC: Portfolio</a></li>');
   else if (location.href.indexOf('/sjsu/') > -1)
     $navlist.html('<li><a class="current" href="index.html">SJSU: Portfolio</a></li>');
+  else if (location.href.indexOf('/tandon/') > -1)
+    $navlist.html('<li><a class="current" href="index.html">Tandon: Portfolio</a></li>');
 }
 
 function detailUrl(title) {
