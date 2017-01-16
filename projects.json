@@ -513,6 +513,19 @@
     "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
   }]
 }, {
+  "shorttitle": "open.ended",
+  "thumb": "img/openended_s.jpg",
+  "shortdesc": "<i>open.ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another.",
+  "longtitle": "open.ended",
+  "images": [{
+    "src": "img/openended_l.jpg"
+    }],
+  "longdesc": "open.ended is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a mouse, joystick, or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem, organically complementing the visual and tactile components of the work.",
+   "links": [{
+    "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
+    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
+  }]
+},{
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
   "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
