@@ -28,7 +28,7 @@
     "src": "video/adn",
     "poster": "img/adn_poster.jpg"
   }],
-  "longdesc": "AdNauseam (ADN) is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, ADN hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, ADN creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
+  "longdesc": "<i>AdNauseam</i> is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, AdNauseam hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, AdNauseam creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
   "exhibitions": [{
     "text": "<i>Follow</i>, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
   }, {
@@ -109,7 +109,7 @@
   "images": [{
     "src": "img/reader_l.jpg"
   }],
-  "longdesc": "The Readers Project (an ongoing collaboration with John Cayley) is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
+  "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
   "exhibitions": [{
     "text": "Full list of exhibitions",
     "target": "http://thereadersproject.org/outcomes.html#CV"
@@ -138,7 +138,7 @@
   "images": [{
     "src": "img/adlipo_l.jpg"
   }],
-  "longdesc": "AdLiPo replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page.",
+  "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page.",
   "exhibitions": [{
     "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
     "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
@@ -158,7 +158,7 @@
     "src": "video/automatype",
     "poster": "img/automatype_poster.jpg"
   }],
-  "longdesc": "Automatype is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
+  "longdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
   "exhibitions": [{
     "text": "<i>Art2Code</i>, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
     "target": "http://v1b3.com/daniel-howe-automatype/"
@@ -218,7 +218,7 @@
     "poster": "img/ta_poster.jpg",
     "title": "<i>Theoretical Architectures</i>, directed by Josh Gibson, is one of several videos created for the album, Minor Distance"
   }],
-  "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops&hellip;",
+  "longdesc": "<i>Minor Distance</i> (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops&hellip;",
   "quotes": [{
     "text": "The uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air&hellip; I will keep these recordings near to hand.",
     "from": "Gregory Taylor"
@@ -268,7 +268,7 @@
   "images": [{
     "src": "img/ritapen.jpg"
   }],
-  "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
+  "longdesc": "Designed to support the creation of novel works of generative literature, the <i>RiTa</i> library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
   "projects": [{
     "name": "Roulette",
     "target": "#roulette"
@@ -285,7 +285,7 @@
     "name": "Architecture of Association",
     "target": "#architectureofassociation"
   }, {
-    "name": "Text.curtain",
+    "name": "Text.Curtain",
     "target": "#textcurtain"
   }, {
     "name": "AdLiPo",
@@ -342,7 +342,7 @@
     "src": "video/roulette",
     "poster": "img/roulette_poster.jpg"
   }],
-  "longdesc": "Roulette is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
+  "longdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "exhibitions": [{
     "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
   }, {
@@ -378,7 +378,7 @@
     "src": "video/eoe480p",
     "poster": "img/eoe_poster.jpg"
   }],
-  "longdesc": "Engine of Engines is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
+  "longdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
   "exhibitions": [{
     "text": "<i>The Burning Edge</i>. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
     "target": "http://www.gardens-co.com/clients/scm/download/faculty_brochure_FINAL_online2.pdf"
@@ -390,13 +390,13 @@
 }, {
   "shorttitle": "Read For Us",
   "thumb": "img/rfu_s.jpg",
-  "shortdesc": "A set of algorithms reads through Adam Smith’s <i>Wealth of Nations</i>, highlighting the longest phrases written by others, that is, found on web pages unconnected with Smith or his book. Each phrase is then re-read via a Google search, showing how they would be read now, in real-time, complete with images and advertising.",
+  "shortdesc": "An algorithmic process reads through Adam Smith’s <i>Wealth of Nations</i>, highlighting the longest phrases written by others, that is, found on web pages unconnected with Smith or his book. Each phrase is then re-read via a Google search, showing how they would be read now, in real-time, complete with images and advertising.",
   "collaborators": "John Cayley",
   "longtitle": "Read For Us",
   "images": [{
     "src": "img/rfu_l.jpg"
   }],
-  "longdesc": "A algorithmic process reads through Adam Smith’s <i>An Inquiry into the Nature and Causes of the Wealth of Nations (1776)</i>, highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another process which re-searches and re-reads these phrases on Google and other portals, seeking to discover other causes for the wealth of nations now.",
+  "longdesc": "An algorithmic process reads through Adam Smith’s <i>An Inquiry into the Nature and Causes of the Wealth of Nations (1776)</i>, highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another process which re-searches and re-reads these phrases on Google and other portals, seeking to discover other causes for the wealth of nations now.",
   "links": [{
     "name": "Project Home Page",
     "target": "http://thereadersproject.org/installations/rfu.html#rfu"
@@ -414,7 +414,7 @@
   "images": [{
     "src": "img/tmn_l.jpg"
   }],
-  "longdesc": "TrackMeNot blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
+  "longdesc": "<i>TrackMeNot</i> blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
   "quotes": [{
     "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip; TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
     "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
@@ -437,17 +437,17 @@
     "target": "http://speedshow.ideacritik.com/"
   }]
 }, {
-  "shorttitle": "Text.curtain",
+  "shorttitle": "Text.Curtain",
   "thumb": "img/textcurtain_s.jpg",
-  "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
+  "shortdesc": "<i>Text.Curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
   "longtitle": "text.curtain",
   "videos": [{
     "src": "video/textCurtain",
     "poster": "img/textcurtain_poster.jpg"
   }],
-  "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
+  "longdesc": "<i>Text.Curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
-    "text": "Text.curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
+    "text": "Text.Curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
     "from": "Brian Kim Stefans"
   }],
   "links": [{
@@ -476,6 +476,19 @@
     "target": "http://www.arras.net/?p=18"
   }]
 }, {
+  "shorttitle": "ChinaEye",
+  "thumb": "img/chinaeye_s.jpg",
+  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
+  "longtitle": "ChinaEye",
+  "images": [{
+    "src": "img/chinaeye_l.jpg"
+  }],
+  "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
+  "links": [{
+    "name": "ChinaEye on Github",
+    "target": "https://github.com/dhowe/ChinaEye"
+  }]
+}, {
   "shorttitle": "Architecture of Association",
   "thumb": "img/aoa_s.jpg",
   "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and evolving databases.",
@@ -490,7 +503,7 @@
     "src": "video/aoa_paris",
     "poster": "img/aoa_poster.jpg"
   }],
-  "longdesc": "The Architecture of Association is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
+  "longdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
   "exhibitions": [{
     "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
   }, {
@@ -510,19 +523,6 @@
   "links": [{
     "name": "Catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
     "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
-  }]
-}, {
-  "shorttitle": "ChinaEye",
-  "thumb": "img/chinaeye_s.jpg",
-  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
-  "longtitle": "ChinaEye",
-  "images": [{
-    "src": "img/chinaeye_l.jpg"
-  }],
-  "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
-  "links": [{
-    "name": "ChinaEye on Github",
-    "target": "https://github.com/dhowe/ChinaEye"
   }]
 }, {
   "shorttitle": "Open.Ended",
