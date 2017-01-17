@@ -10,9 +10,6 @@ function createGrid(projects) {
     html += "<h5>" + projects[i].shorttitle + "</h5>";
     html += "<img src=" + projects[i].thumb + ">";
     html += "<p>" + projects[i].shortdesc + "</p>";
-    if (projects[i].collaborators) {
-      html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
-    }
     html += "</div></a>";
 
     $('#projects .grid').append(html);
@@ -80,8 +77,11 @@ function createDetail(projects, id) {
     detailUrl(current.shorttitle) + "'><div class='grid'>";
     html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
     html += "<h5>" + current.longtitle + "</h5>";
-
-      // LONG TEXT
+    if (projects[i].collaborators) {
+      html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
+    }
+    
+    // LONG TEXT
     html += "<p class='longdesc'>" + current.longdesc + "</p>";
 
     // QUOTES
