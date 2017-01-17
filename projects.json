@@ -5,7 +5,7 @@
   "shortdesc": "<i>Advertising Positions</i> begins with a set of 'robots' trained to search the web according to specific profiles (age, gender, location, interests, etc). Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to the polygons of its own virtual body.",
   "longtitle": "Advertising Positions",
   "images": [{
-     "src": "img/ap_l.jpg"
+    "src": "img/ap_l.jpg"
   }],
   "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
@@ -22,7 +22,7 @@
   "collaborators": "Nissenbaum & Zer-Aviv",
   "longtitle": "AdNauseam",
   "images": [{
-    "src":  "img/adn_l.jpg"
+    "src": "img/adn_l.jpg"
   }],
   "videos": [{
     "src": "video/adn",
@@ -50,24 +50,24 @@
   }, {
     "name": "The AdNauseam/Obfuscation Paper",
     "target": "http://www.aprja.net/?p=2510"
-  },{
+  }, {
     "name": "AdNauseam for Chrome",
     "target": "https://chrome.google.com/webstore/detail/adnauseam/hgfacieeomogkcchookiodlpppbcolha?hl=en"
-  },{
+  }, {
     "name": "AdNauseam for Firefox",
     "target": "https://addons.mozilla.org/en-US/firefox/addon/adnauseam/"
   }]
 }, {
-  "shorttitle": "How It Is...",
+  "shorttitle": "How It Is",
   "thumb": "img/hiiict_s.jpg",
-  "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books...",
+  "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books&hellip;",
   "collaborators": "John Cayley",
   "longtitle": "How It Is in Common Tongues",
   "images": [{
     "src": "img/hiiict_l.jpg"
-    }, {
+  }, {
     "src": "img/lcp.jpg"
-    }, {
+  }, {
     "src": "img/hiiiict.jpg"
   }],
   "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project<i/> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
@@ -91,7 +91,7 @@
     "name": "Featured on UBUWeb",
     "target": "http://www.ubuweb.com/contemp/cayley/"
   }, {
-    "name": "Full .pdf of the Work",
+    "name": "Full PDF of the Work",
     "target": "http://rednoise.org/readers/hiiict.pdf"
   }, {
     "name": "On the 'Top 10 Radical Books' list",
@@ -117,23 +117,19 @@
   "links": [{
     "name": "The Project Home Page",
     "target": "http://thereadersproject.org"
-  },{
+  }, {
     "name": "The Readers Paper (II)",
     "target": "http://rednoise.org/daniel/pubs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
-  },
-  {
+  }, {
     "name": "The Readers Paper (I)",
     "target": "http://rednoise.org/~dhowe/pubs/LEON4404_pp317-324.pdf"
-  },
-  {
+  }, {
     "name": "The Real Story of Ah-Q",
     "target": "http://thereadersproject.org/index.php?p=installation/HK2014/wmc.html"
-  },
-  {
+  }, {
     "name": "How It Is in Common Tongues",
     "target": "  http://thereadersproject.org/hiiict2012.html#hiiict"
-  }
-]
+  }]
 }, {
   "shorttitle": "AdLiPo",
   "thumb": "img/adlipo_s.jpg",
@@ -153,7 +149,7 @@
 }, {
   "shorttitle": "Automatype",
   "thumb": "img/auto_s.jpg",
-  "shortdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that uses algorithms to find the bridges between English words, 6-degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense, but composed of normative English...",
+  "shortdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that uses algorithms to find the bridges between English words, 6-degrees-of-Kevin-Bacon-style — not bridges of garbled nonsense, but composed of normative English&hellip;",
   "longtitle": "Automatype",
   "images": [{
     "src": "img/auto_l.jpg"
@@ -209,12 +205,12 @@
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
-  "shortdesc": "<i>Minor Distance</i> is a album of generative music, published by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures...",
+  "shortdesc": "<i>Minor Distance</i> is a album of generative music, published by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures&hellip;",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
   "images": [{
     "src": "img/md_l.jpg"
-    }, {
+  }, {
     "src": "img/md_more.jpg"
   }],
   "videos": [{
@@ -222,12 +218,12 @@
     "poster": "img/ta_poster.jpg",
     "title": "<i>Theoretical Architectures</i>, directed by Josh Gibson, is one of several videos created for the album, Minor Distance"
   }],
-  "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops...",
+  "longdesc": "Minor Distance (Cotton Goods Records) is a collaboration between Howe and Bill Seaman realized after the two exchanged ideas while both travelling separately—in effect making for an album recorded between Seoul, Bremen, Frankfurt, Berlin, Thailand, China and New York—covering more than the &quot;Minor Distance&quot; referred to in the title. The recordings began with Howe's improvised guitar recordings, played live-to-tape through his bespoke  probablistic sampler software (Pataclysm), and Seaman's simple piano loops&hellip;",
   "quotes": [{
-    "text": "The uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air... I will keep these recordings near to hand.",
+    "text": "The uncanny ability of this recording to evoke snatches of work well removed from the genre: Miles floating a single trumpet note toward the ceiling of that deconsecrated Armenium church in &quot;So What&quot;. The way that the piano appears out of the rain on those divine Blue Nile recordings. The grave and resolute brass in Johan Johanssen's &quot;Miner's Hymns&quot;. Moments of beauty that leap the gap like a spark across the air&hellip; I will keep these recordings near to hand.",
     "from": "Gregory Taylor"
   }, {
-    "text": "Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies...",
+    "text": "Howe's noise-meets-Ry-Cooder electric guitar fills gravitate like a swarm of metallic dragon flies&hellip;",
     "from": "Steve Fore"
   }],
   "exhibitions": [{
@@ -252,7 +248,7 @@
     "target": "https://boomkat.com/products/minor-distance-special-edition-2e3a9bb5-13dd-4329-8267-d8f39e8c8252"
   }],
   "links": [{
-    "name": "Listen...",
+    "name": "Listen&hellip;",
     "target": "http://rednoise.org/minordistance/tracks.html"
   }, {
     "name": "Cotton Goods Home Page",
@@ -271,7 +267,7 @@
   "longtitle": "RiTa",
   "images": [{
     "src": "img/ritapen.jpg"
-    }],
+  }],
   "longdesc": "Designed to support the creation of novel works of generative literature, the RiTa library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
   "projects": [{
     "name": "Roulette",
@@ -304,21 +300,24 @@
   "links": [{
     "name": "The Project Home Page",
     "target": "http://rednoise.org/rita/"
-  },{
+  }, {
     "name": "The RiTa paper (with A.B. Soderman)",
     "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
+  }, {
+    "name": "The RiTa gallery",
+    "target": "http://rednoise.org/rita/gallery.php"
   }]
 }, {
   "shorttitle": "The Real Story of Ah-Q",
   "thumb": "img/ahq_s.jpg",
-  "shortdesc": "Lu Xun's <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others, but not written by or about Lu Xun. Each phrase is sent to a search engine, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, even censorship...",
+  "shortdesc": "Lu Xun's <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others, but not written by or about Lu Xun. Each phrase is sent to a search engine, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, even censorship&hellip;",
   "collaborators": "John Cayley",
   "longtitle": "The Real Story of Ah-Q",
   "images": [{
     "src": "img/reader_l.jpg"
-    }, {
+  }, {
     "src": "img/ahq_l3.jpg"
-    }, {
+  }, {
     "src": "img/ahq_l.jpg"
   }],
   "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
@@ -374,7 +373,7 @@
   "longtitle": "Engine of Engines",
   "images": [{
     "src": "img/eoe_l.jpg"
-    }],
+  }],
   "videos": [{
     "src": "video/eoe480p",
     "poster": "img/eoe_poster.jpg"
@@ -396,7 +395,7 @@
   "longtitle": "Read For Us",
   "images": [{
     "src": "img/rfu_l.jpg"
-    }],
+  }],
   "longdesc": "A algorithmic process reads through Adam Smith’s <i>An Inquiry into the Nature and Causes of the Wealth of Nations (1776)</i>, highlighting phrases, up to six words in length, that might have been written by any of us. We know that we might have composed these successive short sequences of words because a search engine has found them on web pages unconnected with Smith and his book. The software reader then sends our phrases to another process which re-searches and re-reads these phrases on Google and other portals, seeking to discover other causes for the wealth of nations now.",
   "links": [{
     "name": "Project Home Page",
@@ -406,24 +405,24 @@
     "text": "Brown Faculty Triennial. The David Winton Bell gallery. Providence, RI, USA. Dec 4 2010–Feb 13 2011",
     "target": "https://www.brown.edu/campus-life/arts/bellgallery/exhibitions/faculty-triennial-exhibition-2010"
   }]
-  }, {
+}, {
   "shorttitle": "TrackMeNot",
   "thumb": "img/tmn_s.jpg",
-  "shortdesc": "<i>TrackMeNot</i> is a browser extension and artware provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other  technologies of resistance, TrackMeNot self-consciously integrates values into its design...",
+  "shortdesc": "<i>TrackMeNot</i> is a browser extension and artware provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other  technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip;",
   "collaborators": "Helen Nissenbaum",
   "longtitle": "TrackMeNot",
   "images": [{
     "src": "img/tmn_l.jpg"
-    }],
+  }],
   "longdesc": "TrackMeNot blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
   "quotes": [{
-    "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design... TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
+    "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip; TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
     "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
   }],
   "links": [{
     "name": "TrackMeNot for Chrome",
     "target": "https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka?hl=en"
-  },{
+  }, {
     "name": "TrackMeNot for Firefox",
     "target": "https://addons.mozilla.org/en-US/firefox/addon/trackmenot/"
   }],
@@ -443,8 +442,8 @@
   "shortdesc": "<i>Text.curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
   "longtitle": "text.curtain",
   "videos": [{
-    "src":"video/textCurtain",
-    "poster":"img/textcurtain_poster.jpg"
+    "src": "video/textCurtain",
+    "poster": "img/textcurtain_poster.jpg"
   }],
   "longdesc": "text.curtain explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
@@ -483,7 +482,7 @@
   "collaborators": "Bill Seaman",
   "longtitle": "Architecture of Association",
   "images": [{
-     "src": "img/aoa_l.jpg"
+    "src": "img/aoa_l.jpg"
   }, {
     "src": "img/aoa_press.jpg"
   }],
@@ -513,30 +512,31 @@
     "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
   }]
 }, {
-  "shorttitle": "open.ended",
-  "thumb": "img/openended_s.jpg",
-  "shortdesc": "<i>open.ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another.",
-  "longtitle": "open.ended",
-  "images": [{
-    "src": "img/openended_l.jpg"
-    }],
-  "longdesc": "open.ended is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a mouse, joystick, or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem, organically complementing the visual and tactile components of the work.",
-   "links": [{
-    "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
-    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
-  }]
-},{
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
   "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
   "longtitle": "ChinaEye",
   "images": [{
     "src": "img/chinaeye_l.jpg"
-    }],
+  }],
   "longdesc": "ChinaEye allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
   "links": [{
     "name": "ChinaEye on Github",
     "target": "https://github.com/dhowe/ChinaEye"
+  }]
+}, {
+  "shorttitle": "Open.Ended",
+  "collaborators": "Aya Karpinska",
+  "thumb": "img/openended_s.jpg",
+  "shortdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of nested translucent cubes and dynamically update to realize a variety of permutations&hellip;",
+  "longtitle": "Open.Ended",
+  "images": [{
+    "src": "img/openended_l.jpg"
+  }],
+  "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a mouse, joystick, or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem, organically complementing the visual and tactile components of the work.",
+  "links": [{
+    "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
+    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
   }]
 }, {
   "shorttitle": "Redacto",
@@ -545,7 +545,7 @@
   "longtitle": "Redacto",
   "images": [{
     "src": "img/redacto_l.jpg"
-    }],
+  }],
   "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
     "name": "Redacto for Chrome",
