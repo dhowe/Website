@@ -159,7 +159,7 @@ nav>ul>li>a:hover {
   float: left;
 }
 .project h5, .projectlong h5 {
-  font-size: 1.15em;
+  font-size: 20px;
   color: #39465A;
 }
 .project:hover {
