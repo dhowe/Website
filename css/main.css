@@ -158,8 +158,12 @@ nav>ul>li>a:hover {
   width: 25%;
   float: left;
 }
-.project h5, .projectlong h5 {
-  font-size: 20px;
+.project h5 {
+  font-size: 1em;
+  color: #39465A;
+}
+.projectlong h5 {
+  font-size:1.15em;
   color: #39465A;
 }
 .project:hover {
@@ -786,7 +790,7 @@ body {
 
 /*Small Devices Tablet 768-992*/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1100px) {
   .gd-center {
     max-width: 940px;
     width: 100%;
