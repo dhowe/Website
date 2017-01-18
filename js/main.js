@@ -154,8 +154,10 @@ function createDetail(projects, id) {
           html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
           html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
           if(current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
-          html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto"><source src="' + current.videos[j].src + '.mp4" type="video/mp4">  </video></div>';
-
+           html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto">';
+           html += '<source src="' + current.videos[j].src + '.mp4" type="video/mp4">';
+           html += '<source src="' + current.videos[j].src + '.webm" type="video/webm">';
+           html += '</video></div>';
       }
   }
 
