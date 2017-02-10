@@ -151,7 +151,12 @@ nav>ul>li>a:hover {
   margin-left:0px;
 }
 #publist {
-  max-width: 800px;
+  max-width: 600px;
+}
+.pubhead {
+  font-size: 1.19em;
+  font-weight: 600;
+  color: #39465A;
 }
 .project {
   padding: 1% 3%;
