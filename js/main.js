@@ -1,4 +1,4 @@
-var projects;
+var projects, lastCols = 0;
 
 function createGrid(projects) {
 
@@ -15,16 +15,16 @@ function createGrid(projects) {
     $('#projects .grid').append(html);
   }
 
-  $('.project img').css("height", $('.project img').width() * 0.65);
+  $('#projects .grid').append("<div class='space'></div>");
+  afterGridCreated();
 
-  adjustHeight(projects);
-  selectNavigation();
+}
 
-  // footer space
-  if ($('.footer').css("display") != "none") {
-    $('#projects .grid').append("<div class='space' style='height:" +
-      $('.footer').outerHeight() + "'></div>");
-  }
+function afterGridCreated() {
+    $('.project img').css("height", $('.project img').width() * 0.65);
+    adjustItemHeight();
+    adjustFooterSpace();
+    selectNavigation();
 }
 
 function selectNavigation() {
@@ -192,18 +192,64 @@ function getBestImage(img) {
   return img.slice(0, img.length - 4) + "@2x" + img.slice(img.length - 4, img.length);
 }
 
-function adjustHeight(projects) {
+function adjustItemHeight() {
 
-  //adjust the height of each project
-  var maxH = 0;
-  for (var i = 0; i < projects.length; i++) {
-    var current = $('.project').eq(i).outerHeight();
-    // console.log(current);
-    if (current > maxH) maxH = current;
+  //max-width > 1100 - 4
+  //max-width 1100 - 3
+  //max-width 768 -2
+  //max-width 400 -1
+
+  var total = $('.project').length,
+      cols = 4,
+      windowWidth = $(window).width();
+
+  if (windowWidth < 1100 && windowWidth > 768) cols = 3;
+  else if (windowWidth < 768 && windowWidth > 400) cols = 2;
+  else if (windowWidth < 400) cols = 1;
+  
+  // //if the colomn doesn't change, return
+  if(cols === lastCols) return;
+  
+  
+  lastCols = cols;
+  $('.project').removeClass(function(index, className) {
+      return (className.match(/(^|\s)row\S+/g) || []).join(' ');
+  });
+
+  //no need to adjust Height if cols is 1
+  if (cols === 1) return;
+
+  var lines = Math.ceil(total / cols);
+  // console.log(cols, lastCols, total, lines);
+
+  //adjust the height to maxH for each line
+  
+  for (var j = 0; j < lines; j++) {
+
+      var maxH = 0,
+          classname = 'row' + j;
+      for (var i = 0; i < cols; i++) {
+          var index = j * cols + i;
+          var current = $('.project').eq(index).outerHeight();
+          // console.log(i,j);
+          if (current > maxH) maxH = current;
+          if (index + 1 > projects.length) break;
+          $('.project').eq(index).addClass(classname);
+      }
+
+      $('.' + classname).css("height", maxH);
+
   }
-  // console.log(maxH);
-  $('.project').addClass('maxH');
-  $('.maxH').css("height", maxH);
+  
+}
+
+function adjustFooterSpace() {
+
+    if ($('.footer').css("position") === "fixed")
+        $('.space').css("height", $('.footer').outerHeight());
+    else
+        $('.space').css("height", "0px");
+      // console.log($('.footer').css("position"), $('.footer').outerHeight());
 }
 
 function getCurrentIdFromUrl(url) {
@@ -248,8 +294,11 @@ window.onhashchange = function () {
 }
 
 $(window).resize(function () {
-  $('.project img').css("height", $('.project img').width() * 0.65);
-  $('.space').css("height", $('.footer').outerHeight());
+  if ($('.project').length > 0) {
+        $('.project img').css("height", $('.project img').width() * 0.65);
+        adjustItemHeight();
+        adjustFooterSpace();
+    }
 });
 
 // lets run some code...
