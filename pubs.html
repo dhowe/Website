@@ -25,19 +25,19 @@
 
   function createPublications(sections){
     for (var i = 0; i < sections.length; i++) {
-      console.log(sections[i].section);
+      // console.log(sections[i].section);
       var html = "<span class='pubhead'>" + sections[i].section + "</span>";
 
       for(var j = 0; j < sections[i].items.length; j++){
         var item = sections[i].items[j];
-        console.log(item.year, item.detail);
+        // console.log(item.year, item.detail);
         html += '<div class="row"><div class="col-1-12"><p>' + item.year + '</p></div><div class="col-11-12"><p>' + item.detail + '</p></div></div>';
       }
 
        $('#publist').append(html);
      
     }
-    console.log(sections);
+
   }
 
   </script>
@@ -87,7 +87,7 @@
     <div class="col-1-12"></div>
   <div class="col-8-12 mobile-col-1-1">
     <img src="img/photo.jpg" alt="">
-    <b>Daniel C. Howe</b> is an artist, researcher and critical technologist whose work focuses on the social and political implications of networked and computational technologies, specifically concerning privacy, surveillance, and human rights. He has a Ph.D. in computer science and Masters in interactive media and digital literature. He divides his time between New York and Hong Kong, where he teaches at the School of Creative Media.</p>
+    <p><b>Daniel C. Howe</b> is an artist, researcher and critical technologist whose work focuses on the social and political implications of networked and computational technologies, specifically concerning privacy, surveillance, and human rights. He has a Ph.D. in computer science and Masters in interactive media and digital literature. He divides his time between New York and Hong Kong, where he teaches at the School of Creative Media.</p>
   </div>
 
   <div class="col-1-4 mobile-col-1-1">
