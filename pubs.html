@@ -14,6 +14,33 @@
   <meta name="keywords" content="daniel howe, daniel c. howe, artist, writing, digital writing, natural language, creative coding, art, values, design, new media, rita, trackmenot, adnauseam, advertising positions, automatype, how it is, text.curtain, adlipo, pataclysm, readers, watermelon eating cat">
 
   <script src="js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  var processJSON = $.getJSON("publications.json", function (json) {
+    projects = json.cells;
+  });
+
+  processJSON.done(function (sections) {
+  createPublications(sections);
+  });
+
+  function createPublications(sections){
+    for (var i = 0; i < sections.length; i++) {
+      console.log(sections[i].section);
+      var html = "<span class='pubhead'>" + sections[i].section + "</span>";
+
+      for(var j = 0; j < sections[i].items.length; j++){
+        var item = sections[i].items[j];
+        console.log(item.year, item.detail);
+        html += '<div class="row"><div class="col-1-12"><p>' + item.year + '</p></div><div class="col-11-12"><p>' + item.detail + '</p></div></div>';
+      }
+
+       $('#publist').append(html);
+     
+    }
+    console.log(sections);
+  }
+
+  </script>
   <script src="js/main.js" type="text/javascript"></script>
   <link href="css/main.css" rel="stylesheet" type="text/css"/>
 
@@ -46,78 +73,7 @@
 <div class="grid pad-large" id="publication">
   <div class="col-1-12"></div>
   <div class="col-11-12 mobile-1-1" id="publist">
-<p>
-    <br><span class='pubhead'>Journal Articles</span>
-<p>
-    2016  “Generative Art and the Aesthetics of Surprise.” Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac. Forthcoming 2017, Cambridge: MIT Press.
-<p>
-    2015  “Surveillance Countermeasures: Expressive Privacy via Obfuscation.” Howe, Daniel C.  In A Peer–reviewed Journal About (APRJA). Christian Ulrik Andersen and Geoff Cox (eds.) Vol. 4, Issue 1. Aarhus: Digital Aesthetics Research Center, Aarhus University, Berlin (online peer–reviewed journal: http://www.aprja.net/?p=2510).
-<p>
-    2013  “Reading, Writing, Resisting: Literary Appropriation in the Readers Project.” Howe, Daniel C. and Cayley, J. In Conference Proceedings for the 19th International Symposium on Electronic Art (Peer–reviewed.) Cleland, Fisher, and Harley, Editors, ISEA International, the Australian Network for Art &amp; Technology and the University of Sydney, (online peer–reviewed journal: http://hdl.handle.net/2123/9708).
-<p>
-    2011  “The Readers Project: Procedural Agents and Literary Vectors.” Howe, Daniel C. and Cayley, J. In Leonardo. Aug 2011, Vol. 44, No. 4, MIT Press, Cambridge, MA, p317–324.
-<p>
-    2009  “The Aesthetics of Generative Literature: Lessons from an Electronic Writing Workshop.” Howe, Daniel C. and Soderman, A. B.  In Hyperrhiz: New Media Cultures, Visionary Landscapes, Vol. 6. Fall (online peer–reviewed journal: http://dx.doi.org/10.20415/hyp/006.e04.).
-<p>
-    2000  “Trust Online.” Friedman, B., Khan P. H. Jr. and Howe, D. C. In Communications of the ACM, v.43 n.12. New York: Association for Computing Machinery,  p.34–40.
-<p>
-    <br><span class='pubhead'>Book Chapters</span>
-<p>
-    2015  “Protecting Sensitive Communication with Defensive Technology.” Howe, Daniel C. Chapter 25, in Boycott Classes, Continue Learning - A Review of the Theories and Thoughts Prior to the Umbrella Movement. Hong Kong: Step Forward Press, p239-251.
-<p>
-    2008  “TrackMeNot:  Resisting Surveillance in Web Search.” Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Lessons from the Identity Trail: Anonymity, Privacy and Identity in a Networked Society. Ian Kerr, Carole Lucock and Valerie Steeves (eds.) Oxford:  Oxford University Press, p417–436.
-<p>
-    2007  “New Design Methods for Activist Gaming.” Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, in Worlds in Play: International Perspectives on Digital Games Research (New Literacies and Digital Epistemologies), S. de Castell and J. Jensen (eds.) Peter Lang, p241–248.
-<p>
-    2006  “Informed Consent in the Mozilla Browser:  Implementing Value–Sensitive Design.” Friedman, B., Howe, D. C. and Felten, E. W. Chapter 9, in Internet Security: Hacking, CounterHacking, and Society, K. E. Himma (editor).  Mass: Jones and Bartlett Publishers, p153–170.
-<p>
-    2006  “Values in Design: Theory and Practice.” Flanagan, M., Howe, D. C.  and Nissenbaum, H. Chapter 16, in Information Technology and Moral Philosophy. Jeroen van den Hoven and John Weckert (eds.) Cambridge: Cambridge University Press, p322–353.
-<p>
-    <br><span class='pubhead'>Conference Proceedings</span>
-<p>
-    2017  “Making Humans Machine-readable:  Obfuscation as Quantified Refusal". Howe, Daniel C. and Nissenbaum, H. Proceedings on Privacy Enhancing Technologies (PETS). Vol. 2017, No. 2.  Submitted, June 2016. Under Review.
-<p>
-    2016 	Proceedings of the 22nd International Symposium on Electronic Arts, Tapio-Leino, Howe, Charrieras et al. Editors. School of Creative Media, Hong Kong, May 2016.
-<p>
-    2013  “Reading, Writing, Resisting: Literary Appropriation in the Readers Project.” Howe, Daniel C. and Cayley, J. In Proceedings of the 19th International Symposium of Electronic Art. Cleland, Fisher, and Harley, Editors. ISEA International, the Australian Network for Art & Technology and the University of Sydney (http://hdl.handle.net/2123/9708).
-<p>
-    2012  “In Common Tongues.” Cayley, J. and Howe, Daniel C. In Remediating the Social. Bergen, Norway, University of Bergen, Department of Linguistic, Literary and Aesthetic Studies, p46–47.
-<p>
-    2009. “RiTa: creativity support for computational literature.” In Proceedings of the seventh ACM conference on Creativity and cognition (C&C '09). ACM, New York, NY, USA, p205-210.
-    2005  “Values at Play:  Design Tradeoffs in Socially–Oriented Game Design.” Flanagan, M, Howe, D. C., and Nissenbaum, H. In Proceedings of the CHI 2005 Conference on Human Factors in Computing Systems. CHI 2005, 2–7 April, Portland, Oregon. New York: ACM Press, p751-760.
-<p>
-    2002  “Informed Consent in the Mozilla Browser:  Implementing Value–Sensitive Design.” Friedman, B., Howe, D. C.,  and Felten, E. W. In Proceedings of 35th Annual Hawaii International Conference on System Sciences, Jan 2002. (Awarded Best Paper of Organizational Systems track). Abstract. IEEE Computer Society Washington, DC, USA,  p247.
-<p>
-    2002  “Users' Conceptions of Web Security:  A Comparative Study.” Friedman, B., Hurley, D., Howe, D. C., Felten, E. W. and H. Nissenbaum. In Extended Abstracts of the Conf. on Human Factors in Computing Systems, CHI 2002. New York: ACM Press, p614–615.
-<p>
-    2002  “Users' Conceptions of Risks and Harms on the Web:  A Comparative Study.” Friedman, B., Nissenbaum, H. Hurley, D., Howe, D. C. and Felten, E. W. In Extended Abstracts of CHI 2002. New York, NY: ACM Press. p746-747 
-<p>
-    <br><span class='pubhead'>Other Publications</span>
-<p>
-    2016  “A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.” Howe, Daniel C. and Cayley, J. In WHOSE BOOK IS IT ANYWAY?  CREATe (the Centre for Creativity, Regulation, Enterprise and Technology), University of Glasgow. Forthcoming, 2016.
-<p>
-    2016  “The Readers Project.” Howe, Daniel C. and Cayley, J. In Electronic Literature Collection Vol. 3. Cambridge, Massachusetts: Electronic Literature Organization.  Forthcoming, 2016.
-<p>
-    2015  “Browser Hacks for DIY Privacy.” Howe, Daniel C. In the Datafied Research Reader, Cox, G., and Andersen, C.U., eds.: transmediale/darc, Aarhus University.
-<p>
-    2014  “AdLiPo.” Howe, Daniel C. In Drunken Boat. DB20, Winter 2014.
-<p>
-    2014  “Gesture / Language / Mirror: A Research Project and Installation Series Exploring the Mirror Neuron and Mirror Therapy.” Howe, Daniel C. and Gruber, D. In The New Everyday *, Hoelzl, I. editor: Vol. ‘the Operative Image’,  p3–6.
-<p>
-    2012	How It Is, in Common Tongues. Cayley, J. and Howe, Daniel C. Limited Edition Monograph, 297 pp., NLLF Press.  ISBN–13: 978–0948454301
-<p>
-    2012  “I Will Not Make Any More Boring [Art Fair] Art: John Baldessari & the fabric of the everyday.” Daniel C. Howe, In Pipeline, Hong Kong, Issue No. 30, p119–120.
-<p>
-    2011  “Roulette.” Howe, Daniel C. and Molina, B. In Electronic Literature Collection Vol. 2. Cambridge, Massachusetts: Electronic Literature Organization.
-<p>
-    2008   “Roulette.” Howe, Daniel C. and Molina, B. In New River Journal, Virginia Tech's Center for Digital Discourse and Culture.
-<p>
-    2006  “Open–Ended.” Howe, Daniel C. and Karpinska, A. In Electronic Literature Collection Vol. 1. College Park, Maryland: Electronic Literature Organization.
-<p>
-    2006  “Open.Ended.” Karpinska, A. and Howe, Daniel C. In Leonardo Electronic Almanac. New Media Poetry and Poetics Special Issue . Vol. 14, No. 5–6.
-<p>
-    2004  “Phantom Access Agent: a Client–Side Approach to Personal Information Control.”
-    	Zhao, X., Howe, D. C., Mazières, D. and Nissenbaum, H. New York University Report. Manuscript/Software.
+
 </div>
 
 </div>
@@ -131,7 +87,7 @@
     <div class="col-1-12"></div>
   <div class="col-8-12 mobile-col-1-1">
     <img src="img/photo.jpg" alt="">
-    <p><b>Daniel C. Howe</b> is an artist, researcher and critical technologist whose work focuses on the social and political implications of networked and computational technologies, specifically concerning privacy, surveillance, and human rights. He has a Ph.D. in computer science and Masters in interactive media and digital literature. He divides his time between New York and Hong Kong, where he teaches at the School of Creative Media.</p>
+    <b>Daniel C. Howe</b> is an artist, researcher and critical technologist whose work focuses on the social and political implications of networked and computational technologies, specifically concerning privacy, surveillance, and human rights. He has a Ph.D. in computer science and Masters in interactive media and digital literature. He divides his time between New York and Hong Kong, where he teaches at the School of Creative Media.</p>
   </div>
 
   <div class="col-1-4 mobile-col-1-1">

@@ -1,0 +1,83 @@
+[
+
+    {
+        "section":"Journal Articals",
+        "items": [
+            { "year": "2016", "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac. Forthcoming 2017, Cambridge: MIT Press." },
+
+            { "year": "2015", "detail": "&ldquo;Surveillance Countermeasures: Expressive Privacy via Obfuscation.&rdquo; Howe, Daniel C.  In A Peer&ndash;reviewed Journal About (APRJA). Christian Ulrik Andersen and Geoff Cox (eds.) Vol. 4, Issue 1. Aarhus: Digital Aesthetics Research Center, Aarhus University, Berlin (online peer&ndash;reviewed journal: http://www.aprja.net/?p=2510)." },
+
+            { "year": "2013", "detail": "&ldquo;Reading, Writing, Resisting: Literary Appropriation in the Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Conference Proceedings for the 19th International Symposium on Electronic Art (Peer&ndash;reviewed.) Cleland, Fisher, and Harley, Editors, ISEA International, the Australian Network for Art &amp;amp; Technology and the University of Sydney, (online peer&ndash;reviewed journal: http://hdl.handle.net/2123/9708)." },
+
+            { "year": "2011", "detail": "&ldquo;The Readers Project: Procedural Agents and Literary Vectors.&rdquo; Howe, Daniel C. and Cayley, J. In Leonardo. Aug 2011, Vol. 44, No. 4, MIT Press, Cambridge, MA, p317&ndash;324." },
+
+            { "year": "2009", "detail": "&ldquo;The Aesthetics of Generative Literature: Lessons from an Electronic Writing Workshop.&rdquo; Howe, Daniel C. and Soderman, A. B.  In Hyperrhiz: New Media Cultures, Visionary Landscapes, Vol. 6. Fall (online peer&ndash;reviewed journal: http://dx.doi.org/10.20415/hyp/006.e04.)." },
+
+            { "year": "2000", "detail": "&ldquo;Trust Online.&rdquo; Friedman, B., Khan P. H. Jr. and Howe, D. C. In Communications of the ACM, v.43 n.12. New York: Association for Computing Machinery,  p.34&ndash;40." }
+        ]
+
+    }, {
+       "section": "Book Chapters",
+       "items": [
+            { "year": "2015", "detail": "&ldquo;Protecting Sensitive Communication with Defensive Technology.&rdquo; Howe, Daniel C. Chapter 25, in Boycott Classes, Continue Learning - A Review of the Theories and Thoughts Prior to the Umbrella Movement. Hong Kong: Step Forward Press, p239-251." },
+
+            { "year": "2008", "detail": "&ldquo;TrackMeNot:  Resisting Surveillance in Web Search.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Lessons from the Identity Trail: Anonymity, Privacy and Identity in a Networked Society. Ian Kerr, Carole Lucock and Valerie Steeves (eds.) Oxford:  Oxford University Press, p417&ndash;436." },
+
+            { "year": "2007", "detail": "&ldquo;New Design Methods for Activist Gaming.&rdquo; Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, in Worlds in Play: International Perspectives on Digital Games Research (New Literacies and Digital Epistemologies), S. de Castell and J. Jensen (eds.) Peter Lang, p241&ndash;248." },
+
+            { "year": "2006", "detail": "&ldquo;Informed Consent in the Mozilla Browser:  Implementing Value&ndash;Sensitive Design.&rdquo; Friedman, B., Howe, D. C. and Felten, E. W. Chapter 9, in Internet Security: Hacking, CounterHacking, and Society, K. E. Himma (editor).  Mass: Jones and Bartlett Publishers, p153&ndash;170." },
+
+            { "year": "2006", "detail": "&ldquo;Values in Design: Theory and Practice.&rdquo; Flanagan, M., Howe, D. C.  and Nissenbaum, H. Chapter 16, in Information Technology and Moral Philosophy. Jeroen van den Hoven and John Weckert (eds.) Cambridge: Cambridge University Press, p322&ndash;353." }
+        ]
+    }, {
+        "section": "Conference Proceedings",
+       "items": [
+
+            { "year": "2017", "detail": "&ldquo;Making Humans Machine-readable:  Obfuscation as Quantified Refusal&quot;. Howe, Daniel C. and Nissenbaum, H. Proceedings on Privacy Enhancing Technologies (PETS). Vol. 2017, No. 2.  Submitted, June 2016. Under Review." },
+
+            { "year": "2016", "detail": "Proceedings of the 22nd International Symposium on Electronic Arts, Tapio-Leino, Howe, Charrieras et al. Editors. School of Creative Media, Hong Kong, May 2016." },
+
+            { "year": "2013", "detail": "&ldquo;Reading, Writing, Resisting: Literary Appropriation in the Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Proceedings of the 19th International Symposium of Electronic Art. Cleland, Fisher, and Harley, Editors. ISEA International, the Australian Network for Art &amp; Technology and the University of Sydney (http://hdl.handle.net/2123/9708)." },
+
+            { "year": "2012", "detail": "&ldquo;In Common Tongues.&rdquo; Cayley, J. and Howe, Daniel C. In Remediating the Social. Bergen, Norway, University of Bergen, Department of Linguistic, Literary and Aesthetic Studies, p46&ndash;47." },
+
+            { "year": " 2009", "detail": "&ldquo;RiTa: creativity support for computational literature.&rdquo; In Proceedings of the seventh ACM conference on Creativity and cognition (C&amp;C '09). ACM, New York, NY, USA, p205-210." },
+
+            { "year": "2005", "detail": "&ldquo;Values at Play:  Design Tradeoffs in Socially&ndash;Oriented Game Design.&rdquo; Flanagan, M, Howe, D. C., and Nissenbaum, H. In Proceedings of the CHI 2005 Conference on Human Factors in Computing Systems. CHI 2005, 2&ndash;7 April, Portland, Oregon. New York: ACM Press, p751-760." },
+
+            { "year": "2002", "detail": "&ldquo;Informed Consent in the Mozilla Browser:  Implementing Value&ndash;Sensitive Design.&rdquo; Friedman, B., Howe, D. C.,  and Felten, E. W. In Proceedings of 35th Annual Hawaii International Conference on System Sciences, Jan 2002. (Awarded Best Paper of Organizational Systems track). Abstract. IEEE Computer Society Washington, DC, USA,  p247." },
+
+            { "year": "2002", "detail": "&ldquo;Users' Conceptions of Web Security:  A Comparative Study.&rdquo; Friedman, B., Hurley, D., Howe, D. C., Felten, E. W. and H. Nissenbaum. In Extended Abstracts of the Conf. on Human Factors in Computing Systems, CHI 2002. New York: ACM Press, p614&ndash;615." },
+
+            { "year": "2002", "detail": "&ldquo;Users' Conceptions of Risks and Harms on the Web:  A Comparative Study.&rdquo; Friedman, B., Nissenbaum, H. Hurley, D., Howe, D. C. and Felten, E. W. In Extended Abstracts of CHI 2002. New York, NY: ACM Press. p746-747&nbsp;" }
+        ]
+    }, {
+      "section": "Other Publications",
+       "items": [
+
+            { "year": "2016", "detail": "&ldquo;A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.&rdquo; Howe, Daniel C. and Cayley, J. In WHOSE BOOK IS IT ANYWAY?  CREATe (the Centre for Creativity, Regulation, Enterprise and Technology), University of Glasgow. Forthcoming, 2016." },
+
+            { "year": "2016", "detail": "&ldquo;The Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Electronic Literature Collection Vol. 3. Cambridge, Massachusetts: Electronic Literature Organization.  Forthcoming, 2016." },
+
+            { "year": "2015", "detail": "&ldquo;Browser Hacks for DIY Privacy.&rdquo; Howe, Daniel C. In the Datafied Research Reader, Cox, G., and Andersen, C.U., eds.: transmediale/darc, Aarhus University." },
+
+            { "year": "2014", "detail": "&ldquo;AdLiPo.&rdquo; Howe, Daniel C. In Drunken Boat. DB20, Winter 2014." },
+
+            { "year": "2014", "detail": "&ldquo;Gesture / Language / Mirror: A Research Project and Installation Series Exploring the Mirror Neuron and Mirror Therapy.&rdquo; Howe, Daniel C. and Gruber, D. In&nbsp;The New Everyday *, Hoelzl, I. editor: Vol. &lsquo;the Operative Image&rsquo;,  p3&ndash;6." },
+
+            { "year": "2012", "detail": "How It Is, in Common Tongues. Cayley, J. and Howe, Daniel C. Limited Edition Monograph, 297 pp., NLLF Press.  ISBN&ndash;13: 978&ndash;0948454301" },
+
+            { "year": "2012", "detail": "&ldquo;I Will Not Make Any More Boring [Art Fair] Art: John Baldessari &amp; the fabric of the everyday.&rdquo; Daniel C. Howe, In Pipeline, Hong Kong, Issue No. 30, p119&ndash;120." },
+
+            { "year": "2011", "detail": "&ldquo;Roulette.&rdquo; Howe, Daniel C. and Molina, B. In Electronic Literature Collection Vol. 2. Cambridge, Massachusetts: Electronic Literature Organization." },
+
+            { "year": "2008 ", "detail": "&ldquo;Roulette.&rdquo; Howe, Daniel C. and Molina, B. In New River Journal, Virginia Tech's Center for Digital Discourse and Culture." },
+
+            { "year": "2006", "detail": "&ldquo;Open&ndash;Ended.&rdquo; Howe, Daniel C. and Karpinska, A. In Electronic Literature Collection Vol. 1. College Park, Maryland: Electronic Literature Organization." },
+
+            { "year": "2006", "detail": "&ldquo;Open.Ended.&rdquo; Karpinska, A. and Howe, Daniel C. In Leonardo Electronic Almanac. New Media Poetry and Poetics Special Issue . Vol. 14, No. 5&ndash;6." },
+
+            { "year": "2004", "detail": "&ldquo;Phantom Access Agent: a Client&ndash;Side Approach to Personal Information Control.&rdquo;Zhao, X., Howe, D. C., Mazi&egrave;res, D. and Nissenbaum, H. New York University Report. Manuscript/Software." }
+        ]
+    }
+]

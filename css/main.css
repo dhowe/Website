@@ -151,12 +151,19 @@ nav>ul>li>a:hover {
   margin-left:0px;
 }
 #publist {
-  max-width: 600px;
+  max-width: 700px;
 }
 .pubhead {
   font-size: 1.19em;
   font-weight: 600;
   color: #39465A;
+  line-height: 4em;
+}
+#publist .section{
+  margin-top: 2em;
+}
+#publist .row p{
+  margin-bottom: .5em;
 }
 .project {
   padding: 1% 3%;
@@ -534,7 +541,9 @@ body {
     clear: both;
 }*/
 
-.row {}
+.row {
+  min-height: 1px;
+}
 .push-right {
   float: right;
 }
