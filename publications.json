@@ -1,7 +1,6 @@
 [
-
     {
-        "section":"Journal Articals",
+        "section":"Journal Articles",
         "items": [
             { "year": "2016", "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac. Forthcoming 2017, Cambridge: MIT Press." },
 
@@ -15,7 +14,6 @@
 
             { "year": "2000", "detail": "&ldquo;Trust Online.&rdquo; Friedman, B., Khan P. H. Jr. and Howe, D. C. In Communications of the ACM, v.43 n.12. New York: Association for Computing Machinery,  p.34&ndash;40." }
         ]
-
     }, {
        "section": "Book Chapters",
        "items": [
