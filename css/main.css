@@ -96,6 +96,9 @@ nav>ul>li>a:hover {
   font-size: 90%;
   z-index: 15;
 }
+.footer .grid > * {
+  margin-top:20px;
+}
 .footer img, .bioPhoto {
   width: 90px;
   float: left;
@@ -130,11 +133,16 @@ nav>ul>li>a:hover {
   margin-top: 2em;
   float: left;
 }
-
+/*#publication + .footer>.grid, #reference + .footer>.grid{
+  margin:0 0 0 20px;
+}*/
+/*#publication + .footer img,#reference + .footer img{
+  margin-left:0px;
+}*/
 /****** End of Footer ******/
 
 
-/****** Projects ******/
+/****** Publication ******/
 
 #projects {
   margin-top: 60px;
@@ -143,12 +151,7 @@ nav>ul>li>a:hover {
 #publication, #reference{
   margin-left: 20px;
 }
-#publication + .footer>.grid, #reference + .footer>.grid{
-  margin:0 0 0 20px;
-}
-#publication + .footer img,#reference + .footer img{
-  margin-left:0px;
-}
+
 #publist {
   max-width: 700px;
 }
@@ -164,6 +167,8 @@ nav>ul>li>a:hover {
 #publist .row p{
   margin-bottom: .5em;
 }
+
+/****** Projects ******/
 .project {
   padding: 1% 3%;
   width: 25%;
@@ -521,7 +526,7 @@ body {
   width: 100%;
   max-width: 1140px;
   min-width: 755px;
-  margin: 0 auto 0;
+  margin: -20px auto -20px;
   overflow: hidden;
 }
 .content {
