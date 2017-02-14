@@ -47,15 +47,19 @@ $(document).ready(function() {
       $('.intro').css("background-color", "rgba(0,0,0,0)");
       $('img.zoom').css("visibility","hidden");
     })
-
-    $('#imageDisplay').click(function() {
-       $('img.zoom').css("visibility","visible");
-      
-       if ($('body').height() > 630) {
-           $('img.zoom').height($('body').height());
-       }
-       else $('img.zoom').height(630);
     
+    //show zoomable detailed collection image
+    $('#imageDisplay').click(function() {
+      if ($('#imageDisplay').hasClass("nicoleAdCollection") || $('#imageDisplay').hasClass("wilsonAdCollection")) {
+          $('img.zoom').css("visibility", "visible");
+
+          if ($('body').height() > 630) {
+              $('img.zoom').height($('body').height());
+          } else $('img.zoom').height(630);
+
+
+      }
+       
     })
     
     if (!zoomMode) {
