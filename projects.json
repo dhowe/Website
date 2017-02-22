@@ -145,6 +145,10 @@
   }, {
     "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
     "target": "http://glia.ca/2014/db/"
+  }],
+  "links": [{
+    "name": "The Project Home Page",
+    "target": "adlipo/"
   }]
 }, {
   "shorttitle": "Automatype",
@@ -182,7 +186,7 @@
   }],
   "links": [{
     "name": "The Project Home Page",
-    "target": "http://rednoise.org/~dhowe/automatype/"
+    "target": "automatype/"
   }, {
     "name": "A review at SFMOMA",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-by-daniel-c-howe/"
@@ -249,7 +253,7 @@
   }],
   "links": [{
     "name": "Listen&hellip;",
-    "target": "http://rednoise.org/minordistance/tracks.html"
+    "target": "minordistance/"
   }, {
     "name": "Cotton Goods Home Page",
     "target": "http://minor-distance.tumblr.com/"
@@ -385,7 +389,7 @@
   }],
   "links": [{
     "name": "The Project Home Page",
-    "target": "http://rednoise.org/eoe/"
+    "target": "eoe/"
   }]
 }, {
   "shorttitle": "Read For Us",
@@ -452,7 +456,7 @@
   }],
   "links": [{
     "name": "The Project Home Page",
-    "target": "http://rednoise.org/daniel/textcurtain/"
+    "target": "textcurtain/"
   }],
   "exhibitions": [{
     "text": "<i>Open Space</i>. San Francisco Museum of Modern Art. Online exhibit. Sep 8, 2012",
