@@ -313,7 +313,9 @@ video{
   max-width:640px;
   width:100%;
 }
-
+.bib{
+  margin-top:5em;
+}
 .play {
   display: block;
   width: 0;
