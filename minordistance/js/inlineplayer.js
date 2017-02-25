@@ -224,9 +224,21 @@ function InlinePlayer() {
   this.init = function() {
     sm._writeDebug('inlinePlayer.init()');
     var oLinks = document.getElementsByTagName('a');
-    // grab all links, look for .mp3
+
+    // hack, if mp3 is not supported, use ogg
+    console.log(sm.html5["audio/mp3"]);
+    if (sm.html5["audio/mp3"] == false) {
+        $(function() {
+            $("#playlist a[href^='./']").each(function() {
+                this.href = this.href.replace(/mp3/g,
+                    "ogg");
+            });
+        });
+
+    }
+
     var foundItems = 0;
-    for (var i=0, j=oLinks.length; i<j; i++) {
+    for (var i=0, j = oLinks.length; i<j; i++) {
       if ((sm.canPlayLink(oLinks[i]) || self.classContains(oLinks[i],self.playableClass)) && !self.classContains(oLinks[i],self.excludeClass)) {
         self.addClass(oLinks[i],self.css.sDefault); // add default CSS decoration
         self.links[foundItems] = (oLinks[i]);
