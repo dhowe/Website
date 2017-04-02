@@ -1,3 +1,8 @@
+@media screen and (max-width: 1280px) {
+    #imageDisplay {
+        background-position: center; 
+    }
+}
 .clearfix:after {
   content: "";
   display: block;
@@ -183,6 +188,9 @@ video {
   width: 500px;
   display: none;
   top: -50%;
+}
+.mobile #video {
+  width:100vw;
 }
 #video {
   margin: 0 auto;
