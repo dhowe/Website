@@ -1,8 +1,11 @@
 var zoomMode = false;
 
 $(document).ready(function() {
+
     var current =  $('.modelView').attr('id')
     // console.log(current);
+
+     resetDisplayMinHeight();
 
     $('video').hover(function toggleControls() {
         if (this.hasAttribute("controls")) {
@@ -82,3 +85,12 @@ $(document).ready(function() {
     }
 
 });
+
+window.onresize = function(event) {
+  resetDisplayMinHeight();
+};
+
+function resetDisplayMinHeight() {
+   var minW = $(window).height() *16/9;
+   $('#imageDisplay').css("min-width", minW+"px");
+}
