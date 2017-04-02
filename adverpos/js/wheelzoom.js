@@ -5,7 +5,7 @@
 */
 window.wheelzoom = (function(){
 	var defaults = {
-		zoom: 0.10
+		zoom: 0.01
 	};
 
 	var canvas = document.createElement('canvas');
@@ -101,11 +101,14 @@ window.wheelzoom = (function(){
 		    	bgWidth = maxWidth;
 		    }
 
+		    
+
 
 		    // Take the percent offset and apply it to the new size:
 			bgPosX = offsetX - (bgWidth * bgRatioX);
 			bgPosY = offsetY - (bgHeight * bgRatioY);
-
+             
+            // console.log(bgWidth, bgHeight,bgPosX,bgPosY);
 			// Prevent zooming out beyond the starting size
 			if (bgWidth <= width || bgHeight <= height) {
 				reset();
