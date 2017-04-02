@@ -1,9 +1,6 @@
 var zoomMode = false;
 
 $(document).ready(function() {
-
-   if(isMobile()) 
-     $('body').addClass(current + "mobile");
     
     resetDisplayMinHeight();
     menuOnClicks();
