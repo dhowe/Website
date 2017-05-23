@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Automatype</title>
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <script src="lib/p5.sound.min.js" type="text/javascript"></script>
+    <script src="lib/rita-full.min.js" type="text/javascript"></script>
+    <script src="automatype.js" type="text/javascript"></script>
+    <script>
+
+var typer, bg=245, test=0, bell, type;
+
+function preload() {
+  bell = loadSound("res/bell.wav");
+  type = loadSound("res/key.wav");
+}
+
+function setup() {
+
+  createCanvas(680, 490);
+  textFont('courier', 150);
+  textAlign(CENTER, CENTER);
+
+  typer = new Automatype(onWordComplete);
+  next();
+}
+
+function draw() {
+
+  background(bg < 245 ? bg += 4 : bg);
+  typer.draw();
+  test && noLoop();
+}
+
+function next() {
+
+  typer.step();
+  !test && setTimeout(next, random(500,1200));
+}
+
+function onWordComplete() {
+  !test && (bg = 0);
+  bell.play();
+}
+
+function keyReleased() { // tmp
+
+  if (key===' '){
+    test = 1;
+    next();
+    draw();
+  }
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
