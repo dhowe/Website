@@ -206,10 +206,10 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/*#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection{
+#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection{
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-}*/
+}
 .zoom{
   visibility: hidden;
   position:fixed;
@@ -225,14 +225,12 @@ video {
   cursor: grabbing;
 }
 #hint{
-  width:200px;
+  width:120px;
   padding:5px;
-  text-align: center;
   background-color:rgba(0,0,0,.7); 
   margin:0 auto;
   display:none;
   position:absolute;
-  cursor: default;
 }
 #imageDisplay.nicoleAdCollection:hover #hint,#imageDisplay.wilsonAdCollection:hover #hint{
   display: block;
