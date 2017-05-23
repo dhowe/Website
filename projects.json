@@ -188,6 +188,9 @@
     "name": "The Project Home Page",
     "target": "automatype/"
   }, {
+    "name": "Online version",
+    "target": "automatype/p5/"
+  }, {
     "name": "A review at SFMOMA",
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-by-daniel-c-howe/"
   }, {
