@@ -101,7 +101,12 @@ function zoomableImage () {
     if (!zoomMode) {
         $('#imageDisplay').on('mousemove', function(e) {
             $('#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection').click(function() {
-                $('#hint').css("display", "none");
+
+                $('#hint').html("Zoom with mouse wheel or touchpad");
+                setTimeout(function() {
+                    $('#hint').css("display", "none");
+                }, 2000)
+
                 zoomMode = true;
             });
 
