@@ -155,6 +155,11 @@
       "description": "recursive tree animated with noise"
     },
     {
+      "img": "img/pr_thumb.png",
+      "url": "http://rednoise.org/perceptualReader/",
+      "description": "Perceptual Reader"
+    },
+    {
       "img": "img/eoe_thumb.png",
       "url": "http://rednoise.org/eoe/",
       "description": "engine of engines, with bill seaman, is a reactive networked installation... "
