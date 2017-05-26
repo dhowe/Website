@@ -30,11 +30,6 @@
       "description": "dynamic image filters: prototype for a real-time video installation[requires java]"
     },
     {
-      "img": "img/textcurtain_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/textcurtain/",
-      "description": "link to text-curtain, an interactive physics-inspired poetry project"
-    },
-    {
       "img": "img/amata_thumb.jpg",
       "url": "http://rednoise.org/~dhowe/audiomata/intro.html",
       "description": "an interactive sonification of cellular automata patterns[req. java/jsyn]"
@@ -95,11 +90,6 @@
       "description": "link to the 'ornithoids' project page [artbots 2004]"
     },
     {
-      "img": "img/tmn_thumb4.jpg",
-      "url": "http://rednoise.org/~dhowe/TrackMeNot",
-      "description": "link to the TrackMeNot project site"
-    },
-    {
       "img": "img/recube_thumb.jpg",
       "url": "http://rednoise.org/~dhowe/recube",
       "description": "'recube', a recombinant sound/poetry work for the Brown Cave[requires java]"
@@ -118,11 +108,6 @@
       "img": "img/jazzer_thumb.jpg",
       "url": "http://rednoise.org/~dhowe/elmusico",
       "description": "a 3d musician that 'plays along' with arbitrary audio tracks[req. javajsyn]"
-    },
-    {
-      "img": "img/howe_roulette.png",
-      "url": "http://collection.eliterature.org/2/works/howe_roulette.html",
-      "description": "roulette is a work of recombinant narrative that offers a novel interactive reading experience..."
     },
     {
       "img": "img/rectangles_thumb.png",
@@ -151,17 +136,12 @@
     },
     {
       "img": "img/noisetree_thumb.png",
-      "url": "./noisetree.pde",
+      "url": "../NoiseTree/",
       "description": "recursive tree animated with noise"
     },
     {
       "img": "img/pr_thumb.png",
       "url": "http://rednoise.org/perceptualReader/",
       "description": "Perceptual Reader"
-    },
-    {
-      "img": "img/eoe_thumb.png",
-      "url": "http://rednoise.org/eoe/",
-      "description": "engine of engines, with bill seaman, is a reactive networked installation... "
     }
 ]
