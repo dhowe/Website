@@ -119,10 +119,10 @@
     "target": "http://thereadersproject.org"
   }, {
     "name": "The Readers Paper (II)",
-    "target": "http://rednoise.org/daniel/pubs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
+    "target": "pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
   }, {
     "name": "The Readers Paper (I)",
-    "target": "http://rednoise.org/~dhowe/pubs/LEON4404_pp317-324.pdf"
+    "target": "pdfs/LEON4404_pp317-324.pdf"
   }, {
     "name": "The Real Story of Ah-Q",
     "target": "http://thereadersproject.org/index.php?p=installation/HK2014/wmc.html"
@@ -492,7 +492,7 @@
   }],
   "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
   "links": [
- 
+
   {
     "name": "ChinaEye for Chrome",
     "target": "https://chrome.google.com/webstore/detail/chinaeye/kbkejkbhaiggcfnalkdlphlikillhlpf"
