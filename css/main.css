@@ -422,6 +422,10 @@ html, body {
   line-height: 1.4;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+i {
+  font-family:"HelveticaNeue-LightItalic", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
 h1, h2, h3, h4, h5, p {
   margin-bottom: 0.8em;
 }
