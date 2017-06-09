@@ -564,4 +564,17 @@
     "name": "Redacto for Chrome",
     "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
   }]
+},{
+  "shorttitle": "Perceptual Reader",
+  "thumb": "img/perceptualReader_s.png",
+  "shortdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
+  "longtitle": "Perceptual Reader",
+  "images": [{
+    "src": "img/perceptualReader_l.png"
+  }],
+  "longdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
+  "links": [{
+    "name": "Perceptual Reader",
+    "target": "perceptualReader/"
+  }]
 }]
