@@ -91,18 +91,18 @@ nav>ul>li>a:hover {
   width: 100%;
   background-color: #39465A;
   color: #DDD;
-  height: 150px;
+  height: 160px;
   padding: 2em 0;
   font-size: 90%;
   z-index: 15;
 }
 .footer .grid > * {
-  margin-top:20px;
+  margin-top:10px;
 }
 .footer img, .bioPhoto {
   width: 90px;
   float: left;
-  margin: 0 20px;
+  margin: 0 4%;
 }
 .bioPhoto {
   margin-top: 1em;
@@ -147,9 +147,6 @@ nav>ul>li>a:hover {
 #projects {
   margin-top: 60px;
   height: 100%;
-}
-#publication, #reference{
-  margin-left: 20px;
 }
 
 #publist {
@@ -251,6 +248,17 @@ nav>ul>li>a:hover {
 .projectlong ul.exhibitions li {
   margin-bottom: 0.3em;
   line-height: 1.4em !important;
+}
+.projectlong iframe {
+  margin:10px 0;
+  width:525px;
+  height:380px;
+  border-style:none;
+  overflow-x: hidden;
+}
+#automatype iframe {
+  width:300px;
+  height:200px;
 }
 #close {
   display: none;
@@ -764,7 +772,7 @@ body {
   padding: 3em 0;
 }
 .pad-large {
-  padding: 5em 0;
+  padding: 5em 2em;
 }
 .pad-sl {
   padding: 1em 0 5em;
@@ -777,7 +785,7 @@ body {
 
 /*Supoer Large Display*/
 
-@media only screen and (min-height: 720px) {
+@media only screen and (min-height: 1000px) {
 .footer{
     bottom:0;
     position:fixed;
@@ -800,7 +808,7 @@ body {
 }
 .bottomNav{
   position:fixed;
-    bottom:150px;
+    bottom:160px;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -893,6 +901,13 @@ body {
   }
   .maxH {
     height: auto;
+  }
+}
+
+/* mobile */
+@media screen and (max-device-width: 800px){
+  .projectlong iframe {
+    display: none;
   }
 }
 
