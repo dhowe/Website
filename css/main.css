@@ -250,10 +250,15 @@ nav>ul>li>a:hover {
   line-height: 1.4em !important;
 }
 .projectlong iframe {
+  margin:10px 0;
   width:525px;
   height:400px;
   border-style:none;
   overflow-x: hidden;
+}
+#automatype iframe {
+  width:300px;
+  height:200px;
 }
 #close {
   display: none;
@@ -780,7 +785,7 @@ body {
 
 /*Supoer Large Display*/
 
-@media only screen and (min-height: 720px) {
+@media only screen and (min-height: 1000px) {
 .footer{
     bottom:0;
     position:fixed;
