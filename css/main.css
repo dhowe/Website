@@ -91,18 +91,18 @@ nav>ul>li>a:hover {
   width: 100%;
   background-color: #39465A;
   color: #DDD;
-  height: 150px;
+  height: 160px;
   padding: 2em 0;
   font-size: 90%;
   z-index: 15;
 }
 .footer .grid > * {
-  margin-top:20px;
+  margin-top:10px;
 }
 .footer img, .bioPhoto {
   width: 90px;
   float: left;
-  margin: 0 20px;
+  margin: 0 4%;
 }
 .bioPhoto {
   margin-top: 1em;
@@ -147,9 +147,6 @@ nav>ul>li>a:hover {
 #projects {
   margin-top: 60px;
   height: 100%;
-}
-#publication, #reference{
-  margin-left: 20px;
 }
 
 #publist {
@@ -770,7 +767,7 @@ body {
   padding: 3em 0;
 }
 .pad-large {
-  padding: 5em 0;
+  padding: 5em 2em;
 }
 .pad-sl {
   padding: 1em 0 5em;
@@ -806,7 +803,7 @@ body {
 }
 .bottomNav{
   position:fixed;
-    bottom:150px;
+    bottom:160px;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
