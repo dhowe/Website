@@ -252,7 +252,7 @@ nav>ul>li>a:hover {
 .projectlong iframe {
   margin:10px 0;
   width:525px;
-  height:400px;
+  height:380px;
   border-style:none;
   overflow-x: hidden;
 }
@@ -901,6 +901,13 @@ body {
   }
   .maxH {
     height: auto;
+  }
+}
+
+/* mobile */
+@media screen and (max-device-width: 800px){
+  .projectlong iframe {
+    display: none;
   }
 }
 
