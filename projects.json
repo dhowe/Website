@@ -162,7 +162,7 @@
     "src": "video/automatype",
     "poster": "img/automatype_poster.jpg"
   }],
-  "longdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
+  "longdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. The algorithm at the heart of the work continually computes the minimum number of substitutions required to transform each valid English word into the nxt, deriving a near infinite number of combinations of words and phrases, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> toolkit for computational language. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
   "exhibitions": [{
     "text": "<i>Art2Code</i>, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
     "target": "http://v1b3.com/daniel-howe-automatype/"
@@ -560,7 +560,7 @@
   "images": [{
     "src": "img/redacto_l.jpg"
   }],
-  "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
+  "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite web pages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
     "name": "Redacto for Chrome",
     "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
@@ -568,13 +568,17 @@
 },{
   "shorttitle": "Perceptual Reader",
   "thumb": "img/perceptualReader_s.png",
-  "shortdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
+  "shortdesc": "The <i>Perceptual Reader</i> is a novel, experimental reading interface that explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space.",
   "longtitle": "Perceptual Reader",
-  "longdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
-   "sketch": "perceptualReader/",
+  "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of the <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
+  "sketch": "perceptualReader/",
   "links": [{
     "name": "Perceptual Reader",
     "target": "perceptualReader/"
+  },
+  {
+    "name": "The Readers Project",
+    "target": "https://thereadersproject.org/index.html"
   }]
 
 }]
