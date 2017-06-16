@@ -252,6 +252,12 @@ nav>ul>li>a:hover {
   margin-bottom: 0.3em;
   line-height: 1.4em !important;
 }
+.projectlong iframe {
+  width:525px;
+  height:400px;
+  border-style:none;
+  overflow-x: hidden;
+}
 #close {
   display: none;
   padding: 1em 2em;

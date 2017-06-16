@@ -208,7 +208,8 @@
   }, {
     "name": "The RiTa HomePage",
     "target": "http://rednoise.org/rita/"
-  }]
+  }],
+  "sketch": "automatype/p5/"
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
@@ -569,12 +570,11 @@
   "thumb": "img/perceptualReader_s.png",
   "shortdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
   "longtitle": "Perceptual Reader",
-  "images": [{
-    "src": "img/perceptualReader_l.png"
-  }],
   "longdesc": "<i>Perceptual Reader</i> is an experiment that explores the possibility to read through a piece of text without any eye movement.",
+   "sketch": "perceptualReader/",
   "links": [{
     "name": "Perceptual Reader",
     "target": "perceptualReader/"
   }]
+
 }]
