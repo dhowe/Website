@@ -1,0 +1,92 @@
+{
+	"cells": [
+  {
+		"img": "img/rectangles_thumb.png",
+		"url": "http://rednoise.org/sketches/Rectangles1/",
+		"description": "constraint-based sketch: only black/white rectangles with sin/cos"
+	},
+  {
+    "img": "img/rasterwalk_thumb.png",
+    "url": "http://rednoise.org/sketches/RasterWalk/",
+    "description": "recode of 'Random Walk Through Raster' by Frieder Nake for the ReCode project"
+  },
+  {
+    "img": "img/notimemachine_thumb.png",
+    "url": "http://turbulence.org/project/no-time-machine/",
+    "description": "Quiet time, dead time, free time — call it what you will..."
+  },
+  {
+    "img": "img/voronoirecode_thumb.png",
+    "url": "http://rednoise.org/sketches/VoronoiRecode/",
+    "description": "recode of 'Equidistant Space' by Peter Milojevic for the ReCode project"
+  },
+  {
+    "img": "img/glyphflock_thumb.png",
+    "url": "http://rednoise.org/glyphflock/",
+    "description": "demo extracting points from a font path with p5.js"
+  },
+  {
+    "img": "img/noisetree_thumb.png",
+    "url": "../NoiseTree/",
+    "description": "recursive tree animated with noise"
+  },
+  {
+    "img": "img/pr_thumb.png",
+    "url": "http://rednoise.org/perceptualReader/",
+    "description": "Perceptual Reader"
+  },
+  {
+		"img": "img/rectangles_thumb.png",
+		"url": "http://rednoise.org/sketches/Rectangles1/",
+		"description": "constraint-based sketch: only black/white rectangles with sin/cos"
+	},
+  {
+    "img": "img/rasterwalk_thumb.png",
+    "url": "http://rednoise.org/sketches/RasterWalk/",
+    "description": "recode of 'Random Walk Through Raster' by Frieder Nake for the ReCode project"
+  },
+  {
+    "img": "img/notimemachine_thumb.png",
+    "url": "http://turbulence.org/project/no-time-machine/",
+    "description": "Quiet time, dead time, free time — call it what you will..."
+  },
+  {
+    "img": "img/voronoirecode_thumb.png",
+    "url": "http://rednoise.org/sketches/VoronoiRecode/",
+    "description": "recode of 'Equidistant Space' by Peter Milojevic for the ReCode project"
+  },
+  {
+    "img": "img/glyphflock_thumb.png",
+    "url": "http://rednoise.org/glyphflock/",
+    "description": "demo extracting points from a font path with p5.js"
+  },
+  {
+    "img": "img/noisetree_thumb.png",
+    "url": "../NoiseTree/",
+    "description": "recursive tree animated with noise"
+  },
+  {
+    "img": "img/pr_thumb.png",
+    "url": "http://rednoise.org/perceptualReader/",
+    "description": "Perceptual Reader"
+  },{
+		"img": "img/rectangles_thumb.png",
+		"url": "http://rednoise.org/sketches/Rectangles1/",
+		"description": "constraint-based sketch: only black/white rectangles with sin/cos"
+	},
+  {
+    "img": "img/rasterwalk_thumb.png",
+    "url": "http://rednoise.org/sketches/RasterWalk/",
+    "description": "recode of 'Random Walk Through Raster' by Frieder Nake for the ReCode project"
+  },
+  {
+    "img": "img/notimemachine_thumb.png",
+    "url": "http://turbulence.org/project/no-time-machine/",
+    "description": "Quiet time, dead time, free time — call it what you will..."
+  },
+  {
+    "img": "img/voronoirecode_thumb.png",
+    "url": "http://rednoise.org/sketches/VoronoiRecode/",
+    "description": "recode of 'Equidistant Space' by Peter Milojevic for the ReCode project"
+  }
+]}
