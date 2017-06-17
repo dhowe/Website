@@ -95,6 +95,11 @@ function createDetail(projects, id) {
     html += "</div>";
   }
 
+  // IFRAME SKETCH 
+  if(current.sketch) {
+    html += "<iframe src='" + current.sketch + "'></iframe>"
+  }
+
   // LINKS
   if (current.links) {
 
@@ -133,6 +138,7 @@ function createDetail(projects, id) {
     }
     html += "</ul>";
   }
+
 
   html += "</div>";
   html += "<div class='col-1-3 mobile-col-1-1'>";

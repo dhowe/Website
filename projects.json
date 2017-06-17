@@ -92,7 +92,7 @@
     "target": "http://www.ubuweb.com/contemp/cayley/"
   }, {
     "name": "Full PDF of the Work",
-    "target": "http://rednoise.org/readers/hiiict.pdf"
+    "target": "pdfs/hiiict.pdf"
   }, {
     "name": "On the 'Top 10 Radical Books' list",
     "target": "http://nickm.com/post/2013/01/radical-books-of-2012-2/"
@@ -162,7 +162,7 @@
     "src": "video/automatype",
     "poster": "img/automatype_poster.jpg"
   }],
-  "longdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. Using natural language algorithms (specifically the 'Min-Edit Distance' algorithm), the piece runs continuously, deriving a near infinite number of combinations of words and phrase, letter-by-letter, substitution-by-substitution. <br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> library, my that toolkit for algorithmic creative writing. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.",
+  "longdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that explores the creation of aesthetic, linguistic meaning via anticipation, juxtaposition, and association. The algorithm at the heart of the work continually computes the minimum number of substitutions required to transform each valid English word into the next, deriving a near infinite number of combinations of words and phrases, letter-by-letter, substitution-by-substitution. <!--br/><br/>The project is built with the author's <a href=\"detail.html#rita\">RiTa</a> toolkit for computational language. Combining natural language processing, generative techniques, and computational stylistics, the open-source RiTa toolkit provides state-of-the-art natural language techniques to creative writers and language artists.-->",
   "exhibitions": [{
     "text": "<i>Art2Code</i>, Online Catalog, College Art Association, Chicago, USA. Feb 1, 2016",
     "target": "http://v1b3.com/daniel-howe-automatype/"
@@ -208,7 +208,8 @@
   }, {
     "name": "The RiTa HomePage",
     "target": "http://rednoise.org/rita/"
-  }]
+  }],
+  "sketch": "automatype/p5/"
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
@@ -246,7 +247,7 @@
     "target": "http://www.cddc.vt.edu/journals/newriver/08Spring/"
   }, {
     "text": "<i>Theoretical Architectures</i> in Telluride Film Festival. Telluride, Colorado, USA. Aug 29–Sep1, 2014",
-    "target": "http://www.telluridefilmfestival.org/assets/guides/41st_TFF_program_guide_FINAL.pdf"
+    "target": "pdfs/41st_TFF_program_guide_FINAL.pdf"
   }, {
     "text": "<i>Theoretical Architectures</i> in PROJECTIONS, the New York Film Festival 52, New York, USA. Oct 3, 2014",
     "target": "http://www.filmlinc.org/daily/nyff-sets-63-film-and-videos-for-its-projections-lineup/"
@@ -388,7 +389,7 @@
   "longdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
   "exhibitions": [{
     "text": "<i>The Burning Edge</i>. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
-    "target": "http://www.gardens-co.com/clients/scm/download/faculty_brochure_FINAL_online2.pdf"
+    "target": "pdfs/faculty_brochure_FINAL_online2.pdf"
   }],
   "links": [{
     "name": "The Project Home Page",
@@ -466,7 +467,7 @@
     "target": "http://openspace.sfmoma.org/2011/09/third-hand-plays-automatype-bydaniel-c-howe/"
   }, {
     "text": "<i>Left to Chance: Accident and intentionality in the work of eight contemporary artists from the United States and Europe</i>. Firehouse 13 Gallery / Providence, RI, USA. Nov 20–28, 2009",
-    "target": "http://rednoise.org/daniel/ftp/Left-To-Chance-FH13.pdf"
+    "target": "pdfs/Left-To-Chance-FH13.pdf"
   }, {
     "text": "<i>POESIS : Language Games</i>. Academy of the Arts, Berlin, Germany. Jun 27–Jul 5, 2009",
     "target": "http://www.haus-fuer-poesie.org/en/poesiefestival-berlin/archive-poesiefestivalberlin/archiv-2009/poesis-sprachspiele/"
@@ -559,9 +560,25 @@
   "images": [{
     "src": "img/redacto_l.jpg"
   }],
-  "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite webpages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
+  "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite web pages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
   "links": [{
     "name": "Redacto for Chrome",
     "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
   }]
+},{
+  "shorttitle": "Perceptual Reader",
+  "thumb": "img/perceptualReader_s.png",
+  "shortdesc": "The <i>Perceptual Reader</i> is a novel, experimental reading interface that explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space.",
+  "longtitle": "Perceptual Reader",
+  "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of the <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
+  "sketch": "perceptualReader/",
+  "links": [{
+    "name": "Perceptual Reader",
+    "target": "perceptualReader/"
+  },
+  {
+    "name": "The Readers Project",
+    "target": "https://thereadersproject.org/index.html"
+  }]
+
 }]

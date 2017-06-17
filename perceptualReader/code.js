@@ -14,6 +14,13 @@ function preload() {
 function setup() {
 
   createCanvas(727, 387);
+
+   if (window.innerWidth < 600) {
+    var canvas = document.getElementById("defaultCanvas0");
+    canvas.style.width = "";
+    canvas.style.height = "";
+  }
+  
   background(255);
   frameRate(50);
 
