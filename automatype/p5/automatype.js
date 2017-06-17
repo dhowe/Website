@@ -53,13 +53,13 @@ function Automatype(wordCompleteCallback) {
 
       this.cursor--; // move left
       this.highlight = false;
-      type.play(); // #17
+      if (!muted) type.play(); // #17
 
     } else if (this.nextPos > this.cursor) {
 
       this.cursor++; // move right
       this.highlight = false;
-      type.play(); // #17
+      if (!muted) type.play(); // #17
 
     } else if (!this.highlight && this.nextAction === REPLACE_ACTION) {
 
