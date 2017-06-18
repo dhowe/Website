@@ -35,7 +35,11 @@
 
        afterShow: function() {
         this.content.find('video').trigger('play');
-       }
+        //mute sketch
+        if (document.getElementsByTagName("iframe").length > 0)
+          document.getElementsByTagName("iframe")[0].contentWindow.document.
+          getElementsByTagName("button")[0].click();
+      }
     });
   });
   </script>
