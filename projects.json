@@ -570,7 +570,7 @@
   "thumb": "img/perceptualReader_s.png",
   "shortdesc": "The <i>Perceptual Reader</i> is a novel, experimental reading interface that explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space.",
   "longtitle": "Perceptual Reader",
-  "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of the <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
+  "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
   "sketch": "perceptualReader/",
   "links": [{
     "name": "Perceptual Reader",
