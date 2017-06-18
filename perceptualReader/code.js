@@ -2,7 +2,7 @@ var NUM_LINES = 7, DISPLAY_WIDTH = 495, DISPLAY_X = 113, LEADING = 40;
 
 var words, lineW = 0, spaceW, arrowSpeed = -1, shift;
 var lerpValue = 0, speed = 0.1, dragging, mouseDownX;
-var numLinesBelow, lines = [], showBorder = true;
+var numLinesBelow, lines = [], showBorder = false;
 var font, textWidths = {};
 
 function preload() {
