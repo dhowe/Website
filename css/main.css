@@ -213,6 +213,7 @@ nav>ul>li>a:hover {
   padding-top: 60px;
   width: 100%;
   z-index: 1;
+  min-height: 85vh;
 }
 .longdesc, .quotes {
   max-width: 525px;
@@ -384,10 +385,12 @@ video{
   border-left: 8px solid rgba(255,255,255,.95);
   box-shadow: inset 12px 0 0 0 rgba(0, 0, 0, 0.6);
 }
-
 /* links */
-
-.projectlong a, .bottomNav p a, #about a {
+.longdesc a {
+ font-style: italic;
+ font-family: 'HelveticaNeue-LightItalic';
+}
+.longdesc a, .links a, .bottomNav p a, #about a {
   color: #004d66;
   text-decoration: none;
 }
@@ -449,6 +452,7 @@ p {
   font-size: 1em;
   margin-bottom: 1.2em;
   line-height: 1.4em;
+  letter-spacing:.01em;
 }
 ul {
   list-style: none;
