@@ -5,7 +5,6 @@
 <meta charset="utf-8">
 <script src="p5.min.js"></script>
 <script src="code.js"></script>
-</script>
 <style>
 /*iframe*/
 @media only screen and (max-width: 600px) {
@@ -52,5 +51,15 @@ canvas{
 <div id="instructions">
 Drag mouse or use left/right arrows to control direction and speed, up/down arrows to toggle borders
 </div>
+<script>
+   //prevent default up/down arrow behaviour
+
+   window.document.addEventListener("keydown", function(e){
+   	  if (e.keyCode >= 37 && e.keyCode <= 40 ) {
+        e.preventDefault();
+      }
+   });
+
+</script>
 </body>
 </html>

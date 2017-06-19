@@ -97,7 +97,7 @@ function createDetail(projects, id) {
 
   // IFRAME SKETCH 
   if(current.sketch) {
-    html += "<iframe src='" + current.sketch + "'></iframe>"
+    html += "<iframe name='sketch'  src='" + current.sketch + "'></iframe>"
   }
 
   // LINKS
@@ -291,6 +291,18 @@ $(document).ready(function () {
 
     }
   })
+
+  //prevent default up/down key behaviour if sketch is present
+  $(document).keydown(function(e){
+    if ($('iframe').length === 0 ) return;
+    if (e.keyCode >= 37 && e.keyCode <= 40 ) {
+      e.preventDefault();
+      // var iframeDocument = $('iframe').contents();
+      // var keyDownEvent = jQuery.Event("keydown");
+      // keyDownEvent.which = e.keyCode;
+      // iframeDocument.trigger(keyDownEvent);
+    }
+  });
 
 });
 
