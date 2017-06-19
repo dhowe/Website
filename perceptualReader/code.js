@@ -5,6 +5,8 @@ var lerpValue = 0, speed = 0.1, dragging, mouseDownX;
 var numLinesBelow, lines = [], showBorder = false;
 var font, textWidths = {};
 
+var mouseOnCanvas = false;
+
 function preload() {
 
   font = loadFont("Baskerville.ttf");
@@ -13,9 +15,19 @@ function preload() {
 
 function setup() {
 
-  createCanvas(727, 387);
+  var c = createCanvas(727, 387);
 
-   if (window.innerWidth < 600) {
+  c.mousePressed(function(){
+     mouseOnCanvas = true;
+     mouseDownX = mouseX;
+  });
+ 
+  c.mouseReleased(function() {
+    mouseOnCanvas = false;
+    dragging = false;
+  });
+
+  if (window.innerWidth < 600) {
     var canvas = document.getElementById("defaultCanvas0");
     canvas.style.width = "";
     canvas.style.height = "";
@@ -190,16 +202,10 @@ function keyPressed() {
   }
 }
 
-function mousePressed() {
-  mouseDownX = mouseX;
-}
-
 function mouseDragged() {
-  arrowSpeed = 0;
-  dragging = true;
-  lerpValue = lerp((mouseX - mouseDownX) * speed, 0, 4);
-}
-
-function mouseReleased() {
-  dragging = false;
+  if (mouseOnCanvas) {
+    arrowSpeed = 0;
+    dragging = true;
+    lerpValue = lerp((mouseX - mouseDownX) * speed, 0, 4);
+  }
 }

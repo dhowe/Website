@@ -9,6 +9,7 @@
   vertical-align: bottom;
   border-bottom: solid 1px #2E3C51;
   z-index: 2;
+  background-color: rgba(255, 255, 255, .9)
 }
 .name {
   display: inline-block;
@@ -34,7 +35,6 @@ nav {
   float: left;
   height: 100%;
   position: relative;
-  background-color: rgba(255, 255, 255, .9)
 }
 nav ul {
   position: absolute;
@@ -207,7 +207,7 @@ nav>ul>li>a:hover {
   min-height: 530px;
 }
 .projectlong .col-8-12 {
-  width: 60% !important;
+  width: 60%;
 }
 .projectlong {
   padding-top: 60px;
@@ -654,7 +654,7 @@ body {
     padding-bottom: 0px;
   }
   .mobile-col-1-1 {
-    width: 100%;
+    width: 100% !important;
   }
   .mobile-col-2-3, .mobile-col-8-12 {
     width: 66.66%;
@@ -715,10 +715,16 @@ body {
   }
   .projectlong img {
     max-width: 400px;
+  }
+  .projectlong img, .projectlong .fancybox {
     margin-left: 0;
   }
 }
-
+@media screen and (max-width: 500px) {
+   .bottomNav .nextPage {
+    float: left;
+   }
+}
 /* The Percentage-based grid, akin to bootstrap */
 
 .gd-1, .gd-2, .gd-3, .gd-4, .gd-5, .gd-6, .gd-7, .gd-8, .gd-9, .gd-10, .gd-11, .gd-12 {
