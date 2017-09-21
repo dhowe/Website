@@ -2,15 +2,19 @@
   "shorttitle": "Advertising Positions",
   "id": "",
   "thumb": "img/ap_s.jpg",
-  "shortdesc": "<i>Advertising Positions</i> begins with a set of 'robots' trained to search the web according to specific profiles (age, gender, location, interests, etc). Each robot collects the ads it is served (based on its profile) and applies them, one-by-one, to the polygons of its own virtual body.",
+  "shortdesc": "<i>Advertising Positions</i> begins with a set of 'robots' trained to search the web according to specific profiles (age, gender, location, interests, etc). Each robot collects the ads it is served according to this profile and applies them, one-by-one, to the polygons of its virtual body.",
   "longtitle": "Advertising Positions",
   "images": [{
     "src": "img/ap_l.jpg"
   }],
-  "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects, as it has been trained to do, all of the advertisements it is served based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
+  "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects all of the advertisements it has been served, based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
-    "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
-  }],
+    "text": "<i>Netopia</i>, Art Center Nabi, Seoul, South Korea, Dec 5, Nov 15 – Dec 31, 2017"
+    },
+    {
+      "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
+    }
+  ],
   "links": [{
     "name": "The Project Home Page",
     "target": "adverpos/"
@@ -18,7 +22,7 @@
 }, {
   "shorttitle": "AdNauseam",
   "thumb": "img/adn_s.jpg",
-  "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from surveillance by advertising networks and attempts , by clicking ever ad it hides, to subvert the economic system that drives it.",
+  "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from surveillance by advertising networks and attempts, by clicking every ad it hides, to subvert the economic system that drives it.",
   "collaborators": "Nissenbaum & Zer-Aviv",
   "longtitle": "AdNauseam",
   "images": [{
@@ -103,7 +107,7 @@
 }, {
   "shorttitle": "The Readers Project",
   "thumb": "img/reader_s.jpg",
-  "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities engineered to explore the culture of human reading (and writing) in the face of ubiquitous algorithmic and networked services.",
+  "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities engineered to explore the cultures of human reading and writing in the face of ubiquitous algorithmic and networked services.",
   "collaborators": "John Cayley",
   "longtitle": "The Readers Project",
   "images": [{
@@ -133,12 +137,12 @@
 }, {
   "shorttitle": "AdLiPo",
   "thumb": "img/adlipo_s.jpg",
-  "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time.",
+  "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time.",
   "longtitle": "AdLiPo",
   "images": [{
     "src": "img/adlipo_l.jpg"
   }],
-  "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with calls to Javascript code that fills the advertising regions of pages with text created in real-time. AdLiPo doesn't replace every ad, but instead makes careful critical selections based on the content of the page.",
+  "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time. AdLiPo doesn't replace every ad, but instead makes critical (and often humorous) selections based on the content of the page.",
   "exhibitions": [{
     "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
     "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
@@ -213,7 +217,7 @@
 }, {
   "shorttitle": "Minor Distance",
   "thumb": "img/md_s.jpg",
-  "shortdesc": "<i>Minor Distance</i> is a album of generative music, published by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures&hellip;",
+  "shortdesc": "<i>Minor Distance</i> is an album of generative music, distributed by Cotton Goods Records, which begins with Howe's improvised guitar, played through his <i>Pataclysm</i> software (a real-time probablistic sampler) and Seaman's delicate piano figures&hellip;",
   "collaborators": "Bill Seaman",
   "longtitle": "Minor Distance",
   "images": [{
@@ -318,7 +322,7 @@
 }, {
   "shorttitle": "The Real Story of Ah-Q",
   "thumb": "img/ahq_s.jpg",
-  "shortdesc": "Lu Xun's <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others, but not written by or about Lu Xun. Each phrase is sent to a search engine, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, even censorship&hellip;",
+  "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for exact phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today,  augmented with targeted advertising, images, even censorship&hellip;",
   "collaborators": "John Cayley",
   "longtitle": "The Real Story of Ah-Q",
   "images": [{
@@ -343,7 +347,7 @@
 }, {
   "shorttitle": "Roulette",
   "thumb": "img/rl_s.jpg",
-  "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
+  "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the interactive 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
   "collaborators": "Bebe Molina",
   "longtitle": "Roulette",
   "videos": [{
@@ -376,7 +380,7 @@
 }, {
   "shorttitle": "Engine of Engines",
   "thumb": "img/eoe_s.jpg",
-  "shortdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen self-contained computational nodes, each of which reacts in real-time to changes in the type and quantity of information being exchanged over the networks of the building in which it is installed.",
+  "shortdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen, self-contained computational nodes, each reacting in real-time, both visually and aurally, to changes in the type and quantity of information being exchanged over the networks of the building in which it is installed.",
   "collaborators": "Bill Seaman",
   "longtitle": "Engine of Engines",
   "images": [{
@@ -398,7 +402,7 @@
 }, {
   "shorttitle": "Read For Us",
   "thumb": "img/rfu_s.jpg",
-  "shortdesc": "An algorithmic process reads through Adam Smith’s <i>Wealth of Nations</i>, highlighting the longest phrases written by others, that is, found on web pages unconnected with Smith or his book. Each phrase is then re-read via a Google search, showing how they would be read now, in real-time, complete with images and advertising.",
+  "shortdesc": "An algorithmic process reads through Adam Smith’s <i>Wealth of Nations</i>, highlighting the longest phrases written by others, unconnected with Smith or his book. Each phrase is then re-read via a live Google search, showing how they would be found now, complete with images and targeted advertising.",
   "collaborators": "John Cayley",
   "longtitle": "Read For Us",
   "images": [{
@@ -416,7 +420,7 @@
 }, {
   "shorttitle": "TrackMeNot",
   "thumb": "img/tmn_s.jpg",
-  "shortdesc": "<i>TrackMeNot</i> is a browser extension and artware provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other  technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip;",
+  "shortdesc": "<i>TrackMeNot</i> is a browser extension and 'artware' provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip;",
   "collaborators": "Helen Nissenbaum",
   "longtitle": "TrackMeNot",
   "images": [{
@@ -447,13 +451,13 @@
 }, {
   "shorttitle": "Text.Curtain",
   "thumb": "img/textcurtain_s.jpg",
-  "shortdesc": "<i>Text.Curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users via organic motion and generative sound.",
+  "shortdesc": "<i>Text.Curtain</i> explores the tensions between reading and ludic play, via an interactive recombinant text. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple users via organic motion and generative sound.",
   "longtitle": "text.curtain",
   "videos": [{
     "src": "video/textCurtain",
     "poster": "img/textcurtain_poster.jpg"
   }],
-  "longdesc": "<i>Text.Curtain</i> explores relationships between poetic text and ludic play via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
+  "longdesc": "<i>Text.Curtain</i> explores tensions between reading and ludic play, via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
   "quotes": [{
     "text": "Text.Curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
     "from": "Brian Kim Stefans"
@@ -486,12 +490,12 @@
 }, {
   "shorttitle": "ChinaEye",
   "thumb": "img/chinaeye_s.jpg",
-  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China. If the page is blocked in one or more of these locations, the page appears with content obscured.",
+  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
   "longtitle": "ChinaEye",
   "images": [{
     "src": "img/chinaeye_l.png"
   }],
-  "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
+  "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
   "links": [
 
   {
@@ -505,7 +509,7 @@
 }, {
   "shorttitle": "Architecture of Association",
   "thumb": "img/aoa_s.jpg",
-  "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and evolving databases.",
+  "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and databases.",
   "collaborators": "Bill Seaman",
   "longtitle": "Architecture of Association",
   "images": [{
@@ -542,12 +546,12 @@
   "shorttitle": "Open.Ended",
   "collaborators": "Aya Karpinska",
   "thumb": "img/openended_s.jpg",
-  "shortdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of nested translucent cubes and dynamically update to realize a variety of permutations&hellip;",
+  "shortdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of nested translucent cubes and dynamically update to realize a variety of textual permutations&hellip;",
   "longtitle": "Open.Ended",
   "images": [{
     "src": "img/openended_l.jpg"
   }],
-  "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a mouse, joystick, or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem, organically complementing the visual and tactile components of the work.",
+  "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a controller or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem.",
   "links": [{
     "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
     "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
@@ -555,7 +559,7 @@
 }, {
   "shorttitle": "Redacto",
   "thumb": "img/redacto_s.png",
-  "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.",
+  "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. This free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.",
   "longtitle": "Redacto",
   "images": [{
     "src": "img/redacto_l.jpg"
