@@ -5,7 +5,7 @@
 */
 window.wheelzoom = (function(){
 	var defaults = {
-		zoom: 0.01
+		zoom: 0.03
 	};
 
 	var canvas = document.createElement('canvas');
