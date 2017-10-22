@@ -2,7 +2,7 @@ var zoomMode = false;
 
 $(document).ready(function() {
     
-    resetDisplayMinHeight();
+    // resetDisplayMinHeight();
     menuOnClicks();
     videoControl();
     zoomableImage();
@@ -86,14 +86,12 @@ function zoomableImage () {
     }
       else {
         $('#imageDisplay').click(function() {
-            if ($('#imageDisplay[class*="AdCollection"]')) {
-                $('img.zoom').css("visibility", "visible");
+            if ($('#imageDisplay[class*="AdCollection"]').length > 0) {
+               $('img.zoom').css("visibility", "visible");
 
                 if ($('body').height() > 630) {
                     $('img.zoom').height($('body').height());
                 } else $('img.zoom').height(630);
-
-
             }
 
         })
