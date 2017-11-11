@@ -2,7 +2,7 @@ var zoomMode = false;
 
 $(document).ready(function() {
     
-    resetDisplayMinHeight();
+    // resetDisplayMinHeight();
     menuOnClicks();
     videoControl();
     zoomableImage();
@@ -55,7 +55,8 @@ function menuOnClicks () {
         $('#imageDisplay').removeClass().addClass(current + "AdCollection");
         $('video').hide();
         $('.items').css("color", "#EEE");
-        $('.intro').css("background-color", "rgba(16,60,83,.8)");
+        $('#nicole .intro, #wilson .intro').css("background-color", "rgba(16,60,83,.8)");
+        $('#bertha .intro').css("background-color", "rgba(0,0,0,.8)");
         if (!zoomMode) $('img.zoom').css("visibility", "hidden");
         else $('img.zoom').css("visibility", "visible");
     })
@@ -85,14 +86,12 @@ function zoomableImage () {
     }
       else {
         $('#imageDisplay').click(function() {
-            if ($('#imageDisplay').hasClass("nicoleAdCollection") || $('#imageDisplay').hasClass("wilsonAdCollection")) {
-                $('img.zoom').css("visibility", "visible");
+            if ($('#imageDisplay[class*="AdCollection"]').length > 0) {
+               $('img.zoom').css("visibility", "visible");
 
                 if ($('body').height() > 630) {
                     $('img.zoom').height($('body').height());
                 } else $('img.zoom').height(630);
-
-
             }
 
         })
@@ -100,12 +99,11 @@ function zoomableImage () {
     
     if (!zoomMode) {
         $('#imageDisplay').on('mousemove', function(e) {
-            $('#imageDisplay.nicoleAdCollection, #imageDisplay.wilsonAdCollection').click(function() {
-
+            $('#imageDisplay[class*="AdCollection"]').click(function() {
                 $('#hint').html("Zoom with mouse wheel or touchpad");
                 setTimeout(function() {
                     $('#hint').css("display", "none");
-                }, 2000)
+                }, 3000)
 
                 zoomMode = true;
             });
