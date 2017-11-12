@@ -31,6 +31,7 @@
         z-index: 10;
         font-size: 8px;
         padding: 1px;
+        width:40px;
       }
       }
 
@@ -38,6 +39,7 @@
         position:absolute;
         top:460px;
         left:630px;
+        width:55px;
       }
 
     </style>
@@ -71,8 +73,11 @@ function setup() {
   next();
 }
 
-function toggleMute() {
-  muted = !muted;
+function toggleMute(event) {
+
+  if (typeof event === 'boolean') muted = event;
+  else muted = !muted;
+  console.log(muted);
   document.getElementById("mute").innerText = muted ? 'unmute' : ' mute ';
 }
 

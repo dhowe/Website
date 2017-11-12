@@ -97,7 +97,7 @@ function createDetail(projects, id) {
 
   // IFRAME SKETCH 
   if(current.sketch) {
-    html += "<iframe name='sketch'  src='" + current.sketch + "'></iframe>"
+      html += "<iframe name='sketch' src='" + current.sketch + "'></iframe>";
   }
 
   // LINKS
@@ -105,8 +105,12 @@ function createDetail(projects, id) {
 
     html += "<ul class='links'>LINKS";
     for (var j = 0; j < current.links.length; j++) {
-      html += "<li><a target='_blank' href='" + projects[i].links[j].target +
-        "'>" + current.links[j].name + "</a></li>";
+      var link = current.links[j];
+      if (link.target === "automatype/p5/")
+        html += "<li><a target='_blank' onclick='mutesketch();' href='" + link.target +
+        "'>" + link.name + "</a></li>";
+      else html += "<li><a target='_blank' href='" + link.target +
+        "'>" + link.name + "</a></li>";
     }
     html += "</ul>";
   }
@@ -249,6 +253,11 @@ function adjustItemHeight() {
   
 }
 
+function mutesketch() {
+    var iframeDocument = $('iframe')[0].contentWindow;
+    iframeDocument.toggleMute(true);
+}
+
 function adjustFooterSpace() {
 
     if ($('.footer').css("position") === "fixed")
@@ -297,7 +306,7 @@ $(document).ready(function () {
     if ($('iframe').length === 0 ) return;
     if (e.keyCode >= 37 && e.keyCode <= 40 ) {
       e.preventDefault();
-      // var iframeDocument = $('iframe').contents();
+      // var iframeDocument = $('iframe')[0].contents();
       // var keyDownEvent = jQuery.Event("keydown");
       // keyDownEvent.which = e.keyCode;
       // iframeDocument.trigger(keyDownEvent);
