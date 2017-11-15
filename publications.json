@@ -30,7 +30,7 @@
     }, {
         "section": "Conference Proceedings",
        "items": [
-            { "year": "2017", "detail": "&ldquo;Engineering Privacy and Protest: a Case Study of AdNauseam&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Proceedings of the IEEE International Workshop on Privacy Engineering, San Jose, California, USA" },
+            { "year": "2017", "detail": "&ldquo;Engineering Privacy and Protest: a Case Study of AdNauseam.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Proceedings of the IEEE International Workshop on Privacy Engineering, San Jose, California, USA" },
 
             { "year": "2016", "detail": "Proceedings of the 22nd International Symposium on Electronic Arts, Tapio-Leino, Howe, Charrieras et al. Editors. School of Creative Media, Hong Kong, May 2016." },
 
@@ -51,6 +51,8 @@
     }, {
       "section": "Other Publications",
        "items": [
+
+            { "year": "2017", "detail": "&ldquo;Obfuscation Workshop Report.&rdquo; Brunton, F., Nissenbaum, H., Howe, D, et al.  Report for the National Science Foundation, 2017-09-01" },
 
             { "year": "2016", "detail": "&ldquo;A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.&rdquo; Howe, Daniel C. and Cayley, J. In WHOSE BOOK IS IT ANYWAY?  CREATe (the Centre for Creativity, Regulation, Enterprise and Technology), University of Glasgow. Forthcoming, 2016." },
 
