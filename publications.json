@@ -2,7 +2,7 @@
     {
         "section":"Journal Articles",
         "items": [
-            { "year": "2016", "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac. Forthcoming 2017, Cambridge: MIT Press." },
+            { "year": "2017", "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac. Forthcoming 2018, Cambridge: MIT Press." },
 
             { "year": "2015", "detail": "&ldquo;Surveillance Countermeasures: Expressive Privacy via Obfuscation.&rdquo; Howe, Daniel C.  In A Peer&ndash;reviewed Journal About (APRJA). Christian Ulrik Andersen and Geoff Cox (eds.) Vol. 4, Issue 1. Aarhus: Digital Aesthetics Research Center, Aarhus University, Berlin (online peer&ndash;reviewed journal: http://www.aprja.net/?p=2510)." },
 
@@ -30,8 +30,7 @@
     }, {
         "section": "Conference Proceedings",
        "items": [
-
-            { "year": "2017", "detail": "&ldquo;Making Humans Machine-readable:  Obfuscation as Quantified Refusal&quot;. Howe, Daniel C. and Nissenbaum, H. Proceedings on Privacy Enhancing Technologies (PETS). Vol. 2017, No. 2.  Submitted, June 2016. Under Review." },
+            { "year": "2017", "detail": "&ldquo;Engineering Privacy and Protest: a Case Study of AdNauseam&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Proceedings of the IEEE International Workshop on Privacy Engineering, San Jose, California, USA" },
 
             { "year": "2016", "detail": "Proceedings of the 22nd International Symposium on Electronic Arts, Tapio-Leino, Howe, Charrieras et al. Editors. School of Creative Media, Hong Kong, May 2016." },
 
