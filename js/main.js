@@ -1,4 +1,4 @@
-var projects, lastCols = 0;
+var lastCols = 0;
 
 function createGrid(projects) {
 
@@ -16,15 +16,16 @@ function createGrid(projects) {
   }
 
   $('#projects .grid').append("<div class='space'></div>");
-  afterGridCreated();
+  afterGridCreated(projects);
 
 }
 
-function afterGridCreated() {
-    $('.project img').css("height", $('.project img').width() * 0.65);
-    adjustItemHeight();
-    adjustFooterSpace();
-    selectNavigation();
+function afterGridCreated(projects) {
+  
+  $('.project img').css("height", $('.project img').width() * 0.65);
+  adjustItemHeight(projects);
+  adjustFooterSpace();
+  selectNavigation();
 }
 
 function selectNavigation() {
@@ -48,7 +49,8 @@ function detailUrl(title) {
 function createDetail(projects, id) {
 
   selectNavigation();
-  //hide the previous
+
+  // hide the previous
   $('.projectlong').hide();
 
   var current, idk = 0;
@@ -62,15 +64,13 @@ function createDetail(projects, id) {
     };
   }
 
-  //if the div is already created, show the div
+  // if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0) {
     $('.projectlong#' + id).show();
     return;
   }
 
-  //if not, create the div
-  /***************************** CREATE *****************************/
-
+  // if not, create the div
   var html = "",
     nav = "";
   html += "<div class='projectlong' id='" +
@@ -95,9 +95,9 @@ function createDetail(projects, id) {
     html += "</div>";
   }
 
-  // IFRAME SKETCH 
-  if(current.sketch) {
-      html += "<iframe name='sketch' src='" + current.sketch + "'></iframe>";
+  // IFRAME SKETCH
+  if (current.sketch) {
+    html += "<iframe name='sketch' src='" + current.sketch + "'></iframe>";
   }
 
   // LINKS
@@ -107,7 +107,7 @@ function createDetail(projects, id) {
     for (var j = 0; j < current.links.length; j++) {
       var link = current.links[j];
       if (link.target === "automatype/p5/")
-        html += "<li><a target='_blank' onclick='mutesketch();' href='" + link.target +
+        html += "<li><a target='_blank' onclick='muteSketch();' href='" + link.target +
         "'>" + link.name + "</a></li>";
       else html += "<li><a target='_blank' href='" + link.target +
         "'>" + link.name + "</a></li>";
@@ -143,7 +143,6 @@ function createDetail(projects, id) {
     html += "</ul>";
   }
 
-
   html += "</div>";
   html += "<div class='col-1-3 mobile-col-1-1'>";
 
@@ -152,14 +151,16 @@ function createDetail(projects, id) {
 
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
-    html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='" + current.images[0].src + "' alt='" + altInfo + "' ></a>";
+    html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='"
+      + current.images[0].src + "' alt='" + altInfo + "' ></a>";
   }
 
-  //VIDEO
+  // VIDEO
   if (current.videos) {
-    for (var j = 0; j < current.videos.length; j++) {
-      var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
 
+    for (var j = 0; j < current.videos.length; j++) {
+
+      var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
       html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
@@ -170,8 +171,9 @@ function createDetail(projects, id) {
     }
   }
 
-  //OTHER IMAGES
+  // OTHER IMAGES
   if (current.images) {
+
     for (var j = 1; j < current.images.length; j++) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title ? current.images[j].title : current.longtitle;
@@ -181,7 +183,7 @@ function createDetail(projects, id) {
 
   html += "</div></div></div>";
 
-  //DETAIL PAGE: BOTTOM NAV
+  // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
     html += "<p><span>previous</span><a href='#" +
@@ -199,83 +201,83 @@ function createDetail(projects, id) {
 }
 
 function getBestImage(img) {
-  return img.slice(0, img.length - 4) + "@2x" + img.slice(img.length - 4, img.length);
+
+  return img.slice(0, img.length - 4) + "@2x" +
+    img.slice(img.length - 4, img.length);
 }
 
-function adjustItemHeight() {
+function adjustItemHeight(projects) {
 
-  //max-width > 1100 - 4
-  //max-width 1100 - 3
-  //max-width 768 -2
-  //max-width 400 -1
+  // max-width > 1100  - 4
+  // max-width 1100    - 3
+  // max-width 768     - 2
+  // max-width 400     - 1
 
   var total = $('.project').length,
-      cols = 4,
-      windowWidth = $(window).width();
+    cols = 4,
+    windowWidth = $(window).width();
 
   if (windowWidth < 1100 && windowWidth > 768) cols = 3;
   else if (windowWidth < 768 && windowWidth > 400) cols = 2;
   else if (windowWidth < 400) cols = 1;
-  
-  // //if the colomn doesn't change, return
-  if(cols === lastCols) return;
-  
-  
+
+  // if the colomn doesn't change, return
+  if (cols === lastCols) return;
+
   lastCols = cols;
-  $('.project').removeClass(function(index, className) {
-      return (className.match(/(^|\s)row\S+/g) || []).join(' ');
+  $('.project').removeClass(function (index, className) {
+    return (className.match(/(^|\s)row\S+/g) || []).join(' ');
   });
 
   //no need to adjust Height if cols is 1
   if (cols === 1) return;
 
   var lines = Math.ceil(total / cols);
-  // console.log(cols, lastCols, total, lines);
 
-  //adjust the height to maxH for each line
-  
+  // adjust the height to maxH for each line
   for (var j = 0; j < lines; j++) {
 
-      var maxH = 0,
-          classname = 'row' + j;
-      for (var i = 0; i < cols; i++) {
-          var index = j * cols + i;
-          var current = $('.project').eq(index).outerHeight();
-          // console.log(i,j);
-          if (current > maxH) maxH = current;
-          if (index + 1 > projects.length) break;
-          $('.project').eq(index).addClass(classname);
-      }
+    var maxH = 0,
+      classname = 'row' + j;
+    for (var i = 0; i < cols; i++) {
+      var index = j * cols + i;
+      var current = $('.project').eq(index).outerHeight();
+      // console.log(i,j);
+      if (current > maxH) maxH = current;
+      if (index + 1 > projects.length) break;
+      $('.project').eq(index).addClass(classname);
+    }
 
-      $('.' + classname).css("height", maxH);
-
+    $('.' + classname).css("height", maxH);
   }
-  
 }
 
-function mutesketch() {
-    var iframeDocument = $('iframe')[0].contentWindow;
-    iframeDocument.toggleMute(true);
+function muteSketch() {
+
+  $('iframe')[0].contentWindow.toggleMute(true);
 }
 
 function adjustFooterSpace() {
 
-    if ($('.footer').css("position") === "fixed")
-        $('.space').css("height", $('.footer').outerHeight());
-    else
-        $('.space').css("height", "0px");
-      // console.log($('.footer').css("position"), $('.footer').outerHeight());
+  if ($('.footer').css("position") === "fixed")
+    $('.space').css("height", $('.footer').outerHeight());
+  else
+    $('.space').css("height", "0px");
+  // console.log($('.footer').css("position"), $('.footer').outerHeight());
 }
 
 function getCurrentIdFromUrl(url) {
+
   return url.split("#")[1];
 }
 
-function openNewWindow(URLtoOpen, windowName, windowFeatures) {
-  window.open(URLtoOpen, windowName, windowFeatures);
+function openNewWindow(url, name, feats) {
+
+  window.open(url, name, feats);
 }
 
 function imageExists(image_url) {
+
   var http = new XMLHttpRequest();
   http.open('HEAD', image_url, false);
   http.send();
@@ -301,10 +303,10 @@ $(document).ready(function () {
     }
   })
 
-  //prevent default up/down key behaviour if sketch is present
-  $(document).keydown(function(e){
-    if ($('iframe').length === 0 ) return;
-    if (e.keyCode >= 37 && e.keyCode <= 40 ) {
+  // prevent default up/down key behaviour if sketch is present
+  $(document).keydown(function (e) {
+    if ($('iframe').length === 0) return;
+    if (e.keyCode >= 37 && e.keyCode <= 40) {
       e.preventDefault();
       // var iframeDocument = $('iframe')[0].contents();
       // var keyDownEvent = jQuery.Event("keydown");
@@ -312,30 +314,30 @@ $(document).ready(function () {
       // iframeDocument.trigger(keyDownEvent);
     }
   });
-
 });
 
 window.onhashchange = function () {
+
   var id = getCurrentIdFromUrl($(location).attr('href'));
   createDetail(projects, id);
 }
 
 $(window).resize(function () {
+
   if ($('.project').length > 0) {
-        $('.project img').css("height", $('.project img').width() * 0.65);
-        adjustItemHeight();
-        adjustFooterSpace();
-    }
+    $('.project img').css("height", $('.project img').width() * 0.65);
+    adjustItemHeight();
+    adjustFooterSpace();
+  }
 });
 
 // lets run some code...
+$.getJSON("projects.json").done(function (projs) {
 
-var projects, processJSON = $.getJSON("projects.json", function (json) {
-  projects = json.cells;
-});
-
-processJSON.done(function (projs) {
-  projects = projs;
-  if ($('#projects').length > 0) createGrid(projects);
-  if ($('#detail').length > 0) createDetail(projects, getCurrentIdFromUrl($(location).attr('href')));
+  if ($('#projects').length > 0) {
+    createGrid(projs);
+  }
+  if ($('#detail').length > 0) {
+    createDetail(projs, getCurrentIdFromUrl($(location).attr('href')));
+  }
 });
