@@ -3,25 +3,25 @@ var lastCols = 0;
 function createGrid(projects) {
 
   // create grid in html
-  for (var i = 0; i < projects.length; i++) {
+  for (var html, i = 0; i < projects.length; i++) {
 
-    var html = "<a href='detail.html#" + detailUrl(projects[i].shorttitle) + "'>";
+    html = "<a href='" + projLink(projects[i]) + "'>";
     html += "<div class='project'>";
     html += "<h5>" + projects[i].shorttitle + "</h5>";
-    html += "<img src=" + projects[i].thumb + ">";
+    html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
-    html += "</div></a>";
-
+    html += "</div>";
+    console.log(html);
     $('#projects .grid').append(html);
   }
 
   $('#projects .grid').append("<div class='space'></div>");
-  afterGridCreated(projects);
 
+  afterGridCreated(projects);
 }
 
 function afterGridCreated(projects) {
-  
+
   $('.project img').css("height", $('.project img').width() * 0.65);
   adjustItemHeight(projects);
   adjustFooterSpace();
@@ -41,9 +41,15 @@ function selectNavigation() {
     $navlist.html('<li><a class="current" href="index.html">NYU/Tandon: Portfolio</a></li>');
 }
 
+function projLink(proj) {
+
+  return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
+}
+
+
 function detailUrl(title) {
 
-  return title.toLowerCase().replace(/[ .-]+/g, '');
+   return title.toLowerCase().replace(/[ .-]+/g, '');
 }
 
 function createDetail(projects, id) {

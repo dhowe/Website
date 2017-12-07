@@ -9,7 +9,7 @@
   }],
   "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects all of the advertisements it has been served, based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
   "exhibitions": [{
-    "text": "<i>Netopia</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017"
+      "text": "<i>Netopia</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017"
     },
     {
       "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
@@ -449,9 +449,84 @@
     "target": "http://speedshow.ideacritik.com/"
   }]
 }, {
+  "shorttitle": "ChinaEye",
+  "thumb": "img/chinaeye_s.jpg",
+  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
+  "longtitle": "ChinaEye",
+  "images": [{
+    "src": "img/chinaeye_l.png"
+  }],
+  "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
+  "links": [
+
+    {
+      "name": "ChinaEye for Chrome",
+      "target": "https://chrome.google.com/webstore/detail/chinaeye/kbkejkbhaiggcfnalkdlphlikillhlpf"
+    },
+    {
+      "name": "ChinaEye on Github",
+      "target": "https://github.com/dhowe/ChinaEye"
+    }
+  ]
+}, {
+  "shorttitle": "Architecture of Association",
+  "thumb": "img/aoa_s.jpg",
+  "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human association. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and databases.",
+  "collaborators": "Bill Seaman",
+  "longtitle": "Architecture of Association",
+  "images": [{
+    "src": "img/aoa_l.jpg"
+  }, {
+    "src": "img/aoa_press.jpg"
+  }],
+  "videos": [{
+    "src": "video/aoa_paris",
+    "poster": "img/aoa_poster.jpg"
+  }],
+  "longdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
+  "exhibitions": [{
+    "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
+  }, {
+    "text": "<i>Futures of Digital Studies</i>. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
+    "target": "http://www.english.ufl.edu/fds/exhibit.html"
+  }, {
+    "text": "<i>C.H.A.T. 2010</i>. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
+  }, {
+    "text": "Selected for the Duke Permanent Collection. Perkins Library, Duke University, Raleigh, North Carolina, USA. May 15, 2009"
+  }, {
+    "text": "<i>Dans la nuit, des images</i>. Grand Palais, Paris, France. Dec 18–31, 2008",
+    "target": "http://dukemagazine.duke.edu/article/dans-la-nuit"
+  }, {
+    "text": "Commissioned for the Museu da Imagem e do Som, São Paulo, Brazil. Aug 9–Oct 5, 2008",
+    "target": " http://www.mis-sp.org.br/about"
+  }],
+  "links": [{
+    "name": "Catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
+    "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
+  }]
+}, {
+  "shorttitle": "All your Google are Belong",
+  "thumb": "img/allyourgoogle_s.jpg",
+  "shortdesc": "In 2005, I posted a Terms of Service agreement for this site with one unique clause stating that if an entity uses automated means to crawl the site (as Google has done consistently since), then their databases becomes the sole property of rednoise.org",
+  "longtitle": "All your Google are Belong to Us"
+}, {
+  "shorttitle": "Open.Ended",
+  "collaborators": "Aya Karpinska",
+  "thumb": "img/openended_s.jpg",
+  "shortdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of nested translucent cubes and dynamically update to realize a variety of textual permutations&hellip;",
+  "longtitle": "Open.Ended",
+  "images": [{
+    "src": "img/openended_l.jpg"
+  }],
+  "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a controller or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem.",
+  "links": [{
+    "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
+    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
+  }]
+}, {
   "shorttitle": "Text.Curtain",
   "thumb": "img/textcurtain_s.jpg",
-  "shortdesc": "<i>Text.Curtain</i> explores the tensions between reading and ludic play, via an interactive recombinant text. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple users via organic motion and generative sound.",
+  "shortdesc": "<i>Text.Curtain</i> explores tensions between reading and interactive play, via a recombinant text. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple users via organic motion and generative sound.",
   "longtitle": "text.curtain",
   "videos": [{
     "src": "video/textCurtain",
@@ -488,75 +563,6 @@
     "target": "http://www.arras.net/?p=18"
   }]
 }, {
-  "shorttitle": "ChinaEye",
-  "thumb": "img/chinaeye_s.jpg",
-  "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
-  "longtitle": "ChinaEye",
-  "images": [{
-    "src": "img/chinaeye_l.png"
-  }],
-  "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
-  "links": [
-
-  {
-    "name": "ChinaEye for Chrome",
-    "target": "https://chrome.google.com/webstore/detail/chinaeye/kbkejkbhaiggcfnalkdlphlikillhlpf"
-  },
-  {
-    "name": "ChinaEye on Github",
-    "target": "https://github.com/dhowe/ChinaEye"
-  }]
-}, {
-  "shorttitle": "Architecture of Association",
-  "thumb": "img/aoa_s.jpg",
-  "shortdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring the mechanisms of human associative thought. The system algorithmically generates and combines fragments of video, text, and sound in real-time, via a cluster of networked computers and databases.",
-  "collaborators": "Bill Seaman",
-  "longtitle": "Architecture of Association",
-  "images": [{
-    "src": "img/aoa_l.jpg"
-  }, {
-    "src": "img/aoa_press.jpg"
-  }],
-  "videos": [{
-    "src": "video/aoa_paris",
-    "poster": "img/aoa_poster.jpg"
-  }],
-  "longdesc": "<i>The Architecture of Association</i> is a software architecture and series of interactive installations exploring mechanisms of human associative thought. Drawing on research from a range of disciplines (psychology, linguistics, cognitive and computer science, etc) the software explores large multi-media databases to 'discover' unexpected linkages between disparate items. An initial version opened in 2008 at the MIS Museum in Sao Paulo, with a full-scale premiere in 2009 at the Grand Palais in Paris.",
-  "exhibitions": [{
-    "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
-  }, {
-    "text": "<i>Futures of Digital Studies</i>. University of Florida, Gainesville, Florida, USA. Feb 25–27, 2010",
-    "target": "http://www.english.ufl.edu/fds/exhibit.html"
-  }, {
-    "text": "<i>C.H.A.T. 2010</i>. Renaissance Computing Institute. Chapel Hill, NC, USA. Feb 16–20, 2010"
-  }, {
-    "text": "Selected for the Duke Permanent Collection. Perkins Library, Duke University, Raleigh, North Carolina, USA. May 15, 2009"
-  }, {
-    "text": "<i>Dans la nuit, des images</i>. Grand Palais, Paris, France. Dec 18–31, 2008",
-    "target": "http://dukemagazine.duke.edu/article/dans-la-nuit"
-  }, {
-    "text": "Commissioned for the Museu da Imagem e do Som, São Paulo, Brazil. Aug 9–Oct 5, 2008",
-    "target": " http://www.mis-sp.org.br/about"
-  }],
-  "links": [{
-    "name": "Catalogue for the exhibition in Museum of Image and Sound of São Paulo”",
-    "target": "https://www.ps2.com.br/en/projects/a-arquitetura-da-associacao/mis-arquitetura-da-associacao-catalogo/"
-  }]
-}, {
-  "shorttitle": "Open.Ended",
-  "collaborators": "Aya Karpinska",
-  "thumb": "img/openended_s.jpg",
-  "shortdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of nested translucent cubes and dynamically update to realize a variety of textual permutations&hellip;",
-  "longtitle": "Open.Ended",
-  "images": [{
-    "src": "img/openended_l.jpg"
-  }],
-  "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a controller or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem.",
-  "links": [{
-    "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
-    "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
-  }]
-}, {
   "shorttitle": "Redacto",
   "thumb": "img/redacto_s.png",
   "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. This free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.",
@@ -569,7 +575,7 @@
     "name": "Redacto for Chrome",
     "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
   }]
-},{
+}, {
   "shorttitle": "Perceptual Reader",
   "thumb": "img/perceptualReader_s.png",
   "shortdesc": "The <i>Perceptual Reader</i> is a novel, experimental reading interface that explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space.",
@@ -577,12 +583,12 @@
   "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
   "sketch": "perceptualReader/",
   "links": [{
-    "name": "Perceptual Reader",
-    "target": "perceptualReader/"
-  },
-  {
-    "name": "The Readers Project",
-    "target": "https://thereadersproject.org/index.html"
-  }]
-
+      "name": "Perceptual Reader",
+      "target": "perceptualReader/"
+    },
+    {
+      "name": "The Readers Project",
+      "target": "https://thereadersproject.org/index.html"
+    }
+  ]
 }]
