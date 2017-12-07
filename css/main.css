@@ -174,11 +174,11 @@ nav>ul>li>a:hover {
 .project h5 {
   font-size: 1.19em;
   color: #39465A;
+  height:32px;
 }
 .projectlong h5 {
   font-size:1.15em;
   color: #39465A;
-  height:32px
 }
 .project:hover {
   background-color: rgba(57, 70, 90, .06);
