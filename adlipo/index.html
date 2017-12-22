@@ -8,6 +8,7 @@
 <title>AdLiPo</title>
 <link rel="shortcut icon" href="http://rednoise.org/adlipo/img/favicon.ico">
 <!--link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'-->
+<link rel="stylesheet" href="../fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
 <style type="text/css">
 @font-face
@@ -239,15 +240,96 @@ hr{
 	border-color: #d1b38b;
 
 }
+.gallery{
+	height:500px;
+}
+h4{
+	font-family: pagedefault;
+	font-size: 23px;
+	color:#BC7F2A;
+	text-align: center;
+	margin-top: 2em;
+}
+.gallery .container{
+	position:relative;
+	width:580px;
+	margin:20px 60px;
+}
+.gallery img{
+	position:absolute;
+	width:200px;
+	border-width:6px;
+	border-style: solid;
+}
+#img_1{
+	width:175px;
+    left:240px;
+    top:0px;
+    border-color:#C68E41;
+}
+#img_2{
+	width:246px;
+	top:120px;
+    left:170px;
+    border-color:#CC542B;
+}
+#img_3{
+	width:175px;
+	top:0px;
+    left:45px;
+    border-color:#A2B6C0;
+}
+#img_4{
+	width:125px;
+	top:265px;
+    left:170px;
+    border-color:#5383A1;
+}
+#img_5{
+	width:75px;
+	top:340px;
+    left:75px;
+    border-color:#A5B6BF;
+}
+#img_6{
+	width:150px;
+	top:120px;
+    left:0px;
+    border-color:#899B57;
+}
+#img_7{
+	width:150px;
+	top:163px;
+    left:435px;
+    border-color:#899B57;
+}
+#img_8{
+	width:240px;
+    left:320px;
+    top:265px;
+    border-color:#CC542B;
+}
+#img_9{
+	width:120px;
+    left:435px;
+    top:55px;
+    border-color:#C68E41;
+}
 </style>
 <style type="text/css">@font-face { font-family: custom; src: url("./fonts/BenchNine.ttf"); }</style>
 <script src="./lib/jquery-1.8.3.min.js"></script>
 <script src="./lib/text.js"></script>
 <script src="./lib/rita-1.0.67.microp5.js"></script>
 <script src="./fonts/BenchNineAll.js"></script>
-<script src="./lib/adlipo-client.js"></script>	
+<script src="./lib/adlipo-client.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
 
-<script>
+    $(document).ready(function ()
+    {
+      $(".fancybox").fancybox();
+    });
+
 $(document).ready(function() {
 
 	injectAd("#poem1", 108, 53, 5);
@@ -317,6 +399,21 @@ $(document).ready(function() {
 		
 		<br-->
 		   <div class="download"><a title="Install AdLiPo" id="install-link" onclick="chrome.webstore.install(); return false;" href="http://rednoise.org/adlipo/adlipo.crx">Install for Chrome (beta v0.48)</a></div><div class="spot"><a title="Install AdLiPo" id="install-link" onclick="chrome.webstore.install(); return false;" href="http://rednoise.org/adlipo/adlipo.crx"><img src="./index_files/adlipo.png" alt="" align="center"></a></div>
+
+		   <div class="gallery">
+		   	<h4>Real-world Examples</h4>
+		   	<div class="container">
+		   	<a class="fancybox" rel="group" href="index_files/screenShot1_y.png"><img src="index_files/screenShot1_y.png" id="img_1" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot2_o.png"><img src="index_files/screenShot2_o.png" id="img_2" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot3_gray.png"><img src="index_files/screenShot3_gray.png" id="img_3" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot4_b.png"><img src="index_files/screenShot4_b.png"  id="img_4" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot5_gray.png"><img src="index_files/screenShot5_gray.png" id="img_5" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot6_green.png"><img src="index_files/screenShot6_green.png" id="img_6" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot7_green.png"><img src="index_files/screenShot7_green.png" id="img_7" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot8_o.png"><img src="index_files/screenShot8_o.png" id="img_8" alt=""></a>
+		   	<a class="fancybox" rel="group" href="index_files/screenShot9_y.png"><img src="index_files/screenShot9_y.png" id="img_9" alt=""></a>
+		   	</div>
+		   </div>
 		<p class="main" style="margin-left:0px">
        <br>&nbsp;<br>  * Note: &nbsp; The current version of AdLiPo will automatically install <a target="new" href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?hl=en">AdBlock</a>. If you are using another adblocker, you will need to disable it. Also, on some platforms, you may need to restart your browser after installing
         </p>
