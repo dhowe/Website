@@ -250,6 +250,13 @@ h4{
 	text-align: center;
 	margin-top: 2em;
 }
+h4 span{
+	font-size:16px;
+	display: block;
+	color:gray;
+	font-weight: 200;
+
+}
 .gallery .container{
 	position:relative;
 	width:580px;
@@ -260,6 +267,9 @@ h4{
 	width:200px;
 	border-width:6px;
 	border-style: solid;
+}
+.gallery img:hover{
+	opacity: .7;
 }
 #img_1{
 	width:175px;
@@ -401,8 +411,8 @@ $(document).ready(function() {
 		   <div class="download"><a title="Install AdLiPo" id="install-link" onclick="chrome.webstore.install(); return false;" href="http://rednoise.org/adlipo/adlipo.crx">Install for Chrome (beta v0.48)</a></div><div class="spot"><a title="Install AdLiPo" id="install-link" onclick="chrome.webstore.install(); return false;" href="http://rednoise.org/adlipo/adlipo.crx"><img src="./index_files/adlipo.png" alt="" align="center"></a></div>
 
 		   <div class="gallery">
-		   	<h4>AdLiPo in the Wild...</h4>
-			   <!-- real-world examples, submitted by users -->
+		   	<h4>AdLiPo in the Wild... <span>Real-world examples, submitted by users</span></h4>
+			  
 		   	<div class="container">
 		   	<a class="fancybox" rel="group" href="index_files/screenShot1_y.png"><img src="index_files/screenShot1_y.png" id="img_1" alt=""></a>
 		   	<a class="fancybox" rel="group" href="index_files/screenShot2_o.png"><img src="index_files/screenShot2_o.png" id="img_2" alt=""></a>
