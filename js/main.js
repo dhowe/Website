@@ -11,7 +11,7 @@ function createGrid(projects) {
     html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
     html += "</div>";
-    console.log(html);
+    //console.log(html);
     $('#projects .grid').append(html);
   }
 
