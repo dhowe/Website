@@ -69,6 +69,11 @@ function createDetail(projects, id) {
       break;
     };
   }
+  
+  // wrong id or no id
+  if (current === undefined)
+    window.location.href = 'index.html';
+
 
   // if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0) {
