@@ -42,8 +42,8 @@ function selectNavigation() {
 }
 
 function projLink(proj) {
-
-  return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
+  if (proj.directLink) return proj.directLink;
+  else return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
 }
 
 

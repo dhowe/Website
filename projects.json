@@ -1,4 +1,10 @@
 [{
+  "shorttitle": "Dialogic",
+  "thumb": "img/dialogic_s.png",
+  "shortdesc": "Dialogic is a system designed to help writers easily create interactive scripts with generative elements. It makes no assumptions about how generated text is displayed, or about how users will choose their responses.",
+  "longtitle": "Dialogic",
+  "directLink": "https://github.com/dhowe/dialogic"
+}, {
   "shorttitle": "Advertising Positions",
   "id": "",
   "thumb": "img/ap_s.jpg",
