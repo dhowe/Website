@@ -36,7 +36,7 @@
       for (var j = 0; j < items.length; j++) {
         html += '<div class="row"><div class="col-1-12"><p>' + items[j].year +
           '</p></div><div class="col-11-12"><p>' + items[j].detail + (items[j].link.length
-             ? ' [ <a href="'+items[j].link+' target="new">PDF</a> ]' : '') +'</p></div></div>';
+             ? ' [ <a href="'+items[j].link+'" target="_blank">PDF</a> ]' : '') +'</p></div></div>';
       }
       $('#publist').append(html);
     }
