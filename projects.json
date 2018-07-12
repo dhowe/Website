@@ -225,13 +225,19 @@
     }],
     "links": [{
       "name": "The Project Home Page",
-      "target": "http://rednoise.org/rita/"
+      "target": "https://rednoise.org/rita/"
     }, {
-      "name": "The RiTa paper (with A.B. Soderman)",
+      "name": "The Quick-start guide",
+      "target": "https://rednoise.org/rita/quickstart.php"
+    }, {
+      "name": "The Original RiTa paper",
+      "target": "pdfs/rita2009.pdf"
+    }, {
+      "name": "RiTa & Generative Lit. (with A.B. Soderman)",
       "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
     }, {
       "name": "The RiTa gallery",
-      "target": "http://rednoise.org/rita/gallery.php"
+      "target": "https://rednoise.org/rita/gallery.php"
     }]
   }, {
     "shorttitle": "All your Google are Belong to Us",
@@ -380,7 +386,7 @@
       "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
     }, {
       "name": "The RiTa HomePage",
-      "target": "http://rednoise.org/rita/"
+      "target": "https://rednoise.org/rita/"
     }],
     "sketch": "automatype/p5/"
   }, {
