@@ -34,9 +34,13 @@
 
       var html = "<br/> <br/>";
       for (var j = 0; j < items.length; j++) {
+        var link = items[j].link;
+        var type = link && link.length ? (link.endsWith('.pdf') ? 'PDF' : 'LINK')  : null;
+
         html += '<div class="row"><div class="col-1-12"><p>' + items[j].year +
-          '</p></div><div class="col-11-12"><p>' + items[j].detail + (items[j].link.length
-             ? ' [ <a href="'+items[j].link+'" target="_blank">PDF</a> ]' : '') +'</p></div></div>';
+          '</p></div><div class="col-11-12"><p>' + items[j].detail + (type
+             ? ' [&nbsp;<a href="'+link+'" target="_blank">'+type+'</a>&nbsp;]' : '')
+             +'</p></div></div>';
       }
       $('#publist').append(html);
     }
