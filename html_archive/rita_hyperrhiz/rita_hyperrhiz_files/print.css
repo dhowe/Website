@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,700);	
+			            /* aside styles
+-------------------------------------------------- */
+
+.content {
+}
+aside {
+	xxdisplay:none;
+}
+
+            /* Sticky footer styles
+-------------------------------------------------- */
+html,
+body {
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+}
+/* Set the fixed height of the footer here */
+#footer {
+display:none;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+@page { margin: auto; }
+
+code {
+  font-size: 80%;
+}
+
+.page-header {
+display:none;
+}
+
+
+h1 {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-weight:400;
+	font-size:2.0em;
+	line-height:120%;
+}
+
+h2 {	
+	font-family: 'Lato', Myriad Pro, sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	font-size:1.2em;
+	line-height:120%;
+}
+h3 {			
+	font-family: 'Lato', Myriad Pro, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:1em;
+	line-height:120%;
+}
+h4 {			
+	font-family: 'Lato', Myriad Pro, sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:120%;
+}
+.section {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-weight:400;
+	text-transform: none;
+	xxfont-size:1em;
+
+}
+.content {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	text-align:left;
+	overflow:auto;
+}
+
+.content p {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-size:1em;
+	line-height:160%;
+}
+.content li {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-size:1em;
+	line-height:150%;
+}
+aside p {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-size:1em;
+	line-height:160%;
+}
+.bio {
+	font-family: 'Roboto Slab', serif;font-weight:300;
+	font-size:1em;
+	line-height:160%;
+}
+aside h4 {
+	font-family: 'Roboto Slab', serif;font-weight:400;
+	text-transform:uppercase;
+	font-size:1em;
+	line-height:140%;
+}
+aside name {
+	font-weight:400;
+}
+aside a:link {
+	color:#C96;
+	text-decoration:none;
+}
+aside a:visited {
+	color:#C96;
+	text-decoration:none;
+}
+aside a:hover {
+	color:#C96;
+	text-decoration:underline;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eee;
+  line-height:140%;
+  font-size:1.1em;
+}
+
+#menu {
+	font-family: 'Lato', Myriad Pro, sans-serif;
+	background-color:#300;
+	text-align:center;
+	xxfont-size: 1.2em;
+}
+
+.catmenu a:link {
+	color:#930;
+	text-decoration:underline;
+}
+.catmenu a:visited {
+	color:#930;
+	text-decoration:underline;
+}
+.catmenu a:hover {
+	color:#930;
+	text-decoration:underline;
+}
+
+.content a:link {
+	color:#930;
+	text-decoration:none;
+}
+.content a:visited {
+	color:#930;
+	text-decoration:none;
+}
+.content a:hover {
+	color:#930;
+	text-decoration:none;
+}
+hr {
+	border: none 0;
+	border-top: 1px dotted #bbb;
+	height: 1px;
+}
+#breadcrumbs {
+	display:none;
+}
+#breadcrumbs a:link, a:visited, a:hover {
+	color:#930;
+}
+.glyphicon-search {
+	padding-top:4px;
+}
+figure {
+  text-align:center;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+	figure img {
+    display: block;
+    margin: 0 auto;
+   	margin-top:10px;
+	margin-bottom:10px;
+}
+figcaption {
+	font-style: italic;
+	font-size: 0.9em;
+	padding-top:10px;
+}
+.essaytable {
+	border:1px solid #ccc;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.essaytable td, th {
+	border:1px solid #ccc;
+	padding:10px;
+
+}
+.essaytable caption {
+	text-align:center;
+}
+.essaytable th {
+	background-color:#eee;
+}
+.caption {
+	font-size: 0.9em;
+}
+.footnoted {
+	font-style: normal;
+}
+.content name {
+	font-weight:400;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+#footnotes a {
+	text-decoration:underline;
+}
