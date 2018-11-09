@@ -25,15 +25,14 @@
         items.push(...sections[i].items);
       }
 
-      for (var j = 0; j < items.length; j++) {
-        console.log(items[j].year + " " + items[j].detail);
-      }
-
       // sort by date here
       items.sort(function(a,b) { return (a.year < b.year) ? 1 : -1; });
 
       var html = "<br/> <br/>";
       for (var j = 0; j < items.length; j++) {
+        var hidden = items[j].hidden;
+        if (typeof hidden != 'undefined' && hidden) continue;
+
         var link = items[j].link;
         var type = link && link.length ? (link.endsWith('.pdf') ? 'PDF' : 'LINK')  : null;
 

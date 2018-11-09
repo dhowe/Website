@@ -17,7 +17,7 @@
     {
       "year": 2018,
       "detail": "&ldquo;You Have Pressure, I Have Pressure: Hacking, Art & Activism in Hong Kong.&rdquo; Howe, Daniel C. Chapter 3, in The Field Guide to Hacking. Forthcoming 2018. Hong Kong: Dim Sum Press.",
-      "link": ""
+      "link": "pdfs/YouHavePressure.pdf"
     },
 
     {
@@ -130,6 +130,7 @@
     {
       "year": 2017,
       "detail": "&ldquo;Obfuscation Workshop Report.&rdquo; Brunton, F., Nissenbaum, H., Howe, D, et al.  Report for the National Science Foundation, 2017-09-01",
+      "hidden": true,
       "link": ""
     },
 
@@ -141,7 +142,7 @@
 
     {
       "year": 2016,
-      "detail": "&ldquo;The Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Electronic Literature Collection Vol. 3. Cambridge, Massachusetts: Electronic Literature Organization.",
+      "detail": "&ldquo;The Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Electronic Literature Collection Vol. III. Cambridge, Massachusetts: Electronic Literature Organization.",
       "link": "http://collection.eliterature.org/3/work.html?work=the-readers-project"
     },
 
@@ -177,7 +178,7 @@
 
     {
       "year": 2011,
-      "detail": "&ldquo;Roulette.&rdquo; Howe, Daniel C. and Molina, B. In Electronic Literature Collection Vol. 2. Cambridge, Massachusetts: Electronic Literature Organization.",
+      "detail": "&ldquo;Roulette.&rdquo; Howe, Daniel C. and Molina, B. In Electronic Literature Collection Vol. II. Cambridge, Massachusetts: Electronic Literature Organization.",
       "link": "http://collection.eliterature.org/2/works/howe_roulette.html"
     },
 
@@ -189,7 +190,7 @@
 
     {
       "year": 2006,
-      "detail": "&ldquo;Open&ndash;Ended.&rdquo; Howe, Daniel C. and Karpinska, A. In Electronic Literature Collection Vol. 1. College Park, Maryland: Electronic Literature Organization.",
+      "detail": "&ldquo;Open&ndash;Ended.&rdquo; Howe, Daniel C. and Karpinska, A. In Electronic Literature Collection Vol. I. College Park, Maryland: Electronic Literature Organization.",
       "link": ""
     },
 
