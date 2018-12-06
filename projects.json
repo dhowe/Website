@@ -82,6 +82,9 @@
     }],
     "longdesc": "<i>AdNauseam</i> is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, AdNauseam hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, AdNauseam creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
     "exhibitions": [{
+      "text": "<i>Into the Deep</i>, Design Museum of Israel. Holon, Israel. Oct 31–Nov 3, 2018",
+      "target": "https://www.english.printscreenfestival.com/into-the-deep"
+    }, {
       "text": "<i>Follow</i>, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
     }, {
       "text": "<i>SECRET</i>, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
