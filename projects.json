@@ -127,6 +127,9 @@
     }],
     "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project<i/> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
     "exhibitions": [{
+      "text": "<i>Author Function</i> Mass. Institute of Technology, Maihaugen Gallery. Massachusetts Institute of Technology, Maihaugen Gallery, Cambridge, USA. Jan 25-Mar 21, 2018",
+      "target": "http://nickm.com/post/2018/01/author-function/"
+    }, {
       "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
       "target": "http://www.ubu.com/contemp/cayley/index.html"
     }, {
