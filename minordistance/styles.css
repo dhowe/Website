@@ -17,7 +17,7 @@ body, html {
 
 #shortdesc {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  margin: 20px 10px;
+  margin: 0px 10px 20px;
   max-width: 600px;
   color: rgba(24, 59, 107, 0.76);
   font-size: 14px;
