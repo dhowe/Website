@@ -1,7 +1,7 @@
 [{
     "shorttitle": "Dialogic",
     "thumb": "img/dialogic_s.png",
-    "shortdesc": "A real-time system for interactive, generative dialog in AR/VR/NR games and conversational interfaces. Dialogic integrates generative and scripted content, allowing NPCs to respond organically to non-sequential input and actions from human users.",
+    "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games & conversational interfaces. Dialogic elegantly integrates generative & scripted content, allowing NPCs to respond organically to non-sequential input & actions from users.",
     "longtitle": "Dialogic",
     "directLink": "https://github.com/dhowe/dialogic#dialogic-fish"
   },
@@ -9,13 +9,16 @@
     "shorttitle": "Advertising Positions",
     "id": "",
     "thumb": "img/ap_s.jpg",
-    "shortdesc": "A set of 'robots' is trained to search the web according to specific profiles (age, gender, location, interests, etc). Each collects the ads it is served, according to its profile and applies them, one-by-one, to the skin of its virtual body.",
+    "shortdesc": "Volunteers are 3d-scanned and given custom software to collect the ads they're served over several months, according to their profile as perceived by corporate data hoarders. The ads are applied, one-by-one, to the skin of the user's body in virtual space.",
     "longtitle": "Advertising Positions",
     "images": [{
       "src": "img/ap_l.jpg"
     }],
-    "longdesc": "This series begins with 'robots'; software robots trained to search the web, according to specific user profiles they have been assigned, including age, gender, location, interests and the like. Each robot is released on the web, driving a modified version of Google’s Chrome browser, to periodically visit sites that it 'likes', and to click links that it selects, which then bring it to new sites. This process continues over several weeks, during which the robot collects all of the advertisements it has been served, based on its profile (generally several thousand or more), applying each to a single polygon on the mesh skin of the virtual avatar it inhabits. The training period concludes when the robot’s 3-dimensional figure is complete.",
+    "longdesc": "This series began with software agents trained to search the web, according to specific user profiles they have been assigned (age, gender, ethnicity, orientation, location, etc. These robots were released onto the web, driving a modified version of the Chrome browser, periodically visiting sites that they 'liked', and clicking links that they chose, which then brought them to new sites. This process continued over several months, during which the robot collected all of the advertisements they were served, based on their profile. In current iterations, human volunteers are 3d-scanned and given custom software to collect the ads they're served over several months  (generally several thousands of ads). Each ad is then applied to a single polygon on the mesh skin of an avatar that we create and release into virtual space.",
     "exhibitions": [{
+        "text": "<i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong, Dec 27 - Jan 10, 2019"
+      },
+      {
         "text": "<i>Netopia</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017"
       },
       {
@@ -39,7 +42,7 @@
   {
     "shorttitle": "The Readers Project",
     "thumb": "img/reader_s.jpg",
-    "shortdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities engineered to explore the cultures of human reading and writing in the face of ubiquitous algorithmic and networked services.",
+    "shortdesc": "An aesthetically-oriented system of software agents that explore human reading and writing behaviors in the face of ubiquitous algorithmic and networked services. Each reader is uniquely coded to embody a specific strategy for consuming language&hellip;",
     "collaborators": "John Cayley",
     "longtitle": "The Readers Project",
     "images": [{
@@ -70,7 +73,7 @@
   {
     "shorttitle": "AdNauseam",
     "thumb": "img/adn_s.jpg",
-    "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously protect users from advertising networks and attempts, by clicking every ad that it hides, to subvert the very economic system that drives online surveillance.",
+    "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously hides users' interests from advertising networks and attempts, by clicking every ad that it hides, to subvert the very economic system that drives online surveillance and datafication.",
     "collaborators": "Nissenbaum & Zer-Aviv",
     "longtitle": "AdNauseam",
     "images": [{
@@ -115,7 +118,7 @@
   }, {
     "shorttitle": "How It Is",
     "thumb": "img/hiiict_s.jpg",
-    "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the overreaches of copyright, composed by searching for the text of Samuel Beckett's How It Is in Google Books&hellip;",
+    "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, quite closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors found in Google Books&hellip;",
     "collaborators": "John Cayley",
     "longtitle": "How It Is in Common Tongues",
     "images": [{
@@ -125,7 +128,7 @@
     }, {
       "src": "img/hiiiict.jpg"
     }],
-    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the longest common phrases from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project<i/> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
+    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the <i>longest common phrases</i> from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project</i> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
     "exhibitions": [{
       "text": "<i>Author Function</i> Mass. Institute of Technology, Maihaugen Gallery. Massachusetts Institute of Technology, Maihaugen Gallery, Cambridge, USA. Jan 25-Mar 21, 2018",
       "target": "http://nickm.com/post/2018/01/author-function/"
@@ -161,7 +164,7 @@
   }, {
     "shorttitle": "TrackMeNot",
     "thumb": "img/tmn_s.jpg",
-    "shortdesc": "<i>TrackMeNot</i> is a browser extension and 'artware' provocation that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip;",
+    "shortdesc": "<i>TrackMeNot</i> is a browser extension that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other technologies of resistance, TrackMeNot self-consciously integrates human values into its design&hellip;",
     "collaborators": "Helen Nissenbaum",
     "longtitle": "TrackMeNot",
     "images": [{
@@ -195,12 +198,12 @@
   }, {
     "shorttitle": "RiTa",
     "thumb": "img/RiTa_s.png",
-    "shortdesc": "Designed to support the creation of novel works of computational literature, <i>RiTa</i> is a free and open-source, natural language toolkit (for Java, JavaScript, Android, and Node) that provides a unique set of tools for artists, writers and digital humanists working with programmable media. ",
+    "shortdesc": "Designed to support the creation of novel works of computational literature, <i>RiTa</i> is a free and open-source, natural language toolkit (for Java, JavaScript, Android and Node) that provides a unique set of tools for artists, writers and digital humanists working with programmable media. ",
     "longtitle": "RiTa",
     "images": [{
       "src": "img/ritapen.jpg"
     }],
-    "longdesc": "Designed to support the creation of novel works of generative literature, the <i>RiTa</i> library (for Java, JavaScript, and NodeJS) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free and open-source, and optionally runs in the popular 'Processing' environment for arts programming.",
+    "longdesc": "Designed to support the creation of novel works of generative literature, the <i>RiTa</i> library (for Java, JavaScript, Android and Node) provides a unique set of tools for artists and writers working in programmable media. RiTa is designed to be easy-to-use while still enabling a range of tasks, from grammar and Markov-based generation to stemming, splitting, conjugation, pos-tagging, rhyming, metrics, and feature analysis (stresses, phonemes, syllables,  etc). RiTa, implemented in both Java and JavaScript, is free/libre and open-source, and optionally runs in the popular Processing and p5.js environments for arts programming.",
     "projects": [{
       "name": "Roulette",
       "target": "#roulette"
@@ -248,12 +251,12 @@
   }, {
     "shorttitle": "All your Google are Belong to Us",
     "thumb": "img/allyourgoogle_s.jpg",
-    "shortdesc": "In 2005, I posted a Terms of Service agreement for this site with a unique clause stating that if anyone uses automated means to crawl the site (as Google has done consistently since), then their databases becomes the sole property of rednoise.org",
+    "shortdesc": "In 2005, we posted a binding <a href=\"http://rednoise.org/tos.html\" target=\"_new\"><i>Terms of Service</i></a> agreement on this site, with a unique clause stating that if any entity were to use automated means to crawl the site (as Google has done consistently since), then the databases in which the collected data was stored would become the property of rednoise.org",
     "longtitle": "All your Google are Belong to Us"
   }, {
     "shorttitle": "The Real Story of Ah-Q",
     "thumb": "img/ahq_s.jpg",
-    "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for exact phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today,  augmented with targeted advertising, images, even censorship&hellip;",
+    "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for exact phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today, augmented with targeted advertising, images, and Great Firewall censorship&hellip;",
     "collaborators": "John Cayley",
     "longtitle": "The Real Story of Ah-Q",
     "images": [{
@@ -298,7 +301,7 @@
   {
     "shorttitle": "AdLiPo",
     "thumb": "img/adlipo_s.jpg",
-    "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of modern ad-blockers, AdLiPo not only blocks ads, but replaces them with critical text algorithmically-generated in real-time.",
+    "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated text questioning the nature of advertising & the social, cultural & ecological destruction it engenders. Leveraging the ad-detection techniques of modern ad-blockers, AdLiPo replaces ads with critical, irreverent & often suprisingly insightful language.",
     "longtitle": "AdLiPo",
     "images": [{
       "src": "img/adlipo_l.jpg"
@@ -323,12 +326,12 @@
     "images": [{
       "src": "img/chinaeye_l.png"
     }],
-    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well.",
+    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well. Like <a href=\"./adnauseam\" target=\"_new\"><i>AdNauseam</i></a>, this extension has been BANNED by Google from its Chrome store.",
     "links": [
 
       {
-        "name": "ChinaEye for Chrome",
-        "target": "https://chrome.google.com/webstore/detail/chinaeye/kbkejkbhaiggcfnalkdlphlikillhlpf"
+        "name": "<strike>ChinaEye for Chrome</strike>",
+        "target": ""
       },
       {
         "name": "ChinaEye on Github",
@@ -511,7 +514,7 @@
   }, {
     "shorttitle": "Perceptual Reader",
     "thumb": "img/perceptualReader_s.png",
-    "shortdesc": "The <i>Perceptual Reader</i> is a novel, experimental reading interface that explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space.",
+    "shortdesc": "The <i>Perceptual Reader</i> is an novel, experimental interface for reading on new digital devices. The interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. For the untrained reader, it can be fully exhausting.",
     "longtitle": "Perceptual Reader",
     "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of <a href=\"detail.html#thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
     "sketch": "perceptualReader/",
@@ -524,6 +527,19 @@
         "target": "https://thereadersproject.org/index.html"
       }
     ]
+  }, {
+    "shorttitle": "Redacto",
+    "thumb": "img/redacto_s.png",
+    "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. This free/open-source browser extension removes <i>all</i> potentially harmful text so that you can better concentrate on your acquiescence.",
+    "longtitle": "Redacto",
+    "images": [{
+      "src": "img/redacto_l.jpg"
+    }],
+    "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite web pages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
+    "links": [{
+      "name": "Redacto for Chrome",
+      "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
+    }]
   }, {
     "shorttitle": "Text.Curtain",
     "thumb": "img/textcurtain_s.jpg",
@@ -612,19 +628,6 @@
     "links": [{
       "name": "<i>Electronic Literature Collection Vol. 1</i>. Cambridge, Massachusetts: Electronic Literature Organization.",
       "target": "http://collection.eliterature.org/1/works/howe_kaprinska__open_ended.html"
-    }]
-  }, {
-    "shorttitle": "Redacto",
-    "thumb": "img/redacto_s.png",
-    "shortdesc": "<i>Redacto</i> redacts the distracting information on web pages you visit, just like your favorite oppressive regime. This free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.",
-    "longtitle": "Redacto",
-    "images": [{
-      "src": "img/redacto_l.jpg"
-    }],
-    "longdesc": "<i>Redacto</i> redacts all the distracting information on your favorite web pages, just like your favorite oppressive regime. The free and open-source browser extension removes all potentially harmful text so that you can better concentrate on your acquiescence.<br><br/>To temporarily restore the normal appearance of a page, click the 'disable' button in the Redacto toolbar. To restore all pages, simply disable the extension in the extension manager.",
-    "links": [{
-      "name": "Redacto for Chrome",
-      "target": "https://chrome.google.com/webstore/detail/redacto/fgnfmpbncilgfjhlpocgokojeajfalgm?hl=en"
     }]
   }
 ]
