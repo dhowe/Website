@@ -15,14 +15,14 @@ function draw() {
 function branch(len) {
 
   if (len > 4) {
-    
+
     stroke(0,200);
     var sw = map(len, 200, 4, 20, .1);
     //strokeWeight(sw);
     //line(0, 0, 0, -len);
     oline(0, 0, 0, -len, sw);
     translate(0, -len);
-    
+
     len *= random(.5,.9);
 
     push();
@@ -34,7 +34,7 @@ function branch(len) {
     rotate(radians(angle + map(noise(1000+k),0,1,-10,10)));
     branch(len);
     pop();
-    
+
     if (random(1) < .5) {
       push();
       rotate(radians(angle/2 + map(noise(1000+k),0,1,-10,10)));
@@ -61,11 +61,9 @@ function oline(x1, y1, x2, y2, weight)
   strokeWeight(weight);
 
   var twisti = 1 + (weight/24.0);
-
   var xd = x2 - x1, yd = y2 - y1;
   var dist = sqrt(xd * xd + yd * yd);
   var sections = ceil(dist / 10.0);
-  //sections = 8;
 
   var twist, twist2 = new Array(sections + 1);
   for (var i = 0; i < twist2.length; i++) {

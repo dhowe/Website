@@ -1,17 +1,15 @@
 [{
   "section": "Journal Articles",
-  "items": [
+  "items": [{
+      "year": 2019,
+      "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac, Number 24,  Issue 1. Forthcoming 2019, Cambridge: MIT Press.",
+      "link": ""
+    },
 
     {
       "year": 2018,
       "detail": "&ldquo;Advertising Positions: Data Portraiture as Aesthetic Critique.&rdquo; Howe, Daniel C. et al. In Leonardo, Volume 51, Issue 4, August 2018. p.413-418. Cambridge: MIT Press. Originally published in ACM Trans. Graphics.",
       "link": "pdfs/AdvertisingPositions2018.pdf"
-    },
-
-    {
-      "year": 2018,
-      "detail": "&ldquo;Generative Art and the Aesthetics of Surprise.&rdquo; Howe, Daniel C. and Soderman, A. B. In Leonardo Electronic Almanac, Number 24,  Issue 1. Forthcoming 2018, Cambridge: MIT Press.",
-      "link": ""
     },
 
     {
@@ -46,21 +44,30 @@
   ]
 }, {
   "section": "Book Chapters",
-  "items": [{
+  "items": [
+    {
+      "year": 2019,
+      "detail": "&ldquo;A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.&rdquo; Cayley, J. and Howe, Daniel C., in \"Whose Book is it Anyway?: A View From Elsewhere on Publishing, Copyright and Creativity\", Jeffries, J, and Kember, S. (eds.) Open Book Publishers. DOI: 10.11647/OBP.0159.01",
+      "link": "pdfs/StatementByTheReadersProject2019.pdf"
+    },
+    {
       "year": 2015,
       "detail": "&ldquo;Protecting Sensitive Communication with Defensive Technology.&rdquo; Howe, Daniel C. Chapter 25, in Boycott Classes, Continue Learning - A Review of the Theories and Thoughts Prior to the Umbrella Movement. Hong Kong: Step Forward Press, p239-251.",
       "link": ""
     },
-
     {
       "year": 2008,
-      "detail": "&ldquo;TrackMeNot:  Resisting Surveillance in Web Search.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in Lessons from the Identity Trail: Anonymity, Privacy and Identity in a Networked Society. Ian Kerr, Carole Lucock and Valerie Steeves (eds.) Oxford:  Oxford University Press, p417&ndash;436.",
+      "detail": "&ldquo;TrackMeNot:  Resisting Surveillance in Web Search.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in \"Lessons from the Identity Trail: Anonymity, Privacy and Identity in a Networked Society\". Ian Kerr, Carole Lucock and Valerie Steeves (eds.) Oxford:  Oxford University Press, p417&ndash;436.",
       "link": "pdfs/trackmenot2009.pdf"
     },
-
+    {
+      "year": 2008,
+      "detail": "&ldquo;Values in Design: Theory and Practice.&rdquo; Flanagan, M., Howe, D., & Nissenbaum, H. Embodying Values in Technology: Theory and Practice. In \"Information Technology and Moral Philosophy\" (Cambridge Studies in Philosophy and Public Policy, pp. 322-353), J. Van den Hoven & J. Weckert (Eds.). Cambridge: Cambridge University Press. DOI: 10.1017/CBO9780511498725.017",
+      "link": "pdfs/embodying_values.pdf"
+    },
     {
       "year": 2007,
-      "detail": "&ldquo;New Design Methods for Activist Gaming.&rdquo; Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, in Worlds in Play: International Perspectives on Digital Games Research (New Literacies and Digital Epistemologies), S. de Castell and J. Jensen (eds.) Peter Lang, p241&ndash;248.",
+      "detail": "&ldquo;New Design Methods for Activist Gaming.&rdquo; Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, in \"Worlds in Play: International Perspectives on Digital Games Research (New Literacies and Digital Epistemologies)\", S. de Castell and J. Jensen (eds.) Peter Lang, p241&ndash;248.",
       "link": ""
     },
 
@@ -68,12 +75,6 @@
       "year": 2006,
       "detail": "&ldquo;Informed Consent in the Mozilla Browser:  Implementing Value&ndash;Sensitive Design.&rdquo; Friedman, B., Howe, D. C. and Felten, E. W. Chapter 9, in Internet Security: Hacking, CounterHacking, and Society, K. E. Himma (editor).  Mass: Jones and Bartlett Publishers, p153&ndash;170.",
       "link": "pdfs/InformedConsent.pdf"
-    },
-
-    {
-      "year": 2006,
-      "detail": "&ldquo;Values in Design: Theory and Practice.&rdquo; Flanagan, M., Howe, D. C.  and Nissenbaum, H. Chapter 16, in Information Technology and Moral Philosophy. Jeroen van den Hoven and John Weckert (eds.) Cambridge: Cambridge University Press, p322&ndash;353.",
-      "link": ""
     }
   ]
 }, {
@@ -104,7 +105,12 @@
     {
       "year": 2005,
       "detail": "&ldquo;Values at Play:  Design Tradeoffs in Socially&ndash;Oriented Game Design.&rdquo; Flanagan, M, Howe, D. C., and Nissenbaum, H. In Proceedings of the CHI 2005 Conference on Human Factors in Computing Systems. CHI 2005, 2&ndash;7 April, Portland, Oregon. New York: ACM Press, p751-760.",
-      "link": "pdfs/values_at_[lay.pdf"
+      "link": "pdfs/values_at_play.pdf"
+    },
+    {
+      "year": 2005,
+      "detail": "&ldquo;New Design Methods for Activist Gaming.&rdquo; Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, Proceedings of the Digital Games Research Association (DIGRA), June 16-20, Vancouver CA.",
+      "link": "pdfs/NewDesignMethodsActivistGaming.pdf"
     },
     {
       "year": 2002,
@@ -126,20 +132,12 @@
 }, {
   "section": "Other Publications",
   "items": [
-
     {
       "year": 2017,
       "detail": "&ldquo;Obfuscation Workshop Report.&rdquo; Brunton, F., Nissenbaum, H., Howe, D, et al.  Report for the National Science Foundation, 2017-09-01",
       "hidden": true,
       "link": ""
     },
-
-    {
-      "year": 2016,
-      "detail": "&ldquo;A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.&rdquo; Howe, Daniel C. and Cayley, J. In WHOSE BOOK IS IT ANYWAY?  CREATe (the Centre for Creativity, Regulation, Enterprise and Technology), University of Glasgow.",
-      "link": "pdfs/readers_project_statement.pdf"
-    },
-
     {
       "year": 2016,
       "detail": "&ldquo;The Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In Electronic Literature Collection Vol. III. Cambridge, Massachusetts: Electronic Literature Organization.",
