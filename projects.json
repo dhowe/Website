@@ -1,6 +1,6 @@
 [{
     "shorttitle": "Dialogic",
-    "thumb": "img/dialogic_s.png",
+    "thumb": "img/dialogic.jpg",
     "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games & conversational interfaces. Dialogic elegantly integrates generative & scripted content, allowing NPCs to respond organically to non-sequential input & actions from users.",
     "longtitle": "Dialogic",
     "directLink": "https://github.com/dhowe/dialogic#dialogic-fish"
