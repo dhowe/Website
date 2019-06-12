@@ -27,7 +27,7 @@ p, blockquote{
 	color:#eee;
 	text-align:justify;
 	width: 550px;
-  padding:0 75px 0;
+  padding:0 25px 0;
   margin-bottom:20px;
 }
 
@@ -60,8 +60,13 @@ a:visited
 /**************************
 		 CONTAINER
 /*************************/
-.main, .gallery, .figures{
+.gallery, .figures{
   margin-top: 80px;
+}
+.wrapper {
+  padding: 5px 0;
+  margin:50px 50px 0;
+  background-color: rgba(0,0,0,.4);
 }
 .container
 {
@@ -122,28 +127,26 @@ iframe{
 {
   color:#fff;
 	height: 37px;
-  margin:0px;
-  margin-top:3px;
-  margin-bottom:0px;
-	font-size:20px;
+	font-size:18px;
   letter-spacing: .3px;
-	padding-top:inherit;
 	text-align:center;
 	text-justify:inter-word;
   -webkit-margin-after: 0em;
+  text-align:center;
 }
 .credit span{
-  font-size:32px !important;
+  font-size:28px !important;
 }
 .credit-media
 {
   color:#fff;
   margin:0px;
-	font-size:16px;
+	font-size:14px;
 	padding-top:0px;
 	text-align:center;
 	text-justify:inter-word;
   height: 15px;
+  margin-bottom: 50px;
 }
 #footer
 {
@@ -183,13 +186,15 @@ h4 span{
 }
 img.decompositions{
   width:300px;
-  padding:0 200px 0;
-  margin:auto;
+  margin:0 180px 0;
+
+}
+img.code, img.decompositions {
+  background-color:black;
+  padding:20px;
 }
 img.code{
-  background-color:black;
   width:500px;
-  padding:20px;
   margin:50px 80px 0;
 }
 img.render {
