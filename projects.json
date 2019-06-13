@@ -2,12 +2,12 @@
     "shorttitle": "Spectre",
     "collaborators": "Bill Posters",
     "thumb": "img/spectre2_s.png",
-    "shortdesc": "Spectre is an interactive installation that reveals the secrets of the Digital Influence Industry, but only if you are willing to ‘pray at the altar of Dataism with the Gods of Silicon Valley’. Hear celebs like Zuckerberg, Duchamp, and Mercury endorse the project.",
+    "shortdesc": "An interactive installation that reveals the secrets of the Digital Influence Industry, but only if you are willing to ‘pray at the altar of Dataism with the Gods of Silicon Valley’. Hear deep-fake celebs like Zuckerberg, Duchamp, and Freddy Mercury express their debt to Spectre.",
     "longtitle": "Spectre",
     "images": [{
       "src": "img/spectre-blue_l.png"
     }],
-    "longdesc": "Spectre is an interactive installation that reveals the secrets of the Digital Influence Industry, but only if you are willing to ‘pray at the altar of Dataism with the Gods of Silicon Valley’. Comprised of six 2.2 meter high monoliths, Spectre uses a range of 'deep fake' celebrities (Zuckerberg, Duchamp, Abramovic, Freddie Mercury, etc.) to tell a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
+    "longdesc": "Spectre is an interactive installation that reveals the secrets of the Digital Influence Industry, but only if you are willing to ‘pray at the altar of Dataism with the Gods of Silicon Valley’. Comprised of six 2.2 meter high monoliths, With the help of a number of 'deep fake' celebrities (Mark Zuckerberg, Marcel Duchamp, Marina Abramović, Freddie Mercury, etc), Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
     "exhibitions": [{
       "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
     }],
@@ -30,16 +30,9 @@
     ]
   },
   {
-    "shorttitle": "Dialogic",
-    "thumb": "img/dialogic.jpg",
-    "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games & conversational interfaces. Dialogic elegantly integrates generative & scripted content, allowing NPCs to respond organically to non-sequential input & actions from users.",
-    "longtitle": "Dialogic",
-    "directLink": "https://github.com/dhowe/dialogic#dialogic-fish"
-  },
-  {
     "shorttitle": "Advertising Positions",
     "thumb": "img/ap_s.jpg",
-    "shortdesc": "Volunteers are 3d-scanned and given custom software to collect the ads they're served over several months, according to their profile as perceived by corporate data hoarders. The ads are applied, one-by-one, to the skin of the user's body in virtual space.",
+    "shortdesc": "Volunteers for <i>Advertising Positions</i> are 3d-scanned and given custom software to collect the digital ads they are served over several months. These ads are then applied, one-by-one, to the skin of the user's body as it is animated in virtual space.",
     "longtitle": "Advertising Positions",
     "images": [{
       "src": "img/ap_l.jpg"
@@ -70,40 +63,9 @@
     ]
   },
   {
-    "shorttitle": "The Readers Project",
-    "thumb": "img/reader_s.jpg",
-    "shortdesc": "An aesthetically-oriented system of software agents that explore human reading and writing behaviors in the face of ubiquitous algorithmic and networked services. Each reader is uniquely coded to embody a specific strategy for consuming language&hellip;",
-    "collaborators": "John Cayley",
-    "longtitle": "The Readers Project",
-    "images": [{
-      "src": "img/reader_l.jpg"
-    }],
-    "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
-    "exhibitions": [{
-      "text": "Full list of exhibitions",
-      "target": "http://thereadersproject.org/outcomes.html#CV"
-    }],
-    "links": [{
-      "name": "The Project Home Page",
-      "target": "http://thereadersproject.org"
-    }, {
-      "name": "The Readers Paper (II)",
-      "target": "pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
-    }, {
-      "name": "The Readers Paper (I)",
-      "target": "pdfs/LEON4404_pp317-324.pdf"
-    }, {
-      "name": "The Real Story of Ah-Q",
-      "target": "http://thereadersproject.org/index.php?p=installation/HK2014/wmc.html"
-    }, {
-      "name": "How It Is in Common Tongues",
-      "target": "  http://thereadersproject.org/hiiict2012.html#hiiict"
-    }]
-  },
-  {
     "shorttitle": "AdNauseam",
     "thumb": "img/adn_s.jpg",
-    "shortdesc": "<i>AdNauseam</i> is the free browser extension that simultaneously hides users' interests from advertising networks and attempts, by clicking every ad that it hides, to subvert the very economic system that drives online surveillance and datafication.",
+    "shortdesc": "<i>AdNauseam</i> is the open-source browser extension that hides users' interests from advertising networks and attempts, by clicking every ad that it hides, to subvert the very economic system that drives online surveillance and datafication.",
     "collaborators": "Helen Nissenbaum & Mushon Zer-Aviv",
     "longtitle": "AdNauseam",
     "images": [{
@@ -145,7 +107,14 @@
       "name": "AdNauseam for Firefox",
       "target": "https://addons.mozilla.org/en-US/firefox/addon/adnauseam/"
     }]
-  }, {
+  },
+  {
+    "shorttitle": "All your Google are Belong to Us",
+    "thumb": "img/allyourgoogle_s.jpg",
+    "shortdesc": "In 2005, we posted a binding <a href=\"http://rednoise.org/tos.html\" target=\"_new\"><i>Terms of Service</i></a> agreement with a unique clause stating that if any entity were to use automated means to crawl the site (as Google has done consistently since), then the databases in which this data was stored would become the property of rednoise",
+    "longtitle": "All your Google are Belong to Us"
+  },
+  {
     "shorttitle": "How It Is",
     "thumb": "img/hiiict_s.jpg",
     "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, quite closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors found in Google Books&hellip;",
@@ -192,9 +161,47 @@
       "target": "http://www.amazon.com/How-Common-Tongues-Readers-Project/dp/094845430X"
     }]
   }, {
+    "shorttitle": "AdLiPo",
+    "thumb": "img/adlipo_s.jpg",
+    "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated text questioning the nature of advertising & the social, cultural & ecological destruction it engenders. Leveraging the ad-detection techniques of modern ad-blockers, AdLiPo replaces ads with critical, irreverent & often suprisingly insightful language.",
+    "longtitle": "AdLiPo",
+    "images": [{
+      "src": "img/adlipo_l.jpg"
+    }],
+    "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time. AdLiPo doesn't replace every ad, but instead makes critical (and often humorous) selections based on the content of the page.",
+    "exhibitions": [{
+      "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
+      "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
+    }, {
+      "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
+      "target": "http://glia.ca/2014/db/"
+    }],
+    "links": [{
+      "name": "The Project Home Page",
+      "target": "adlipo/"
+    }]
+  }, {
+    "shorttitle": "ChinaEye",
+    "thumb": "img/chinaeye_s.jpg",
+    "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
+    "longtitle": "ChinaEye",
+    "images": [{
+      "src": "img/chinaeye_l.png"
+    }],
+    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well. Like <a href=\"./adnauseam\" target=\"_new\"><i>AdNauseam</i></a>, this extension has been BANNED by Google from its Chrome store.",
+    "links": [{
+        "name": "<strike>ChinaEye for Chrome</strike>",
+        "target": ""
+      },
+      {
+        "name": "ChinaEye on Github",
+        "target": "https://github.com/dhowe/ChinaEye"
+      }
+    ]
+  }, {
     "shorttitle": "TrackMeNot",
     "thumb": "img/tmn_s.jpg",
-    "shortdesc": "<i>TrackMeNot</i> is a browser extension that protects users from data profiling and intervenes in the power dynamic between searchers and corporate search engines. Like other technologies of resistance, TrackMeNot self-consciously integrates human values into its design&hellip;",
+    "shortdesc": "<i>TrackMeNot</i> is the browser extension that protects users from data profiling by flooding search engines with noise queries whenever the user searches. These queries obfuscate the user's profile and intervene in the lopsided power dynamic between searchers and corporate search engines.",
     "collaborators": "Helen Nissenbaum",
     "longtitle": "TrackMeNot",
     "images": [{
@@ -224,6 +231,44 @@
     }, {
       "text": "<i>SpeedShow</i>, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
       "target": "http://speedshow.ideacritik.com/"
+    }]
+  },
+  {
+    "shorttitle": "Dialogic",
+    "thumb": "img/dialogic.jpg",
+    "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games & conversational interfaces. Dialogic elegantly integrates generative & scripted content, allowing NPCs to respond organically to non-sequential input & actions from users.",
+    "longtitle": "Dialogic",
+    "directLink": "https://github.com/dhowe/dialogic#dialogic-fish"
+  },
+  {
+    "shorttitle": "The Readers Project",
+    "thumb": "img/reader_s.jpg",
+    "shortdesc": "An aesthetically-oriented system of software agents that explore human reading and writing behaviors in the face of ubiquitous algorithmic and networked services. Each reader is uniquely coded to embody a specific strategy for consuming language&hellip;",
+    "collaborators": "John Cayley",
+    "longtitle": "The Readers Project",
+    "images": [{
+      "src": "img/reader_l.jpg"
+    }],
+    "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
+    "exhibitions": [{
+      "text": "Full list of exhibitions",
+      "target": "http://thereadersproject.org/outcomes.html#CV"
+    }],
+    "links": [{
+      "name": "The Project Home Page",
+      "target": "http://thereadersproject.org"
+    }, {
+      "name": "The Readers Paper (II)",
+      "target": "pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
+    }, {
+      "name": "The Readers Paper (I)",
+      "target": "pdfs/LEON4404_pp317-324.pdf"
+    }, {
+      "name": "The Real Story of Ah-Q",
+      "target": "http://thereadersproject.org/index.php?p=installation/HK2014/wmc.html"
+    }, {
+      "name": "How It Is in Common Tongues",
+      "target": "  http://thereadersproject.org/hiiict2012.html#hiiict"
     }]
   }, {
     "shorttitle": "RiTa",
@@ -279,11 +324,6 @@
       "target": "https://rednoise.org/rita/gallery.php"
     }]
   }, {
-    "shorttitle": "All your Google are Belong to Us",
-    "thumb": "img/allyourgoogle_s.jpg",
-    "shortdesc": "In 2005, we posted a binding <a href=\"http://rednoise.org/tos.html\" target=\"_new\"><i>Terms of Service</i></a> agreement on this site, with a unique clause stating that if any entity were to use automated means to crawl the site (as Google has done consistently since), then the databases in which the collected data was stored would become the property of rednoise.org",
-    "longtitle": "All your Google are Belong to Us"
-  }, {
     "shorttitle": "The Real Story of Ah-Q",
     "thumb": "img/ahq_s.jpg",
     "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for exact phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today, augmented with targeted advertising, images, and Great Firewall censorship&hellip;",
@@ -329,46 +369,6 @@
     }]
   },
   {
-    "shorttitle": "AdLiPo",
-    "thumb": "img/adlipo_s.jpg",
-    "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated text questioning the nature of advertising & the social, cultural & ecological destruction it engenders. Leveraging the ad-detection techniques of modern ad-blockers, AdLiPo replaces ads with critical, irreverent & often suprisingly insightful language.",
-    "longtitle": "AdLiPo",
-    "images": [{
-      "src": "img/adlipo_l.jpg"
-    }],
-    "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time. AdLiPo doesn't replace every ad, but instead makes critical (and often humorous) selections based on the content of the page.",
-    "exhibitions": [{
-      "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
-      "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
-    }, {
-      "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
-      "target": "http://glia.ca/2014/db/"
-    }],
-    "links": [{
-      "name": "The Project Home Page",
-      "target": "adlipo/"
-    }]
-  }, {
-    "shorttitle": "ChinaEye",
-    "thumb": "img/chinaeye_s.jpg",
-    "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
-    "longtitle": "ChinaEye",
-    "images": [{
-      "src": "img/chinaeye_l.png"
-    }],
-    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well. Like <a href=\"./adnauseam\" target=\"_new\"><i>AdNauseam</i></a>, this extension has been BANNED by Google from its Chrome store.",
-    "links": [
-
-      {
-        "name": "<strike>ChinaEye for Chrome</strike>",
-        "target": ""
-      },
-      {
-        "name": "ChinaEye on Github",
-        "target": "https://github.com/dhowe/ChinaEye"
-      }
-    ]
-  }, {
     "shorttitle": "Automatype",
     "thumb": "img/auto_s.jpg",
     "shortdesc": "<i>Automatype</i> is a networked installation (composed of analog TV monitors and RaspberryPIs running custom software) that uses algorithms to find the bridges between English words, six-degrees-of-Kevin-Bacon-style; not bridges of garbled nonsense, but normative English that&hellip;",
