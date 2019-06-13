@@ -12,12 +12,22 @@
       "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
     }],
     "links": [{
-      "name": "The Project Home Page",
-      "target": "spectre/index.html"
-    }, {
-      "name": "Zuckerberg on Spectre",
-      "target": "https://vimeo.com/341794473"
-    }]
+        "name": "The Project Home Page",
+        "target": "spectre/index.html"
+      },
+      {
+        "name": "Zuckerberg on Spectre",
+        "target": "https://vimeo.com/341794473"
+      },
+      {
+        "name": "Kardashian on Spectre",
+        "target": "https://vimeo.com/341795971"
+      },
+      {
+        "name": "Alternate Realities Commission",
+        "target": "https://sheffdocfest.com/articles/705-alternate-realities-artist-commission-winner?tag=homepage"
+      }
+    ]
   },
   {
     "shorttitle": "Dialogic",
