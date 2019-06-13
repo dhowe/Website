@@ -1,4 +1,41 @@
-[{
+[  {
+    "shorttitle": "Spectre",
+    "thumb": "img/Spectre_s.png",
+    "shortdesc": "Spectre, a new art installation by Bill Posters and Daniel Howe, is poised to reveal the secrets of the Digital Influence Industry, but only if you are willing, as the artists say, to ‘pray at the altar of Dataism with the Gods of Silicon Valley’.",
+    "longtitle": "Spectre",
+    "images": [{
+      "src": "img/Spectre1.png"
+    }],
+    "longdesc": "Spectre, a new art installation by Bill Posters and Daniel Howe, is poised to reveal the secrets of the Digital Influence Industry, but only if you are willing, as the artists say, to ‘pray at the altar of Dataism with the Gods of Silicon Valley’. Spectre is an immersive, ‘black box’ installation comprising six 2.2m high monoliths, which tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
+    "exhibitions": [{
+        "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
+      }
+    ],
+    "links": [{
+        "name": "The Project Home Page",
+        "target": "spectre/index.html"
+      }
+    ]
+  },
+  {
+    "shorttitle": "Atomic Language Machines",
+    "thumb": "img/alm_s.png",
+    "shortdesc": "An atomic language machine (ALM) is a discrete computational entity with the potential to change the direction, intent, or magnitude of a linguistic element. ",
+    "longtitle": "Atomic Language Machines",
+    "images": [{
+      "src": "img/alm_l.png"
+    }],
+    "longdesc": "An atomic language machine (ALM) is a discrete computational entity with the potential to change the direction, intent, or magnitude of a linguistic element. In general, ALMs can be defined as members of the simplest class of mechanisms able to realize linguistic advantage. Traditionally the term has referred to the three classical ALMs defined in early theoretical research associated with the ‘National Language Liberation Front’. The simplest of these were elementary devices consisting of a specific movement, often called a mechanism, which were to be combined with other devices and movements to form a new machine or machinic assembly. Thus even simple ALMs expressed modularity and could be considered as building blocks for more complex ones. Between simple atomic machines and complex assemblies, several intermediate classes have since been proposed, often termed compound-ALMs. This analytical view of ALMs as hierarchical modules decomposable into simple (or ///\"atomic\") machines first arose in the early 2020s as a post-AI-crisis expression of counter-vectoralist thought (see 'the Readers Project' for one prescient example), and now constitute a central part of applied linguistic praxis. For example, some of the simple ALMs on display here (the so-called construction, aggregation, and mutation engines) are still widely used in logographic input methodologies (text-entry in Chinese, for example), predictive completion algorithms, and a host of other quotidian applications; a fact often obscured in the literature.",
+    "exhibitions": [{
+        "text": ""
+      }
+    ],
+    "links": [{
+        "name": "The Project Home Page",
+        "target": "atomicLanguageMachine/index.html"
+      }
+    ]
+  },{
     "shorttitle": "Dialogic",
     "thumb": "img/dialogic.jpg",
     "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games & conversational interfaces. Dialogic elegantly integrates generative & scripted content, allowing NPCs to respond organically to non-sequential input & actions from users.",
@@ -7,7 +44,6 @@
   },
   {
     "shorttitle": "Advertising Positions",
-    "id": "",
     "thumb": "img/ap_s.jpg",
     "shortdesc": "Volunteers are 3d-scanned and given custom software to collect the ads they're served over several months, according to their profile as perceived by corporate data hoarders. The ads are applied, one-by-one, to the skin of the user's body in virtual space.",
     "longtitle": "Advertising Positions",
