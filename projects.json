@@ -16,11 +16,11 @@
         "target": "spectre/index.html"
       },
       {
-        "name": "Zuckerberg on Spectre",
+        "name": "Mark Zuckerberg on Spectre",
         "target": "https://vimeo.com/341794473"
       },
       {
-        "name": "Kardashian on Spectre",
+        "name": "Kim Kardashian on Spectre",
         "target": "https://vimeo.com/341795971"
       },
       {
@@ -201,7 +201,7 @@
   }, {
     "shorttitle": "TrackMeNot",
     "thumb": "img/tmn_s.jpg",
-    "shortdesc": "<i>TrackMeNot</i> is the browser extension that protects users from data profiling by flooding search engines with noise queries whenever the user searches. These queries obfuscate the user's profile and intervene in the lopsided power dynamic between searchers and corporate search engines.",
+    "shortdesc": "<i>TrackMeNot</i> is the browser extension that protects users from data profiling by flooding search engines with noise queries whenever the user searches. These queries obfuscate the user's profile and Zuckerintervene in the lopsided power dynamic between searchers and corporate search engines.",
     "collaborators": "Helen Nissenbaum",
     "longtitle": "TrackMeNot",
     "images": [{
