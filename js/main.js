@@ -70,7 +70,7 @@ function createDetail(projects, id) {
       break;
     };
   }
-  
+
   // wrong id or no id
   if (current === undefined)
     window.location.href = 'index.html';
@@ -331,7 +331,7 @@ $(document).ready(function () {
 window.onhashchange = function () {
 
   var id = getCurrentIdFromUrl($(location).attr('href'));
-  createDetail(projects, id);
+  createDetail(window.projects, id);
 }
 
 $(window).resize(function () {
@@ -343,8 +343,9 @@ $(window).resize(function () {
   }
 });
 
-// lets run some code...
 $.getJSON("projects.json").done(function (projs) {
+
+  window.projects = projs; // hack for onhashchange
 
   if ($('#projects').length > 0) {
     createGrid(projs);
