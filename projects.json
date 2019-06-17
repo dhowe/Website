@@ -11,9 +11,14 @@
     "exhibitions": [{
       "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
     }],
-    "links": [{
+    "links": [
+      {
         "name": "The Project Home Page",
         "target": "spectre/index.html"
+      },
+      {
+        "name": "Sheffield Installation Walkthrough (3D)",
+        "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
       },
       {
         "name": "Mark Zuckerberg on Spectre",
