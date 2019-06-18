@@ -94,7 +94,9 @@ function createDetail(projects, id) {
   }
 
   // LONG TEXT
-  html += "<p class='longdesc'>" + current.longdesc + "</p>";
+  if (current.longdesc != undefined) {
+    html += "<p class='longdesc'>" + current.longdesc + "</p>";
+  }
 
   // QUOTES
   if (current.quotes) {
@@ -109,7 +111,9 @@ function createDetail(projects, id) {
 
   // IFRAME SKETCH
   if (current.sketch) {
-    html += "<iframe name='sketch' src='" + current.sketch + "'></iframe>";
+    html += "<iframe id='" + current.shorttitle +"_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
+    // mute sketch whenever a link redirect is triggered on current detailed page
+    html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '" + current.shorttitle.toLowerCase() +"') $('a').click(function(){muteSketch()});</script>";
   }
 
   // LINKS
@@ -119,9 +123,7 @@ function createDetail(projects, id) {
     for (var j = 0; j < current.links.length; j++) {
       var link = current.links[j];
       if (link.target === "automatype/p5/")
-        html += "<li><a target='_blank' onclick='muteSketch();' href='" + link.target +
-        "'>" + link.name + "</a></li>";
-      else html += "<li><a target='_blank' href='" + link.target +
+        html += "<li><a target='_blank' href='" + link.target +
         "'>" + link.name + "</a></li>";
     }
     html += "</ul>";
@@ -198,14 +200,23 @@ function createDetail(projects, id) {
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
+    var last = idk -1;
+    if (projects[last].longdesc === undefined) {
+      last -= 1;
+    }
     html += "<p><span>previous</span><a href='#" +
-      detailUrl(projects[idk - 1].shorttitle) + "'>" +
-      projects[idk - 1].longtitle + "</a></p>";
+      detailUrl(projects[last].shorttitle) + "'>" +
+      projects[last].longtitle + "</a></p>";
+
   }
 
+  var next = idk + 1;
+  if (projects[next].longdesc === undefined) {
+    next += 1;
+  }
   html += "<p class='nextPage'><span>next</span><a href='#" +
-    detailUrl(projects[(idk + 1) % projects.length].shorttitle) +
-    "'>" + projects[(idk + 1) % projects.length].longtitle + "</a></p>";
+    detailUrl(projects[(next) % projects.length].shorttitle) +
+    "'>" + projects[(next) % projects.length].longtitle + "</a></p>";
 
   html += "</div></div>";
 
@@ -265,8 +276,9 @@ function adjustItemHeight(projects) {
 }
 
 function muteSketch() {
-
-  $('iframe')[0].contentWindow.toggleMute(true);
+  $('iframe').each(function(){
+    $(this)[0].contentWindow.toggleMute(true);
+  })
 }
 
 function adjustFooterSpace() {
@@ -328,11 +340,7 @@ $(document).ready(function () {
   });
 });
 
-window.onhashchange = function () {
 
-  var id = getCurrentIdFromUrl($(location).attr('href'));
-  createDetail(window.projects, id);
-}
 
 $(window).resize(function () {
 
@@ -345,12 +353,15 @@ $(window).resize(function () {
 
 $.getJSON("projects.json").done(function (projs) {
 
-  window.projects = projs; // hack for onhashchange
-
   if ($('#projects').length > 0) {
     createGrid(projs);
   }
   if ($('#detail').length > 0) {
     createDetail(projs, getCurrentIdFromUrl($(location).attr('href')));
+  }
+
+  window.onhashchange = function () {
+    var id = getCurrentIdFromUrl($(location).attr('href'));
+    createDetail(projs, id);
   }
 });
