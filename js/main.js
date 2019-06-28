@@ -122,9 +122,9 @@ function createDetail(projects, id) {
     html += "<ul class='links'>LINKS";
     for (var j = 0; j < current.links.length; j++) {
       var link = current.links[j];
-      if (link.target === "automatype/p5/")
-        html += "<li><a target='_blank' href='" + link.target +
-        "'>" + link.name + "</a></li>";
+      // if (link.target === "automatype/p5/")
+      html += "<li><a target='_blank' href='" + link.target +
+      "'>" + link.name + "</a></li>";
     }
     html += "</ul>";
   }
