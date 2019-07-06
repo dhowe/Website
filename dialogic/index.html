@@ -1,0 +1,732 @@
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dialogic - a framework for generative interactive dialog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+    .main-wrapper h1 {
+    font-family: 'Gill sans',sans-serif !important;
+    letter-spacing: 2px;
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.33333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+  </style>
+  <link rel="stylesheet" href="DialogicScroll_files/0c0d5b1ee3cd049f7aadbb6e522bca93a614e002.css">
+  <link href="DialogicScroll_files/css.css" rel="stylesheet">
+  <link href="DialogicScroll_files/css_002.css" rel="stylesheet">
+  <meta name="description" content="Dialogic is a framework for building efficient, scalable Node.js web applications. It uses modern JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Progamming), FP (Functional Programming), and FRP (Functional Reactive Programming).">
+  <meta name="robots" content="noodp">
+  <link rel="canonical" href="https://github.com/dhowe/dialogic">
+  <meta property="og:url" content="https://nestjs.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:site_name" content="Dialogic - A progressive Node.js web framework">
+  <meta property="og:title" content="Dialogic - A progressive Node.js web framework">
+  <meta property="og:description" content="Dialogic is a framework for building efficient, scalable Node.js web applications. It uses modern JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Progamming), FP (Functional Programming), and FRP (Functional Reactive Programming).">
+  <meta property="og:image" content="https://github.com/dhowe/dialogicimg/nest-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="650">
+  <meta name="twitter:description" content="Dialogic is a framework for building efficient, scalable Node.js web applications. It uses modern JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Progamming), FP (Functional Programming), and FRP (Functional Reactive Programming).">
+  <meta name="twitter:title" content="Dialogic - A progressive Node.js web framework">
+  <link rel="icon" type="image/x-icon" href="https://github.com/dhowe/dialogicfavicon.a18fc8a9.ico">
+  <script type="text/javascript" id="www-widgetapi-script" src="DialogicScroll_files/www-widgetapi.js" async=""></script>
+  <script defer="defer" src="DialogicScroll_files/all.js"></script>
+  <script src="DialogicScroll_files/scripts.js"></script>
+  <link rel="stylesheet" href="DialogicScroll_files/plyr.css">
+  <script src="DialogicScroll_files/iframe_api" async=""></script>
+</head>
+
+<body>
+  <div id="sprite-plyr" hidden="">
+    <!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="plyr-airplay" viewBox="0 0 18 18">
+        <path d="M16 1H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3v-2H3V3h12v8h-2v2h3a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"></path>
+        <path d="M4 17h10l-5-6z"></path>
+      </symbol>
+      <symbol id="plyr-captions-off" viewBox="0 0 18 18">
+        <path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z"
+          fill-rule="evenodd" fill-opacity=".5"></path>
+      </symbol>
+      <symbol id="plyr-captions-on" viewBox="0 0 18 18">
+        <path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z"
+          fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18">
+        <path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z"></path>
+      </symbol>
+      <symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18">
+        <path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z"></path>
+      </symbol>
+      <symbol id="plyr-fast-forward" viewBox="0 0 18 18">
+        <path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path>
+      </symbol>
+      <symbol id="plyr-muted" viewBox="0 0 18 18">
+        <path d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path>
+      </symbol>
+      <symbol id="plyr-pause" viewBox="0 0 18 18">
+        <path d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zM12 1c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z"></path>
+      </symbol>
+      <symbol id="plyr-pip" viewBox="0 0 18 18">
+        <path d="M13.293 3.293L7.022 9.564l1.414 1.414 6.271-6.271L17 7V1h-6z"></path>
+        <path d="M13 15H3V5h5V3H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6h-2v5z"></path>
+      </symbol>
+      <symbol id="plyr-play" viewBox="0 0 18 18">
+        <path d="M15.562 8.1L3.87.225C3.052-.337 2 .225 2 1.125v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path>
+      </symbol>
+      <symbol id="plyr-restart" viewBox="0 0 18 18">
+        <path d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z"></path>
+      </symbol>
+      <symbol id="plyr-rewind" viewBox="0 0 18 18">
+        <path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path>
+      </symbol>
+      <symbol id="plyr-settings" viewBox="0 0 18 18">
+        <path d="M16.135 7.784a2 2 0 0 1-1.23-2.969c.322-.536.225-.998-.094-1.316l-.31-.31c-.318-.318-.78-.415-1.316-.094a2 2 0 0 1-2.969-1.23C10.065 1.258 9.669 1 9.219 1h-.438c-.45 0-.845.258-.997.865a2 2 0 0 1-2.969 1.23c-.536-.322-.999-.225-1.317.093l-.31.31c-.318.318-.415.781-.093 1.317a2 2 0 0 1-1.23 2.969C1.26 7.935 1 8.33 1 8.781v.438c0 .45.258.845.865.997a2 2 0 0 1 1.23 2.969c-.322.536-.225.998.094 1.316l.31.31c.319.319.782.415 1.316.094a2 2 0 0 1 2.969 1.23c.151.607.547.865.997.865h.438c.45 0 .845-.258.997-.865a2 2 0 0 1 2.969-1.23c.535.321.997.225 1.316-.094l.31-.31c.318-.318.415-.781.094-1.316a2 2 0 0 1 1.23-2.969c.607-.151.865-.547.865-.997v-.438c0-.451-.26-.846-.865-.997zM9 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+      </symbol>
+      <symbol id="plyr-volume" viewBox="0 0 18 18">
+        <path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path>
+        <path d="M11.282 5.282a.909.909 0 0 0 0 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 0 0 0 1.316c.145.145.636.262 1.018.156a.725.725 0 0 0 .298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 0 0-1.316 0zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path>
+      </symbol>
+    </svg></div>
+  <div class="navbar-sticky visible">
+    <div class="container">
+      <div class="logo-wrapper d-inline-block"> <a href="https://github.com/dhowe/dialogic"> <img src="DialogicScroll_files/dlogo-small.png" alt="Dialogic - A progressive Node.js web framework"> </a> </div>
+      <ul class="nav-wrapper d-inline-block">
+        <li class="hidden-sm"><a href="https://github.com/dhowe/dialogic/wiki">FAQ</a></li>
+        <li class="hidden-sm"><a target="blank" href="https://github.com/dhowe/dialogic/wiki/Command-Reference">Command Reference</a></li>
+        <li class="hidden-xs"> <a target="blank" href="http://rednoise.org/dialogic/">DOCUMENTATION</a></li>
+        <li class="hidden-sm"><a target="blank" href="http://rednoise.org:8082/dialogic/editor/">Workbench</a></li>
+        <li class="hidden-sm"><a target="blank" href="https://www.nuget.org/packages/org.rednoise.dialogic/">NuGet Package</a></li>
+        <li> <a href="https://github.com/dhowe/dialogic" target="blank" class="icon m-l-30"> <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+              data-fa-i2svg="">
+              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg><!-- <i class="fab fa-github"></i> --> </a> </li>
+        <li>
+
+          <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=I%E2%80%99m%20using%20%23Dialogic&tw_p=tweetbutton&url=http%3A%2F%2Frednoise.org%2Fdialogic-web%2F" target="blank" class="icon"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+              data-fa-i2svg="">
+              <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg><!-- <i class="fab fa-twitter"></i> --> </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </li>
+      </ul>
+    </div>
+  </div>
+  <header class="page-header">
+    <div class="container">
+      <div class="top-wrapper">
+        <!--div class="logo-wrapper d-inline-block"> <a href="https://github.com/dhowe/dialogic"> <img src="DialogicScroll_files/dlogo-small.png" alt="Dialogic - A progressive Node.js web framework"> </a> </div-->
+        <nav class="pull-right">
+          <ul class="nav-wrapper">
+            <li class="hidden-sm"><a href="https://github.com/dhowe/dialogic/wiki">FAQ</a></li>
+            <li class="hidden-sm"><a target="blank" href="https://github.com/dhowe/dialogic/wiki/Command-Reference">Command Reference</a></li>
+            <li class="hidden-sm"><a target="blank" href="http://rednoise.org:8082/dialogic/editor/">Workbench</a></li>
+            <li class="hidden-sm"><a target="blank" href="https://www.nuget.org/packages/org.rednoise.dialogic/">NuGet Package</a></li>
+            <li>
+
+              <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=I%E2%80%99m%20using%20%23Dialogic&tw_p=tweetbutton&url=http%3A%2F%2Frednoise.org%2Fdialogic-web%2F" target="blank" class="icon"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg><!-- <i class="fab fa-twitter"></i> --> </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </li>
+          </ul>
+        </nav>
+        <div class="main-wrapper">
+          <h1>dialogic</h1>
+          <h4> A cross-language framework for interactive generative dialog. </h4>
+          <div class="buttons-wrapper"> <a href="https://github.com/dhowe/dialogic" class="btn btn-primary d-inline-block">Documentation</a> <a href="https://github.com/dhowe/dialogic" class="btn btn-secondary d-inline-block"> <svg class="svg-inline--fa fa-github fa-w-16"
+                aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
+                <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+              </svg><!-- <i class="fab fa-github"></i> --> <span>Source code</span> </a> </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="highlights-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 highlight-block">
+          <div class="icon-wrapper"><img src="DialogicScroll_files/3d.svg"></div>
+          <h5>Extensible</h5>
+          <p> Gives you true flexibility by allowing use of any other libraries thanks to modular architecture. </p>
+        </div>
+        <div class="col-md-4 highlight-block">
+          <div class="icon-wrapper"><img src="DialogicScroll_files/magic-wand.svg"></div>
+          <h5>Versatile</h5>
+          <p> An adaptable scripting language that can be easily customized for all applications. </p>
+        </div>
+        <div class="col-md-4 highlight-block">
+          <div class="icon-wrapper"><img src="DialogicScroll_files/quality.svg"></div>
+          <h5>Powerful</h5>
+          <p> Takes advantage of latest language generation techniques for powerful computational writing. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="live-wrapper">
+    <div class="container">
+      <h4>Live preview</h4>
+      <p> Experiment with Dialogic without leaving<br> your browser. </p> <img src="DialogicScroll_files/Dialogic-Editor.png" style="height:500px;border:0;border-radius:4px;overflow:hidden;"></img>
+    </div>
+  </div>
+  <div class="video-wrapper" id="video">
+    <div class="container">
+      <h4>Presentation</h4>
+      <p> Building a platform: Dialogic from the ground up <a href="https://github.com/dhowe/dialogic" target="blank">Daniel Howe </a><br>ELO, Ireland, 2019 </p>
+      <div class="plyr plyr--full-ui plyr--video plyr--youtube plyr--fullscreen-enabled plyr--paused plyr--stopped plyr__poster-enabled" id="player">
+        <div class="plyr__controls"><button type="button" class="plyr__control" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false">
+              <use xlink:href="#plyr-pause"></use>
+            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
+              <use xlink:href="#plyr-play"></use>
+            </svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button>
+          <div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="plyr-seek-4200" style="--value:0%;"><progress
+              class="plyr__progress__buffer" min="0" max="100" value="0" role="presentation" aria-hidden="true">% buffered</progress><span class="plyr__tooltip">00:00</span></div>
+          <div class="plyr__time plyr__time--current" aria-label="Current time">-26:22</div>
+          <div class="plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" role="presentation" focusable="false">
+                <use xlink:href="#plyr-muted"></use>
+              </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
+                <use xlink:href="#plyr-volume"></use>
+              </svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider"
+              aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-4200" style="--value:100%;" aria-valuetext="100.0%"></div><button type="button" class="plyr__control" data-plyr="captions"><svg class="icon--pressed"
+              role="presentation" focusable="false">
+              <use xlink:href="#plyr-captions-on"></use>
+            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
+              <use xlink:href="#plyr-captions-off"></use>
+            </svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button>
+          <div class="plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-4200" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg role="presentation" focusable="false">
+                <use xlink:href="#plyr-settings"></use>
+              </svg><span class="plyr__sr-only">Settings</span></button>
+            <div class="plyr__menu__container" id="plyr-settings-4200" hidden="">
+              <div>
+                <div id="plyr-settings-4200-home">
+                  <div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button
+                      data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings"
+                      type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">Normal</span></span></button></div>
+                </div>
+                <div id="plyr-settings-4200-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button>
+                  <div role="menu"></div>
+                </div>
+                <div id="plyr-settings-4200-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button>
+                  <div role="menu"></div>
+                </div>
+                <div id="plyr-settings-4200-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button>
+                  <div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control"
+                      aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="1"><span>Normal</span></button><button data-plyr="speed"
+                      type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button
+                      data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control"
+                      aria-checked="false" value="2"><span>2×</span></button></div>
+                </div>
+              </div>
+            </div>
+          </div><button type="button" class="plyr__control" data-plyr="fullscreen"><svg class="icon--pressed" role="presentation" focusable="false">
+              <use xlink:href="#plyr-exit-fullscreen"></use>
+            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
+              <use xlink:href="#plyr-enter-fullscreen"></use>
+            </svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button>
+        </div>
+        <div class="plyr__video-wrapper plyr__video-embed" style="padding-bottom: 56.25%;"><iframe id="youtube-3759" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Player for " src="DialogicScroll_files/f0qzBkAQ3mk.html"
+            width="640" height="360" frameborder="0"></iframe>
+          <div class="plyr__poster" style="background-image: url(&quot;https://img.youtube.com/vi/f0qzBkAQ3mk/maxresdefault.jpg&quot;);"></div>
+        </div> <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false">
+            <use xlink:href="#plyr-play"></use>
+          </svg><span class="plyr__sr-only">Play</span></button>
+      </div>
+    </div>
+  </div>
+  <!--div class="sponsors-wrapper" id="sponsors">
+    <div class="container">
+      <h4>Support us</h4>
+      <p>
+        Dialogic is an MIT-licensed open-source project. Hence, it grows thanks to
+        the sponsors and support by the amazing backers. Please, consider
+        supporting us! </p>
+      <div class="support-section">
+        <h5>Principal sponsor</h5> <a href="https://valor-software.com/" target="blank"> <img src="DialogicScroll_files/valor-software.png" class="principal-logo"> </a>
+      </div>
+      <div class="support-section">
+        <h5>Silver sponsors</h5> <a href="https://neoteric.eu/" target="blank"> <img src="DialogicScroll_files/neoteric.png" class="silver-logo"> </a> <a href="https://gojob.com/" target="blank"> <img src="DialogicScroll_files/gojob-logo.png" class="gojob-logo">
+        </a> <a href="https://trilon.io/" target="blank"> <img src="DialogicScroll_files/trilon.svg" class="silver-logo m-l-10 m-r-10"> </a> <a href="https://www.leogistics.com/" target="blank"> <img src="DialogicScroll_files/leogistics-logo.jpeg"
+            class="silver-logo m-l-10 m-r-10"> </a>
+      </div>
+      <div class="support-section">
+        <h5>Sponsors / Partners</h5> <a href="https://blueanchor.io/" target="blank"> <img src="DialogicScroll_files/blueanchor.png" class="company-logo company-logo--wide2x"> </a> <a href="https://www.novologic.com/" target="blank"> <img src="DialogicScroll_files/novologic.png"
+            class="company-logo company-logo--wide"> </a> <a href="https://www.swingdev.io/" target="blank"> <img src="DialogicScroll_files/swingdev-logo.svg" class="company-logo"> </a> <a href="https://scal.io/" target="blank"> <img src="DialogicScroll_files/scalio-logo.svg"
+            class="company-logo"> </a> <a href="http://angularity.io/" target="blank"> <img src="DialogicScroll_files/angularity-logo.png" class="company-logo company-logo--low"> </a> <a href="https://hostpresto.com/" target="blank"> <img src="DialogicScroll_files/hostpresto.png"
+            class="company-logo company-logo--low"> </a> <a href="https://genuinebee.com/" target="blank"> <img src="DialogicScroll_files/genuinebee.svg" class="company-logo company-logo--wide"> </a> <a href="http://architectnow.net/" target="blank">
+          <img src="DialogicScroll_files/architectnow.png" class="company-logo company-logo--wide"> </a> <a href="https://quander.io/" target="blank"> <img src="DialogicScroll_files/quander.png" class="company-logo company-logo--wide"> </a> <a href="https://mantro.net/"
+          target="blank"> <img src="DialogicScroll_files/mantro-logo.svg" class="company-logo company-logo--low"> </a> <a href="https://triplebyte.com/" target="blank"> <img src="DialogicScroll_files/triplebyte.png" class="company-logo company-logo--wide">
+        </a> <a href="https://ever.co/" target="blank"> <img src="DialogicScroll_files/ever-logo.png" class="company-logo company-logo--low"> </a> <a href="https://buddy.works/" target="blank"> <img src="DialogicScroll_files/buddy-logo.svg" class="company-logo company-logo--wide">
+        </a> <a href="https://blokt.com/" target="blank"> <img src="DialogicScroll_files/blokt-logo.png" class="company-logo company-logo--wide"> </a> <a href="https://reposit.co.uk/" target="blank"> <img src="DialogicScroll_files/reposit-logo.png"
+            class="company-logo"> </a> <a href="https://www.netlify.com/" target="blank"> <img src="DialogicScroll_files/netlify-logo.svg" class="company-logo company-logo--wide"> </a> <a href="https://yakaz.com/" target="blank"> <img src="DialogicScroll_files/yakaz.png"
+            class="company-logo"> </a> <a href="http://xtremis.com/" target="blank"> <img src="DialogicScroll_files/logo-xtremis.svg" class="company-logo"> </a>
+      </div>
+      <div class="support-section">
+        <h5>Community partners</h5> <a href="http://ng-atl.org/" target="blank"> <img src="DialogicScroll_files/ngatl.svg" class="company-logo company-logo--wide"> </a> <a href="https://ngtalks.io/" target="blank"> <img src="DialogicScroll_files/ngtalks.png"
+            class="company-logo company-logo--high"> </a> <a href="https://jscamp.tech/" target="blank"> <img src="DialogicScroll_files/jscamp-official.svg" class="company-logo company-logo--high"> </a> <a href="https://js-kongress.com/" target="blank">
+          <img src="DialogicScroll_files/jskongress.png" class="company-logo company-logo--high"> </a> <a href="http://js-poland.pl/" target="blank"> <img src="DialogicScroll_files/js-poland-logo.png" class="company-logo"> </a> <a href="http://ng-poland.pl/"
+          target="blank"> <img src="DialogicScroll_files/ng-poland-logo.png" class="company-logo"> </a> <a href="https://ng-my.org/" target="blank"> <img src="DialogicScroll_files/ngmy.svg" class="company-logo company-logo--wide"> </a> <a href="https://ngvikings.org/"
+          target="blank"> <img src="DialogicScroll_files/ngvikings-logo.png" class="company-logo company-logo--wide"> </a> <a href="https://angularmix.com/" target="blank"> <img src="DialogicScroll_files/angularmix-logo.png" class="company-logo company-logo--wide">
+        </a>
+      </div> <a href="https://github.com/dhowe/dialogicsupport" target="blank" class="btn btn-primary d-inline-block">Become a sponsor <span>/</span> backer</a>
+    </div>
+  </div-->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="social-wrapper"> <a href="https://github.com/nestjs/nest" target="blank" class="icon"> <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512" data-fa-i2svg="">
+            <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+          </svg><!-- <i class="fab fa-github"></i> --> </a> <a href="https://twitter.com/home?status=I%20started%20clicking%20every%20ad%20I%20block%20to%20obfuscate%20advertising%20surveillance%20http://adnauseam.io%20%23AdNauseam" target="blank" class="icon"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+            <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+          </svg><!-- <i class="fab fa-twitter"></i> --> </a> </div>
+      <p> Released under the GPL License <br> Copyright © 2019 by <a href="https://github.com/dhowe/dialogic" target="blank">Daniel Howe</a> <br>
+
+    </div>
+  </footer>
+</body>
+
+</html>
