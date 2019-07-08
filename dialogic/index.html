@@ -7,6 +7,12 @@
   <title>Dialogic - a framework for generative interactive dialog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <style type="text/css">
+  .headerLink {
+    color: #FFF;
+  }
+   .headerLink:hover {
+     color:#ea2845;
+   }
     svg:not(:root).svg-inline--fa {
       overflow: visible
     }
@@ -609,74 +615,11 @@
   </div>
   <div class="live-wrapper">
     <div class="container">
-      <h4>Live preview</h4>
+      <h4><a class="headerLink" href="http://rednoise.org/dialogic/editor/" target="_blank"> Live preview</a></h4>
       <p> Experiment with Dialogic without leaving<br> your browser. </p> <img src="DialogicScroll_files/Dialogic-Editor.png" style="max-width:750px;width:100%;border:0;border-radius:4px;overflow:hidden;"></img>
     </div>
   </div>
-  <div class="video-wrapper" id="video">
-    <div class="container">
-      <h4>Presentation</h4>
-      <p> Building a platform: Dialogic from the ground up <a href="https://github.com/dhowe/dialogic" target="blank">Daniel Howe </a><br>ELO, Ireland, 2019 </p>
-      <div class="plyr plyr--full-ui plyr--video plyr--youtube plyr--fullscreen-enabled plyr--paused plyr--stopped plyr__poster-enabled" id="player">
-        <div class="plyr__controls"><button type="button" class="plyr__control" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false">
-              <use xlink:href="#plyr-pause"></use>
-            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
-              <use xlink:href="#plyr-play"></use>
-            </svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button>
-          <div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="plyr-seek-4200" style="--value:0%;"><progress
-              class="plyr__progress__buffer" min="0" max="100" value="0" role="presentation" aria-hidden="true">% buffered</progress><span class="plyr__tooltip">00:00</span></div>
-          <div class="plyr__time plyr__time--current" aria-label="Current time">-26:22</div>
-          <div class="plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" role="presentation" focusable="false">
-                <use xlink:href="#plyr-muted"></use>
-              </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
-                <use xlink:href="#plyr-volume"></use>
-              </svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider"
-              aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-4200" style="--value:100%;" aria-valuetext="100.0%"></div><button type="button" class="plyr__control" data-plyr="captions"><svg class="icon--pressed"
-              role="presentation" focusable="false">
-              <use xlink:href="#plyr-captions-on"></use>
-            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
-              <use xlink:href="#plyr-captions-off"></use>
-            </svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button>
-          <div class="plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-4200" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg role="presentation" focusable="false">
-                <use xlink:href="#plyr-settings"></use>
-              </svg><span class="plyr__sr-only">Settings</span></button>
-            <div class="plyr__menu__container" id="plyr-settings-4200" hidden="">
-              <div>
-                <div id="plyr-settings-4200-home">
-                  <div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button
-                      data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings"
-                      type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">Normal</span></span></button></div>
-                </div>
-                <div id="plyr-settings-4200-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button>
-                  <div role="menu"></div>
-                </div>
-                <div id="plyr-settings-4200-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button>
-                  <div role="menu"></div>
-                </div>
-                <div id="plyr-settings-4200-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button>
-                  <div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control"
-                      aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="1"><span>Normal</span></button><button data-plyr="speed"
-                      type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button
-                      data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control"
-                      aria-checked="false" value="2"><span>2×</span></button></div>
-                </div>
-              </div>
-            </div>
-          </div><button type="button" class="plyr__control" data-plyr="fullscreen"><svg class="icon--pressed" role="presentation" focusable="false">
-              <use xlink:href="#plyr-exit-fullscreen"></use>
-            </svg><svg class="icon--not-pressed" role="presentation" focusable="false">
-              <use xlink:href="#plyr-enter-fullscreen"></use>
-            </svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button>
-        </div>
-        <div class="plyr__video-wrapper plyr__video-embed" style="padding-bottom: 56.25%;"><iframe id="youtube-3759" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Player for " src="DialogicScroll_files/f0qzBkAQ3mk.html"
-            width="640" height="360" frameborder="0"></iframe>
-          <div class="plyr__poster" style="background-image: url(&quot;https://img.youtube.com/vi/f0qzBkAQ3mk/maxresdefault.jpg&quot;);"></div>
-        </div> <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false">
-            <use xlink:href="#plyr-play"></use>
-          </svg><span class="plyr__sr-only">Play</span></button>
-      </div>
-    </div>
-  </div>
+
   <!--div class="sponsors-wrapper" id="sponsors">
     <div class="container">
       <h4>Support us</h4>
