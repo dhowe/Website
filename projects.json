@@ -2,7 +2,7 @@
     "shorttitle": "Spectre",
     "collaborators": "Bill Posters",
     "thumb": "img/spectre2_s.png",
-    "shortdesc": "An interactive installation that tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data. Hear deep-fake celebs like Zuckerberg, Duchamp, and Freddy Mercury express their debt to Spectre...",
+    "shortdesc": "An interactive installation that tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data. Hear deep-fake celebs like Marcel Duchamp and Marina Abramović express their debt to our amazing technology...",
     "longtitle": "Spectre",
     "images": [{
       "src": "img/spectre-blue_l.png"
@@ -11,8 +11,7 @@
     "exhibitions": [{
       "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
     }],
-    "links": [
-      {
+    "links": [{
         "name": "The Project Home Page",
         "target": "spectre/index.html"
       },
@@ -35,9 +34,16 @@
     ]
   },
   {
+    "shorttitle": "Dialogic",
+    "thumb": "img/dialogic.jpg",
+    "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games and conversational interfaces. Dialogic organically integrates generative and scripted content, allowing characters to respond naturally to game events and arbitrary inputs from users.",
+    "longtitle": "Dialogic",
+    "directLink": "https://rednoise.org/dialogic-web"
+  },
+  {
     "shorttitle": "Advertising Positions",
     "thumb": "img/ap_s.jpg",
-    "shortdesc": "Volunteers for <i>Advertising Positions</i> are 3d-scanned and given custom software to collect the digital ads they are served over several months. These ads are then applied, one-by-one, to the skin of the user's body as it is animated in virtual space.",
+    "shortdesc": "Participants in <i>Advertising Positions</i> are 3d-scanned and given custom software to collect the digital ads they are served over several months. These ads are then applied, one-by-one, to the skin of the user's body as it is animated in virtual space.",
     "longtitle": "Advertising Positions",
     "images": [{
       "src": "img/ap_l.jpg"
@@ -66,184 +72,6 @@
         "target": "pdfs/AdvertisingPositions2018.pdf"
       }
     ]
-  },
-  {
-    "shorttitle": "AdNauseam",
-    "thumb": "img/adn_s.jpg",
-    "shortdesc": "<i>AdNauseam</i> is the open-source browser extension that hides users' interests from advertising networks and attempts, by clicking every ad that it hides, to subvert the very economic system that drives online surveillance and datafication.",
-    "collaborators": "Helen Nissenbaum & Mushon Zer-Aviv",
-    "longtitle": "AdNauseam",
-    "images": [{
-      "src": "img/adn_l.jpg"
-    }],
-    "videos": [{
-      "src": "video/adn",
-      "poster": "img/adn_poster.jpg"
-    }],
-    "longdesc": "<i>AdNauseam</i> is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, AdNauseam hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, AdNauseam creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
-    "exhibitions": [{
-      "text": "<i>Into the Deep</i>, Design Museum of Israel. Holon, Israel. Oct 31–Nov 3, 2018",
-      "target": "https://www.english.printscreenfestival.com/into-the-deep"
-    }, {
-      "text": "<i>Follow</i>, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
-    }, {
-      "text": "<i>SECRET</i>, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
-      "target": "https://dublin.sciencegallery.com/secret/exhibits/adnauseum/"
-    }, {
-      "text": "<i>Involuntary Resources</i>, DIAS Digital Interactive Art Space. Copenhagen, Denmark. Mar 20–Jun 7, 2015",
-      "target": "http://kopenhagen.dk/artguide/single/article/involuntary-resources/"
-    }],
-    "links": [{
-      "name": "The Project Home Page",
-      "target": "https://adnauseam.io"
-    }, {
-      "name": "The AdNauseam Paper",
-      "target": "http://ceur-ws.org/Vol-1873/IWPE17_paper_23.pdf"
-    }, {
-      "name": "Interview: Canadian Public Radio",
-      "target": "../spark/"
-    }, {
-      "name": "Talk at HopeX 2014 (video)",
-      "target": "https://www.youtube.com/watch?v=Po593tV-vAg"
-    }, {
-      "name": "AdNauseam for Chrome",
-      "target": "https://chrome.google.com/webstore/detail/adnauseam/hgfacieeomogkcchookiodlpppbcolha?hl=en"
-    }, {
-      "name": "AdNauseam for Firefox",
-      "target": "https://addons.mozilla.org/en-US/firefox/addon/adnauseam/"
-    }]
-  },
-  {
-    "shorttitle": "All your Google are Belong to Us",
-    "thumb": "img/allyourgoogle_s.jpg",
-    "shortdesc": "In 2005, we posted a binding <a href=\"http://rednoise.org/tos.html\" target=\"_new\"><i>Terms of Service</i></a> agreement with a unique clause stating that if any entity were to use automated means to crawl the site (as Google has done consistently since), then the databases in which this data was stored would become the property of rednoise",
-    "longtitle": "All your Google are Belong to Us"
-  },
-  {
-    "shorttitle": "How It Is",
-    "thumb": "img/hiiict_s.jpg",
-    "shortdesc": "<i>How It Is in Common Tongues</i>  is a conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, quite closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors found in Google Books&hellip;",
-    "collaborators": "John Cayley",
-    "longtitle": "How It Is in Common Tongues",
-    "images": [{
-      "src": "img/hiiict_l.jpg"
-    }, {
-      "src": "img/lcp.jpg"
-    }, {
-      "src": "img/hiiiict.jpg"
-    }],
-    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the <i>longest common phrases</i> from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project</i> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
-    "exhibitions": [{
-      "text": "<i>Author Function</i> Mass. Institute of Technology, Maihaugen Gallery. Massachusetts Institute of Technology, Maihaugen Gallery, Cambridge, USA. Jan 25-Mar 21, 2018",
-      "target": "http://nickm.com/post/2018/01/author-function/"
-    }, {
-      "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
-      "target": "http://www.ubu.com/contemp/cayley/index.html"
-    }, {
-      "text": "<i>Library of the Printed Web</i>. New York Book Art Fair. Table Q47, NY, USA. Sept.19–22, 2013",
-      "target": "http://libraryoftheprintedweb.tumblr.com/post/43578206217/cayleyjohn-and-daniel-c-howe-how-it-is-in"
-    }, {
-      "text": "Selected for the <i>Chercher le text</i>. Paragraph Laboratory of the University of Paris 8, the Excellence Arts–H2H Lab, Paris, France. Sept 23–28, 2013",
-      "target": "http://gallery.dddl.eu/en/gallery/how_it_is_in_common_tongues/"
-    }, {
-      "text": "Commission for 'New Media Scotland', at the Inspace gallery, Edinburgh, Scotland. Nov 1–17, 2012",
-      "target": "http://www.mediascot.org/remediatingthesocial"
-    }],
-    "links": [{
-      "name": "The Project Home Page",
-      "target": "http://thereadersproject.org/hiiict2012.html#hiiict"
-    }, {
-      "name": "Featured on UBUWeb",
-      "target": "http://www.ubuweb.com/contemp/cayley/"
-    }, {
-      "name": "Full PDF of the Work",
-      "target": "pdfs/hiiict.pdf"
-    }, {
-      "name": "On the 'Top 10 Radical Books' list",
-      "target": "http://nickm.com/post/2013/01/radical-books-of-2012-2/"
-    }, {
-      "name": "For sale on Amazon",
-      "target": "http://www.amazon.com/How-Common-Tongues-Readers-Project/dp/094845430X"
-    }]
-  }, {
-    "shorttitle": "AdLiPo",
-    "thumb": "img/adlipo_s.jpg",
-    "shortdesc": "<i>AdLiPo</i> replaces advertisements with generated text questioning the nature of advertising & the social, cultural & ecological destruction it engenders. Leveraging the ad-detection techniques of modern ad-blockers, AdLiPo replaces ads with critical, irreverent & often suprisingly insightful language.",
-    "longtitle": "AdLiPo",
-    "images": [{
-      "src": "img/adlipo_l.jpg"
-    }],
-    "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time. AdLiPo doesn't replace every ad, but instead makes critical (and often humorous) selections based on the content of the page.",
-    "exhibitions": [{
-      "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
-      "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
-    }, {
-      "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
-      "target": "http://glia.ca/2014/db/"
-    }],
-    "links": [{
-      "name": "The Project Home Page",
-      "target": "adlipo/"
-    }]
-  }, {
-    "shorttitle": "ChinaEye",
-    "thumb": "img/chinaeye_s.jpg",
-    "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
-    "longtitle": "ChinaEye",
-    "images": [{
-      "src": "img/chinaeye_l.png"
-    }],
-    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well. Like <a href=\"./adnauseam\" target=\"_new\"><i>AdNauseam</i></a>, this extension has been BANNED by Google from its Chrome store.",
-    "links": [{
-        "name": "<strike>ChinaEye for Chrome</strike>",
-        "target": ""
-      },
-      {
-        "name": "ChinaEye on Github",
-        "target": "https://github.com/dhowe/ChinaEye"
-      }
-    ]
-  }, {
-    "shorttitle": "TrackMeNot",
-    "thumb": "img/tmn_s.jpg",
-    "shortdesc": "The free browser extension that protects users from data profiling by flooding search engines with noise queries as the user searches. These queries obfuscate the user's profile and intervene in the unbalanced power dynamic between searchers and corporate search engines.",
-    "collaborators": "Helen Nissenbaum",
-    "longtitle": "TrackMeNot",
-    "images": [{
-      "src": "img/tmn_l.jpg"
-    }],
-    "longdesc": "<i>TrackMeNot</i> blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
-    "quotes": [{
-      "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip; TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
-      "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
-    }],
-    "links": [{
-      "name": "The TrackMeNot paper",
-      "target": "pdfs/trackmenot2009.pdf"
-    }, {
-      "name": "TrackMeNot for Chrome",
-      "target": "https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka?hl=en"
-    }, {
-      "name": "TrackMeNot for Firefox",
-      "target": "https://addons.mozilla.org/en-US/firefox/addon/trackmenot/"
-    }],
-    "exhibitions": [{
-      "text": "<i>Design My Privacy</i>. Z33, House of Contemporary Art, Hasselt, The Netherlands. Mar 27– May 29, 2016",
-      "target": "http://www.z33.be/en/projects/design-my-privacy"
-    }, {
-      "text": "<i>Design My Privacy: The Crypto Design Exhibition</i>. Museum of the Image (MOTI), Breda, The Netherlands. Sept 26–Mar 13, 2016",
-      "target": "http://www.motimuseum.nl/en/tentoonstelling/design-myprivacy/"
-    }, {
-      "text": "<i>SpeedShow</i>, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
-      "target": "http://speedshow.ideacritik.com/"
-    }]
-  },
-  {
-    "shorttitle": "Dialogic",
-    "thumb": "img/dialogic.jpg",
-    "shortdesc": "A custom scripting language and toolkit for interactive generative dialog in games and conversational interfaces. Dialogic organically integrates generative & scripted content, allowing characters to respond naturally to arbitrary inputs from users.",
-    "longtitle": "Dialogic",
-    "directLink": "https://rednoise.org/dialogic-web"
   },
   {
     "shorttitle": "The Readers Project",
@@ -278,7 +106,7 @@
   }, {
     "shorttitle": "RiTa",
     "thumb": "img/RiTa_s.png",
-    "shortdesc": "Designed to support the creation of novel works of computational literature, <i>RiTa</i> is a free and open-source, natural language toolkit (for Java, JavaScript, Android and Node) that provides a unique set of tools for artists, writers and digital humanists working with programmable media. ",
+    "shortdesc": "Designed to support the creation of novel works of computational literature, <i>RiTa</i> is a free and open-source, natural language toolkit (for Java, JavaScript, Android and Node) that provides a unique set of tools for artists, writers and digital humanists interested in working with programmable media. ",
     "longtitle": "RiTa",
     "images": [{
       "src": "img/ritapen.jpg"
@@ -328,7 +156,179 @@
       "name": "The RiTa gallery",
       "target": "https://rednoise.org/rita/gallery.php"
     }]
+  },
+  {
+    "shorttitle": "AdNauseam",
+    "thumb": "img/adn_s.jpg",
+    "shortdesc": "<i>AdNauseam</i> is the open-source browser extension (<a href=\"https://www.fastcompany.com/3068920/google-adnauseam-ad-blocking-war\" target=\"_new\">banned by Google</a> and <a href=\"https://addons.mozilla.org/en-US/firefox/addon/adnauseam/\" target=\"_new\">recommended by Mozilla</a>) that hides users' interests from advertising networks and attempts, by clicking every ad that it finds, to subvert the very economic system that drives online surveillance and datafication.",
+    "collaborators": "Helen Nissenbaum & Mushon Zer-Aviv",
+    "longtitle": "AdNauseam",
+    "images": [{
+      "src": "img/adn_l.jpg"
+    }],
+    "videos": [{
+      "src": "video/adn",
+      "poster": "img/adn_poster.jpg"
+    }],
+    "longdesc": "<i>AdNauseam</i> is one of several recent projects focusing on the browser as a site for artistic intervention. Like an ad-blocker, AdNauseam hides ads on visited pages, but then clicks each ad in the background, polluting user profiles and creating mistrust between advertisers and the networks they pay for clicks. <br><br />Further, by allowing users to explore visualizations of the ads they are served, AdNauseam creates a space for 'sousveillance', providing an algorithmic glimpse into the profiles taken and stored without our consent. The project was recently presented at Eyebeam, MIT, and the New School, covered by Wired magazine, and featured at Transmediale in Berlin. <br><br />AdNauseam developed from an earlier project entitled TrackMeNot, which similarly protected users from data profiling by issuing generated decoy queries to search engines. Users' real searches are hidden in a cloud of false data (see links below). ",
+    "exhibitions": [{
+      "text": "<i>Into the Deep</i>, Design Museum of Israel. Holon, Israel. Oct 31–Nov 3, 2018",
+      "target": "https://www.english.printscreenfestival.com/into-the-deep"
+    }, {
+      "text": "<i>Follow</i>, Foundation for Art and Creative Technology (FACT), Liverpool, England. Dec 11, 2015–Feb 16, 2016 "
+    }, {
+      "text": "<i>SECRET</i>, Science Gallery Dublin. Dublin, Ireland. Aug 7–Nov 1, 2015",
+      "target": "https://dublin.sciencegallery.com/secret/exhibits/adnauseum/"
+    }, {
+      "text": "<i>Involuntary Resources</i>, DIAS Digital Interactive Art Space. Copenhagen, Denmark. Mar 20–Jun 7, 2015",
+      "target": "http://kopenhagen.dk/artguide/single/article/involuntary-resources/"
+    }],
+    "links": [{
+      "name": "The Project Home Page",
+      "target": "https://adnauseam.io"
+    }, {
+      "name": "The AdNauseam Paper",
+      "target": "http://ceur-ws.org/Vol-1873/IWPE17_paper_23.pdf"
+    }, {
+      "name": "Interview: Canadian Public Radio",
+      "target": "../spark/"
+    }, {
+      "name": "Talk at HopeX 2014 (video)",
+      "target": "https://www.youtube.com/watch?v=Po593tV-vAg"
+    }, {
+      "name": "AdNauseam for Chrome",
+      "target": "https://chrome.google.com/webstore/detail/adnauseam/hgfacieeomogkcchookiodlpppbcolha?hl=en"
+    }, {
+      "name": "AdNauseam for Firefox",
+      "target": "https://addons.mozilla.org/en-US/firefox/addon/adnauseam/"
+    }]
+  },
+  {
+    "shorttitle": "AdLiPo",
+    "thumb": "img/adlipo_s.jpg",
+    "shortdesc": "Replaces ads with generated text that questions the nature of advertising and the social, cultural and ecological destruction it engenders. Leveraging the techniques of modern ad-blockers, AdLiPo replaces ads with critical, irreverent and often suprisingly poetic language...",
+    "longtitle": "AdLiPo",
+    "images": [{
+      "src": "img/adlipo_l.jpg"
+    }],
+    "longdesc": "<i>AdLiPo</i> replaces advertisements with generated language art that questions the very nature of advertising. Leveraging the ad-detection techniques of popular ad-blockers, AdLiPo not only blocks ads, but replaces them with snippets of critical text algorithmically generated in real-time. AdLiPo doesn't replace every ad, but instead makes critical (and often humorous) selections based on the content of the page.",
+    "exhibitions": [{
+      "text": "<i>Hold the Light</i>, the ELO Media Art Show. Milwaukee, WI, USA. Jun 19–21, 2014",
+      "target": "https://conference.eliterature.org/media/daniel-c-howe-adlipo"
+    }, {
+      "text": "In <i>Drunken Boat</i>. Volume DB20, Winter 2014.",
+      "target": "http://glia.ca/2014/db/"
+    }],
+    "links": [{
+      "name": "The Project Home Page",
+      "target": "adlipo/"
+    }]
+  },
+  {
+    "shorttitle": "How It Is",
+    "thumb": "img/hiiict_s.jpg",
+    "shortdesc": "A conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, quite closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors as found in Google Books&hellip;",
+    "collaborators": "John Cayley",
+    "longtitle": "How It Is in Common Tongues",
+    "images": [{
+      "src": "img/hiiict_l.jpg"
+    }, {
+      "src": "img/lcp.jpg"
+    }, {
+      "src": "img/hiiiict.jpg"
+    }],
+    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the <i>longest common phrases</i> from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project</i> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
+    "exhibitions": [{
+      "text": "<i>Author Function</i> Mass. Institute of Technology, Maihaugen Gallery. Massachusetts Institute of Technology, Maihaugen Gallery, Cambridge, USA. Jan 25-Mar 21, 2018",
+      "target": "http://nickm.com/post/2018/01/author-function/"
+    }, {
+      "text": "<i>UbuWeb: Contemporaries.</i> Online exhibit. Posted Oct 3, 2013",
+      "target": "http://www.ubu.com/contemp/cayley/index.html"
+    }, {
+      "text": "<i>Library of the Printed Web</i>. New York Book Art Fair. Table Q47, NY, USA. Sept.19–22, 2013",
+      "target": "http://libraryoftheprintedweb.tumblr.com/post/43578206217/cayleyjohn-and-daniel-c-howe-how-it-is-in"
+    }, {
+      "text": "Selected for the <i>Chercher le text</i>. Paragraph Laboratory of the University of Paris 8, the Excellence Arts–H2H Lab, Paris, France. Sept 23–28, 2013",
+      "target": "http://gallery.dddl.eu/en/gallery/how_it_is_in_common_tongues/"
+    }, {
+      "text": "Commission for 'New Media Scotland', at the Inspace gallery, Edinburgh, Scotland. Nov 1–17, 2012",
+      "target": "http://www.mediascot.org/remediatingthesocial"
+    }],
+    "links": [{
+      "name": "The Project Home Page",
+      "target": "http://thereadersproject.org/hiiict2012.html#hiiict"
+    }, {
+      "name": "Featured on UBUWeb",
+      "target": "http://www.ubuweb.com/contemp/cayley/"
+    }, {
+      "name": "Full PDF of the Work",
+      "target": "pdfs/hiiict.pdf"
+    }, {
+      "name": "On the 'Top 10 Radical Books' list",
+      "target": "http://nickm.com/post/2013/01/radical-books-of-2012-2/"
+    }, {
+      "name": "For sale on Amazon",
+      "target": "http://www.amazon.com/How-Common-Tongues-Readers-Project/dp/094845430X"
+    }]
   }, {
+    "shorttitle": "ChinaEye",
+    "thumb": "img/chinaeye_s.jpg",
+    "shortdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. The software hides all content on sites and searches that are blocked in China, via real-time lookups at Chinese proxy sites. If the content is blocked in one or more of these locations, the page appears with its content redacted.",
+    "longtitle": "ChinaEye",
+    "images": [{
+      "src": "img/chinaeye_l.png"
+    }],
+    "longdesc": "<i>ChinaEye</i> allows users to experience the web as if living in China. ChinaEye hides all content on sites that are blocked in China. It does this via real-time lookup on a number of proxy sites in China (Beijing, Shenzen, Mongolia, HeilongJiang, Yunnan, etc). If the page is blocked in one or more of these locations, the page appears with its content obscured. Similarly, when searching, if a particular search term is censored, then the search results will be obscured as well. Like <a href=\"./adnauseam\" target=\"_new\"><i>AdNauseam</i></a>, this extension has been BANNED by Google from its Chrome store.",
+    "links": [{
+        "name": "<strike>ChinaEye for Chrome</strike>",
+        "target": ""
+      },
+      {
+        "name": "ChinaEye on Github",
+        "target": "https://github.com/dhowe/ChinaEye"
+      }
+    ]
+  }, {
+    "shorttitle": "All your Google are Belong to Us",
+    "thumb": "img/allyourgoogle_s.jpg",
+    "shortdesc": "In 2005, we posted a binding <a href=\"http://rednoise.org/tos.html\" target=\"_new\"><i>Terms of Service</i></a> agreement with a unique clause stating that if any entity were to use automated means to crawl the site (as Google has done consistently since), then the databases in which this data was stored would become the property of rednoise",
+    "longtitle": "All your Google are Belong to Us"
+  }, {
+    "shorttitle": "TrackMeNot",
+    "thumb": "img/tmn_s.jpg",
+    "shortdesc": "The free browser extension that protects users from data profiling by flooding search engines with noise queries as the user searches. These queries obfuscate the user's profile and intervene in the unbalanced power dynamic between searchers and corporate search engines.",
+    "collaborators": "Helen Nissenbaum",
+    "longtitle": "TrackMeNot",
+    "images": [{
+      "src": "img/tmn_l.jpg"
+    }],
+    "longdesc": "<i>TrackMeNot</i> blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
+    "quotes": [{
+      "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip; TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
+      "from": "Kate Milberry, DIY citizenship: Critical-Making and Social Media, MIT Press, p58."
+    }],
+    "links": [{
+      "name": "The TrackMeNot paper",
+      "target": "pdfs/trackmenot2009.pdf"
+    }, {
+      "name": "TrackMeNot for Chrome",
+      "target": "https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka?hl=en"
+    }, {
+      "name": "TrackMeNot for Firefox",
+      "target": "https://addons.mozilla.org/en-US/firefox/addon/trackmenot/"
+    }],
+    "exhibitions": [{
+      "text": "<i>Design My Privacy</i>. Z33, House of Contemporary Art, Hasselt, The Netherlands. Mar 27– May 29, 2016",
+      "target": "http://www.z33.be/en/projects/design-my-privacy"
+    }, {
+      "text": "<i>Design My Privacy: The Crypto Design Exhibition</i>. Museum of the Image (MOTI), Breda, The Netherlands. Sept 26–Mar 13, 2016",
+      "target": "http://www.motimuseum.nl/en/tentoonstelling/design-myprivacy/"
+    }, {
+      "text": "<i>SpeedShow</i>, The Kubrick, Yau Ma Tei, Hong Kong, Dec 12, 2012",
+      "target": "http://speedshow.ideacritik.com/"
+    }]
+  },
+  {
     "shorttitle": "The Real Story of Ah-Q",
     "thumb": "img/ahq_s.jpg",
     "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for  phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today, augmented with targeted advertising, images, and Great Firewall censorship&hellip;",
