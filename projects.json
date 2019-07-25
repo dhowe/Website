@@ -90,7 +90,7 @@
       }],
     "links": [{
         "name": "The Project Home Page",
-        "target": "atomicLanguageMachine/index.html"
+        "target": "atomicLanguageMachines/index.html"
       }
     ]
   },
