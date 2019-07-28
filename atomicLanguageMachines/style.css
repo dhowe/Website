@@ -29,17 +29,18 @@ p, blockquote{
 	width: 550px;
   padding:0 25px 0;
   margin-bottom:20px;
+  line-height: 1.2em;
 }
 
 blockquote{
   font-weight:700;
-  width:500px;
-  padding:0 100px 0 100px;
+  width:450px;
+  text-align: center;
   font-style:italic;
 }
 p.caption{
   font-size:12px;
-  text-align:center;
+  text-align:left;
   letter-spacing: .3px;
 }
 a
@@ -60,21 +61,24 @@ a:visited
 /**************************
 		 CONTAINER
 /*************************/
-.gallery, .figures{
-  margin-top: 80px;
+.figures{
+  margin-top: 40px;
+  margin-bottom:40px
+}
+.gallery{
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 .wrapper {
   padding: 5px 0;
-  margin:50px 50px 0;
+  margin:30px 50px 0;
+  width:600px;
   background-color: rgba(0,0,0,.4);
 }
-.container
-{
-	position:relative;
-	width:700px;
-	margin:0 auto;
-  margin-top: 300px;
+.wrapper.transparent{
+  background-color: rgba(0,0,0,0);
 }
+
 .iframes{
   width:700px;
   margin:50px 0 50px;
@@ -174,31 +178,28 @@ h4 span{
 	font-weight: 200;
 
 }
+
 .gallery .container{
 	position:relative;
-	width:620px;
-	margin:20px 60px;
+	width:600px;
+	margin:20px 0px 0px;
 }
 
 .gallery img:hover{
   -webkit-filter: sepia(1);
  filter: sepia(1);
 }
-img.decompositions{
-  width:300px;
-  margin:0 180px 0;
 
-}
 img.code, img.decompositions {
   background-color:black;
-  padding:20px;
-}
-img.code{
+  padding:25px;
   width:500px;
-  margin:50px 80px 0;
+  margin:50px 25px 0;
+
 }
+
 img.render {
-  width:200px;
+  width:197px;
   border:none;
 
 }
