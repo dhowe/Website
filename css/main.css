@@ -911,6 +911,21 @@ body {
     text-align: left;
   }
 }
+
+.bibtexentry{
+  max-width:650px;
+  width:100%;
+  margin-bottom: 1em;
+}
+.bib-year {
+  width:10%;
+  display: table;
+  float:left;
+}
+.bib-content {
+  width:90%;
+  display: table;
+}
 @media only screen and (max-width: 400px) {
   .project {
     padding: 5%;
