@@ -61,8 +61,11 @@ a:visited
 /**************************
 		 CONTAINER
 /*************************/
+.container{
+  margin:60px auto;
+  width:700px;
+}
 .figures{
-  margin-top: 40px;
   margin-bottom:40px
 }
 .gallery{
@@ -81,7 +84,7 @@ a:visited
 
 .iframes{
   width:700px;
-  margin:50px 0 50px;
+  margin:80px 0 0px;
 }
 iframe{
   background-color: grey;
