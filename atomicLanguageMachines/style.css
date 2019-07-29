@@ -6,15 +6,20 @@
     font-family: 'Cambria';
     src: url(font/cambria.ttf);
 }
+@media screen and (min-width:1600px){
+  body{
+    background-size: cover !important;
+  }
+}
 
 body
 {
 	margin:0;
   background:  linear-gradient(
-                     rgba(20,20,20, .7),
-                     rgba(20,20,20, .7)), url(imgs/bg.png) black;
+                     rgba(15,15,15, .9),
+                     rgba(15,15,15, .9)), url(imgs/bg.png) black;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   color:#fff;
   font-family: 'Cambria',sans-serif;
   padding-bottom: 150px;
