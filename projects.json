@@ -97,7 +97,7 @@
         "name": "The Project Home Page",
         "target": "atomicLanguageMachines/index.html"
       },{
-          "name": "Project Banner",
+          "name": "Project Documentation",
           "target": "atomicLanguageMachines/banner.html"
         }
     ]
