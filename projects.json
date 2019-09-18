@@ -10,9 +10,13 @@
     {
       "src": "img/deepzuck.jpg"
     }],
-    "longdesc": "<i>Spectre</i> is an interactive installation that reveals the secrets of the Digital Influence Industry, but only if you are willing to pray at the altar of Dataism with the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
+    "longdesc": "<i>Spectre</i> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray at the altar of Dataism to the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
     "exhibitions": [{
-      "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, June 6-11, 2019"
+      "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
+      "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
+    },{
+      "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, UK. June 6-11, 2019 (with 3D walkthrough)",
+      "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
     }],
     "links": [{
         "name": "The Project Home Page",
@@ -23,16 +27,16 @@
         "target": "https://vimeo.com/341904916"
       },
       {
-        "name": "Marina Abramović on Spectre",
-        "target": "https://vimeo.com/341797930"
+        "name": "Alternate Realities Commission",
+        "target": "https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/"
+      },
+      {
+        "name": "Big Dada at the Museum Jorn",
+        "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
       },
       {
         "name": "Sheffield Installation Walkthrough (3D)",
         "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
-      },
-      {
-        "name": "Alternate Realities Commission",
-        "target": "https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/"
       }
     ]
   },
