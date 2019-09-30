@@ -222,7 +222,7 @@ h5.smallerTitle{
   z-index: 1;
   min-height: 85vh;
 }
-.longdesc, .quotes {
+.longdesc, .quotes, .exhibitions {
   max-width: 525px;
 }
 .hanging {
@@ -394,10 +394,11 @@ video{
 }
 /* links */
 .longdesc a {
- font-style: italic;
- font-family: 'HelveticaNeue-LightItalic';
+  color: #004d66;
+  text-decoration: underline;
+  text-decoration-color: #aaccdd;
 }
-.longdesc a, .links a, .bottomNav p a, #about a {
+.links a, .exhibitions a, .projects a, .bottomNav p a, #about a {
   color: #004d66;
   text-decoration: none;
 }

@@ -72,8 +72,7 @@ function createDetail(projects, id) {
   }
 
   // wrong id or no id
-  if (current === undefined)
-    window.location.href = 'index.html';
+  if (current === undefined) window.location.href = 'index.html';
 
 
   // if the div is already created, show the div
@@ -210,7 +209,7 @@ function createDetail(projects, id) {
 
   }
 
-  var next = idk + 1;
+  var next = (idk + 1) % projects.length;
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
