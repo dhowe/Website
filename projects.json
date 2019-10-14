@@ -49,6 +49,10 @@
     "thumb": "img/ap_s.jpg",
     "shortdesc": "Participants in <i>Advertising Positions</i> are 3d-scanned and given custom software to collect the digital ads they are served over several months. These ads are then applied, one-by-one, to the skin of the user's body as it is animated in virtual space.",
     "longtitle": "Advertising Positions",
+    "videos": [{
+        "src": "video/ap",
+        "poster": "img/ap_poster.jpg"
+    }],
     "images": [{
         "src": "img/ap_l.jpg"
       },
@@ -387,6 +391,10 @@
       "src": "img/ahq_l3.jpg"
     }, {
       "src": "img/ahq_l.jpg"
+    }],
+    "videos": [{
+      "poster": "img/reader_poster.png",
+      "src": "video/THE_REAL_STORY_OF_AH-Q"
     }],
     "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
     "exhibitions": [{
