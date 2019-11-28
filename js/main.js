@@ -307,6 +307,11 @@ function imageExists(image_url) {
   return http.status != 404;
 }
 
+function openInTab(url) {
+  window.open(url,'_blank');
+  window.open(url);
+}
+
 $(document).ready(function () {
 
   // mobile menu
