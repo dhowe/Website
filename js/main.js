@@ -7,7 +7,7 @@ function createGrid(projects) {
 
     html = "<a href='" + projLink(projects[i]) + "'>";
     html += "<div class='project'>";
-    var fontCheck = projects[i].shorttitle.length > 23 ? " class='smallerTitle'":"";
+    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'":"";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
