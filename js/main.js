@@ -280,6 +280,12 @@ function muteSketch() {
   })
 }
 
+function unmuteSketch() {
+  $('iframe').each(function(){
+    $(this)[0].contentWindow.toggleMute(false);
+  })
+}
+
 function adjustFooterSpace() {
 
   if ($('.footer').css("position") === "fixed")
@@ -314,6 +320,13 @@ function openInTab(url) {
 
 $(document).ready(function () {
 
+  //check browser/tab focus
+  //Window active
+  window.addEventListener('focus', startFocus);
+  //Window inactive
+  window.addEventListener('blur', stopFocus);
+  console.log("documentready")
+
   // mobile menu
   $('.name.showInMobile').click(function () {
     $('nav').slideToggle();
@@ -342,8 +355,20 @@ $(document).ready(function () {
       // iframeDocument.trigger(keyDownEvent);
     }
   });
+
+
 });
 
+
+function startFocus() {
+//  console.log("Is Focused")
+  unmuteSketch();
+}
+
+function stopFocus() {
+//  console.log("not Focused")
+  muteSketch();
+}
 
 
 $(window).resize(function () {

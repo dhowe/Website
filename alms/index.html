@@ -22,8 +22,18 @@
     $(document).ready(function ()
     {
       $(".fancybox").fancybox();
-    });
+       window.addEventListener('focus', checkFocus);
 
+       // Inactive
+       window.addEventListener('blur', stopFocus);
+    });
+    function checkFocus(){
+      //  console.log("Is Focused")
+    }
+
+    function stopFocus(){
+      //  console.log("not Focused")
+    }
 </script>
 
 </head>

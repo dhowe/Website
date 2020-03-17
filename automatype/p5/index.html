@@ -1,120 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Automatype</title>
-    <style>
-      /*iframe*/
-      @media only screen and (max-width: 600px) {
-        html, body {
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-        }
-        canvas {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: auto;
-            z-index: 1;
-        }
-        button {
-        top:auto !important;
-        left:auto !important;
-        bottom:10px !important;
-        right:10px !important;
-        z-index: 10;
-        font-size: 8px;
-        padding: 1px;
-        width:40px;
+
+<head>
+  <meta charset="UTF-8">
+  <title>Automatype</title>
+  <style>
+    /*iframe*/
+    @media only screen and (max-width: 600px) {
+
+      html,
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
       }
+
+      canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
       }
 
       button {
-        position:absolute;
-        top:460px;
-        left:630px;
-        width:55px;
+        top: auto !important;
+        left: auto !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        z-index: 10;
+        font-size: 8px;
+        padding: 1px;
+        width: 40px;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 460px;
+      left: 630px;
+      width: 55px;
+    }
+  </style>
+  <script src="lib/p5.min.js" type="text/javascript"></script>
+  <script src="lib/p5.sound.min.js" type="text/javascript"></script>
+  <script src="lib/p5.dom.js" type="text/javascript"></script>
+  <script src="lib/rita-full.min.js" type="text/javascript"></script>
+  <script src="automatype.js" type="text/javascript"></script>
+
+  <script>
+    var typer, bg = 245,
+      test = 0,
+      bell, type, button, muted = false;
+
+    function preload() {
+      bell = loadSound("res/bell.wav");
+      type = loadSound("res/key.wav");
+    }
+
+    function setup() {
+
+
+      //Window active
+      window.addEventListener('focus', startFocus);
+
+      //Window inactive
+      window.addEventListener('blur', stopFocus);
+
+      createCanvas(680, 490);
+
+      if (window.innerWidth < 600) {
+        var canvas = document.getElementById("defaultCanvas0");
+        canvas.style.width = "";
+        canvas.style.height = "";
       }
 
-    </style>
-    <script src="lib/p5.min.js" type="text/javascript"></script>
-    <script src="lib/p5.sound.min.js" type="text/javascript"></script>
-    <script src="lib/p5.dom.js" type="text/javascript"></script>
-    <script src="lib/rita-full.min.js" type="text/javascript"></script>
-    <script src="automatype.js" type="text/javascript"></script>
-    <script>
+      textFont('courier', 150);
+      textAlign(CENTER, CENTER);
 
-var typer, bg=245, test=0, bell, type, button, muted = false;
+      typer = new Automatype(onWordComplete);
+      next();
+    }
 
-function preload() {
-  bell = loadSound("res/bell.wav");
-  type = loadSound("res/key.wav");
-}
+    function toggleMute(event) {
 
-function setup() {
-  createCanvas(680, 490);
+      if (typeof event === 'boolean') muted = event;
+      else muted = !muted;
+      console.log(muted);
+      document.getElementById("mute").innerText = muted ? 'unmute' : ' mute ';
+    }
 
-  if (window.innerWidth < 600) {
-    var canvas = document.getElementById("defaultCanvas0");
-    canvas.style.width = "";
-    canvas.style.height = "";
-  }
+    function draw() {
 
-  textFont('courier', 150);
-  textAlign(CENTER, CENTER);
+      background(bg < 245 ? bg += 4 : bg);
+      typer.draw();
+      test && noLoop();
 
-  typer = new Automatype(onWordComplete);
-  next();
-}
+    }
 
-function toggleMute(event) {
+    function next() {
 
-  if (typeof event === 'boolean') muted = event;
-  else muted = !muted;
-  console.log(muted);
-  document.getElementById("mute").innerText = muted ? 'unmute' : ' mute ';
-}
+      typer.step();
+      !test && setTimeout(next, random(500, 1200));
+    }
 
-function draw() {
+    function onWordComplete() {
+      !test && (bg = 0);
+      if (!muted) bell.play();
+    }
 
-  background(bg < 245 ? bg += 4 : bg);
-  typer.draw();
-  test && noLoop();
-}
+    function keyReleased() { // tmp
 
-function next() {
+      if (key === ' ') {
+        test = 1;
+        next();
+        draw();
+      }
+    }
 
-  typer.step();
-  !test && setTimeout(next, random(500,1200));
-}
+    var isFocused = true;
 
-function onWordComplete() {
-  !test && (bg = 0);
-  if (!muted) bell.play();
-}
+    function startFocus() {
+    //  console.log("Is Focused")
+      isFocused = true;
+      muted = false;
+      loop()
+    }
 
-function keyReleased() { // tmp
+    function stopFocus() {
+    //  console.log("not Focused")
+      isFocused = false;
+      muted = true;
+      noLoop();
+    }
 
-  if (key===' '){
-    test = 1;
-    next();
-    draw();
-  }
-}
-</script>
+
+  </script>
 
 </head>
+
 <body>
-<button id="mute">mute</button>
-<script>
-document.getElementById("mute").onclick = toggleMute;
-</script>
+  <button id="mute">mute</button>
+  <script>
+    document.getElementById("mute").onclick = toggleMute;
+  </script>
 </body>
 
 </html>
