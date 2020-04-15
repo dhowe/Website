@@ -16,22 +16,34 @@
       "from": "Creative Review"
     }],
     "images": [{
-      "src": "img/spectre-blue_l.png"
+        "src": "img/spectre-blue_l.png"
       },
       {
         "src": "img/spec2.jpg"
-    }],
+      }
+    ],
     "longdesc": "Winner of the <span style=\"decoration:none !important\"><a href=\"https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/\" target=\"_new\">2019 Alternate Realities Commission</a></span>, <em>Spectre</em> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray to Dataism and the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
     "exhibitions": [{
-        "text": "<i>South-By-Southwest (SXSW) 2020</i>, Austin, TX USA, March 13-22",
-        "target": "https://www.sxsw.com/exhibitions/sxsw-art-program/"
-    }, {
-      "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
-      "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
-    },{
-      "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, UK. June 6-11, 2019",
-      "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
-    }],
+        "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, UK. June 6-11, 2019 (with 3D walkthrough))))",
+        "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
+      },
+      {
+        "text": "<i>'Presentation: Spectre – Welcome to the Altar of Dataism'</i>, Studios des 7 Doigts, Montréal, Canada. Aug 20, 2019",
+        "target": "http://www.mutek.org/en/montreal/2019/events/1685-presentation-spectre-welcome-to-the-altar-of-dataism"
+      }, {
+        "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
+        "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
+      },
+
+      {
+        "text": "<i>‘SXSW Art Prgram’</i> Austin, Texas, US. March 14-21, 2020",
+        "target": "https://www.sxsw.com/exhibitions/sxsw-art-program/#2020-program"
+      },
+      {
+        "text": "<i>‘Trust, But Verify’</i> Rochester Contemporary, New York. April 3–May 10, 2020",
+        "target": "http://www.rochestercontemporary.org/exhibitions/trust-but-verify/"
+      }
+    ],
     "links": [{
         "name": "The Project Home Page",
         "target": "spectre/index.html"
@@ -47,7 +59,20 @@
       {
         "name": "Sheffield Installation Walkthrough [3D]",
         "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
+      },
+      {
+        "name": "‘Spectre’ Short Film Added To British Council Film Directory",
+        "target": "http://film-directory.britishcouncil.org/spectre-a-detour-into-dataism"
+      },
+      {
+        "name": "Spectre Shortlisted for the Aesthetica Art Prize",
+        "target": "http://billposters.ch/award-spectre-shortlisted-aesthetica-art-prize/"
+      },
+      {
+        "name": "Spectre added to MIT Docubase Lab",
+        "target": "https://docubase.mit.edu/project/spectre/"
       }
+
     ]
   },
   {
@@ -64,16 +89,17 @@
       },
       {
         "src": "img/bertha.png"
-    }],
+      }
+    ],
     "longdesc": "This series began with software agents trained to search the web, according to specific user profiles they have been assigned (age, gender, ethnicity, orientation, location, etc.) Driving a modified version of the Chrome browser, these agents periodically visited sites that they 'liked', and clicked links they selected, bringing them to new pages. This process continued over several months, during which all they collected all of the advertisements they were served, based on their profile. In more recent iterations, human volunteers are 3d-scanned and given custom software to collect the ads they receiveserved over several months  (generally several thousands of them). Each ad is then applied to a single polygon on the mesh skin of an avatar that we create and release into virtual space.",
     "exhibitions": [{
-        "text": "<i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong, Dec 27 - Jan 10, 2019"
+        "text": "<a href='https://shufflingspaceandtime.com/'><i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong, Dec 27 - Jan 10, 2019</a>"
       },
       {
-        "text": "<i>Netopia</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017"
+        "text": "<a href='http://www.nabi.or.kr/en/page/board_view.php?brd_idx=795&brd_id=project'><i>Neotopia: Data and Humanity</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017</a>"
       },
       {
-        "text": "<i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017"
+        "text": "<a href='https://www.lcsd.gov.hk/CE/Museum/APO/en_US/web/apo/montage_express.html'><i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017</a>"
       }
     ],
     "links": [{
@@ -87,6 +113,55 @@
       {
         "name": "Paper: SIGGRAPH 2018 ",
         "target": "pdfs/AdvertisingPositions2018.pdf"
+      }
+    ]
+  },
+  {
+    "shorttitle": "Big Dada",
+    "thumb": "img/bigd.png",
+    "shortdesc": "Six ‘deep fake’ video works, created as part of the ‘Spectre’ installation, were inserted into Instagram as a digital intervention in June 2019 and quickly went viral, leading to global press coverage and confused responses from Facebook and Instagram...",
+    "longtitle": "Big Dada",
+    "collaborators": "Bill Posters",
+    "videos": [{
+      "src": "video/imagineThis",
+      "poster": "img/fuckzuck.jpg"
+    }],
+    "images": [{
+      "src": "img/mjorn.jpg"
+    }],
+    "directLinkX": "http://billposters.ch/projects/big-dada/",
+    "longdesc": "Comprised of six ‘deep fake’ video works created as part of the ‘Spectre’ installation, the <i>Big Dada</i> series was inserted into Instagram as a digital intervention in June 2019 and quickly went viral leading to global press coverage and strange, contradictory official responses from Facebook and Instagram concerning their policies regarding computational propaganda on their platforms.<p style=\"margin-top:-1.3em;line-height: 1.8em; letter-spacing: 0.1em;\">PRESS<p style=\"margin-top:-1em; width:80%;\"><a href=\"https://www.nytimes.com/2019/06/11/technology/fake-zuckerberg-video-facebook.html\" target=\"_blank\" rel=\"noopener\">New York Times</a> / <a href=\"https://www.washingtonpost.com/nation/2019/06/12/mark-zuckerberg-deepfake-facebook-instagram-nancy-pelosi/\" target=\"_blank\" rel=\"noopener\">Washington Post</a> / <a href=\"https://www.bbc.co.uk/news/technology-48607673\" target=\"_blank\" rel=\"noopener\">BBC</a> / <a href=\"https://www.theguardian.com/technology/2019/jun/11/deepfake-zuckerberg-instagram-facebook\" target=\"_blank\" rel=\"noopener\">Guardian</a> / <a href=\"https://nypost.com/2019/06/12/facebook-wont-take-down-sinister-mark-zuckerberg-deepfake-video/\" target=\"_blank\" rel=\"noopener\">NY Post</a> / <a href=\"https://www.independent.co.uk/voices/facebook-mark-zuckerberg-video-deepfake-pelosi-social-media-a8955441.html\" target=\"_blank\" rel=\"noopener\">Independent</a> / <a href=\"https://www.spiegel.de/netzwelt/web/manipuliertes-instagram-video-deepfake-mit-mark-zuckerberg-a-1271990.html\" target=\"_blank\" rel=\"noopener\">Spiegel</a> / <a href=\"https://www.lemonde.fr/pixels/article/2019/06/13/une-video-truquee-de-mark-zuckerberg-facon-deepfake-eprouve-les-limites-d-instagram_5475600_4408996.html\" target=\"_blank\" rel=\"noopener\">Le Monde</a> / <a href=\"https://www.repubblica.it/tecnologia/social-network/2019/06/12/news/zuckerberg_chiunque_controlla_i_dati_controlla_il_futuro_ma_il_video_e_un_falso-228609909/\" target=\"_blank\" rel=\"noopener\">La Republica</a> / <a href=\"https://edition.cnn.com/2019/06/11/tech/zuckerberg-deepfake/index.html\" target=\"_blank\" rel=\"noopener\">CNN</a> / <a href=\"https://www.youtube.com/watch?v=pGkP-U5Rf2M\" target=\"_blank\" rel=\"noopener\">CNBC</a> / <a href=\"https://abcnews.go.com/Technology/wireStory/correction-facebook-zuckerberg-fake-video-story-63697427\" target=\"_blank\" rel=\"noopener\">ABC News</a> / <a href=\"https://eu.usatoday.com/story/tech/2019/06/12/instagram-deepfake-video-mark-zuckerberg/1429514001/\" target=\"_blank\" rel=\"noopener\">USA Today</a> / <a href=\"http://www.standaard.be/cnt/dmf20190612_04456264\" target=\"_blank\" rel=\"noopener\">Standaard</a> / <a href=\"https://www.technologyreview.com/f/613690/facebook-deepfake-zuckerberg-instagram-social-media-election-video/\" target=\"_blank\" rel=\"noopener\">MIT Review</a> / <a href=\"https://news.artnet.com/art-world/mark-zuckerberg-deepfake-artist-1571788\" target=\"_blank\" rel=\"noopener\">Artnet</a> / <a href=\"https://www.vice.com/en_uk/article/ywyxex/deepfake-of-mark-zuckerberg-facebook-fake-video-policy\" target=\"_blank\" rel=\"noopener\">Vice</a> / <a href=\"https://www.dazeddigital.com/science-tech/article/44833/1/deepfake-mark-zuckerberg-facebook-video-policy\" target=\"_blank\" rel=\"noopener\">Dazed</a> / <a href=\"https://www.bbc.co.uk/programmes/m0005t54#play\" target=\"_blank\" rel=\"noopener\">BBC Radio 4</a> / <a href=\"https://www.bbc.co.uk/sounds/play/w3csymsd\" target=\"_blank\" rel=\"noopener\">BBC World Service</a> / <a href=\"https://www.channel4.com/news/deep-fakes-can-we-believe-anything-we-see-online\" target=\"_blank\" rel=\"noopener\">Channel 4 News</a> / <a href=\"https://www1.folha.uol.com.br/mundo/2019/06/producao-de-videos-falsos-com-uso-de-inteligencia-artificial-liga-alerta-nos-eua.shtml\" target=\"_blank\" rel=\"noopener\">Folha De S.Paulo</a> / <a href=\"https://frieze.com/article/why-artists-created-mark-zuckerberg-deepfake\" target=\"_blank\" rel=\"noopener\">Frieze</a> / <a href=\"https://www.creativereview.co.uk/bill-posters-on-deepfakes-and-transparency/\" target=\"_blank\" rel=\"noopener\">Creative Review</a> / <a href=\"https://www.goodtroublemag.com/home/brandalism\" target=\"_blank\" rel=\"noopener\">Good Trouble Magazine</a> / <a href=\"https://www.france24.com/fr/20190612-facebook-mark-zuckerberg-instagram-deepfakes-pelosi-video\" target=\"_blank\" rel=\"noopener\">France24</a> / <a href=\"https://www.cbsnews.com/news/adam-mosseri-interview-instagram-head-on-deepfakes-exclusive/\" target=\"_blank\" rel=\"noopener\">CBS News</a> / <a href=\"https://www.businessinsider.com/deepfake-video-mark-zuckerberg-instagram-2019-6?utm_source=intl&utm_medium=ingest\" target=\"_blank\" rel=\"noopener\">Business Insider</a> / <a href=\"https://www.youtube.com/watch?time_continue=46&v=_m2dRDQEC1A&feature=emb_title\" target=\"_blank\" rel=\"noopener\">Economist</a>",
+    "exhibitions": [{
+        "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
+        "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
+      }, {
+        "text": "<i>Practicing Sovereignty: Means of digital involvement</i>, The Weizenbaum Institute, Berlin, Germany. March 12-18, 2020",
+        "target": "https://sovereignty.weizenbaum-institut.de/exhibitions/"
+      },
+      {
+        "text": "<i>‘Alternate Realities’</i>, HOME gallery, Manchester, UK. Nov 9-17, 2019",
+        "target": "https://aestheticamagazine.com/exhibition-2020/"
+
+      },
+      {
+        "text": "<i>Solo show ‘Big Dada’</i>, Art Exchange Gallery, University of Essex, UK. January 16–February 8, 2020",
+        "target": "http://www.artexchange.org.uk/exhibition/big-dada/"
+      }, {
+        "text": "<i>Aesthetica Art Prize Exhibition 2020</i>, York Art Gallery, UK. March 13–July 5, 2020",
+        "target": "https://aestheticamagazine.com/exhibition-2020/"
+      }
+    ],
+    "links": [{
+        "name": "The Spectre Home Page",
+        "target": "spectre/index.html"
+      },
+      {
+        "name": "Marcel Duchamp on Big Dada",
+        "target": "https://vimeo.com/341904916"
+      },
+      {
+        "name": "Big Dada at the Museum Jorn",
+        "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
       }
     ]
   },
@@ -198,9 +273,14 @@
     "directLinkX": "http://billposters.ch/projects/big-dada/",
     "longdesc": "Comprised of six ai-generated ‘deep fake’ character studies created as part of the ‘Spectre’ installation, the <i>Big Dada</i> series was inserted into Instagram as a digital intervention in June 2019 and quickly went viral leading to global press coverage and strange, contradictory official responses from Facebook and Instagram concerning their policies regarding computational propaganda on their platforms.<p style=\"margin-top:-1.3em;line-height: 1.8em; letter-spacing: 0.1em;\">PRESS<p style=\"margin-top:-1em; width:80%;\"><a href=\"https://www.nytimes.com/2019/06/11/technology/fake-zuckerberg-video-facebook.html\" target=\"_blank\" rel=\"noopener\">New York Times</a> / <a href=\"https://www.washingtonpost.com/nation/2019/06/12/mark-zuckerberg-deepfake-facebook-instagram-nancy-pelosi/\" target=\"_blank\" rel=\"noopener\">Washington Post</a> / <a href=\"https://www.bbc.co.uk/news/technology-48607673\" target=\"_blank\" rel=\"noopener\">BBC</a> / <a href=\"https://www.theguardian.com/technology/2019/jun/11/deepfake-zuckerberg-instagram-facebook\" target=\"_blank\" rel=\"noopener\">Guardian</a> / <a href=\"https://nypost.com/2019/06/12/facebook-wont-take-down-sinister-mark-zuckerberg-deepfake-video/\" target=\"_blank\" rel=\"noopener\">NY Post</a> / <a href=\"https://www.independent.co.uk/voices/facebook-mark-zuckerberg-video-deepfake-pelosi-social-media-a8955441.html\" target=\"_blank\" rel=\"noopener\">Independent</a> / <a href=\"https://www.spiegel.de/netzwelt/web/manipuliertes-instagram-video-deepfake-mit-mark-zuckerberg-a-1271990.html\" target=\"_blank\" rel=\"noopener\">Spiegel</a> / <a href=\"https://www.lemonde.fr/pixels/article/2019/06/13/une-video-truquee-de-mark-zuckerberg-facon-deepfake-eprouve-les-limites-d-instagram_5475600_4408996.html\" target=\"_blank\" rel=\"noopener\">Le Monde</a> / <a href=\"https://www.repubblica.it/tecnologia/social-network/2019/06/12/news/zuckerberg_chiunque_controlla_i_dati_controlla_il_futuro_ma_il_video_e_un_falso-228609909/\" target=\"_blank\" rel=\"noopener\">La Republica</a> / <a href=\"https://edition.cnn.com/2019/06/11/tech/zuckerberg-deepfake/index.html\" target=\"_blank\" rel=\"noopener\">CNN</a> / <a href=\"https://www.youtube.com/watch?v=pGkP-U5Rf2M\" target=\"_blank\" rel=\"noopener\">CNBC</a> / <a href=\"https://abcnews.go.com/Technology/wireStory/correction-facebook-zuckerberg-fake-video-story-63697427\" target=\"_blank\" rel=\"noopener\">ABC News</a> / <a href=\"https://eu.usatoday.com/story/tech/2019/06/12/instagram-deepfake-video-mark-zuckerberg/1429514001/\" target=\"_blank\" rel=\"noopener\">USA Today</a> / <a href=\"http://www.standaard.be/cnt/dmf20190612_04456264\" target=\"_blank\" rel=\"noopener\">Standaard</a> / <a href=\"https://www.technologyreview.com/f/613690/facebook-deepfake-zuckerberg-instagram-social-media-election-video/\" target=\"_blank\" rel=\"noopener\">MIT Review</a> / <a href=\"https://news.artnet.com/art-world/mark-zuckerberg-deepfake-artist-1571788\" target=\"_blank\" rel=\"noopener\">Artnet</a> / <a href=\"https://www.vice.com/en_uk/article/ywyxex/deepfake-of-mark-zuckerberg-facebook-fake-video-policy\" target=\"_blank\" rel=\"noopener\">Vice</a> / <a href=\"https://www.dazeddigital.com/science-tech/article/44833/1/deepfake-mark-zuckerberg-facebook-video-policy\" target=\"_blank\" rel=\"noopener\">Dazed</a> / <a href=\"https://www.bbc.co.uk/programmes/m0005t54#play\" target=\"_blank\" rel=\"noopener\">BBC Radio 4</a> / <a href=\"https://www.bbc.co.uk/sounds/play/w3csymsd\" target=\"_blank\" rel=\"noopener\">BBC World Service</a> / <a href=\"https://www.channel4.com/news/deep-fakes-can-we-believe-anything-we-see-online\" target=\"_blank\" rel=\"noopener\">Channel 4 News</a> / <a href=\"https://www1.folha.uol.com.br/mundo/2019/06/producao-de-videos-falsos-com-uso-de-inteligencia-artificial-liga-alerta-nos-eua.shtml\" target=\"_blank\" rel=\"noopener\">Folha De S.Paulo</a> / <a href=\"https://frieze.com/article/why-artists-created-mark-zuckerberg-deepfake\" target=\"_blank\" rel=\"noopener\">Frieze</a> / <a href=\"https://www.creativereview.co.uk/bill-posters-on-deepfakes-and-transparency/\" target=\"_blank\" rel=\"noopener\">Creative Review</a> / <a href=\"https://www.goodtroublemag.com/home/brandalism\" target=\"_blank\" rel=\"noopener\">Good Trouble Magazine</a> / <a href=\"https://www.france24.com/fr/20190612-facebook-mark-zuckerberg-instagram-deepfakes-pelosi-video\" target=\"_blank\" rel=\"noopener\">France24</a>",
     "exhibitions": [{
-      "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
+      "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark.<br/>Sept 15-Dec 8, 2019",
       "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
-    }],
+    },
+    {
+      "text": "'Big Dada' in 'Alternate Realities' at HOME, Manchester, UK.<br/>Sat 9 Nov 2019 – Sun 17 Nov 2019",
+      "target": "https://homemcr.org/exhibition/alternate-realities-tour-2019/"
+    }
+  ],
     "links": [{
         "name": "The Spectre Home Page",
         "target": "spectre/index.html"
@@ -720,7 +800,7 @@
     "longtitle": "Open.Ended",
     "images": [{
       "src": "img/openended_l.jpg"
-    },{
+    }, {
       "src": "img/oe.png"
     }],
     "longdesc": "<i>Open.Ended</i> is an interactive three-dimensional poem experienced through the interplay of shifting geometric surfaces. Verses appear on the faces of separate translucent cubes nested within one another. The reader manipulates a controller or touch-screen to bring stanzas on different surfaces into view. As cubes, faces, and layers are revealed, dynamically updating lines of text move in and out of focus. The structure of the poem facilitates a multiplicity of readings: from single verses on cube faces, to sequential verses across faces, to juxtapositions of verses across multiple cubes. Meaning is constructed actively through collaboration between reader, author, and mediated work. An audio track of the authors' layered voices extends the experience, enveloping the reader in the atmosphere of the poem.",
