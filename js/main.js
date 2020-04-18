@@ -156,6 +156,14 @@ function createDetail(projects, id) {
     html += "</ul>";
   }
 
+  // DETAIL IMAGE
+  if (current.largeDetailImage) {
+    html += "<img src='" + current.largeDetailImage.src + "' style='margin-left: -15px; max-width: 525px'/>";
+    if (current.largeDetailImage.title) {
+      html += "<p style='font-size:10px; margin-top:0px'>Fig. " + current.largeDetailImage.title + "<strong/></p>";
+    }
+  }
+
   html += "</div>";
   html += "<div class='col-1-3 mobile-col-1-1'>";
 

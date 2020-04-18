@@ -103,13 +103,13 @@
     "longdesc": "This series began with software agents trained to search the web, according to specific user profiles they have been assigned (age, gender, ethnicity, orientation, location, etc.) Driving a modified version of the Chrome browser, these agents periodically visited sites that they 'liked', and clicked links they selected, bringing them to new pages. This process continued over several months, during which all they collected all of the advertisements they were served, based on their profile. In more recent iterations, human volunteers are 3d-scanned and given custom software to collect the ads they receiveserved over several months  (generally several thousands of them). Each ad is then applied to a single polygon on the mesh skin of an avatar that we create and release into virtual space.",
     "exhibitions": [
       {
-        "text": "<a href='https://shufflingspaceandtime.com/'><i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong, Dec 27 - Jan 10, 2019</a>"
+        "text": "<a href='https://shufflingspaceandtime.com/'><i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong<br/> Dec 27 - Jan 10, 2019</a>"
       },
       {
-        "text": "<a href='http://www.nabi.or.kr/en/page/board_view.php?brd_idx=795&brd_id=project'><i>Neotopia: Data and Humanity</i>, Art Center Nabi, Seoul, South Korea, Nov 15 – Dec 31, 2017</a>"
+        "text": "<a href='http://www.nabi.or.kr/en/page/board_view.php?brd_idx=795&brd_id=project'><i>Neotopia: Data and Humanity</i>, Art Center Nabi, Seoul, South Korea<br/>Nov 15 – Dec 31, 2017</a>"
       },
       {
-        "text": "<a href='https://www.lcsd.gov.hk/CE/Museum/APO/en_US/web/apo/montage_express.html'><i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong, Dec 5, 2016–Jan 2, 2017</a>"
+        "text": "<a href='https://www.lcsd.gov.hk/CE/Museum/APO/en_US/web/apo/montage_express.html'><i>Montage Express</i>, Oi! Street gallery, North Point, Hong Kong<br/>Dec 5, 2016 – Jan 2, 2017</a>"
       }
     ],
     "links": [
@@ -128,10 +128,10 @@
     ]
   },
   {
-    "shorttitle": "Radial of the Vertical Heart",
+    "shorttitle": "Radical of the Vertical Heart",
     "thumb": "img/alm_s.png",
     "shortdesc": "A reading machine that searches the possibility space of a language, one word at a time. While alphabetic machines move according to letter mutation (deletion, addition, substitution), this logographic machine analyses the subcomponents of character-based words...",
-    "longtitle": "Radial of the Vertical Heart",
+    "longtitle": "Radical of the Vertical Heart 忄",
     "images": [
       {
         "src": "img/alm_dist.gif"
@@ -144,9 +144,14 @@
         "src": "img/alm_sense.gif"
       },
       {
-        "src": "img/alm_l.png"
+        "src": "img/alm_liff.png",
+        "title": "A visualization of reader movement through traditional Chinese"
       }
     ],
+    "largeDetailImage": {
+      "src": "img/alm_decompositions.gif",
+      "title": "A visualization of reader movement through traditional Chinese"
+    },
     "longdesc": "A reading machine that searches the possibility space of (simplfied and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution. Logographic machines, like the one shown on the <a target=\"blank\" href=\"../alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of the strokes, radicals, and subcomponents of Chinese characters.",
     "links": [
       {
@@ -160,6 +165,12 @@
       {
         "name": "Extended Documentation (zoomable)",
         "target": "./alms/banner.html"
+      }
+    ],
+    "exhibitions": [
+      {
+        "text": "<i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong<br/>Dec 27 - Jan 10, 2019",
+        "target": "https://shufflingspaceandtime.com/"
       }
     ]
   },
