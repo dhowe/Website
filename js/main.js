@@ -72,8 +72,7 @@ function createDetail(projects, id) {
   }
 
   // wrong id or no id
-  if (current === undefined)
-    window.location.href = 'index.html';
+  if (current === undefined) window.location.href = 'index.html';
 
 
   // if the div is already created, show the div
@@ -210,7 +209,7 @@ function createDetail(projects, id) {
 
   }
 
-  var next = idk + 1;
+  var next = (idk + 1) % projects.length;
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
@@ -281,6 +280,12 @@ function muteSketch() {
   })
 }
 
+function unmuteSketch() {
+  $('iframe').each(function(){
+    $(this)[0].contentWindow.toggleMute(false);
+  })
+}
+
 function adjustFooterSpace() {
 
   if ($('.footer').css("position") === "fixed")
@@ -308,7 +313,19 @@ function imageExists(image_url) {
   return http.status != 404;
 }
 
+function openInTab(url) {
+  window.open(url,'_blank');
+  window.open(url);
+}
+
 $(document).ready(function () {
+
+  //check browser/tab focus
+  //Window active
+  window.addEventListener('focus', startFocus);
+  //Window inactive
+  window.addEventListener('blur', stopFocus);
+  console.log("documentready")
 
   // mobile menu
   $('.name.showInMobile').click(function () {
@@ -338,8 +355,20 @@ $(document).ready(function () {
       // iframeDocument.trigger(keyDownEvent);
     }
   });
+
+
 });
 
+
+function startFocus() {
+//  console.log("Is Focused")
+  unmuteSketch();
+}
+
+function stopFocus() {
+//  console.log("not Focused")
+  muteSketch();
+}
 
 
 $(window).resize(function () {
