@@ -173,7 +173,7 @@ function createDetail(projects, id) {
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='"
-      + current.images[0].src + "' alt='" + altInfo + "' ></a>";
+      + current.images[0].src + "' title='"+altInfo+"' alt='" + altInfo + "' ></a>";
   }
 
   // VIDEO
@@ -197,8 +197,8 @@ function createDetail(projects, id) {
 
     for (var j = 1; j < current.images.length; j++) {
       var bestImage = getBestImage(current.images[j].src);
-      var altInfo = current.images[j].title ? current.images[j].title : current.longtitle;
-      html += "<a class='fancybox' href='" + bestImage + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+      var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
+      html += "<a class='fancybox' title='" + altInfo +"' href='" + bestImage + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
