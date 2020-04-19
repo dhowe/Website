@@ -1,0 +1,5 @@
+4c5760 rgb(76,87,96) gray
+dfbe99 rgb(223,190,153) pale gold
+89acc6 rgb(137,172,198) pewter blue
+cc9f9f rgb(204,159,159) parrot pink
+93a8acrgb(147,168,172) cadet gray / green

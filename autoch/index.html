@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>autochar</title>
+  <script src="node_modules/p5/lib/p5.min.js"></script>
+  <script src="node_modules/tone/build/Tone.min.js"></script>
+  <script src="./audioshim.js"></script>
+  <script src="node_modules/fast-levenshtein/levenshtein.js"></script>
+  <script src="cutils.js"></script>
+  <script src="autochar.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    function preload() {
+      if (doSound) {
+        bell = new Tone.Player("res/chime.wav").toMaster();
+        stroke = new Tone.Player("res/stroke.wav").toMaster();
+      }
+      chars = loadJSON('chardata.json');
+      trad = loadJSON('words-trad.json'); // comment for testmode
+      simp = loadJSON('words-simp.json'); // comment for testmode
+      conf = loadJSON('config.json');
+    }
+
+    function setup() {
+      noCursor();
+      frameRate(30);
+      createCanvas(1024, 768);
+      textAlign(CENTER);
+      textSize(14);
+
+      if (window.innerWidth < 600) {
+        var canvas = document.getElementById("defaultCanvas0");
+        canvas.style.width = "";
+        canvas.style.height = "";
+      }
+
+      let testOnly = !(trad || simp);
+      util = new CharUtils(chars, trad, simp, Levenshtein, showDefs);
+      typer = new Autochar(util, onAction, onTarget, testOnly ? chars : null);
+      word = typer.word.literal;
+      console.log("1) [ ] -> " + word);
+
+      if (testOnly) {
+        noLoop();
+        return;
+      }
+      next();
+    }
+
+    function draw() {
+      adjustColor();
+      background(rgb[0], rgb[1], rgb[2]);
+      push();
+      typer.draw(this._renderer, txtcol);
+      pop();
+      if (showDefs) {
+        push();
+        textSize(40);
+        fill(txtcol);
+        text(def, width / 2, 100);
+        pop();
+      }
+      showMed && text(wmed, width - 12, 15);
+      doPerf && logPerf();
+    }
+
+    function toggleMute(event) {
+
+      if (typeof event === 'boolean') doSound = event ? 0 : 1;
+      else doSound = doSound == 0 ? 1 : 0;
+      console.log("Sound", doSound);
+      document.getElementById("mute").innerText = doSound == 0 ? 'unmute' : ' mute ';
+    }
+
+
+    function next() {
+      if (typer.step()) {
+        tid = setTimeout(next, strokeDelay); // drawing
+      }
+      else {
+        next(); // erasing
+      }
+    }
+
+    function onTarget(next, numStrokes, trigger) {
+      triggered = trigger;
+      var numStrokes = typer.currentStrokeCount;
+      var nSpeed = min(1, numStrokes / 12);
+      strokeDelay = map(nSpeed, 0, 1, 1000, 200);
+      //console.log(numStrokes, nSpeed, strokeDelay);
+    }
+
+    function onAction(nextWord, med) {
+      if (nextWord) {
+        flashColors();
+        playStroke(true);
+        playBell()
+        if (showDefs && nextWord.definition) def = nextWord.definition;
+        wmed = med + (util.language().startsWith('s') ? 's' : '');
+        console.log(++steps + ') ' + word + " -> " + nextWord.literal, wmed, def);
+        word = nextWord.literal;
+        triggered = false;
+      }
+      else {
+        playStroke();
+      }
+
+    }
+
+    function flashColors() {
+      for (var i = 0; i < rgb.length; i++) {
+        rgb[i] = triggered ? trgcol[i] : hitcol[i];
+        txtcol[i] = whiteOnColor ? 0 : 255;
+      }
+    }
+
+    function playBell() {
+      if (doSound) {
+        bell.playbackRate = random(.6, .9);
+        bell.volume.value = random(.7, 1);
+        bell.restart();
+        if (triggered) {
+          bell.playbackRate = random(.5, .7);
+          bell.volume.value = 5;
+          bell.start(200, 0, .1);
+        }
+      }
+    }
+
+    function playStroke(quiet) {
+      if (doSound) {
+        stroke.playbackRate = random(.5, .7);
+        stroke.volume.value = quiet ? -24 : -12;
+        stroke.restart(undefined, 0, random(.05, .1)); //.05, 0.1));
+      }
+    }
+
+    function keyReleased() {
+      if (key == ' ') clearTimeout(tid);
+      if (key == 't') {
+        triggered = true;
+        flashColors();
+        playStroke(true);
+        playBell();
+      }
+    }
+
+    function adjustColor() {
+      if (!rgb) {
+        rgb = [0, 0, 0];
+        for (var i = 0; i < rgb.length; i++) {
+          rgb[i] = bgcol[i];
+        }
+      }
+      for (var i = 0; i < rgb.length; i++) {
+        if (rgb[i] != bgcol[i]) rgb[i] = lerp(rgb[i], bgcol[i], .05);
+        //if (invertText) txtcol[i] = 255 - round(rgb[i]); else
+        //txtcol[i] = 255 - round(rgb[i]);
+        if (whiteOnColor && txtcol[i] < 255) txtcol[i] += 10;
+        if (!whiteOnColor && txtcol[i] > -1) txtcol[i] -= 10;
+        //txtcol[i] = lerp(txtcol[i], bgcol[i], .05);
+        //else if (txtcol[i] > 0) txtcol[i] += 5;
+        //if (invertText) txtcol[i] = 255 - floor(rgb[i]);
+        //else if (txtcol[i] > 0) txtcol[i] += 5;
+      }
+    }
+
+    function logPerf() {
+      if (performance && performance.memory && steps - memt >= 20) {
+        console.log('Perf: ' + round(frameRate()) + ' fps, ' +
+          round(performance.memory.usedJSHeapSize / 1000000) +
+          '/' + round(performance.memory.jsHeapSizeLimit / 1000000) + ' MB heap');
+        memt = steps;
+      }
+    }
+
+    var lang, chars, simp, trad, bell;
+    var typer, conf, word, tid, stroke;
+
+    var memt = -15;
+    var wmed = '';
+    var def = '';
+    var steps = 1;
+    var triggered = 0;
+    var strokeDelay = 300;
+
+    var showDefs = 1;
+    var showMed = 0;
+    var doSound = 1;
+    var doPerf = 1;
+    var prod = false;
+
+    var whiteOnColor = false;
+    var bgcol = [137, 172, 198];
+    var hitcol = [76, 87, 96];
+    var txtcol = [0, 0, 0];
+    var trgcol = [150, 0, 0];
+    var rgb = [0, 0, 0];
+  </script>
+</head>
+
+<body>
+  <!--   <button id="mute">mute</button>
+  <script>
+  document.getElementById("mute").onclick = toggleMute;
+  </script> -->
+</body>
+
+</html>
