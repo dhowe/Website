@@ -134,29 +134,31 @@
     "longtitle": "Radical of the Vertical Heart 忄",
     "images": [
       {
-        "src": "img/alm_dist.gif"
+        "src": "img/alm_decomp_h.gif",
+        "title": "Twelve atomic decompositions for Chinese characters"
       },
       {
-        "src": "img/alm_decompositions.gif",
-        "title": "The twelve atomic decompositions"
+        "src": "img/alm_triggers.gif",
+        "title": "An excerpt of the \"sensitive\" word list for Chinese readers"
       },
       {
-        "src": "img/alm_sense.gif"
-      },
-      {
-        "src": "img/alm_liff.png",
+        "src": "img/almviz.jpg",
         "title": "A visualization of reader movement through traditional Chinese"
+      },
+      {
+        "src": "img/alm_dist.gif",
+        "title": "A new minimum edit distance metric for logographic characters"
       }
     ],
     "largeDetailImage": {
-      "src": "img/alm_decompositions.gif",
+      "src": "img/alm_chars.png",
       "title": "A visualization of reader movement through traditional Chinese"
     },
-    "longdesc": "A reading machine that searches the possibility space of (simplfied and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution. Logographic machines, like the one shown on the <a target=\"blank\" href=\"../alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of the strokes, radicals, and subcomponents of Chinese characters.",
+    "longdesc": "A reading machine that searches the possibility space of (simplfied and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution, logographic machines, like the one shown on the <a target=\"blank\" href=\"./alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of the strokes, radicals, and subcomponents of Chinese characters.",
     "links": [
       {
         "name": "The Project Home Page",
-        "target": "alms/index.html"
+        "target": "./alms/index.html"
       },
       {
         "name": "The English Reader (Automatype)",

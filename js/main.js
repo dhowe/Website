@@ -7,7 +7,7 @@ function createGrid(projects) {
 
     html = "<a href='" + projLink(projects[i]) + "'>";
     html += "<div class='project'>";
-    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'":"";
+    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -50,7 +50,7 @@ function projLink(proj) {
 
 function detailUrl(title) {
 
-   return title.toLowerCase().replace(/[ .-]+/g, '');
+  return title.toLowerCase().replace(/[ .-]+/g, '');
 }
 
 function createDetail(projects, id) {
@@ -110,9 +110,9 @@ function createDetail(projects, id) {
 
   // IFRAME SKETCH
   if (current.sketch) {
-    html += "<iframe id='" + current.shorttitle +"_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
+    html += "<iframe id='" + current.shorttitle + "_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
     // mute sketch whenever a link redirect is triggered on current detailed page
-    html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '" + current.shorttitle.toLowerCase() +"') $('a').click(function(){muteSketch()});</script>";
+    html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '" + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
   }
 
   // LINKS
@@ -123,7 +123,7 @@ function createDetail(projects, id) {
       var link = current.links[j];
       // if (link.target === "automatype/p5/")
       html += "<li><a target='_blank' href='" + link.target +
-      "'>" + link.name + "</a></li>";
+        "'>" + link.name + "</a></li>";
     }
     html += "</ul>";
   }
@@ -149,7 +149,7 @@ function createDetail(projects, id) {
       html += "<li class='hanging'>";
       if (current.exhibitions[j].target)
         html += "<a target='_blank' href='" + current.exhibitions[j].target +
-        "'>" + current.exhibitions[j].text + "</a></li>";
+          "'>" + current.exhibitions[j].text + "</a></li>";
       else
         html += current.exhibitions[j].text + "</li>";
     }
@@ -158,9 +158,9 @@ function createDetail(projects, id) {
 
   // DETAIL IMAGE
   if (current.largeDetailImage) {
-    html += "<img src='" + current.largeDetailImage.src + "' style='margin-left: -15px; max-width: 525px'/>";
+    html += "<img src='" + current.largeDetailImage.src + "' style='margin-left: 0px; max-width: 525px'/>";
     if (current.largeDetailImage.title) {
-      html += "<p style='font-size:10px; margin-top:0px'>Fig. " + current.largeDetailImage.title + "<strong/></p>";
+      html += "<p style='font-size:10px; margin-top:-5px'>Fig. " + current.largeDetailImage.title + "<strong/></p>";
     }
   }
 
@@ -207,7 +207,7 @@ function createDetail(projects, id) {
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
-    var last = idk -1;
+    var last = idk - 1;
     if (projects[last].longdesc === undefined) {
       last -= 1;
     }
@@ -283,13 +283,13 @@ function adjustItemHeight(projects) {
 }
 
 function muteSketch() {
-  $('iframe').each(function(){
+  $('iframe').each(function () {
     $(this)[0].contentWindow.toggleMute(true);
   })
 }
 
 function unmuteSketch() {
-  $('iframe').each(function(){
+  $('iframe').each(function () {
     $(this)[0].contentWindow.toggleMute(false);
   })
 }
@@ -322,18 +322,14 @@ function imageExists(image_url) {
 }
 
 function openInTab(url) {
-  window.open(url,'_blank');
+  window.open(url, '_blank');
   window.open(url);
 }
 
 $(document).ready(function () {
 
-  //check browser/tab focus
-  //Window active
-  window.addEventListener('focus', startFocus);
-  //Window inactive
-  window.addEventListener('blur', stopFocus);
-  console.log("documentready")
+  window.addEventListener('focus', startFocus);   //Window active
+  window.addEventListener('blur', stopFocus);   //Window inactive
 
   // mobile menu
   $('.name.showInMobile').click(function () {
@@ -357,27 +353,20 @@ $(document).ready(function () {
     if ($('iframe').length === 0) return;
     if (e.keyCode >= 37 && e.keyCode <= 40) {
       e.preventDefault();
-      // var iframeDocument = $('iframe')[0].contents();
-      // var keyDownEvent = jQuery.Event("keydown");
-      // keyDownEvent.which = e.keyCode;
-      // iframeDocument.trigger(keyDownEvent);
     }
   });
-
-
 });
 
 
 function startFocus() {
-//  console.log("Is Focused")
+  //  console.log("Is Focused")
   unmuteSketch();
 }
 
 function stopFocus() {
-//  console.log("not Focused")
+  //  console.log("not Focused")
   muteSketch();
 }
-
 
 $(window).resize(function () {
 
