@@ -1,16 +1,32 @@
 var lastCols = 0;
 
 function createGrid(projects) {
-
+  var gridSmall = "s";
+  var gridLarge = "l";
+  var gridLargeRight = "lr";
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
+    var g;
+
+      if(i % 6 === 0){
+        g = gridLarge;
+      }else if(i % 6 === 3){
+        g = gridLargeRight;
+      }
+      else{
+        g = gridSmall;
+      }
+
 
     html = "<a href='" + projLink(projects[i]) + "'>";
-    html += "<div class='project'>";
+    html += "<div class='project gridSize-"+ g +"'>";
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+
+    html += "<img src=" + projects[i].thumb + ">";
+    html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
-    html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
+    html += "</div></a>";
     html += "</div>";
     //console.log(html);
     $('#projects .grid').append(html);
@@ -18,7 +34,7 @@ function createGrid(projects) {
 
   $('#projects .grid').append("<div class='space'></div>");
 
-  afterGridCreated(projects);
+//  afterGridCreated(projects);
 }
 
 function afterGridCreated(projects) {
@@ -336,7 +352,7 @@ $(document).ready(function () {
     $('nav').slideToggle();
   });
 
-  $(window).trigger('resize');
+//  $(window).trigger('resize');
 
   //control bar for videos
   $('video').hover(function toggleControls() {
