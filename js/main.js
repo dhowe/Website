@@ -290,7 +290,10 @@ function adjustItemHeight(projects) {
       var current = $('.project').eq(index).outerHeight();
       // console.log(i,j);
       if (current > maxH) maxH = current;
-      if (index + 1 > projects.length) break;
+      if(projects){
+              if (index + 1 > projects.length) break;
+      }
+
       $('.project').eq(index).addClass(classname);
     }
 
@@ -344,6 +347,17 @@ function openInTab(url) {
 
 $(document).ready(function () {
 
+  //reload on resize
+  $(window).bind('resize', function(e)
+  {
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 100);
+  });
+
+
   window.addEventListener('focus', startFocus);   //Window active
   window.addEventListener('blur', stopFocus);   //Window inactive
 
@@ -371,6 +385,8 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+
 });
 
 
