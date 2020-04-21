@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- http://billposters.ch/wp-json/wp/v2/posts -->
 <head>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <meta content="utf-8" http-equiv="encoding">
@@ -17,51 +17,22 @@
 
   <script src="js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
   <script type="text/javascript">
-    $.getJSON("publications.json", function (json) {
-      projects = json.cells;
-    }).done(layout);
 
-    function layout(sections) {
-      var items = [];
-      for (var i = 0; i < sections.length; i++) {
-        items.push(...sections[i].items);
+
+   $(document).ready(function() {
+ console.log("HERE")
+    $.ajax({
+        url: "http://billposters.ch/wp-json/wp/v2/posts"
+    }).then(function(data) {
+      for (var i = 0; i < data.length; i++) {
+        $('.post-title').append(data[i].id);
+        $('.post-content').append(data[i].content.rendered);
+               console.log(data[i])
       }
 
-      // sort by date here
-      items.sort(function(a,b) { return (a.year < b.year) ? 1 : -1; });
 
-      var html = "<br/> <br/>";
-      for (var j = 0; j < items.length; j++) {
-        var hidden = items[j].hidden;
-        if (typeof hidden != 'undefined' && hidden) continue;
-
-        var link = items[j].link;
-        var type = link && link.length ? (link.endsWith('.pdf') ? 'PDF' : 'LINK')  : null;
-
-        html += '<div class="row"><div class="col-1-12"><p>' + items[j].year +
-          '</p></div><div class="col-11-12"><p>' + items[j].detail + (type
-             ? ' [&nbsp;<a href="'+link+'" target="_blank">'+type+'</a>&nbsp;]' : '')
-             +'</p></div></div>';
-      }
-      $('#publist').append(html);
-    }
-
-    function layoutBySection(sections) { // old
-
-      for (var i = 0; i < sections.length; i++) {
-
-        var html = "<span class='pubhead'>" + sections[i].section + "</span>";
-        for (var j = 0; j < sections[i].items.length; j++) {
-
-          var item = sections[i].items[j];
-          html += '<div class="row"><div class="col-1-12"><p>' + item.year +
-            '</p></div><div class="col-11-12"><p>' + item.detail + '</p></div></div>';
-        }
-
-        $('#publist').append(html);
-      }
-    }
-
+    });
+});
   </script>
   <script src="js/main.js" type="text/javascript"></script>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -86,8 +57,8 @@
     <nav>
       <ul>
         <li><a href="index.html">Projects</a></li>
-        <li><a class="current" href="pubs.html">Publications</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="pubs.html">Publications</a></li>
+        <li><a class="current" href="blog.html">Blog</a></li>
         <!--li><a href="sketchpad/index.html">Sketchpad</a></li-->
         <li><a class="showInMobile" href="about.html">About</a></li>
       </ul>
@@ -100,7 +71,8 @@
 
   <div class="grid pad-large" id="publication">
     <div class="col-11-12 mobile-1-1" id="publist">
-
+      <div class="post-title"></div>
+      <div class="post-content"></div>
     </div>
   </div>
 
