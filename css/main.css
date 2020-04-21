@@ -180,13 +180,13 @@ nav>ul>li>a:hover {
   float: left;
   width: 66%;
   height: 480px;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 10px;
 }
 .gridSize-lr{
   float: right;
   width: 66%;
   height: 480px;
-  padding: 20px 10px;
+  padding: 20px 20px 20px 0px;
 }
 .gridSize-s{
   width: 33%;
@@ -894,10 +894,19 @@ body {
     max-width: 940px;
     width: 100%;
   }
-  .project {
-    width: 33%;
+
+  .project, .gridSize-l, .gridSize-lr, .gridSize-s
+ {
+    width: 100%;
     float: left;
+    height: 480px;
   }
+
+
+  .gridSize-l img,.gridSize-lr img, .gridSize-s img{
+    height: 460px;
+  }
+
 }
 
 /*Extra Small Devices Mobile<768*/
@@ -934,10 +943,12 @@ body {
   .bottomNav {
     bottom: 0;
   }
+  /*
   .project {
     padding: 4%;
     width: 50%;
   }
+  */
   nav {
     display: none;
     height: auto;
@@ -979,11 +990,13 @@ body {
   display: table;
 }
 @media only screen and (max-width: 400px) {
+  /*
   .project {
     padding: 5%;
     width: 100%;
     height: auto;
   }
+  */
   .maxH {
     height: auto;
   }
