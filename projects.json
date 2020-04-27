@@ -13,10 +13,6 @@
       {
         "text": "When I experienced ‘Spectre’ at Doc/Fest in Sheffield I found its use of ‘deepfake’ video technology chillingly effective. We are at a watershed moment in terms our relationship to news, information and trusted sources, the acquisition of these works bring us right up to the cutting edge of media evolution and human-AI collaboration.",
         "from": "Will Massa, the British Film Institute National Archive"
-      },
-      {
-        "text": "Look as closely as you want, but it’s nigh on impossible to tell that these clips are fakes, if it weren’t for the purposefully jarring content of what they’re saying. The series — which also counts Morgan Freeman and Marina Abramović among its ‘stars’ — is part of a broader effort from transatlantic duo Bill Posters and Daniel Howe to lay bare the dubious technological underbelly of modern society.",
-        "from": "Creative Review"
       }
     ],
     "images": [
@@ -30,23 +26,23 @@
     "longdesc": "Winner of the <span style=\"decoration:none !important\"><a href=\"https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/\" target=\"_new\">2019 Alternate Realities Commission</a></span>, <em>Spectre</em> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray to Dataism and the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
     "exhibitions": [
       {
-        "text": "<i>Sheffield Doc/Fest ‘Alternate Realities’</i>, Site Gallery, Sheffield, UK. June 6-11, 2019 (with 3D walkthrough))))",
+        "text": "<i>Sheffield Doc/Fest</i>, Site Gallery, Sheffield, UK. Jun 6-11, 2019",
         "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
       },
       {
-        "text": "<i>'Presentation: Spectre – Welcome to the Altar of Dataism'</i>, Studios des 7 Doigts, Montréal, Canada. Aug 20, 2019",
+        "text": "<i>Spectre: Welcome to the Altar of Dataism</i>, Studios des 7 Doigts, Montréal. Aug&nbsp;20,&nbsp;2019",
         "target": "http://www.mutek.org/en/montreal/2019/events/1685-presentation-spectre-welcome-to-the-altar-of-dataism"
       },
       {
-        "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sept 15-Dec 8, 2019",
+        "text": "<i>Art Strikes Back</i>, Museum Jorn, Silkeborg, Denmark. Sep 15-Dec 8, 2019",
         "target": "http://billposters.ch/art-strikes-back-museum-jorn/"
       },
       {
-        "text": "<i>‘SXSW Art Prgram’</i> Austin, Texas, US. March 14-21, 2020",
+        "text": "<i>SXSW Art Prgram</i> Austin, Texas, US. Mar 14-21, 2020 (postponed)",
         "target": "https://www.sxsw.com/exhibitions/sxsw-art-program/#2020-program"
       },
       {
-        "text": "<i>‘Trust, But Verify’</i> Rochester Contemporary, New York. April 3–May 10, 2020",
+        "text": "<i>Trust, But Verify</i> Rochester Contemporary, New York. Apr 3–May 10, 2020 (postponed)",
         "target": "http://www.rochestercontemporary.org/exhibitions/trust-but-verify/"
       }
     ],
@@ -191,6 +187,12 @@
     "images": [
       {
         "src": "img/mjorn.jpg"
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Look as closely as you want, but it’s nigh on impossible to tell that these clips are fakes, if it weren’t for the purposefully jarring content of what they’re saying. The series — which also counts Morgan Freeman and Marina Abramović among its ‘stars’ — is part of a broader effort from transatlantic duo Bill Posters and Daniel Howe to lay bare the dubious technological underbelly of modern society.",
+        "from": "Creative Review"
       }
     ],
     "directLinkX": "http://billposters.ch/projects/big-dada/",
@@ -1047,5 +1049,4 @@
       }
     ]
   }
-
 ]
