@@ -93,7 +93,7 @@ a:visited
 }
 iframe{
   background-color: grey;
-  border-width: 1px;
+  border-width: 0px;
   width:298px;
   height:198px;
 }
