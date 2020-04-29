@@ -1,16 +1,33 @@
 var lastCols = 0;
 
 function createGrid(projects) {
-
+  var gridSmall = "s";
+  var gridLarge = "l";
+  var gridLargeRight = "lr";
+  var noOfSpecialLayout = 6;
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
+    var g;
+
+      if(i % 6 === 0 && i< noOfSpecialLayout){
+        g = gridLarge;
+      }else if(i % 6 === 3 && i< noOfSpecialLayout){
+        g = gridLargeRight;
+      }
+      else{
+        g = gridSmall;
+      }
+
 
     html = "<a href='" + projLink(projects[i]) + "'>";
-    html += "<div class='project'>";
+    html += "<div class='project gridSize-"+ g +"'>";
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+
+    html += "<img src=" + projects[i].thumb + ">";
+    html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
-    html += "<img src=" + projects[i].thumb + "></a>";
     html += "<p>" + projects[i].shortdesc + "</p>";
+    html += "</div></a>";
     html += "</div>";
     //console.log(html);
     $('#projects .grid').append(html);
@@ -18,7 +35,7 @@ function createGrid(projects) {
 
   $('#projects .grid').append("<div class='space'></div>");
 
-  afterGridCreated(projects);
+//  afterGridCreated(projects);
 }
 
 function afterGridCreated(projects) {
@@ -274,7 +291,10 @@ function adjustItemHeight(projects) {
       var current = $('.project').eq(index).outerHeight();
       // console.log(i,j);
       if (current > maxH) maxH = current;
-      if (index + 1 > projects.length) break;
+      if(projects){
+              if (index + 1 > projects.length) break;
+      }
+
       $('.project').eq(index).addClass(classname);
     }
 
@@ -328,6 +348,17 @@ function openInTab(url) {
 
 $(document).ready(function () {
 
+  //reload on resize
+  $(window).bind('resize', function(e)
+  {
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 100);
+  });
+
+
   window.addEventListener('focus', startFocus);   //Window active
   window.addEventListener('blur', stopFocus);   //Window inactive
 
@@ -336,7 +367,7 @@ $(document).ready(function () {
     $('nav').slideToggle();
   });
 
-  $(window).trigger('resize');
+//  $(window).trigger('resize');
 
   //control bar for videos
   $('video').hover(function toggleControls() {
@@ -355,6 +386,8 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+
 });
 
 
