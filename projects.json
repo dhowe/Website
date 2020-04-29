@@ -24,6 +24,12 @@
       }
     ],
     "longdesc": "Winner of the <span style=\"decoration:none !important\"><a href=\"https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/\" target=\"_new\">2019 Alternate Realities Commission</a></span>, <em>Spectre</em> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray to Dataism and the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
+    "videos": [
+      {
+        "src": "video/Artists_Create_Deepfake_Video",
+        "poster": "img/spec_vid.png"
+      }
+    ],
     "exhibitions": [
       {
         "text": "<i>Sheffield Doc/Fest</i>, Site Gallery, Sheffield, UK. Jun 6-11, 2019",
@@ -47,6 +53,10 @@
       }
     ],
     "links": [
+      {
+        "name": "Deepfake or art: who decides? [audio podcast]",
+        "target": "audio/TechTent-20190614-DeepfakeOrArtWhoDecides.mp3"
+      },
       {
         "name": "The Project Home Page",
         "target": "spectre/index.html"
