@@ -4,13 +4,14 @@ function createGrid(projects) {
   var gridSmall = "s";
   var gridLarge = "l";
   var gridLargeRight = "lr";
+  var noOfSpecialLayout = 6;
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
     var g;
 
-      if(i % 6 === 0){
+      if(i % 6 === 0 && i< noOfSpecialLayout){
         g = gridLarge;
-      }else if(i % 6 === 3){
+      }else if(i % 6 === 3 && i< noOfSpecialLayout){
         g = gridLargeRight;
       }
       else{
