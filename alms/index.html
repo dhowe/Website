@@ -9,28 +9,14 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../fancybox/jquery.fancybox.css" type="text/css" media="screen" />
   <script type="text/javascript" src="../fancybox/jquery.fancybox.pack.js"></script>
-  <script src="../js/main.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $(".fancybox").fancybox();
       window.addEventListener('focus', checkFocus);
       window.addEventListener('blur', stopFocus); // Inactive
     });
-
-    function checkFocus() { unmuteSketch()/* console.log("Is Focused") */ }
-    function stopFocus() { muteSketch()/* console.log("Not Focused") */ }
-
-    function muteSketch() {
-      $('iframe').each(function () {
-        $(this)[0].contentWindow.toggleMute(true);
-      })
-    }
-
-    function unmuteSketch() {
-      $('iframe').each(function () {
-        $(this)[0].contentWindow.toggleMute(false);
-      })
-    }
+    function checkFocus() { /* console.log("Is Focused") */ }
+    function stopFocus() { /* console.log("Not Focused") */ }
   </script>
 </head>
 
