@@ -1,0 +1,5 @@
+[Desktop Entry] 
+Name=autochar
+Exec=/home/pi/autochar/node_modules/electron/dist/electron /home/pi/autochar/
+Type=application
+Terminal=true
