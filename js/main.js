@@ -349,14 +349,16 @@ function openInTab(url) {
 $(document).ready(function () {
 
   //reload on resize
+  /*
   $(window).bind('resize', function(e)
   {
     if (window.RT) clearTimeout(window.RT);
     window.RT = setTimeout(function()
     {
-      this.location.reload(false); /* false to get page from cache */
+      this.location.reload(false); // false to get page from cache
     }, 100);
   });
+*/
 
 
   window.addEventListener('focus', startFocus);   //Window active
@@ -404,9 +406,10 @@ function stopFocus() {
 $(window).resize(function () {
 
   if ($('.project').length > 0) {
-    $('.project img').css("height", $('.project img').width() * 0.65);
-    adjustItemHeight();
-    adjustFooterSpace();
+  //  $('.project img').css("height", $('.project img').width() * 0.65);
+//    this.location.reload(false); // false to get page from cache
+//    adjustItemHeight();
+  //  adjustFooterSpace();
   }
 });
 
