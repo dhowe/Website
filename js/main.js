@@ -365,7 +365,13 @@ $(document).ready(function () {
   window.addEventListener('blur', stopFocus);   //Window inactive
 
   // mobile menu
+  /*
   $('.name.showInMobile').click(function () {
+    $('nav').slideToggle();
+  });
+  */
+
+  $('.menubutton.showInMobile').click(function () {
     $('nav').slideToggle();
   });
 
