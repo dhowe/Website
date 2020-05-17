@@ -30,9 +30,18 @@
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
+
+.menubutton {
+z-index: 100;
+position: fixed;
+right: 10px;
+top: 10px;
+width:40px;
+
+}
 nav {
   width: 100%;
-  float: left;
+  float: right;
   height: 100%;
   position: relative;
 }
