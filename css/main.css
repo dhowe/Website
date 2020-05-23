@@ -612,7 +612,7 @@ body {
 }
 .grid {
   width: calc(100% - 225px);
-  max-width: 1140px;
+  max-width: 855px;
   min-width: 755px;
 
   margin: 0px 225px -20px;
