@@ -155,6 +155,7 @@ nav>ul>li>a:hover {
 
 #projects {
   margin-top: 60px;
+    margin-bottom: 20px;
   height: 100%;
 }
 
@@ -188,20 +189,21 @@ nav>ul>li>a:hover {
 .gridSize-l{
   float: left;
   width: 66%;
-  height: 480px;
+  height: 360px;
   padding: 20px 10px 20px 10px;
 }
 .gridSize-lr{
   float: right;
   width: 66%;
-  height: 480px;
+  height: 360px;
   padding: 20px 20px 20px 0px;
 }
 .gridSize-s{
   width: 33%;
-  height: 240px;
+  height: 180px;
   padding: 20px 10px;
 }
+
 
 .project-description{
   position: absolute;
@@ -209,7 +211,7 @@ nav>ul>li>a:hover {
   left: 0;
   bottom: 0;
   margin: 20px 10px 0 10px;
-  padding: 20px 20px;
+  padding: 10px 20px;
   color: #fff;
   background-color: rgba(0,0,0,0.8);
   opacity: 0;
@@ -217,22 +219,34 @@ nav>ul>li>a:hover {
   text-shadow: 1px 1px #000000;
 }
 
+
+.gridSize-lr .project-description{
+  margin: 20px 20px 0px 0px;
+}
+
+
+
+
 .project-description:hover{
   opacity: 1;
   transition: opacity 0.3s;
 }
 
+.project-description p{
+  font-size: 0.8em;
+}
+
 
 h5.smallerTitle{
-  font-size: 0.99em !important;
+  font-size: 0.8em !important;
 }
 .project h5 {
-  font-size: 1.19em;
+  font-size: 0.8em;
   color: #fff;
-  height:32px;
+  height:0.8em;
 }
 .projectlong h5 {
-  font-size:1.19em;
+  font-size:0.8em;
   color: #39465A;
 }
 .project:hover {
@@ -254,13 +268,11 @@ h5.smallerTitle{
 }
 
 .gridSize-s img{
-
-  height: 220px;
-
+  height: 160px;
 }
 
 .gridSize-l img,.gridSize-lr img{
-  height: 460px;
+  height: 340px;
 }
 .collaborators {
   text-transform: uppercase;
@@ -515,7 +527,7 @@ h4 {
 }
 h5 {
   margin-top: 1rem;
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom:0;
 }
 p {
@@ -695,6 +707,23 @@ body {
   width: 45.33%
 }
 @media handheld, only screen and (max-width: 1100px) {
+  .gridSize-l{
+    height: 320px;
+  }
+  .gridSize-lr{
+    height: 320px;
+  }
+  .gridSize-s{
+    height: 160px;
+  }
+  .gridSize-s img{
+    height: 140px;
+  }
+  .gridSize-l img,.gridSize-lr img{
+    height: 300px;
+  }
+
+
   .grid {
     width: 100%;
     min-width: 0;
@@ -906,13 +935,9 @@ body {
     width: 100%;
   }
 
-
-
-
   .gridSize-l img,.gridSize-lr img, .gridSize-s img{
     height: 100%;
   }
-
 
 
 }
