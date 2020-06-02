@@ -935,9 +935,9 @@ body {
     width: 100%;
   }
 
-  .gridSize-l img,.gridSize-lr img, .gridSize-s img{
+  /* .gridSize-l img,.gridSize-lr img, .gridSize-s img{
     height: 100%;
-  }
+  } */
 
 
 }
