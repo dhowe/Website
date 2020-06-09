@@ -155,8 +155,9 @@ nav>ul>li>a:hover {
 
 #projects {
   margin-top: 60px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   height: 100%;
+  min-width:600px;
 }
 
 #publist {
@@ -203,7 +204,12 @@ nav>ul>li>a:hover {
   height: 180px;
   padding: 20px 10px;
 }
-
+.gridSize-s img{
+  height: 160px;
+}
+.gridSize-l img,.gridSize-lr img{
+  height: 340px;
+}
 
 .project-description{
   position: absolute;
@@ -223,9 +229,6 @@ nav>ul>li>a:hover {
 .gridSize-lr .project-description{
   margin: 20px 20px 0px 0px;
 }
-
-
-
 
 .project-description:hover{
   opacity: 1;
@@ -260,20 +263,14 @@ h5.smallerTitle{
   display: block;
   width: 100%;
   object-fit:cover;
-  object-position: center; /* Center the image within the element */
+  object-position: top; /* Center the image within the element */
   background-color: black;
   border-style: solid;
   border-color:#DDD;
   border-width: 1px;
 }
 
-.gridSize-s img{
-  height: 160px;
-}
 
-.gridSize-l img,.gridSize-lr img{
-  height: 340px;
-}
 .collaborators {
   text-transform: uppercase;
   color: #2E3C51;
@@ -1036,10 +1033,29 @@ body {
 }
 
 /* mobile */
-@media screen and (max-device-width: 800px){
+@media screen and (max-width: 800px){
   .projectlong iframe {
     display: none;
   }
+  .project-description{
+    display: none;
+  }
+  .gridSize-l{
+    height: 280px;
+  }
+  .gridSize-lr{
+    height: 280px;
+  }
+  .gridSize-s{
+    height: 140px;
+  }
+  .gridSize-s img{
+    height: 120px;
+  }
+  .gridSize-l img,.gridSize-lr img{
+    height: 260px;
+  }
+
 }
 
 /* ==========================================================================
