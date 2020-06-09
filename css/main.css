@@ -155,7 +155,7 @@ nav>ul>li>a:hover {
 
 #projects {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 150px;
   height: 100%;
   min-width:600px;
 }
@@ -710,6 +710,7 @@ body {
     max-width: 855px;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:50px;
   }
 
   .grid {
@@ -888,9 +889,7 @@ body {
     bottom:0;
     position:fixed;
 }
-#projects{
-  margin-bottom:50px;
-}
+
 #publication{
   margin-bottom:150px;
 }
