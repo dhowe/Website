@@ -689,7 +689,7 @@
         "target": "https://engb.facebook.com/input.output.733"
       },
       {
-        "text": "Information Day, School of Creative Media, Kowloon Tong, Hong Kong. Oct 10–Nov 5, 2012"
+        "text": "Info.Day, School of Creative Media, Kowloon Tong, Hong Kong. Oct 10–Nov 5, 2012"
       },
       {
         "text": "<i>Electrifying Literature: Affordances and Constraints</i>, the ELO Media Art Show. West Virginia University, Morgantown , WV, USA. Jun 22, 2012",
@@ -728,14 +728,6 @@
       {
         "name": "Featured in NT2 (French)",
         "target": "http://nt2.uqam.ca/repertoire/automatype"
-      },
-      {
-        "name": "The RiTa paper (with A.B. Soderman)",
-        "target": "http://hyperrhiz.net/hyperrhiz06/essays/the-aesthetics-of-generative-literature-lessons-from-a-digital-writing-workshop.html"
-      },
-      {
-        "name": "The RiTa HomePage",
-        "target": "https://rednoise.org/rita/"
       }
     ],
     "sketch": "automatype/p5/"
