@@ -1,6 +1,11 @@
 [{
   "section": "Journal Articles",
-  "items": [{
+  "items": [
+    {
+      "year": 2020,
+      "detail": "&ldquo;Dialogic: A Toolkit for Generative Interactive Dialog.&rdquo; Howe, Daniel C. Forthcoming in <em>Proceedings of Foundations of Digital Games</em>  (FDG) 2020, Foundations of Digital Games Conference, Malta."
+    },
+    {
       "year": 2019,
       "detail": "&ldquo;A Critique of Surprise in Generative Art.&rdquo; Soderman, Braxton and Daniel C. Howe. In <em>Algorithmic and Generative Art,</em> edited by Aceti, Lanfranco, Kris Paulsen, and Meredith Hoy. Leonardo Electronic Almanac. Volume 22, Issue 4. March 15, 2019, Cambridge: MIT Press.",
       "link": "https://www.leoalmanac.org/a-critique-of-surprise-in-generative-art-braxton-soderman-daniel-c-howe/"
