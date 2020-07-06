@@ -810,8 +810,10 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-   .bottomNav .nextPage {
-    float: left;
+   .bottomNav{
+     display:none;
+    /* float: left;
+    width:100%; */
    }
 }
 /* The Percentage-based grid, akin to bootstrap */
