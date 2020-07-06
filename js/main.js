@@ -23,7 +23,7 @@ function createGrid(projects) {
     html += "<div class='project gridSize-"+ g +"'>";
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
 
-    html += "<img src=" + projects[i].thumb + ">";
+    html += "<img data-rjs='2' src=" + projects[i].thumb + ">";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -175,7 +175,7 @@ function createDetail(projects, id) {
 
   // DETAIL IMAGE
   if (current.largeDetailImage) {
-    html += "<img src='" + current.largeDetailImage.src + "' style='margin-left: 0px; max-width: 525px'/>";
+    html += "<img src='" + current.largeDetailImage.src + "' data-rjs='2' style='margin-left: 0px; max-width: 525px'/>";
     if (current.largeDetailImage.title) {
       html += "<p style='font-size:10px; margin-top:-5px'>Fig. " + current.largeDetailImage.title + "<strong/></p>";
     }
@@ -189,7 +189,7 @@ function createDetail(projects, id) {
 
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
-    html += "<a class='fancybox' rel='group' href='" + bestImage + "'><img src='"
+    html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
       + current.images[0].src + "' title='"+altInfo+"' alt='" + altInfo + "' ></a>";
   }
 
@@ -245,6 +245,9 @@ function createDetail(projects, id) {
   html += "</div></div>";
 
   $('#detail').append(html);
+
+  const newImages = $('#' + id + ' img')
+  retinajs(newImages);
 }
 
 function getBestImage(img) {
@@ -424,6 +427,10 @@ $.getJSON("projects.json").done(function (projs) {
   if ($('#projects').length > 0) {
     createGrid(projs);
   }
+
+  const images = $('img');
+  retinajs(images);
+
   if ($('#detail').length > 0) {
     createDetail(projs, getCurrentIdFromUrl($(location).attr('href')));
   }
