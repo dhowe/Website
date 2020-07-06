@@ -111,10 +111,7 @@ nav>ul>li>a:hover {
 .footer img, .bioPhoto {
   width: 90px;
   float: left;
-  margin: 0 4%;
-}
-.bioPhoto {
-  margin-top: 1em;
+  margin: 0.3em 1em 1em;
 }
 .footer p {
   margin: 0 1em;
@@ -712,6 +709,9 @@ body {
     margin-right:auto;
     margin-bottom:50px;
   }
+  #about .bioPhoto {
+    margin:0 1em 0 0 !important;
+  }
 
   .grid {
     width: 100%;
@@ -951,13 +951,7 @@ body {
   .s-last {
     margin-right: 0;
   }
-  .showInMobile {
-    display: inline-block !important;
-  }
   .name {
-    display: none;
-  }
-  .footer, .space {
     display: none;
   }
   .bottomNav {
@@ -1030,7 +1024,12 @@ body {
   .project-description{
     display: none;
   }
-
+  .showInMobile {
+    display: inline-block !important;
+  }
+  .footer, .space {
+    display: none;
+  }
 }
 
 /* ==========================================================================
