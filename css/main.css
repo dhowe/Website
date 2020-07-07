@@ -494,7 +494,8 @@ canvas {
 
 .fancybox-video {
   display: none;
-  width:640px;
+  max-width:640px;
+  width:100%;
 }
 
 
@@ -810,8 +811,10 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-   .bottomNav .nextPage {
-    float: left;
+   .bottomNav{
+     display:none;
+    /* float: left;
+    width:100%; */
    }
 }
 /* The Percentage-based grid, akin to bootstrap */
