@@ -247,7 +247,7 @@ function createDetail(projects, id) {
   $('#detail').append(html);
 
   const newImages = $('#' + id + ' img')
-  retinajs(newImages);
+  window.retinajs(newImages);
 }
 
 function getBestImage(img) {
@@ -429,7 +429,7 @@ $.getJSON("projects.json").done(function (projs) {
   }
 
   const images = $('img');
-  retinajs(images);
+  window.retinajs(images);
 
   if ($('#detail').length > 0) {
     createDetail(projs, getCurrentIdFromUrl($(location).attr('href')));

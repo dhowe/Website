@@ -160,7 +160,7 @@
       "src": "img/harmony.gif",
       "title": "A visualization of reader movement through traditional Chinese"
     },
-    "longdesc": "A reading machine that searches the possibility space of (simplfied and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution, logographic machines, like the one shown on the <a target=\"blank\" href=\"./alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of the strokes, radicals, and subcomponents of Chinese characters.",
+    "longdesc": "A reading machine that searches the possibility space of (simplified and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution, logographic machines, like the one shown on the <a target=\"blank\" href=\"./alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of their strokes, radicals, and subcomponents.",
     "links": [
       {
         "name": "The Project Home Page",
