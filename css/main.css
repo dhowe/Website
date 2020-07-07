@@ -220,8 +220,12 @@ nav>ul>li>a:hover {
   opacity: 0;
   transition: opacity 0.3s;
   text-shadow: 1px 1px #000000;
+  width:calc(100% - 20px);;
 }
 
+.gridSize-l .project-description p, .gridSize-lr .project-description p{
+  max-width:400px;
+}
 
 .gridSize-lr .project-description{
   margin: 20px 20px 0px 0px;
@@ -523,7 +527,7 @@ h4 {
   font-size: 2em;
 }
 h5 {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   font-size: 0.8em;
   margin-bottom:0;
 }
