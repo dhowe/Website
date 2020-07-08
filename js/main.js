@@ -412,6 +412,34 @@ function stopFocus() {
   muteSketch();
 }
 
+Array.prototype.swap = function (x,y) {
+  var b = this[x];
+  this[x] = this[y];
+  this[y] = b;
+  return this;
+}
+
+function pickFeatureProjects(projs) {
+  // min image size 1100px
+  const pool = ["Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype","Radical of the Vertical Heart","The Readers Project"];
+  // Shuffle array
+  const shuffled = pool.sort(() => 0.5 - Math.random());
+  // Get sub-array of first n elements after shuffled
+  let selected = shuffled.slice(0, 2);
+  let selectedIdx = [];
+  for (let i = 0; i < projs.length; i++) {
+    const proj = projs[i];
+    if (selected.indexOf(proj.shorttitle) > -1) {
+      selectedIdx.push(i);
+    }
+  }
+  projs.swap(0, selectedIdx[0]);
+  projs.swap(3, selectedIdx[1]);
+  console.log(selected, selectedIdx )
+  console.log(projs)
+  return projs;
+}
+
 $(window).resize(function () {
 
   if ($('.project').length > 0) {
@@ -425,6 +453,7 @@ $(window).resize(function () {
 $.getJSON("projects.json").done(function (projs) {
 
   if ($('#projects').length > 0) {
+    projs = pickFeatureProjects(projs);
     createGrid(projs);
   }
 
