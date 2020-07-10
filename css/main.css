@@ -958,9 +958,7 @@ body {
   .s-last {
     margin-right: 0;
   }
-  .name {
-    display: none;
-  }
+
   .bottomNav {
     bottom: 0;
   }
@@ -970,30 +968,6 @@ body {
     width: 50%;
   }
   */
-  nav {
-    display: none;
-    height: auto;
-    width: auto;
-    background-color: #EEE;
-    margin-top: 60px
-  }
-  nav .current {
-    border-bottom: none !important;
-  }
-  nav ul {
-    position: static;
-    top: 60px;
-  }
-  nav ul {
-    padding-left: 20px;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    margin-left: 0;
-    text-align: left;
-  }
 }
 
 .bibtexentry{
@@ -1027,6 +1001,30 @@ body {
 @media screen and (max-width: 800px){
   .projectlong iframe {
     display: none;
+  }
+  nav {
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: #EEE;
+    margin-top: 60px
+  }
+  nav .current {
+    border-bottom: none !important;
+  }
+  nav ul {
+    position: static;
+    top: 60px;
+  }
+  nav ul {
+    padding-left: 20px;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    margin-left: 0;
+    text-align: left;
   }
   .project-description{
     display: none;
