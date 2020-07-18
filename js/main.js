@@ -1,19 +1,18 @@
-
-const featured = [
+var lastCols = 0;
+var featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype",
-  "Advertising Positions", "Radical of the Vertical Heart", "The Readers Project"
+  "Radical of the Vertical Heart 忄", "Advertising Positions",
+  "The Readers Project"   // min image size 1100px
 ];
-let lastCols = 0; // min image size 1100px
 
 function createGrid(projects) {
-  let gridSmall = "s";
-  let gridLarge = "l";
-  let gridLargeRight = "lr";
-  let noOfSpecialLayout = 6;
-
+  var gridSmall = "s";
+  var gridLarge = "l";
+  var gridLargeRight = "lr";
+  var noOfSpecialLayout = 6;
   // create grid in html
-  for (let html, i = 0; i < projects.length; i++) {
-    let g;
+  for (var html, i = 0; i < projects.length; i++) {
+    var g;
 
     if (i % 6 === 0 && i < noOfSpecialLayout) {
       g = gridLarge;
@@ -24,9 +23,10 @@ function createGrid(projects) {
       g = gridSmall;
     }
 
-    html = "<a href='" + projLink(projects[i]) + "'>";
+
+    html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent
     html += "<div class='project gridSize-" + g + "'>";
-    let fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
 
     html += "<img data-rjs='2' src=" + projects[i].thumb + ">";
     html += "<div class='project-description'>";
@@ -53,7 +53,7 @@ function afterGridCreated(projects) {
 
 function selectNavigation() {
 
-  let $navlist = $('#navlist');
+  var $navlist = $('#navlist');
   if (location.href.indexOf('/mit/') > -1)
     $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
   else if (location.href.indexOf('/saic/') > -1)
@@ -66,9 +66,8 @@ function selectNavigation() {
 
 function projLink(proj) {
   if (proj.directLink) return proj.directLink;
-  else return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
+  return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
 }
-
 
 function detailUrl(title) {
 
@@ -82,10 +81,10 @@ function createDetail(projects, id) {
   // hide the previous
   $('.projectlong').hide();
 
-  let i, current, idk = 0;
+  var current, idk = 0;
 
-  for (i = 0; i < projects.length; i++) {
-    let title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+  for (var i = 0; i < projects.length; i++) {
+    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
     if (title === id) {
       current = projects[i]
       idk = i;
@@ -104,7 +103,7 @@ function createDetail(projects, id) {
   }
 
   // if not, create the div
-  let html = "",
+  var html = "",
     nav = "";
   html += "<div class='projectlong' id='" +
     detailUrl(current.shorttitle) + "'><div class='grid'>";
@@ -122,7 +121,7 @@ function createDetail(projects, id) {
   // QUOTES
   if (current.quotes) {
     html += "<div class='quotes'>";
-    for (let j = 0; j < current.quotes.length; j++) {
+    for (var j = 0; j < current.quotes.length; j++) {
       //<li><a href="">XXX</a></li>
       html += "<p>&quot<i>" + current.quotes[j].text + "</i>&quot";
       html += "<span>- " + current.quotes[j].from + "</span></p>";
@@ -141,8 +140,8 @@ function createDetail(projects, id) {
   if (current.links) {
 
     html += "<ul class='links'>LINKS";
-    for (let j = 0; j < current.links.length; j++) {
-      let link = current.links[j];
+    for (var j = 0; j < current.links.length; j++) {
+      var link = current.links[j];
       // if (link.target === "automatype/p5/")
       html += "<li><a target='_blank' href='" + link.target +
         "'>" + link.name + "</a></li>";
@@ -154,7 +153,7 @@ function createDetail(projects, id) {
   if (current.projects) {
 
     html += "<ul class='projects'>PROJECTS";
-    for (let j = 0; j < current.projects.length; j++) {
+    for (var j = 0; j < current.projects.length; j++) {
 
       html += "<li><a target='_blank' href='" + current.projects[j].target +
         "'>" + current.projects[j].name + "</a></li>";
@@ -167,7 +166,7 @@ function createDetail(projects, id) {
   if (current.exhibitions) {
 
     html += "<ul class='exhibitions'>EXHIBITIONS";
-    for (let j = 0; j < current.exhibitions.length; j++) {
+    for (var j = 0; j < current.exhibitions.length; j++) {
       html += "<li class='hanging'>";
       if (current.exhibitions[j].target)
         html += "<a target='_blank' href='" + current.exhibitions[j].target +
@@ -192,8 +191,8 @@ function createDetail(projects, id) {
   // MAIN IMAGE
   if (current.images) {
 
-    let bestImage = getBestImage(current.images[0].src);
-    let altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
+    var bestImage = getBestImage(current.images[0].src);
+    var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
       + current.images[0].src + "' title='" + altInfo + "' alt='" + altInfo + "' ></a>";
   }
@@ -201,9 +200,9 @@ function createDetail(projects, id) {
   // VIDEO
   if (current.videos) {
 
-    for (let j = 0; j < current.videos.length; j++) {
+    for (var j = 0; j < current.videos.length; j++) {
 
-      let id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+      var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
       html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
@@ -217,9 +216,9 @@ function createDetail(projects, id) {
   // OTHER IMAGES
   if (current.images) {
 
-    for (let j = 1; j < current.images.length; j++) {
-      let bestImage = getBestImage(current.images[j].src);
-      let altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
+    for (var j = 1; j < current.images.length; j++) {
+      var bestImage = getBestImage(current.images[j].src);
+      var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
@@ -229,7 +228,7 @@ function createDetail(projects, id) {
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
-    let last = idk - 1;
+    var last = idk - 1;
     if (projects[last].longdesc === undefined) {
       last -= 1;
     }
@@ -239,7 +238,7 @@ function createDetail(projects, id) {
 
   }
 
-  let next = (idk + 1) % projects.length;
+  var next = (idk + 1) % projects.length;
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
@@ -268,7 +267,7 @@ function adjustItemHeight(projects) {
   // max-width 768     - 2
   // max-width 400     - 1
 
-  let total = $('.project').length,
+  var total = $('.project').length,
     cols = 4,
     windowWidth = $(window).width();
 
@@ -287,16 +286,16 @@ function adjustItemHeight(projects) {
   //no need to adjust Height if cols is 1
   if (cols === 1) return;
 
-  let lines = Math.ceil(total / cols);
+  var lines = Math.ceil(total / cols);
 
   // adjust the height to maxH for each line
-  for (let j = 0; j < lines; j++) {
+  for (var j = 0; j < lines; j++) {
 
-    let maxH = 0,
+    var maxH = 0,
       classname = 'row' + j;
-    for (let i = 0; i < cols; i++) {
-      let index = j * cols + i;
-      let current = $('.project').eq(index).outerHeight();
+    for (var i = 0; i < cols; i++) {
+      var index = j * cols + i;
+      var current = $('.project').eq(index).outerHeight();
       // console.log(i,j);
       if (current > maxH) maxH = current;
       if (projects) {
@@ -343,7 +342,7 @@ function openNewWindow(url, name, feats) {
 
 function imageExists(image_url) {
 
-  let http = new XMLHttpRequest();
+  var http = new XMLHttpRequest();
   http.open('HEAD', image_url, false);
   http.send();
   return http.status != 404;
@@ -418,7 +417,7 @@ function stopFocus() {
 }
 
 Array.prototype.swap = function (x, y) {
-  let b = this[x];
+  var b = this[x];
   this[x] = this[y];
   this[y] = b;
   return this;
@@ -439,10 +438,11 @@ function shuffle(arr) {
 
 function pickFeatureProjects(projs) {
 
-  // Shuffle array and grab first 2
-  let selected = shuffle(featured).slice(0, 2);
+  //const shuffled = featured.sort(() => 0.5 - Math.random());
+  const shuffled = shuffle(featured);
 
   // Get sub-array of first n elements after shuffled
+  let selected = shuffled.slice(0, 2);
   let selectedIdx = [];
   for (let i = 0; i < projs.length; i++) {
     const proj = projs[i];
@@ -452,6 +452,7 @@ function pickFeatureProjects(projs) {
   }
   projs.swap(0, selectedIdx[0]);
   projs.swap(3, selectedIdx[1]);
+  return projs;
 }
 
 $(window).resize(function () {
@@ -467,7 +468,7 @@ $(window).resize(function () {
 $.getJSON("projects.json").done(function (projs) {
 
   if ($('#projects').length > 0) {
-    pickFeatureProjects(projs);
+    projs = pickFeatureProjects(projs);
     createGrid(projs);
   }
 
@@ -479,7 +480,7 @@ $.getJSON("projects.json").done(function (projs) {
   }
 
   window.onhashchange = function () {
-    let id = getCurrentIdFromUrl($(location).attr('href'));
+    var id = getCurrentIdFromUrl($(location).attr('href'));
     createDetail(projs, id);
   }
 });
