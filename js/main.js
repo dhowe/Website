@@ -1,27 +1,32 @@
-var lastCols = 0;
+
+const featured = [
+  "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype",
+  "Advertising Positions", "Radical of the Vertical Heart", "The Readers Project"
+];
+let lastCols = 0; // min image size 1100px
 
 function createGrid(projects) {
-  var gridSmall = "s";
-  var gridLarge = "l";
-  var gridLargeRight = "lr";
-  var noOfSpecialLayout = 6;
+  let gridSmall = "s";
+  let gridLarge = "l";
+  let gridLargeRight = "lr";
+  let noOfSpecialLayout = 6;
+
   // create grid in html
-  for (var html, i = 0; i < projects.length; i++) {
-    var g;
+  for (let html, i = 0; i < projects.length; i++) {
+    let g;
 
-      if(i % 6 === 0 && i< noOfSpecialLayout){
-        g = gridLarge;
-      }else if(i % 6 === 3 && i< noOfSpecialLayout){
-        g = gridLargeRight;
-      }
-      else{
-        g = gridSmall;
-      }
-
+    if (i % 6 === 0 && i < noOfSpecialLayout) {
+      g = gridLarge;
+    } else if (i % 6 === 3 && i < noOfSpecialLayout) {
+      g = gridLargeRight;
+    }
+    else {
+      g = gridSmall;
+    }
 
     html = "<a href='" + projLink(projects[i]) + "'>";
-    html += "<div class='project gridSize-"+ g +"'>";
-    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+    html += "<div class='project gridSize-" + g + "'>";
+    let fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
 
     html += "<img data-rjs='2' src=" + projects[i].thumb + ">";
     html += "<div class='project-description'>";
@@ -35,7 +40,7 @@ function createGrid(projects) {
 
   $('#projects .grid').append("<div class='space'></div>");
 
-//  afterGridCreated(projects);
+  //  afterGridCreated(projects);
 }
 
 function afterGridCreated(projects) {
@@ -48,7 +53,7 @@ function afterGridCreated(projects) {
 
 function selectNavigation() {
 
-  var $navlist = $('#navlist');
+  let $navlist = $('#navlist');
   if (location.href.indexOf('/mit/') > -1)
     $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
   else if (location.href.indexOf('/saic/') > -1)
@@ -77,10 +82,10 @@ function createDetail(projects, id) {
   // hide the previous
   $('.projectlong').hide();
 
-  var current, idk = 0;
+  let i, current, idk = 0;
 
-  for (var i = 0; i < projects.length; i++) {
-    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+  for (i = 0; i < projects.length; i++) {
+    let title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
     if (title === id) {
       current = projects[i]
       idk = i;
@@ -99,7 +104,7 @@ function createDetail(projects, id) {
   }
 
   // if not, create the div
-  var html = "",
+  let html = "",
     nav = "";
   html += "<div class='projectlong' id='" +
     detailUrl(current.shorttitle) + "'><div class='grid'>";
@@ -117,7 +122,7 @@ function createDetail(projects, id) {
   // QUOTES
   if (current.quotes) {
     html += "<div class='quotes'>";
-    for (var j = 0; j < current.quotes.length; j++) {
+    for (let j = 0; j < current.quotes.length; j++) {
       //<li><a href="">XXX</a></li>
       html += "<p>&quot<i>" + current.quotes[j].text + "</i>&quot";
       html += "<span>- " + current.quotes[j].from + "</span></p>";
@@ -136,8 +141,8 @@ function createDetail(projects, id) {
   if (current.links) {
 
     html += "<ul class='links'>LINKS";
-    for (var j = 0; j < current.links.length; j++) {
-      var link = current.links[j];
+    for (let j = 0; j < current.links.length; j++) {
+      let link = current.links[j];
       // if (link.target === "automatype/p5/")
       html += "<li><a target='_blank' href='" + link.target +
         "'>" + link.name + "</a></li>";
@@ -149,7 +154,7 @@ function createDetail(projects, id) {
   if (current.projects) {
 
     html += "<ul class='projects'>PROJECTS";
-    for (var j = 0; j < current.projects.length; j++) {
+    for (let j = 0; j < current.projects.length; j++) {
 
       html += "<li><a target='_blank' href='" + current.projects[j].target +
         "'>" + current.projects[j].name + "</a></li>";
@@ -162,7 +167,7 @@ function createDetail(projects, id) {
   if (current.exhibitions) {
 
     html += "<ul class='exhibitions'>EXHIBITIONS";
-    for (var j = 0; j < current.exhibitions.length; j++) {
+    for (let j = 0; j < current.exhibitions.length; j++) {
       html += "<li class='hanging'>";
       if (current.exhibitions[j].target)
         html += "<a target='_blank' href='" + current.exhibitions[j].target +
@@ -187,18 +192,18 @@ function createDetail(projects, id) {
   // MAIN IMAGE
   if (current.images) {
 
-    var bestImage = getBestImage(current.images[0].src);
-    var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
+    let bestImage = getBestImage(current.images[0].src);
+    let altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
-      + current.images[0].src + "' title='"+altInfo+"' alt='" + altInfo + "' ></a>";
+      + current.images[0].src + "' title='" + altInfo + "' alt='" + altInfo + "' ></a>";
   }
 
   // VIDEO
   if (current.videos) {
 
-    for (var j = 0; j < current.videos.length; j++) {
+    for (let j = 0; j < current.videos.length; j++) {
 
-      var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+      let id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
       html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
@@ -212,10 +217,10 @@ function createDetail(projects, id) {
   // OTHER IMAGES
   if (current.images) {
 
-    for (var j = 1; j < current.images.length; j++) {
-      var bestImage = getBestImage(current.images[j].src);
-      var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
-      html += "<a class='fancybox' title='" + altInfo +"' href='" + bestImage + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+    for (let j = 1; j < current.images.length; j++) {
+      let bestImage = getBestImage(current.images[j].src);
+      let altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
+      html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
@@ -224,7 +229,7 @@ function createDetail(projects, id) {
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
-    var last = idk - 1;
+    let last = idk - 1;
     if (projects[last].longdesc === undefined) {
       last -= 1;
     }
@@ -234,7 +239,7 @@ function createDetail(projects, id) {
 
   }
 
-  var next = (idk + 1) % projects.length;
+  let next = (idk + 1) % projects.length;
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
@@ -263,7 +268,7 @@ function adjustItemHeight(projects) {
   // max-width 768     - 2
   // max-width 400     - 1
 
-  var total = $('.project').length,
+  let total = $('.project').length,
     cols = 4,
     windowWidth = $(window).width();
 
@@ -282,20 +287,20 @@ function adjustItemHeight(projects) {
   //no need to adjust Height if cols is 1
   if (cols === 1) return;
 
-  var lines = Math.ceil(total / cols);
+  let lines = Math.ceil(total / cols);
 
   // adjust the height to maxH for each line
-  for (var j = 0; j < lines; j++) {
+  for (let j = 0; j < lines; j++) {
 
-    var maxH = 0,
+    let maxH = 0,
       classname = 'row' + j;
-    for (var i = 0; i < cols; i++) {
-      var index = j * cols + i;
-      var current = $('.project').eq(index).outerHeight();
+    for (let i = 0; i < cols; i++) {
+      let index = j * cols + i;
+      let current = $('.project').eq(index).outerHeight();
       // console.log(i,j);
       if (current > maxH) maxH = current;
-      if(projects){
-              if (index + 1 > projects.length) break;
+      if (projects) {
+        if (index + 1 > projects.length) break;
       }
 
       $('.project').eq(index).addClass(classname);
@@ -338,7 +343,7 @@ function openNewWindow(url, name, feats) {
 
 function imageExists(image_url) {
 
-  var http = new XMLHttpRequest();
+  let http = new XMLHttpRequest();
   http.open('HEAD', image_url, false);
   http.send();
   return http.status != 404;
@@ -378,7 +383,7 @@ $(document).ready(function () {
     $('nav').slideToggle();
   });
 
-//  $(window).trigger('resize');
+  //  $(window).trigger('resize');
 
   //control bar for videos
   $('video').hover(function toggleControls() {
@@ -412,20 +417,32 @@ function stopFocus() {
   muteSketch();
 }
 
-Array.prototype.swap = function (x,y) {
-  var b = this[x];
+Array.prototype.swap = function (x, y) {
+  let b = this[x];
   this[x] = this[y];
   this[y] = b;
   return this;
 }
 
+function shuffle(arr) {
+  let newArray = arr.slice(),
+    len = newArray.length,
+    i = len;
+  while (i--) {
+    let p = parseInt(Math.random() * len),
+      t = newArray[i];
+    newArray[i] = newArray[p];
+    newArray[p] = t;
+  }
+  return newArray;
+}
+
 function pickFeatureProjects(projs) {
-  // min image size 1100px
-  const pool = ["Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype","Radical of the Vertical Heart","The Readers Project"];
-  // Shuffle array
-  const shuffled = pool.sort(() => 0.5 - Math.random());
+
+  // Shuffle array and grab first 2
+  let selected = shuffle(featured).slice(0, 2);
+
   // Get sub-array of first n elements after shuffled
-  let selected = shuffled.slice(0, 2);
   let selectedIdx = [];
   for (let i = 0; i < projs.length; i++) {
     const proj = projs[i];
@@ -435,25 +452,22 @@ function pickFeatureProjects(projs) {
   }
   projs.swap(0, selectedIdx[0]);
   projs.swap(3, selectedIdx[1]);
-  console.log(selected, selectedIdx )
-  console.log(projs)
-  return projs;
 }
 
 $(window).resize(function () {
 
   if ($('.project').length > 0) {
-  //  $('.project img').css("height", $('.project img').width() * 0.65);
-//    this.location.reload(false); // false to get page from cache
-//    adjustItemHeight();
-  //  adjustFooterSpace();
+    //  $('.project img').css("height", $('.project img').width() * 0.65);
+    //    this.location.reload(false); // false to get page from cache
+    //    adjustItemHeight();
+    //  adjustFooterSpace();
   }
 });
 
 $.getJSON("projects.json").done(function (projs) {
 
   if ($('#projects').length > 0) {
-    projs = pickFeatureProjects(projs);
+    pickFeatureProjects(projs);
     createGrid(projs);
   }
 
@@ -465,7 +479,7 @@ $.getJSON("projects.json").done(function (projs) {
   }
 
   window.onhashchange = function () {
-    var id = getCurrentIdFromUrl($(location).attr('href'));
+    let id = getCurrentIdFromUrl($(location).attr('href'));
     createDetail(projs, id);
   }
 });
