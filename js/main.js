@@ -1,15 +1,16 @@
 
-const featured = [ // min image size 1100px
-  "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype", "Radical of the Vertical Heart 忄", "The Readers Project"
+const featured = [
+  "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype",
+  "Advertising Positions", "Radical of the Vertical Heart", "The Readers Project"
 ];
-
-let lastCols = 0;
+let lastCols = 0; // min image size 1100px
 
 function createGrid(projects) {
-
+  let gridSmall = "s";
+  let gridLarge = "l";
+  let gridLargeRight = "lr";
   let noOfSpecialLayout = 6;
-  let gridSmall = "s", gridLarge = "l", gridLargeRight = "lr";
-  
+
   // create grid in html
   for (let html, i = 0; i < projects.length; i++) {
     let g;
@@ -38,6 +39,7 @@ function createGrid(projects) {
   }
 
   $('#projects .grid').append("<div class='space'></div>");
+
   //  afterGridCreated(projects);
 }
 
@@ -80,9 +82,9 @@ function createDetail(projects, id) {
   // hide the previous
   $('.projectlong').hide();
 
-  let current, idk = 0;
+  let i, current, idk = 0;
 
-  for (let i = 0; i < projects.length; i++) {
+  for (i = 0; i < projects.length; i++) {
     let title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
     if (title === id) {
       current = projects[i]
@@ -400,7 +402,10 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+
 });
+
 
 function startFocus() {
   //  console.log("Is Focused")
@@ -419,33 +424,6 @@ Array.prototype.swap = function (x, y) {
   return this;
 }
 
-function pickFeatureProjects(projs) {
-
-  // Shuffle array
-  const shuffled = shuffle(featured);
-  const selected = shuffled.slice(0, 2);
-
-  const selectedIdx = [];
-  for (let i = 0; i < projs.length; i++) {
-    const proj = projs[i];
-    if (selected.indexOf(proj.shorttitle) > -1) {
-      selectedIdx.push(i);
-    }
-  }
-
-  projs.swap(0, selectedIdx[0]);
-  projs.swap(3, selectedIdx[1]);
-}
-
-$(window).resize(function () {
-/*   if ($('.project').length > 0) {
-    //  $('.project img').css("height", $('.project img').width() * 0.65);
-    //    this.location.reload(false); // false to get page from cache
-    //    adjustItemHeight();
-    //  adjustFooterSpace();
-  } */
-});
-
 function shuffle(arr) {
   let newArray = arr.slice(),
     len = newArray.length,
@@ -459,7 +437,34 @@ function shuffle(arr) {
   return newArray;
 }
 
-$.getJSON("projects.json").done((projs) => {
+function pickFeatureProjects(projs) {
+
+  // Shuffle array and grab first 2
+  let selected = shuffle(featured).slice(0, 2);
+
+  // Get sub-array of first n elements after shuffled
+  let selectedIdx = [];
+  for (let i = 0; i < projs.length; i++) {
+    const proj = projs[i];
+    if (selected.indexOf(proj.shorttitle) > -1) {
+      selectedIdx.push(i);
+    }
+  }
+  projs.swap(0, selectedIdx[0]);
+  projs.swap(3, selectedIdx[1]);
+}
+
+$(window).resize(function () {
+
+  if ($('.project').length > 0) {
+    //  $('.project img').css("height", $('.project img').width() * 0.65);
+    //    this.location.reload(false); // false to get page from cache
+    //    adjustItemHeight();
+    //  adjustFooterSpace();
+  }
+});
+
+$.getJSON("projects.json").done(function (projs) {
 
   if ($('#projects').length > 0) {
     pickFeatureProjects(projs);
