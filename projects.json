@@ -135,7 +135,7 @@
   },
   {
     "shorttitle": "Radical of the Vertical Heart 忄",
-    "thumb": "img/almviz.jpg",
+    "thumb": "img/rotvh.png",
     "shortdesc": "A reading machine that searches the possibility space of a language, one word at a time. While alphabetic machines move according to letter mutation (deletion, addition, substitution), this logographic machine analyses the subcomponents of character-based words...",
     "longtitle": "Radical of the Vertical Heart 忄",
     "images": [
@@ -157,10 +157,10 @@
       }
     ],
     "largeDetailImage": {
-      "src": "img/harmony.gif",
+      "src": "img/rotvh-defs.png",
       "title": "A visualization of reader movement through traditional Chinese"
     },
-    "longdesc": "A reading machine that searches the possibility space of (simplified and traditional) Chinese, one word at a time. While alphabetic machines, like <a target=\"blank\" href=\"#automatype\">Automatype</a>, move according to the mutation of letters, whether by deletion, addition or substitution, logographic machines, like the one shown on the <a target=\"blank\" href=\"./alms/index.html\">project page</a>) analyse characters according to a unique algorithm for distance based on analysis of their strokes, radicals, and subcomponents.",
+    "longdesc": "The newest in the <em>Atomic Language Machines</em> series, this reading machine searches the the Chinese lexicon by repeatedly making the minimal allowable change to the sub-character components of characters. Rather than evaluating letters, as in alphabetic machines, this logographic reader analyses the strokes, radicals, and subcomponents of characters. When the machine lands on sensitive words, such as those disallowed by China's Great Firewall, a break occurs and the machine jumps from traditional to simplified or vice versa.<!--br/><br/>In order to realize the work, extensive research was required into the potential decompositions of simplified and traditional Chinese characters, and on the various measures of distance between them, the latter leading to a novel algorithm for logographic edit distance. Radical of the Vertical Heart is the second piece in the Atomic Language Machines series, following Automatype, a machine which traverses the English lexicon via minimum-edit (or Levenshtein) distance.-->",
     "links": [
       {
         "name": "The Project Home Page",
@@ -316,6 +316,9 @@
     "images": [
       {
         "src": "img/reader_l.jpg"
+      },
+      {
+        "src": "img/hiiict_l.jpg"
       }
     ],
     "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
