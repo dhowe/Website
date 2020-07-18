@@ -435,8 +435,6 @@ function pickFeatureProjects(projs) {
   }
   projs.swap(0, selectedIdx[0]);
   projs.swap(3, selectedIdx[1]);
-  console.log(selected, selectedIdx )
-  console.log(projs)
   return projs;
 }
 
