@@ -39,7 +39,7 @@ function createGrid(projects) {
   }
 
   $('#projects .grid').append("<div class='space'></div>");
-
+  adjustItemContent();
   //  afterGridCreated(projects);
 }
 
@@ -71,7 +71,7 @@ function projLink(proj) {
 
 function detailUrl(title) {
 
-  return title.toLowerCase().replace(/[ .-]+/g, '');
+  return title.toLowerCase().replace(/[ .-\W]+/g, '');
 }
 
 function createDetail(projects, id) {
@@ -84,7 +84,7 @@ function createDetail(projects, id) {
   var current, idk = 0;
 
   for (var i = 0; i < projects.length; i++) {
-    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-\W]+/g, '');
     if (title === id) {
       current = projects[i]
       idk = i;
@@ -108,7 +108,7 @@ function createDetail(projects, id) {
   html += "<div class='projectlong' id='" +
     detailUrl(current.shorttitle) + "'><div class='grid'>";
   html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
-  html += "<h5>" + current.longtitle + "</h5>";
+  html += "<h4>" + current.longtitle + "</h4>";
   if (projects[i].collaborators) {
     html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
   }
@@ -252,6 +252,18 @@ function createDetail(projects, id) {
 
   const newImages = $('#' + id + ' img')
   window.retinajs(newImages);
+}
+
+function adjustItemContent() {
+  $('.project p').each(function() {
+    while($(this).height() > 115) {
+      var text = $(this).text();
+      var lastIndex = text.lastIndexOf(" ");
+      var newText = text.substring(0, lastIndex);
+      $(this).text(newText + "...");
+      // console.log($(this).height());
+    }
+  })
 }
 
 function getBestImage(img) {
