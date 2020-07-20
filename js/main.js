@@ -203,10 +203,10 @@ function createDetail(projects, id) {
     for (var j = 0; j < current.videos.length; j++) {
 
       var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
-      html += "<a class='fancybox video clearfix' href='#" + id + "_video'>";
+      html += "<a class='fancybox video clearfix' href='#" + id + "_"+ j +  "_video'>";
       html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
-      html += '<div id="' + id + '_video" class="fancybox-video"><video controls width="640px" height="auto">';
+      html += '<div id="' + id + "_" + j+'_video" class="fancybox-video"><video controls width="640px" height="auto">';
       html += '<source src="' + current.videos[j].src + '.mp4" type="video/mp4">';
       html += '<source src="' + current.videos[j].src + '.webm" type="video/webm">';
       html += '</video></div>';
@@ -402,7 +402,6 @@ $(document).ready(function () {
       this.removeAttribute("controls");
     } else {
       this.setAttribute("controls", "controls");
-
     }
   })
 

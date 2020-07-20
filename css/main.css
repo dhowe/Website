@@ -222,9 +222,12 @@ nav>ul>li>a:hover {
   text-shadow: 1px 1px #000000;
   width:calc(100% - 20px);;
 }
-
+.gridSize-l .project-description h5, .gridSize-lr .project-description h5{
+  font-size: 1.2em;
+}
 .gridSize-l .project-description p, .gridSize-lr .project-description p{
   max-width:400px;
+  font-size: 1.1em;
 }
 
 .gridSize-lr .project-description{
@@ -237,12 +240,12 @@ nav>ul>li>a:hover {
 }
 
 .project-description p{
-  font-size: 0.8em;
+  font-size: 12px;
 }
 
 
 h5.smallerTitle{
-  font-size: 0.8em !important;
+  font-size: 0.8em;
 }
 .project h5 {
   font-size: 0.8em;
