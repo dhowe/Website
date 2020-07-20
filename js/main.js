@@ -2,7 +2,7 @@ var lastCols = 0;
 var featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype",
   "Radical of the Vertical Heart 忄", "Advertising Positions",
-  "The Readers Project"   // min image size 1100px
+  "The Readers Project"   // min image size 550px - 1100px
 ];
 
 function createGrid(projects) {
@@ -27,8 +27,9 @@ function createGrid(projects) {
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent
     html += "<div class='project gridSize-" + g + "'>";
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+    var useHighResImage = g.indexOf("l") > -1;
 
-    html += "<img data-rjs='2' src=" + projects[i].thumb + ">";
+    html += "<img data-rjs='2' class='"+ (useHighResImage? "highres" : "project") + "' src=" + ( useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -41,6 +42,12 @@ function createGrid(projects) {
   $('#projects .grid').append("<div class='space'></div>");
   adjustItemContent();
   //  afterGridCreated(projects);
+}
+
+function betterImage(src) {
+  var srcReplace = /(\.[A-z]{3,4}\/?(\?.*)?)$/;
+  var newSrc = src.replace(srcReplace, '@2x$1');
+  return newSrc;
 }
 
 function afterGridCreated(projects) {
@@ -483,7 +490,8 @@ $.getJSON("projects.json").done(function (projs) {
     createGrid(projs);
   }
 
-  const images = $('img');
+  const images = $('img.project');
+  // console.log(images);
   window.retinajs(images);
 
   if ($('#detail').length > 0) {
