@@ -306,7 +306,7 @@ h5.smallerTitle{
   padding-left: 22px ;
   text-indent: -22px ;
 }
-.longdesc, .quotes, .exhibitions, .links {
+.longdesc, .quotes, .exhibitions, .links, .awards{
   margin-bottom: 40px;
 }
 .quotes span {
@@ -474,7 +474,7 @@ video{
   text-decoration: underline;
   text-decoration-color: #aaccdd;
 }
-.links a, .exhibitions a, .projects a, .bottomNav p a, #about a {
+.awards a, .links a, .exhibitions a, .projects a, .bottomNav p a, #about a {
   color: #004d66;
   text-decoration: none;
 }

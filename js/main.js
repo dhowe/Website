@@ -143,6 +143,19 @@ function createDetail(projects, id) {
     html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '" + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
   }
 
+  // RELATED PROJECTS
+  if (current.projects) {
+
+    html += "<ul class='projects'>PROJECTS";
+    for (var j = 0; j < current.projects.length; j++) {
+
+      html += "<li><a target='_blank' href='" + current.projects[j].target +
+        "'>" + current.projects[j].name + "</a></li>";
+
+    }
+    html += "</ul>";
+  }
+
   // LINKS
   if (current.links) {
 
@@ -156,17 +169,18 @@ function createDetail(projects, id) {
     html += "</ul>";
   }
 
-  // RELATED PROJECTS
-  if (current.projects) {
-
-    html += "<ul class='projects'>PROJECTS";
-    for (var j = 0; j < current.projects.length; j++) {
-
-      html += "<li><a target='_blank' href='" + current.projects[j].target +
-        "'>" + current.projects[j].name + "</a></li>";
-
+  if (current.awards) {
+    html += "<ul class='awards'>AWARDS";
+    for (var j = 0; j < current.awards.length; j++) {
+      html += "<li class='hanging'>";
+      if (current.awards[j].target)
+        html += "<a target='_blank' href='" + current.awards[j].target +
+          "'>" + current.awards[j].text + "</a></li>";
+      else
+        html += current.awards[j].text + "</li>";
     }
     html += "</ul>";
+
   }
 
   // EXHIBITIONS

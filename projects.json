@@ -30,6 +30,28 @@
         "poster": "img/spec_vid.png"
       }
     ],
+    "awards": [
+      {
+        "year": "2019",
+        "text": "Winner: Alternate Realities Commission (with £20,000 prize), from Arts Council England",
+        "target": "https://sheffdocfest.com/articles/706-announcing-alternate-realities-commission-winner"
+      },
+      {
+        "year": "2020",
+        "text": "Breakthroughs in Storytelling Award, Columbia ",
+        "target": "http://digitaldozen.io/2020-awards/"
+      },
+      {
+        "year": "2020",
+        "text": "Aesthetica Art Prize, Shortlist, February 12, York / UK ",
+        "target": "http://aestheticamagazine.com/artprize/"
+      },
+      {
+        "year": "2020",
+        "text": "Spectre is first algorithmic artwork acquired by 'British Film Institute National Archive'",
+        "target": "http://billposters.ch/synthesised-moving-image-works-national-film-tv-archive/"
+      }
+    ],
     "exhibitions": [
       {
         "text": "<i>SXSW Art Program</i> Austin, Texas, US. Mar 14-21, 2020 (ppd.)",
