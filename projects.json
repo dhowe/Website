@@ -33,12 +33,12 @@
     "awards": [
       {
         "year": "2019",
-        "text": "Winner: Alternate Realities Commission (with £20,000 prize), from Arts Council England",
+        "text": "Winner: Alternate Realities Commission (£20,000), Arts Council England",
         "target": "https://sheffdocfest.com/articles/706-announcing-alternate-realities-commission-winner"
       },
       {
         "year": "2020",
-        "text": "Breakthroughs in Storytelling Award, Columbia ",
+        "text": "Breakthroughs in Storytelling Award, Columbia University School of the Arts",
         "target": "http://digitaldozen.io/2020-awards/"
       },
       {
@@ -48,7 +48,7 @@
       },
       {
         "year": "2020",
-        "text": "Spectre is first algorithmic artwork acquired by 'British Film Institute National Archive'",
+        "text": "First AI-based artwork acquired by 'British Film Institute National Archive'",
         "target": "http://billposters.ch/synthesised-moving-image-works-national-film-tv-archive/"
       }
     ],
@@ -80,12 +80,12 @@
     ],
     "links": [
       {
-        "name": "Deepfake or art: who decides? [audio podcast]",
-        "target": "audio/TechTent-20190614-DeepfakeOrArtWhoDecides.mp3"
-      },
-      {
         "name": "The Project Home Page",
         "target": "spectre/index.html"
+      },
+      {
+        "name": "Deepfake or art: who decides? [audio podcast]",
+        "target": "audio/TechTent-20190614-DeepfakeOrArtWhoDecides.mp3"
       },
       {
         "name": "Spectre in 'Creative Works' (Drum)",
@@ -94,18 +94,6 @@
       {
         "name": "Alternate Realities Commission",
         "target": "https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/"
-      },
-      {
-        "name": "Sheffield Installation Walkthrough [3D]",
-        "target": "https://v21artspace.com/alternate-realities-subconscious-sensibilities"
-      },
-      {
-        "name": "‘Spectre’ Short Film Added To British Council Film Directory",
-        "target": "http://film-directory.britishcouncil.org/spectre-a-detour-into-dataism"
-      },
-      {
-        "name": "Spectre Shortlisted for the Aesthetica Art Prize",
-        "target": "http://billposters.ch/award-spectre-shortlisted-aesthetica-art-prize/"
       },
       {
         "name": "Spectre added to MIT Docubase Lab",
