@@ -48,7 +48,7 @@ nav {
 nav ul {
   position: absolute;
   bottom: 0;
-  left: 180px;
+  left: 218px;
 }
 nav>ul>li, nav>ul {
   margin: 0;
@@ -484,6 +484,37 @@ video{
 
 /****** End of Projects ******/
 
+/****** Events Col ******/
+.events {
+  position:fixed;
+  top:70px;
+  left:20px;
+  width:240px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.events h4 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.events span {
+  display: inline-block;
+  margin:0;
+}
+.events a {
+  text-decoration: none;
+  line-height: 18px;
+  font-size:14px;
+}
+.events .type {
+    font-weight: 500;
+}
+.events .title {
+  margin-bottom: 5px;
+}
+/****** End of Events Col ******/
 
 /****** Other Pages ******/
 
@@ -627,11 +658,11 @@ body {
   margin: 0;
 }
 .grid {
-  width: calc(100% - 225px);
+  width: calc(100% - 265px);
   max-width: 855px;
   min-width: 755px;
 
-  margin: 0px 225px -20px;
+  margin: 0px 265px -20px;
   overflow: hidden;
 }
 .content {
@@ -719,6 +750,9 @@ body {
   }
   #about .bioPhoto {
     margin:0 1em 0 0 !important;
+  }
+  .events {
+    display: none;
   }
 
   .grid {
