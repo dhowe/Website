@@ -528,7 +528,7 @@ $.getJSON("projects.json").done(function (projs) {
     projs = pickFeatureProjects(projs);
     createGrid(projs);
   }
-  createEventCol("https://rednoise.org/wpr/wp-json/wp/v2/posts");
+  createEventCol("https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2");
 
   const images = $('img.project');
   // console.log(images);
