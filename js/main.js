@@ -45,10 +45,12 @@ function createGrid(projects) {
 
 function createEventCol(url) {
   let maxEntriesShown = 20, bottomMark = 0;
+  $('#projects .events').remove();
   $('#projects').append("<div class='events'><h4>NEWS / EVENTS</h4><div class='wrapper'></div></div>");
   $.getJSON(url, (data) => {
+
     data.forEach((post, i) => {
-      if (maxEntriesShown && bottomMark < $(window). height() - 200) {
+      if (maxEntriesShown) {
         //console.log(post.date, post.title, post.link);
         html = "<a href='" + post.link + "'><p>"
         const rawData = post.title.rendered.split(":");
@@ -60,6 +62,9 @@ function createEventCol(url) {
         html += "</p></a>";
         $('#projects .events .wrapper').append(html);
         bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
+        if (bottomMark > $(window). height() - 200) {
+          $('#projects .events .wrapper a:last-child').addClass("hide");
+        }
         maxEntriesShown--;
       }
     });
@@ -67,6 +72,15 @@ function createEventCol(url) {
     $('#projects .events').append("<a href='https://rednoise.org/wpr/'><div class='button'>More</div></a>");
 
   });
+}
+
+function updateEventsLayout() {
+    let bottomMark = 0;
+    $('#projects .events .wrapper a').removeClass("hide");
+    $(".events .wrapper a").addClass(function(){
+      const toHide = $(this)[0].offsetTop +  $(this).find("p").outerHeight() > $(window). height() - 150;
+      return toHide ?"hide" : "";
+    })
 }
 
 function betterImage(src) {
@@ -520,6 +534,7 @@ $(window).resize(function () {
     //    adjustItemHeight();
     //  adjustFooterSpace();
   }
+  updateEventsLayout();
 });
 
 $.getJSON("projects.json").done(function (projs) {

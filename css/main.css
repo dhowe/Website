@@ -581,15 +581,15 @@ video {
 }
 .events .button {
   margin-top: 20px;
-  width:70px;
-  font-size: 14px;
+  width:50px;
+  font-size: 12px;
   font-weight: 400;
   text-align: center;
   background-color: #2E3C51;
   color:white;
   text-transform: uppercase;
   cursor:pointer;
-  padding: 2px 0;
+  padding: 1px 0;
 }
 .events .button:hover{
   background-color:#45536F;
@@ -605,7 +605,7 @@ video {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-left: -.2em;
+  margin-bottom: 0px;
 }
 
 .events span {
@@ -618,7 +618,9 @@ video {
   line-height: 18px;
   font-size: 13px;
 }
-
+.events a.hide {
+  display:none;
+}
 .events .type {
   font-weight: 500;
   color: #222;
