@@ -1,8 +1,9 @@
 var lastCols = 0;
 var featured = [
-  "Spectre", "Big Dada", "AdNauseam", "How It Is", "Automatype",
-  "Radical of the Vertical Heart 忄", "Advertising Positions",
-  "The Readers Project"   // min image size 550px - 1100px
+  "Spectre", "Big Dada", "AdNauseam", "How It Is",
+  "Advertising Positions",
+  "The Readers Project"   // min image size 1100px @2x
+  // "Radical of the Vertical Heart 忄", "Automatype",
 ];
 
 function createGrid(projects) {
@@ -29,46 +30,41 @@ function createGrid(projects) {
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
     var useHighResImage = g.indexOf("l") > -1;
 
-    html += "<img data-rjs='2' class='"+ (useHighResImage? "highres" : "project") + "' src=" + ( useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
+    html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project") + "' src=" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
     html += "</div></a>";
     html += "</div>";
-    //console.log(html);
     $('#projects .grid').append(html);
   }
 
   $('#projects .grid').append("<div class='space'></div>");
   adjustItemContent();
-  //  afterGridCreated(projects);
 }
 
 function createEventCol(url) {
-  let totalEntries = 5;
+  let maxEntriesShown = 20;
   let html = "<div class='events'>"
-  html += "<h4>Exhibitions & Events</h4>";
-  $.getJSON(url, function(data) {
-      data.forEach((post, i) => {
-        if (totalEntries != 0) {
-          console.log(post.date, post.title, post.link);
-          html += "<a href='" + post.link + "'>";
-          html += "<p>"
-          const rawData = post.title.rendered.split(":");
-          const type = rawData[0];
-          const title = rawData[1];
-          // html += "<span class='date'>" + post.date +"</span>";
-          html += "<span class='type'>" + type +"</span>";
-          html += "<span class='title'>" + title +"</span>";
-          // html += "<span class='details'>Extra Info</span>";
-          html += "</p>"
-          html += "</a>";
-          totalEntries --;
-        }
+  html += "<h4>NEWS / EVENTS</h4>";
+  $.getJSON(url, (data) => {
+    data.forEach((post, i) => {
+      if (maxEntriesShown) {
+        //console.log(post.date, post.title, post.link);
+        html += "<a href='" + post.link + "'><p>"
+        const rawData = post.title.rendered.split(":");
+        const [type, title] = rawData;
+        // html += "<span class='date'>" + post.date +"</span>";
+        html += "<span class='type'>" + type + "</span>";
+        html += "<span class='title'>" + title + "</span>";
+        // html += "<span class='details'>Extra Info</span>";
+        html += "</p></a>";
+        maxEntriesShown--;
+      }
     });
     html += "</div>";
     $('#projects').append(html);
-    });
+  });
 }
 
 function betterImage(src) {
@@ -251,10 +247,10 @@ function createDetail(projects, id) {
     for (var j = 0; j < current.videos.length; j++) {
 
       var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
-      html += "<a class='fancybox video clearfix' href='#" + id + "_"+ j +  "_video'>";
+      html += "<a class='fancybox video clearfix' href='#" + id + "_" + j + "_video'>";
       html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
-      html += '<div id="' + id + "_" + j+'_video" class="fancybox-video"><video controls width="640px" height="auto">';
+      html += '<div id="' + id + "_" + j + '_video" class="fancybox-video"><video controls width="640px" height="auto">';
       html += '<source src="' + current.videos[j].src + '.mp4" type="video/mp4">';
       html += '<source src="' + current.videos[j].src + '.webm" type="video/webm">';
       html += '</video></div>';
@@ -303,8 +299,8 @@ function createDetail(projects, id) {
 }
 
 function adjustItemContent() {
-  $('.project p').each(function() {
-    while($(this).height() > 115) {
+  $('.project p').each(function () {
+    while ($(this).height() > 115) {
       var text = $(this).text();
       var lastIndex = text.lastIndexOf(" ");
       var newText = text.substring(0, lastIndex);
