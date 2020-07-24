@@ -14,7 +14,6 @@ function createGrid(projects) {
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
     var g;
-
     if (i % 6 === 0 && i < noOfSpecialLayout) {
       g = gridLarge;
     } else if (i % 6 === 3 && i < noOfSpecialLayout) {
@@ -23,7 +22,6 @@ function createGrid(projects) {
     else {
       g = gridSmall;
     }
-
 
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent
     html += "<div class='project gridSize-" + g + "'>";
@@ -48,7 +46,6 @@ function createEventCol(url) {
   $('#projects .events').remove();
   $('#projects').append("<div class='events'><h4>NEWS / EVENTS</h4><div class='wrapper'></div></div>");
   $.getJSON(url, (data) => {
-
     data.forEach((post, i) => {
       if (maxEntriesShown) {
         //console.log(post.date, post.title, post.link);
@@ -69,7 +66,8 @@ function createEventCol(url) {
       }
     });
     // append more button
-    $('#projects .events').append("<a href='https://rednoise.org/wpr/'><div class='button'>More</div></a>");
+    let mb = "<a href='https://rednoise.org/wpr/'><div class='button more'>More</div></a>"
+    $('#projects .events').append(mb);
 
   });
 }
@@ -472,8 +470,6 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
-
-
 });
 
 
