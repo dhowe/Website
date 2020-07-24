@@ -44,14 +44,13 @@ function createGrid(projects) {
 }
 
 function createEventCol(url) {
-  let maxEntriesShown = 20;
-  let html = "<div class='events'>"
-  html += "<h4>NEWS / EVENTS</h4>";
+  let maxEntriesShown = 20, bottomMark = 0;
+  $('#projects').append("<div class='events'><h4>NEWS / EVENTS</h4><div class='wrapper'></div></div>");
   $.getJSON(url, (data) => {
     data.forEach((post, i) => {
-      if (maxEntriesShown) {
+      if (maxEntriesShown && bottomMark < $(window). height() - 200) {
         //console.log(post.date, post.title, post.link);
-        html += "<a href='" + post.link + "'><p>"
+        html = "<a href='" + post.link + "'><p>"
         const rawData = post.title.rendered.split(":");
         const [type, title] = rawData;
         // html += "<span class='date'>" + post.date +"</span>";
@@ -59,11 +58,14 @@ function createEventCol(url) {
         html += "<span class='title'>" + title + "</span>";
         // html += "<span class='details'>Extra Info</span>";
         html += "</p></a>";
+        $('#projects .events .wrapper').append(html);
+        bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
         maxEntriesShown--;
       }
     });
-    html += "</div>";
-    $('#projects').append(html);
+    // append more button
+    $('#projects .events').append("<a href='https://rednoise.org/wpr/'><div class='button'>More</div></a>");
+
   });
 }
 

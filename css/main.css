@@ -51,7 +51,7 @@ nav {
 nav ul {
   position: absolute;
   bottom: 0;
-  left: 218px;
+  left: 203px;
 }
 
 nav>ul>li, nav>ul {
@@ -107,6 +107,7 @@ nav>ul>li>a:hover {
 /****** Footer ******/
 
 .footer {
+  position:relative;
   width: 100%;
   background-color: #39465A;
   color: #DDD;
@@ -569,13 +570,31 @@ video {
   width: 210px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+.events .wrapper {
+  overflow: hidden;
+  padding-left: 3px;
+}
 .events p {
   padding: 5px;
   margin-bottom: -1em;
   margin-left: -.6em;
 }
+.events .button {
+  margin-top: 20px;
+  width:70px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #2E3C51;
+  color:white;
+  text-transform: uppercase;
+  cursor:pointer;
+  padding: 2px 0;
+}
+.events .button:hover{
+  background-color:#45536F;
 
+}
 .events p:hover {
   background-color: rgba(57, 70, 90, .06);
 }
@@ -773,7 +792,7 @@ body {
   width: calc(100% - 265px);
   max-width: 855px;
   min-width: 755px;
-  margin: 0px 265px -20px;
+  margin: 0px 250px -20px;
   overflow: hidden;
 }
 
