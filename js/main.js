@@ -44,6 +44,33 @@ function createGrid(projects) {
   //  afterGridCreated(projects);
 }
 
+function createEventCol(url) {
+  let totalEntries = 5;
+  let html = "<div class='events'>"
+  html += "<h4>Exhibitions & Events</h4>";
+  $.getJSON(url, function(data) {
+      data.forEach((post, i) => {
+        if (totalEntries != 0) {
+          console.log(post.date, post.title, post.link);
+          html += "<a href='" + post.link + "'>";
+          html += "<p>"
+          const rawData = post.title.rendered.split(":");
+          const type = rawData[0];
+          const title = rawData[1];
+          // html += "<span class='date'>" + post.date +"</span>";
+          html += "<span class='type'>" + type +"</span>";
+          html += "<span class='title'>" + title +"</span>";
+          // html += "<span class='details'>Extra Info</span>";
+          html += "</p>"
+          html += "</a>";
+          totalEntries --;
+        }
+    });
+    html += "</div>";
+    $('#projects').append(html);
+    });
+}
+
 function betterImage(src) {
   var srcReplace = /(\.[A-z]{3,4}\/?(\?.*)?)$/;
   var newSrc = src.replace(srcReplace, '@2x$1');
@@ -503,6 +530,7 @@ $.getJSON("projects.json").done(function (projs) {
     projs = pickFeatureProjects(projs);
     createGrid(projs);
   }
+  createEventCol("http://rednoise.org/wpr/wp-json/wp/v2/posts");
 
   const images = $('img.project');
   // console.log(images);
