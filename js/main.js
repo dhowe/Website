@@ -139,6 +139,9 @@ function createDetail(projects, id) {
   // wrong id or no id
   if (current === undefined) window.location.href = 'index.html';
 
+  // update meta tag
+  $('meta[name=title], meta[name=description]').remove();
+  $('head').append( '<meta name="description" content="The ' + current.longtitle + ' Project, by Daniel Howe">' + '<meta name="title" content="' + current.longtitle + '">');
 
   // if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0) {
@@ -538,8 +541,8 @@ $.getJSON("projects.json").done(function (projs) {
   if ($('#projects').length > 0) {
     projs = pickFeatureProjects(projs);
     createGrid(projs);
+    createEventCol("https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2&per_page=20");
   }
-  createEventCol("https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2&per_page=20");
 
   const images = $('img.project');
   // console.log(images);
