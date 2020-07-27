@@ -59,7 +59,7 @@ function createEventCol(url) {
         html += "</p></a>";
         $('#projects .events .wrapper').append(html);
         bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
-        if (bottomMark > $(window). height() - 200) {
+        if (bottomMark > $(window).height() - 200) {
           $('#projects .events .wrapper a:last-child').addClass("hide");
         }
         maxEntriesShown--;
@@ -73,12 +73,12 @@ function createEventCol(url) {
 }
 
 function updateEventsLayout() {
-    let bottomMark = 0;
-    $('#projects .events .wrapper a').removeClass("hide");
-    $(".events .wrapper a").addClass(function(){
-      const toHide = $(this)[0].offsetTop +  $(this).find("p").outerHeight() > $(window). height() - 150;
-      return toHide ?"hide" : "";
-    })
+  let bottomMark = 0;
+  $('#projects .events .wrapper a').removeClass("hide");
+  $(".events .wrapper a").addClass(function () {
+    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - 150;
+    return toHide ? "hide" : "";
+  })
 }
 
 function betterImage(src) {
@@ -126,7 +126,6 @@ function createDetail(projects, id) {
   $('.projectlong').hide();
 
   var current, idk = 0;
-
   for (var i = 0; i < projects.length; i++) {
     var title = projects[i].shorttitle.toLowerCase().replace(/[ .-\W]+/g, '');
     if (title === id) {
@@ -139,9 +138,10 @@ function createDetail(projects, id) {
   // wrong id or no id
   if (current === undefined) window.location.href = 'index.html';
 
-  // update meta tag
+  // update meta tags for current project
   $('meta[name=title], meta[name=description]').remove();
-  $('head').append( '<meta name="description" content="The ' + current.longtitle + ' Project, by Daniel Howe">' + '<meta name="title" content="' + current.longtitle + '">');
+  $('head').append('<meta name="description" content="' + current.longtitle
+    + ', by Daniel Howe"><meta name="title" content="' + current.longtitle + '">');
 
   // if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0) {
@@ -150,8 +150,7 @@ function createDetail(projects, id) {
   }
 
   // if not, create the div
-  var html = "",
-    nav = "";
+  var html = "";
   html += "<div class='projectlong' id='" +
     detailUrl(current.shorttitle) + "'><div class='grid'>";
   html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
@@ -178,9 +177,11 @@ function createDetail(projects, id) {
 
   // IFRAME SKETCH
   if (current.sketch) {
-    html += "<iframe id='" + current.shorttitle + "_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
+    html += "<iframe id='" + current.shorttitle
+      + "_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
     // mute sketch whenever a link redirect is triggered on current detailed page
-    html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '" + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
+    html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '"
+       + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
   }
 
   // RELATED PROJECTS
