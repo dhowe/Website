@@ -7,10 +7,12 @@ var featured = [
 ];
 
 function createGrid(projects) {
+  
   var gridSmall = "s";
   var gridLarge = "l";
   var gridLargeRight = "lr";
   var noOfSpecialLayout = 6;
+
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
     var g;
@@ -23,12 +25,13 @@ function createGrid(projects) {
       g = gridSmall;
     }
 
-    html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent
-    html += "<div class='project gridSize-" + g + "'>";
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
     var useHighResImage = g.indexOf("l") > -1;
 
-    html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project") + "' src=" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
+    html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
+    html += "<div class='project gridSize-" + g + "'>"; 
+    html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project")
+      + "' src=" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -38,6 +41,7 @@ function createGrid(projects) {
   }
 
   $('#projects .grid').append("<div class='space'></div>");
+
   adjustItemContent();
 }
 
@@ -537,11 +541,11 @@ $(window).resize(function () {
   updateEventsLayout();
 });
 
-$.getJSON("projects.json").done(function (projs) {
+$.getJSON("projects.json").done((json) => {
 
   if ($('#projects').length > 0) {
-    projs = pickFeatureProjects(projs);
-    createGrid(projs);
+    json = pickFeatureProjects(json);
+    createGrid(json);
     createEventCol("https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2&per_page=20");
   }
 
@@ -550,11 +554,11 @@ $.getJSON("projects.json").done(function (projs) {
   window.retinajs(images);
 
   if ($('#detail').length > 0) {
-    createDetail(projs, getCurrentIdFromUrl($(location).attr('href')));
+    createDetail(json, getCurrentIdFromUrl($(location).attr('href')));
   }
 
   window.onhashchange = function () {
     var id = getCurrentIdFromUrl($(location).attr('href'));
-    createDetail(projs, id);
+    createDetail(json, id);
   }
 });
