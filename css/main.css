@@ -174,7 +174,7 @@ nav>ul>li>a:hover {
 
 #projects {
   margin-top: 60px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   height: 100%;
   min-width: 600px;
 }
@@ -1099,7 +1099,6 @@ body {
 @media only screen and (min-height: 1000px) {
   .footer {
     bottom: 0;
-    position: fixed;
   }
   #publication {
     margin-bottom: 150px;
