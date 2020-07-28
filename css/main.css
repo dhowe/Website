@@ -1098,7 +1098,11 @@ body {
 
 @media only screen and (min-height: 1000px) {
   .footer {
+    position:fixed;
     bottom: 0;
+  }
+  #projects {
+    margin-bottom: 180px;
   }
   #publication {
     margin-bottom: 150px;
