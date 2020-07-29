@@ -5,6 +5,7 @@ var featured = [
   "The Readers Project"   // min image size 1100px @2x
   // "Radical of the Vertical Heart 忄", "Automatype",
 ];
+const EXTRASPACE = 270; //for events col
 
 function createGrid(projects) {
 
@@ -36,7 +37,6 @@ function createGrid(projects) {
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
     html += "</div></div></a>";
-    console.log(html);
     $('#projects .grid').append(html);
   }
 
@@ -63,7 +63,7 @@ function createEventCol(url) {
         html += "</p></a>";
         $('#projects .events .wrapper').append(html);
         bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
-        if (bottomMark > $(window).height() - 200) {
+        if (i != 0 && bottomMark > $(window).height() - EXTRASPACE) {
           $('#projects .events .wrapper a:last-child').addClass("hide");
         }
         maxEntriesShown--;
@@ -79,8 +79,9 @@ function createEventCol(url) {
 function updateEventsLayout() {
   let bottomMark = 0;
   $('#projects .events .wrapper a').removeClass("hide");
-  $(".events .wrapper a").addClass(function () {
-    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - 150;
+  // make sure there is at least one visible
+  $(".events .wrapper a:not(:first-child)").addClass(function () {
+    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - EXTRASPACE;
     return toHide ? "hide" : "";
   })
 }
