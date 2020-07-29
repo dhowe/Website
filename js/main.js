@@ -29,14 +29,14 @@ function createGrid(projects) {
     var useHighResImage = g.indexOf("l") > -1;
 
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
-    html += "<div class='project gridSize-" + g + "'>"; 
+    html += "<div class='project gridSize-" + g + "'>";
     html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project")
-      + "' src=" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
+      + "' src='" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + "'>";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
-    html += "</div></a>";
-    html += "</div>";
+    html += "</div></div></a>";
+    console.log(html);
     $('#projects .grid').append(html);
   }
 
@@ -288,7 +288,7 @@ function createDetail(projects, id) {
     for (var j = 1; j < current.images.length; j++) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
-      html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage 
+      html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
         + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
