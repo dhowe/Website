@@ -14,25 +14,25 @@
     {
       "year": 2018,
       "detail": "&ldquo;Advertising Positions: Data Portraiture as Aesthetic Critique.&rdquo; Howe, Daniel C. et al. In <em>Leonardo</em>, Volume 51, Issue 4, August 2018. p.413-418. Cambridge: MIT Press. Originally published in ACM Trans. Graphics.",
-      "link": "pdfs/AdvertisingPositions2018.pdf"
+      "link": "res/pdfs/AdvertisingPositions2018.pdf"
     },
 
     {
       "year": 2018,
       "detail": "&ldquo;You Have Pressure, I Have Pressure: Hacking, Art & Activism in Hong Kong.&rdquo; Howe, Daniel C. Chapter 3, in <em>The Field Guide to Hacking.</em> 2018. Hong Kong: Dim Sum Press.",
-      "link": "pdfs/YouHavePressure.pdf"
+      "link": "res/pdfs/YouHavePressure.pdf"
     },
 
     {
       "year": 2015,
       "detail": "&ldquo;Surveillance Countermeasures: Expressive Privacy via Obfuscation.&rdquo; Howe, Daniel C.  In <em>A Peer&ndash;reviewed Journal About (APRJA).</em> Christian Ulrik Andersen and Geoff Cox (eds.) Vol. 4, Issue 1. Aarhus: Digital Aesthetics Research Center, Aarhus University, Berlin",
-      "link": "pdfs/expressiveprivacy.pdf"
+      "link": "res/pdfs/expressiveprivacy.pdf"
     },
 
     {
       "year": 2011,
       "detail": "&ldquo;The Readers Project: Procedural Agents and Literary Vectors.&rdquo; Howe, Daniel C. and Cayley, J. In <em>Leonardo.</em> Aug 2011, Vol. 44, No. 4, MIT Press, Cambridge, MA, p317&ndash;324.",
-      "link": "pdfs/LEON4404_pp317-324.pdf"
+      "link": "res/pdfs/LEON4404_pp317-324.pdf"
     },
 
     {
@@ -53,7 +53,7 @@
     {
       "year": 2019,
       "detail": "&ldquo;A Statement by The Readers Project concerning contemporary literary practice, digital mediation, intellectual property, and associated moral rights.&rdquo; Cayley, J. and Howe, Daniel C., in <em>Whose Book is it Anyway?: A View From Elsewhere on Publishing, Copyright and Creativity</em>, Jeffries, J, and Kember, S. (eds.) Open Book Publishers. DOI: 10.11647/OBP.0159.01",
-      "link": "pdfs/StatementByTheReadersProject2019.pdf"
+      "link": "res/pdfs/StatementByTheReadersProject2019.pdf"
     },
     {
       "year": 2015,
@@ -63,12 +63,12 @@
     {
       "year": 2008,
       "detail": "&ldquo;TrackMeNot:  Resisting Surveillance in Web Search.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in <em>Lessons from the Identity Trail: Anonymity, Privacy and Identity in a Networked Society</em>. Ian Kerr, Carole Lucock and Valerie Steeves (eds.) Oxford:  Oxford University Press, p417&ndash;436.",
-      "link": "pdfs/trackmenot2009.pdf"
+      "link": "res/pdfs/trackmenot2009.pdf"
     },
     {
       "year": 2008,
       "detail": "&ldquo;Values in Design: Theory and Practice.&rdquo; Flanagan, M., Howe, D., & Nissenbaum, H. Embodying Values in Technology: Theory and Practice. In <em>Information Technology and Moral Philosophy</em> (Cambridge Studies in Philosophy and Public Policy, pp. 322-353), J. Van den Hoven & J. Weckert (Eds.). Cambridge: Cambridge University Press. DOI: 10.1017/CBO9780511498725.017",
-      "link": "pdfs/embodying_values.pdf"
+      "link": "res/pdfs/embodying_values.pdf"
     },
     {
       "year": 2007,
@@ -79,7 +79,7 @@
     {
       "year": 2006,
       "detail": "&ldquo;Informed Consent in the Mozilla Browser:  Implementing Value&ndash;Sensitive Design.&rdquo; Friedman, B., Howe, D. C. and Felten, E. W. Chapter 9, in <em>Internet Security: Hacking, CounterHacking, and Society, K. E. Himma (editor).  Mass: Jones and Bartlett Publishers, p153&ndash;170.",
-      "link": "pdfs/InformedConsent.pdf"
+      "link": "res/pdfs/InformedConsent.pdf"
     }
   ]
 }, {
@@ -87,40 +87,40 @@
   "items": [{
       "year": 2017,
       "detail": "&ldquo;Engineering Privacy and Protest: a Case Study of AdNauseam.&rdquo; Howe, Daniel C. and Nissenbaum, H.  Chapter 23, in <em>Proceedings of the IEEE International Workshop on Privacy Engineering,</em> San Jose, California, USA",
-      "link": "pdfs/adnauseam.pdf"
+      "link": "res/pdfs/adnauseam.pdf"
     },
     {
       "year": 2013,
       "detail": "&ldquo;Reading, Writing, Resisting: Literary Appropriation in the Readers Project.&rdquo; Howe, Daniel C. and Cayley, J. In <em>Proceedings of the 19th International Symposium of Electronic Art.</em> Cleland, Fisher, and Harley, Editors. ISEA International, the Australian Network for Art &amp; Technology and the University of Sydney.",
-      "link": "pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
+      "link": "res/pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
     },
 
     {
       "year": 2012,
       "detail": "&ldquo;In Common Tongues.&rdquo; Cayley, J. and Howe, Daniel C. In <em>Remediating the Social.</em> Bergen, Norway, University of Bergen, Department of Linguistic, Literary and Aesthetic Studies, p46&ndash;47.",
-      "link": "pdfs/remediating_the_social.pdf"
+      "link": "res/pdfs/remediating_the_social.pdf"
     },
 
     {
       "year": 2009,
       "detail": "&ldquo;RiTa: creativity support for computational literature.&rdquo; In <em>Proceedings of the seventh ACM conference on Creativity and cognition (C&amp;C '09).</em> ACM, New York, NY, USA, p205-210.",
-      "link": "pdfs/rita2009.pdf"
+      "link": "res/pdfs/rita2009.pdf"
     },
 
     {
       "year": 2005,
       "detail": "&ldquo;Values at Play:  Design Tradeoffs in Socially&ndash;Oriented Game Design.&rdquo; Flanagan, M, Howe, D. C., and Nissenbaum, H. In Proceedings of the CHI 2005 Conference on Human Factors in Computing Systems.</em> CHI 2005, 2&ndash;7 April, Portland, Oregon. New York: ACM Press, p751-760.",
-      "link": "pdfs/values_at_play.pdf"
+      "link": "res/pdfs/values_at_play.pdf"
     },
     {
       "year": 2005,
       "detail": "&ldquo;New Design Methods for Activist Gaming.&rdquo; Flanagan, M., Howe, D. C. and Nissenbaum, H. Chapter 20, in <em>Proceedings of the Digital Games Research Association (DIGRA)</em>, June 16-20, Vancouver CA.",
-      "link": "pdfs/NewDesignMethodsActivistGaming.pdf"
+      "link": "res/pdfs/NewDesignMethodsActivistGaming.pdf"
     },
     {
       "year": 2002,
       "detail": "&ldquo;Informed Consent in the Mozilla Browser:  Implementing Value&ndash;Sensitive Design.&rdquo; Friedman, B., Howe, D. C.,  and Felten, E. W. In <em>Proceedings of 35th Annual Hawaii International Conference on System Sciences</em>, Jan 2002. (Awarded Best Paper of Organizational Systems track). Abstract. IEEE Computer Society Washington, DC, USA,  p247.",
-      "link": "pdfs/InformedConsent.pdf"
+      "link": "res/pdfs/InformedConsent.pdf"
     },
     {
       "year": 2002,
@@ -170,7 +170,7 @@
     {
       "year": 2012,
       "detail": "<em>How It Is, in Common Tongues</em>. Cayley, J. and Howe, Daniel C. Limited Edition Monograph, 297 pp., NLLF Press.  ISBN&ndash;13: 978&ndash;0948454301",
-      "link": "pdfs/hiiict.pdf"
+      "link": "res/pdfs/hiiict.pdf"
     },
 
     {

@@ -15,18 +15,15 @@ function createGrid(projects) {
 
   // create grid in html
   for (var html, i = 0; i < projects.length; i++) {
-    var g;
+    var g = gridSmall;
     if (i % 6 === 0 && i < noOfSpecialLayout) {
       g = gridLarge;
     } else if (i % 6 === 3 && i < noOfSpecialLayout) {
       g = gridLargeRight;
     }
-    else {
-      g = gridSmall;
-    }
 
     var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
-    var useHighResImage = g.indexOf("l") > -1;
+    var useHighResImage = (g === gridLarge || g === gridLargeRight);
 
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
     html += "<div class='project gridSize-" + g + "'>"; 
@@ -114,7 +111,8 @@ function selectNavigation() { // custom navigation for various portfolios
 
 function projLink(proj) {
   if (proj.directLink) return proj.directLink;
-  return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
+  //return proj.longdesc ? 'detail.html#' + detailUrl(proj.shorttitle) : "";
+  return proj.longdesc ? './' + detailUrl(proj.shorttitle) : "";
 }
 
 function detailUrl(title) {
@@ -124,6 +122,7 @@ function detailUrl(title) {
 
 function createDetail(projects, id) {
 
+  console.log('createDetail', id);
   selectNavigation();
 
   // hide the previous
@@ -133,7 +132,7 @@ function createDetail(projects, id) {
   for (var i = 0; i < projects.length; i++) {
     var title = projects[i].shorttitle.toLowerCase().replace(/[ .-\W]+/g, '');
     if (title === id) {
-      current = projects[i]
+      current = projects[i];
       idk = i;
       break;
     };
@@ -141,8 +140,8 @@ function createDetail(projects, id) {
 
   // wrong id or no id
   if (!current) {
-    //console.log(window.location.href+" => 'index.html'");
-    window.location.href = 'index.html';
+    console.log(window.location.href+" => 'index.html' current=",current);
+    //window.location.href = 'index.html';
   }
 
   // update meta tags for current project
@@ -412,11 +411,6 @@ function adjustFooterSpace() {
   // console.log($('.footer').css("position"), $('.footer').outerHeight());
 }
 
-function getCurrentIdFromUrl(url) {
-
-  return url.split("#")[1];
-}
-
 function openNewWindow(url, name, feats) {
 
   window.open(url, name, feats);
@@ -536,11 +530,27 @@ $.getJSON("projects.json").done((json) => {
   if (typeof window.retinajs === 'function') window.retinajs(images);
 
   if ($('#detail').length > 0) {
-    createDetail(json, getCurrentIdFromUrl($(location).attr('href')));
+    let href = $(location).attr('href');
+    console.log('href', window.location.href);
+    createDetail(json, getCurrentIdFromUrl(window.location));
   }
 
   window.onhashchange = function () {
-    var id = getCurrentIdFromUrl($(location).attr('href'));
+    var id = getCurrentIdFromUrl(window.location);
     createDetail(json, id);
   }
 });
+
+function getCurrentIdFromUrl(loc) {
+  let url = loc.href;
+  let parts = url.split("#");
+  if (parts.length === 2 && parts[1].length) {
+    return parts[1];
+  }
+  parts = window.location.pathname.split('/');
+  for (let i = parts.length-1; i >= 0; i--) {
+    if (parts[i].length) return parts[i];
+  }
+  console.log('parts', parts);
+
+}
