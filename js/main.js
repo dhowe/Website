@@ -260,7 +260,6 @@ function createDetail(projects, id) {
 
   // MAIN IMAGE
   if (current.images) {
-
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
@@ -290,7 +289,7 @@ function createDetail(projects, id) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
-        + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+        + "'><img data-rjs='2' src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
