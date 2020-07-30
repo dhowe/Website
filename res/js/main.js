@@ -141,7 +141,7 @@ function createDetail(projects, id) {
 
   // wrong id or no id
   if (!current) {
-    console.log(window.location.href+" => 'index.html' current=",current);
+    console.log(window.location.href + " => 'index.html' current=", current);
     //window.location.href = 'index.html';
   }
 
@@ -188,7 +188,7 @@ function createDetail(projects, id) {
       + "_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
     // mute sketch whenever a link redirect is triggered on current detailed page
     html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '"
-       + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
+      + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
   }
 
   // RELATED PROJECTS
@@ -456,9 +456,7 @@ $(document).ready(function () {
   });
 });
 
-
 function startFocus() {
-  //  console.log("Is Focused")
   unmuteSketch();
 }
 
@@ -526,12 +524,11 @@ $.getJSON("projects.json").done((json) => {
   }
 
   const images = $('img.project');
-  // console.log(images);
   if (typeof window.retinajs === 'function') window.retinajs(images);
 
   if ($('#detail').length > 0) {
     let href = $(location).attr('href');
-    console.log('href', window.location.href);
+    //console.log('href', window.location.href);
     createDetail(json, getCurrentIdFromUrl(window.location));
   }
 
@@ -542,15 +539,16 @@ $.getJSON("projects.json").done((json) => {
 });
 
 function getCurrentIdFromUrl(loc) {
+  // first check detail.html#PROJECT
   let url = loc.href;
   let parts = url.split("#");
   if (parts.length === 2 && parts[1].length) {
     return parts[1];
   }
+  // then check new /daniel/PROJECT format
   parts = window.location.pathname.split('/');
-  for (let i = parts.length-1; i >= 0; i--) {
+  for (let i = parts.length - 1; i >= 0; i--) {
     if (parts[i].length) return parts[i];
   }
-  console.log('parts', parts);
-
+  // else fail
 }

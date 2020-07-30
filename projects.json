@@ -110,10 +110,13 @@
     "thumb": "res/img/ap_s.jpg",
     "shortdesc": "Participants in the <i>Advertising Positions</i> project were 3d-scanned and given custom software that collected the online ads they were served over several months. These ads were then applied, one-by-one, to the skin of the user's body and  animated in virtual space...",
     "longtitle": "Advertising Positions",
-    "largeDetailImage": "img/ap_l.jpg",    
+    "largeDetailImage": {
+      "src": "res/img/bertha_still.jpg",
+      "title": "Rendered image for Bertha"
+    },
     "videos": [
       {
-        "src": "res/img/ap",
+        "src": "res/video/ap",
         "poster": "res/img/ap_poster.jpg"
       }
     ],
@@ -122,10 +125,7 @@
         "src": "res/img/ap_l.jpg",
         "title": "Rendered image for Nicole"
       },
-      {
-        "src": "res/img/bertha_still.jpg",
-        "title": "Rendered image for Bertha"
-      },
+   
       {
         "src": "res/img/bertha.png",
         "title": "wireframe (bottom) view of scanned model (left) then recomposed (right)."
