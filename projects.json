@@ -909,12 +909,15 @@
   {
     "shorttitle": "Engine of Engines",
     "thumb": "res/img/eoe_s.jpg",
-    "shortdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen, self-contained computational nodes, each reacting in real-time, both visually and aurally, to changes in the type and quantity of information being exchanged over the networks of the building in which it is installed.",
+    "shortdesc": "<i>Engine of Engines</i> is an installation of sixteen, self-contained computational nodes, each reacting in real-time, both visually and aurally, to changes in the type and quantity of information being exchanged over the networks of the building in which it is installed.",
     "collaborators": "Bill Seaman",
     "longtitle": "Engine of Engines",
     "images": [
       {
         "src": "res/img/eoe_l.jpg"
+      },
+      {
+        "src": "res/img/eoenet.jpg"
       }
     ],
     "videos": [
@@ -923,7 +926,7 @@
         "poster": "res/img/eoe_poster.jpg"
       }
     ],
-    "longdesc": "<i>Engine of Engines</i> is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.",
+    "longdesc": "<i>Engine of Engines</i> is an installation comprised of sixteen self-contained computational nodes, physically suspended in a loose network. Each node, comprised of a screen, microcontroller, and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system—represented via sound and moving image–changes in a dynamic visualization of the building and the behavior of its occupants.",
     "exhibitions": [
       {
         "text": "<i>The Burning Edge</i>. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
