@@ -123,7 +123,6 @@ function detailUrl(title) {
 
 function createDetail(projects, id) {
 
-  console.log('createDetail', id);
   selectNavigation();
 
   // hide the previous
@@ -392,13 +391,19 @@ function adjustItemHeight(projects) {
 
 function muteSketch() {
   $('iframe').each(function () {
-    $(this)[0].contentWindow.toggleMute(true);
+    let cw = $(this)[0].contentWindow;
+    if (cw.toggleMute) {
+      cw.toggleMute(true);
+    }
   })
 }
 
 function unmuteSketch() {
   $('iframe').each(function () {
-    $(this)[0].contentWindow.toggleMute(false);
+    let cw = $(this)[0].contentWindow;
+    if (cw.toggleMute) {
+      cw.toggleMute(false);
+    }
   })
 }
 
@@ -541,9 +546,11 @@ $.getJSON("projects.json").done((json) => {
 function getCurrentIdFromUrl(loc) {
   // first check detail.html#PROJECT
   let url = loc.href;
-  let parts = url.split("#");
-  if (parts.length === 2 && parts[1].length) {
-    return parts[1];
+  if (url) {
+    let parts = url.split("#");
+    if (parts.length === 2 && parts[1].length) {
+      return parts[1];
+    }
   }
   // then check new /daniel/PROJECT format
   parts = window.location.pathname.split('/');

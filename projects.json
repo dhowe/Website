@@ -26,7 +26,7 @@
     "longdesc": "Winner of the <span style=\"decoration:none !important\"><a href=\"https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/\" target=\"_new\">2019 Alternate Realities Commission</a></span>, <em>Spectre</em> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray to Dataism and the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
     "videos": [
       {
-        "src": "res/video/Artists_Create_Deepfake_Video",
+        "src": "res/video/artists_create_deepfake",
         "poster": "res/img/spec_vid.png"
       }
     ],
@@ -116,7 +116,7 @@
     },
     "videos": [
       {
-        "src": "res/video/ap",
+        "src": "res/video/adverpos",
         "poster": "res/img/ap_poster.jpg"
       }
     ],
@@ -125,7 +125,6 @@
         "src": "res/img/ap_l.jpg",
         "title": "Rendered image for Nicole"
       },
-   
       {
         "src": "res/img/bertha.png",
         "title": "wireframe (bottom) view of scanned model (left) then recomposed (right)."
@@ -223,11 +222,11 @@
     "collaborators": "Bill Posters",
     "videos": [
       {
-        "src": "res/img/imagineThis",
+        "src": "res/video/imagineThis",
         "poster": "res/img/fuckzuck.jpg"
       },
       {
-        "src": "res/img/Artists_Create_Deepfake_Video",
+        "src": "res/video/Artists_Create_Deepfake_Video",
         "poster": "res/img/spec_vid.png"
       }
     ],
@@ -411,7 +410,7 @@
     ],
     "videos": [
       {
-        "src": "res/img/adn",
+        "src": "res/video/adn",
         "poster": "res/img/adn_poster.jpg"
       }
     ],
@@ -661,8 +660,8 @@
     ],
     "videos": [
       {
-        "poster": "res/img/reader_poster.png",
-        "src": "res/img/THE_REAL_STORY_OF_AH-Q"
+        "src": "res/video/ahq",
+        "poster": "res/img/reader_poster.png"
       }
     ],
     "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
@@ -720,7 +719,7 @@
     ],
     "videos": [
       {
-        "src": "res/img/automatype",
+        "src": "res/video/automatype",
         "poster": "res/img/automatype_poster.jpg"
       }
     ],
@@ -780,7 +779,7 @@
         "target": "http://nt2.uqam.ca/repertoire/automatype"
       }
     ],
-    "sketch": "automatype/p5/"
+    "sketch": "pages/automatype/p5/"
   },
   {
     "shorttitle": "Minor Distance",
@@ -798,7 +797,7 @@
     ],
     "videos": [
       {
-        "src": "res/img/theoreticalArchitecture",
+        "src": "res/video/theoreticalArchitecture",
         "poster": "res/img/ta_poster.jpg",
         "title": "<i>Theoretical Architectures</i>, directed by Josh Gibson, is one of several videos created for the album, Minor Distance"
       }
@@ -870,7 +869,7 @@
     "longtitle": "Roulette",
     "videos": [
       {
-        "src": "res/img/roulette",
+        "src": "res/video/roulette",
         "poster": "res/img/roulette_poster.jpg"
       }
     ],
@@ -920,7 +919,7 @@
     ],
     "videos": [
       {
-        "src": "res/img/eoe480p",
+        "src": "res/video/eoe",
         "poster": "res/img/eoe_poster.jpg"
       }
     ],
@@ -947,10 +946,6 @@
     "sketch": "pages/perceptualReader/",
     "links": [
       {
-        "name": "Perceptual Reader",
-        "target": "pages/perceptualReader/"
-      },
-      {
         "name": "The Readers Project",
         "target": "https://thereadersproject.org/index.html"
       }
@@ -975,20 +970,20 @@
     ]
   },
   {
-    "shorttitle": "Text.Curtain",
+    "shorttitle": "text.curtain",
     "thumb": "res/img/textcurtain_s.jpg",
     "shortdesc": "A recombinant text exploring the tensions between reading and interactive play. Projected on a wall-size screen, Text.Curtain presents a physics-based interface that organically responds to the interactions of multiple users via physics and generative sound.",
     "longtitle": "text.curtain",
     "videos": [
       {
-        "src": "res/img/textCurtain",
+        "src": "res/video/textCurtain",
         "poster": "res/img/textcurtain_poster.jpg"
       }
     ],
-    "longdesc": "<i>Text.Curtain</i> explores tensions between reading and ludic play, via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
+    "longdesc": "<i>text.curtain</i> explores tensions between reading and ludic play, via an interactive recombinant text. Projected on a wall-size screen, text.curtain presents a physics-based interface that organically responds to the interactions of multiple simultaneous users. As the piece is disrupted and letters wash back and forth, a granular synthesis engine provides realtime aural feedback. Tension is created through the simultaneous desire of users to both disrupt the existing text via 'play' and to ‘read’ the piece as it evolves and recombines in response.",
     "quotes": [
       {
-        "text": "Text.Curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
+        "text": "text.curtain, a gorgeous tapestry of words that the user can move and shake, consequently triggering dynamically organized sounds which make it more visceral, encouraging both play and further reading as the bottom row of letters drops and a new set appears on top.",
         "from": "Brian Kim Stefans"
       }
     ],
@@ -1044,7 +1039,7 @@
     ],
     "videos": [
       {
-        "src": "res/img/aoa_paris",
+        "src": "res/video/aoa_paris",
         "poster": "res/img/aoa_poster.jpg"
       }
     ],

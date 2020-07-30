@@ -1,54 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	<script src="build/jquery.js"></script>	
-	<script src="build/mediaelement-and-player.min.js"></script>
-	<link rel="stylesheet" href="build/mediaelementplayer.css" />
-
-
-<link rel="stylesheet" type="text/css" href="./style.css" />
-	
-
-<title>Engine of Engines by Daniel C Howe &amp; Bill Seaman</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="../../res/js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<title>Engine of Engines: Howe &amp; Seaman</title>
 </head>
 
 <body>
-<div id="container">
+	<div id="container">
+		<div id="header">
+			<h1>ENGINE OF ENGINES</h1>
+			<h2>DANIEL HOWE | BILL SEAMAN</h2>
+		</div>
+		<div id="content">
+			Engine of Engines is a generative installation comprised of sixteen self-contained computational nodes physically
+			suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's
+			infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its
+			networks. As this data is relayed from node to node, the state of the system – represented via sound and moving
+			image – changes in a dynamic visualization of the building and its occupants.
+			<p>
 
-<div id="header">
-<h1>ENGINE OF ENGINES</h1>
-<h2>DANIEL HOWE | BILL SEAMAN</h2>
-</div><!-- header -->
-
-<div id="content">
-Engine of Engines is a generative installation comprised of sixteen self-contained computational nodes physically suspended in a loose network. Each node, comprised of a screen and network interface, is tied into the building's infrastructure and reacts in real-time to changes in the type and quantity of information being exchanged over its networks. As this data is relayed from node to node, the state of the system – represented via sound and moving image – changes in a dynamic visualization of the building and its occupants.
-<p>
-
-<div id="screenset">
-<br>
-<!--video width="720" height="406" id="player2" poster="video/EngieOfEngines_by_DH_BS_noSub.jpg" controls="controls">
-	<source src="video/EngieOfEngines_by_DH_BS_noSub.mp4" type="video/mp4">
-	<source src="video/EngieOfEngines_by_DH_BS_noSub.webm" type="video/webm">	
-	<source src="video/EngieOfEngines_by_DH_BS_noSub.ogv" type="video/ogg">	
-	<track kind="subtitles" src="video/EngieOfEngines_by_DH_BS_noSub.srt" srclang="en" /> 
-	<p>This browser doesn't support this video format.</p>			
-</video-->	
-<iframe width="640" height="427" src="http://www.youtube.com/embed/8F18GYgS5cU" frameborder="0" allowfullscreen></iframe>
-</div>
-</div> <!-- content -->
-</div> <!-- container -->
-
-
-
-<script>
-$('audio,video').mediaelementplayer({
-	// auto-select this language (instead of starting with "None")
-	startLanguage:'en',
-
-});
-</script>
-</div>
+			<div id="screenset">
+				<!-- format video https://github.com/dhowe/Website/issues/245 -->
+				<div id="video">
+					<video preload="auto" class="animation" loop="" autoplay="" style="display: inline;">
+						<source src="../../res/video/eoe.webm" type="video/webm">
+						<source src="../../res/video/eoe.mp4" type="video/mp4"> Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div> <!-- content -->
+	</div> <!-- container -->
 </body>
+
 </html>

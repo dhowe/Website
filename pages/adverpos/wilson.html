@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Advertising Positions</title>
     <link rel="stylesheet" href="style.css">
-    <script src="../js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../res/js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="js/models.js" type="text/javascript"></script>
 </head>
-
 <body>
-     <ul class="items">
-            <li id="still" class="current">still
-            </li>
-            <li id="detail">detail
-            </li>
-            <li id="adCollection">ad set
-            </li>
-            <li id="animation">animation
-            </li>
-        </ul>
-
-
-        <img src='imgs/wilson_adCollection_detail.jpg' class='zoom' width='100%'>
-        <div id="imageDisplay" class="wilsonStill">
-            <div id="hint">Click for <br>high-res view</div>
-            <div class="middle">
+    <ul class="items">
+        <li id="still" class="current">still
+        </li>
+        <li id="detail">detail
+        </li>
+        <li id="adCollection">ad set
+        </li>
+        <li id="animation">animation
+        </li>
+    </ul>
+    <img src='imgs/wilson_adCollection_detail.jpg' class='zoom' width='100%'>
+    <div id="imageDisplay" class="wilsonStill">
+        <div id="hint">Click for <br>high-res view</div>
+        <div class="middle">
             <div id="video">
                 <video preload="auto" class="animation" loop="" autoplay>
                     <source src="animations/wilsonV2.webm" type="video/webm">
                     <source src="animations/wilsonV2.mp4" type="video/mp4"> Your browser does not support the video tag.
                 </video>
             </div>
-            </div>
         </div>
-        <div class="modelView" id="wilson">
+    </div>
+    <div class="modelView" id="wilson">
         <div class="menu">
             <p><a href="index.html">homepage</a></p>
             <a href="nicole.html"> <img src="imgs/nicole_thumbnail.jpg" alt=""></a>
             <a href="bertha.html"> <img src="imgs/bertha_thumbnail.jpg" alt=""></a>
         </div>
         <div class="intro">
-            <p><span>Wilson</span> is a 39-year-old single male residing in Hong Kong, with interests in travel, high-tech, cooking, dating and adult entertainment. He was active online in December 2016.
+            <p><span>Wilson</span> is a 39-year-old single male residing in Hong Kong, with interests in travel,
+                high-tech, cooking, dating and adult entertainment. He was active online in December 2016.
             </p>
         </div>
     </div>
 
 
-<script src="js/wheelzoom.js" type="text/javascript"></script>
+    <script src="js/wheelzoom.js" type="text/javascript"></script>
     <script>
-          wheelzoom(document.querySelector('img.zoom'));
+        wheelzoom(document.querySelector('img.zoom'));
     </script>
 </body>
 
