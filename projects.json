@@ -400,7 +400,7 @@
   {
     "shorttitle": "AdNauseam",
     "thumb": "res/img/adn_poster.jpg",
-    "shortdesc": "<i>AdNauseam</i> is the open-source browser extension (<a href=\"https://www.fastcompany.com/3068920/google-adnauseam-ad-blocking-war\" target=\"_new\">banned by Google</a> and <a href=\"https://addons.mozilla.org/en-US/firefox/addon/adnauseam/\" target=\"_new\">recommended by Mozilla</a>) that hides users' interests from advertising networks and attempts, by clicking every ad that it finds, to subvert the economic system that drives online surveillance and datafication.",
+    "shortdesc": "<i>AdNauseam</i> is the open-source browser extension (banned by Google but recommended by Mozilla) that hides users' interests from advertising networks and attempts, by clicking every ad that it finds, to subvert the economic system that drives online surveillance and datafication.",
     "collaborators": "Helen Nissenbaum & Mushon Zer-Aviv",
     "longtitle": "AdNauseam",
     "images": [
