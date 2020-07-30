@@ -5,6 +5,7 @@ var featured = [
   "The Readers Project"   // min image size 1100px @2x
   // "Radical of the Vertical Heart 忄", "Automatype",
 ];
+const EXTRASPACE = 270; //for events col
 
 function createGrid(projects) {
 
@@ -26,14 +27,13 @@ function createGrid(projects) {
     var useHighResImage = (g === gridLarge || g === gridLargeRight);
 
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
-    html += "<div class='project gridSize-" + g + "'>"; 
+    html += "<div class='project gridSize-" + g + "'>";
     html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project")
-      + "' src=" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + ">";
+      + "' src='" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + "'>";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
-    html += "</div></a>";
-    html += "</div>";
+    html += "</div></div></a>";
     $('#projects .grid').append(html);
   }
 
@@ -60,7 +60,7 @@ function createEventCol(url) {
         html += "</p></a>";
         $('#projects .events .wrapper').append(html);
         bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
-        if (bottomMark > $(window).height() - 200) {
+        if (i != 0 && bottomMark > $(window).height() - EXTRASPACE) {
           $('#projects .events .wrapper a:last-child').addClass("hide");
         }
         maxEntriesShown--;
@@ -76,8 +76,9 @@ function createEventCol(url) {
 function updateEventsLayout() {
   let bottomMark = 0;
   $('#projects .events .wrapper a').removeClass("hide");
-  $(".events .wrapper a").addClass(function () {
-    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - 150;
+  // make sure there is at least one visible
+  $(".events .wrapper a:not(:first-child)").addClass(function () {
+    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - EXTRASPACE;
     return toHide ? "hide" : "";
   })
 }
@@ -258,7 +259,6 @@ function createDetail(projects, id) {
 
   // MAIN IMAGE
   if (current.images) {
-
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
@@ -287,8 +287,8 @@ function createDetail(projects, id) {
     for (var j = 1; j < current.images.length; j++) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
-      html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage 
-        + "'><img src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+      html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
+        + "'><img data-rjs='2' src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
