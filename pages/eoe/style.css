@@ -43,8 +43,11 @@ table {
 #video {
 	margin: 0 auto;
 	width: 770px;
+	border:#333 solid 1px;
 }
-
+*:focus {
+	outline:none;
+}
 .animation {
 	width: 770px;
 	top: -50%;
@@ -123,7 +126,7 @@ a:hover {
 /*------Screens--------*/
 
 #screenset {
-	width: 80%;
+	/* width: 80%; */
 	margin: 0 auto;
 	margin-right: 126px;
 	left: 50%;
