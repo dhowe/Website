@@ -2,6 +2,7 @@ Header set Access-Control-Allow-Origin "*"
 
 Options +FollowSymLinks
 RewriteEngine On
+
 #RewriteBase /
 
 # Allow any files or directories that exist to be displayed directly
@@ -12,4 +13,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteRule ^p/(.*\.(gif|jpe?g|webp|png|css|json|svg))$ daniel/$1
 #RewriteRule ^git/Website/p/([A-Za-z0-9_]+\.(js|css|img|svg|json)))/?$ git/Website/$1 [NC]
 #RewriteRule ^[^/]+/(.+) $1 [NC]
+
 RewriteRule ^([A-Za-z0-9_]+)($|/$) detail.html#$1 [NC,NE]

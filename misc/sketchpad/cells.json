@@ -6,117 +6,117 @@
     },
     {
       "img": "img/bugout_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/bugout",
+      "url": "https://rednoise.org/~dhowe/bugout",
       "description": "an interactive sonification of reversible computation with partitioned automata[req. java/jsyn]"
     },
     {
       "img": "img/organs_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/pubs.html",
+      "url": "https://rednoise.org/~dhowe/pubs.html",
       "description": "link to list of selected writing"
     },
     {
       "img": "img/noisemesh_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/noisemesh",
+      "url": "https://rednoise.org/~dhowe/noisemesh",
       "description": "an interactive simulation of a 2d grid perturbed by noise[requires java]"
     },
     {
       "img": "img/kiteworm_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/kiteworm",
+      "url": "https://rednoise.org/~dhowe/kiteworm",
       "description": "an animated 3dcharacter study for RAPUNSEL[requires java]"
     },
     {
       "img": "img/tango_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/tango2",
+      "url": "https://rednoise.org/~dhowe/tango2",
       "description": "dynamic image filters: prototype for a real-time video installation[requires java]"
     },
     {
       "img": "img/amata_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/audiomata/intro.html",
+      "url": "https://rednoise.org/~dhowe/audiomata/intro.html",
       "description": "an interactive sonification of cellular automata patterns[req. java/jsyn]"
     },
     {
       "img": "img/noteflock_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/noteflock",
+      "url": "https://rednoise.org/~dhowe/noteflock",
       "description": "an interactive sound simulation based on flocking behavior[in progress / java]"
     },
     {
       "img": "img/geopeep_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/geopeep",
+      "url": "https://rednoise.org/~dhowe/geopeep",
       "description": "a procedurally animated 3dcharacter study for RAPUNSEL[requires java]"
     },
     {
       "img": "img/baby_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/baby",
+      "url": "https://rednoise.org/~dhowe/baby",
       "description": "a dynamic image filter based on Perlin noise[requires java]"
     },
     {
       "img": "img/fugue_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/fugue",
+      "url": "https://rednoise.org/~dhowe/fugue",
       "description": "a 3-part interactive fugue generator w' real-time synthesis[req. java/jsyn/ie/pc]"
     },
     {
       "img": "img/cellpix_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/cellpix",
+      "url": "https://rednoise.org/~dhowe/cellpix",
       "description": "an interactive sonification of the life algorithm over an image grid[req. java/jsyn]"
     },
     {
       "img": "img/something_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/stwa/showPage.html",
+      "url": "https://rednoise.org/~dhowe/stwa/showPage.html",
       "description": "short work of illustrated fiction[w' heidi nielson]"
     },
     {
       "img": "img/open_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/open.ended",
+      "url": "https://rednoise.org/~dhowe/open.ended",
       "description": "link to 'open.ended', a spatial poetry installation based on 3d geometries"
     },
     {
       "img": "img/blackbird_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/blackbird",
+      "url": "https://rednoise.org/~dhowe/blackbird",
       "description": "an early inter-active visualization of a Wallace Stevens poem[requires java]"
     },
     {
       "img": "img/autocity_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/autocity",
+      "url": "https://rednoise.org/~dhowe/autocity",
       "description": "a prototype of automata used to generate architectural forms[requires java]"
     },
     {
       "img": "img/origami_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/origami",
+      "url": "https://rednoise.org/~dhowe/origami",
       "description": "an origami-inspired visualization of intersecting polygons[requires java]"
     },
     {
       "img": "img/roto_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/artbots2004/htm",
+      "url": "https://rednoise.org/~dhowe/artbots2004/htm",
       "description": "link to the 'ornithoids' project page [artbots 2004]"
     },
     {
       "img": "img/recube_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/recube",
+      "url": "https://rednoise.org/~dhowe/recube",
       "description": "'recube', a recombinant sound/poetry work for the Brown Cave[requires java]"
     },
     {
       "img": "img/font3d_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/font3d",
+      "url": "https://rednoise.org/~dhowe/font3d",
       "description": "algorithmically generated 3dtypeface [still images & applet]"
     },
     {
       "img": "img/text3d_thumb2.jpg",
-      "url": "http://rednoise.org/~dhowe/text3d",
+      "url": "https://rednoise.org/~dhowe/text3d",
       "description": "animated custom font design in 3d (featured on the 'processing' site)[requires java]"
     },
      {
       "img": "img/jazzer_thumb.jpg",
-      "url": "http://rednoise.org/~dhowe/elmusico",
+      "url": "https://rednoise.org/~dhowe/elmusico",
       "description": "a 3d musician that 'plays along' with arbitrary audio tracks[req. javajsyn]"
     },
     {
       "img": "img/rectangles_thumb.png",
-      "url": "http://rednoise.org/sketches/Rectangles1/",
+      "url": "https://rednoise.org/sketches/Rectangles1/",
       "description": "constraint-based sketch: only black/white rectangles with sin/cos"
     },
     {
       "img": "img/rasterwalk_thumb.png",
-      "url": "http://rednoise.org/sketches/RasterWalk/",
+      "url": "https://rednoise.org/sketches/RasterWalk/",
       "description": "recode of 'Random Walk Through Raster' by Frieder Nake for the ReCode project"
     },
     {
@@ -126,12 +126,12 @@
     },
     { 
       "img": "img/voronoirecode_thumb.png",
-      "url": "http://rednoise.org/sketches/VoronoiRecode/",
+      "url": "https://rednoise.org/sketches/VoronoiRecode/",
       "description": "recode of 'Equidistant Space' by Peter Milojevic for the ReCode project"
     },
     {
       "img": "img/glyphflock_thumb.png",
-      "url": "http://rednoise.org/glyphflock/",
+      "url": "https://rednoise.org/glyphflock/",
       "description": "demo extracting points from a font path with p5.js"
     },
     {
@@ -141,7 +141,7 @@
     },
     {
       "img": "img/pr_thumb.png",
-      "url": "http://rednoise.org/perceptualReader/",
+      "url": "https://rednoise.org/perceptualReader/",
       "description": "Perceptual Reader"
     }
 ]
