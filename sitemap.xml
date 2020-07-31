@@ -1,389 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://rednoise.org/daniel/</loc>
-  <lastmod>2020-07-30T16:23:50+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/index.html</loc>
-  <lastmod>2020-07-30T16:23:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/pubs.html</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/about.html</loc>
-  <lastmod>2020-07-30T16:23:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/refs.html</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/spectre</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/advertisingpositions</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/radicaloftheverticalheart</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/bigdada</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/howitis</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/thereadersproject</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/adnauseam</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/rita</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/adlipo</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/dialogic</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/chinaeye</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/allyourgooglearebelongtous</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/trackmenot</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/therealstoryofahq</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/readforus</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/automatype</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/minordistance</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/roulette</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/engineofengines</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/perceptualreader</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/redacto</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/textcurtain</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/architectureofassociation</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/openended</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/refs.html</loc>
-  <lastmod>2020-07-30T16:23:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/07/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/05/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/04/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/03/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/02/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/12/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/10/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/09/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/08/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/06/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/05/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/04/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/category/homepage/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/category/uncategorized/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/07/24/press-damien-hirst-endorses-spectre/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/07/07/feature-spectre-featured-in-neural-magazine-winter-issue-2020/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/07/05/gallery-radical-of-the-vertical-heart-%e5%bf%84in-uncontinuity-elo20/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/05/31/press-synthesised-moving-image-works-acquired-by-national-film-tv-archive/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/04/20/award-spectre-chosen-for-columbia-university-digital-dozen-breakthrough-in-storytelling-award/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/03/15/gallery-trust-but-verify-rochester-contemporary-new-york/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/02/06/award-spectre-wins-sxsw-2020-artist-commission/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/30/feature-spectre-short-film-added-to-british-council-film-directory/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/19/gallery-big-dada-exhibiting-at-the-weizenbaum-institute-berlin/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/19/press-the-head-of-instagram-says-company-hasnt-taken-down-a-fake-video-of-facebook-ceo-mark-zuckerberg-because-the-damage-is-done/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/16/press-bill-posters-new-media-work-listed-in-trends-of-the-year-creative-review/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2020/01/11/award-spectre-shortlisted-for-the-aesthetica-art-prize/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/page/2/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/12/22/gallery-group-show-centre-for-development-of-visual-arts-havana-cuba-march-2020/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/12/22/gallery-solo-show-big-dada-announced-at-art-exchange-gallery-university-of-essex/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/12/19/award-spectre-longlisted-for-aesthetica-art-prize-2020/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/10/27/feature-spectre-added-to-mit-docubase-lab/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/10/24/gallery-big-dada-showing-at-home-manchester-uk/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/10/19/exhibition-catalogue-art-strikes-back/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/10/10/gallery-big-dada-exhibited-at-art-strikes-back-museum-jorn-denmark/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/09/30/feature-spectre-profiled-in-rankins-guest-issue-of-the-drum-magazine/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/08/10/talk-spectre-mutek-20-montreal/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/06/20/the-zuckerberg-deepfake-heard-around-the-world/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/05/29/gallery-spectre-launches-press-release/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/2019/04/17/award-bill-posters-wins-sheffield-doc-fest-alternate-realities-20000-commission/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/category/homepage/page/2/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/daniel/detail.html</loc>
-  <lastmod>2020-07-30T16:23:50+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/tag/spectre/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/tag/chinese/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://rednoise.org/wpr/tag/radical-of-the-vertical-heart-%e5%bf%84/</loc>
-  <lastmod>2020-07-30T16:36:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>https://rednoise.org/daniel/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>1.00</priority></url>
+<url><loc>https://rednoise.org/daniel/about.html</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.80</priority></url>
+<url><loc>https://rednoise.org/daniel/detail.html</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.80</priority></url>
+<url><loc>https://rednoise.org/daniel/pubs.html</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.80</priority></url>
+<url><loc>https://rednoise.org/daniel/refs.html</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.80</priority></url>
+<url><loc>https://rednoise.org/daniel/spectre</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/spectre-blue_l.png</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/advertisingpositions</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/ap_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/radicaloftheverticalheart</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/rotvh-defs.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/bigdada</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/mjorn.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/howitis</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/hiiiict.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/thereadersproject</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/readers_act.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/adnauseam</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/adn_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/rita</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/ritapen.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/adlipo</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/adlipo_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/dialogic</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+</url>
+<url><loc>https://rednoise.org/daniel/chinaeye</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/chinaeye_l.png</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/allyourgooglearebelongtous</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+</url>
+<url><loc>https://rednoise.org/daniel/trackmenot</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/tmn_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/therealstoryofahq</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/reader_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/readforus</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/rfu_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/automatype</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/auto_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/minordistance</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/md_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/roulette</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+</url>
+<url><loc>https://rednoise.org/daniel/engineofengines</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/eoe_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/perceptualreader</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+</url>
+<url><loc>https://rednoise.org/daniel/redacto</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/redacto_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/textcurtain</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+</url>
+<url><loc>https://rednoise.org/daniel/architectureofassociation</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/aoa_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/openended</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.70</priority>
+  <image:image><image:loc>https://rednoise.org/daniel/res/img/openended_l.jpg</image:loc></image:image>
+</url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/07/24/press-damien-hirst-endorses-spectre/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/07/07/feature-spectre-featured-in-neural-magazine-winter-issue-2020/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/07/05/gallery-radical-of-the-vertical-heart-%e5%bf%84in-uncontinuity-elo20/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/05/31/press-synthesised-moving-image-works-acquired-by-national-film-tv-archive/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/04/20/award-spectre-chosen-for-columbia-university-digital-dozen-breakthrough-in-storytelling-award/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/03/15/gallery-trust-but-verify-rochester-contemporary-new-york/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/02/06/award-spectre-wins-sxsw-2020-artist-commission/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/01/19/gallery-big-dada-exhibiting-at-the-weizenbaum-institute-berlin/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2020/01/11/award-spectre-shortlisted-for-the-aesthetica-art-prize/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2019/12/22/gallery-group-show-centre-for-development-of-visual-arts-havana-cuba-march-2020/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2019/10/27/feature-spectre-added-to-mit-docubase-lab/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2019/10/10/gallery-big-dada-exhibited-at-art-strikes-back-museum-jorn-denmark/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2019/09/30/feature-spectre-profiled-in-rankins-guest-issue-of-the-drum-magazine/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
+<url><loc>https://rednoise.org/daniel/https://rednoise.org/wpr/2019/04/17/award-bill-posters-wins-sheffield-doc-fest-alternate-realities-20000-commission/</loc><lastmod>2020-07-31T02:38:57.044Z</lastmod><priority>0.51</priority></url>
 </urlset>
