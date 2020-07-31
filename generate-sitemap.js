@@ -31,8 +31,10 @@ function generateDetails() {
   let result = ""
   for (let i = 0; i < prjs.length; i++) {
     // add images
-    result += "<url><loc>" + WebsitePath + detailUrl(prjs[i].shorttitle) + "</loc><lastmod>" + TimeStamp + "</lastmod><priority>" + P + "</priority>\n";
-    result += !prjs[i].images ? "" : "  <image:image><image:loc>" + WebsitePath + prjs[i].images[0].src + "</image:loc></image:image>\n";
+    result += "<url>\n  <loc>" + WebsitePath + detailUrl(prjs[i].shorttitle) 
+      + "</loc>\n  <lastmod>" + TimeStamp + "</lastmod>\n  <priority>" + P + "</priority>\n";
+    result += !prjs[i].images ? "" : "  <image:image>\n    <image:loc>" + WebsitePath 
+      + prjs[i].images[0].src + "</image:loc>\n  </image:image>\n";
     result += "</url>\n";
   }
   return result;
@@ -43,7 +45,8 @@ function generateProjectPages() {
   let result = ""
   const allPages = getDirectories("./pages");
   for (let i = 0; i < allPages.length; i++) {
-    result += "<url><loc>" + WebsitePath + "pages/" + allPages[i] + "</loc><priority>0.80</priority></url>\n";
+    result += "<url>\n  <loc>" + WebsitePath + "pages/" + allPages[i] 
+      + "</loc>\n  <priority>0.80</priority>\n</url>\n";
   }
   return result;
 }
@@ -51,32 +54,16 @@ function generateProjectPages() {
 function generateRoot() {
   const P = "0.80";
   // init with home page
-  let result = "<url><loc>" + WebsitePath + "</loc><lastmod>"
-    + TimeStamp + "</lastmod><priority>1.00</priority></url>\n";
+  let result = "\n<url>\n  <loc>" + WebsitePath + "</loc>\n  <lastmod>"
+    + TimeStamp + "</lastmod>\n  <priority>1.00</priority>\n</url>\n";
   const all = getAll("./");
   for (let i = 0; i < all.length; i++) {
     if (all[i] != "index.html" && all[i].indexOf(".html") > 0) {
-      result += "<url><loc>" + WebsitePath + all[i] + "</loc><lastmod>"
-        + TimeStamp + "</lastmod><priority>" + P + "</priority></url>\n";
+      result += "<url>\n  <loc>" + WebsitePath + all[i] + "</loc>\n  <lastmod>"
+        + TimeStamp + "</lastmod>\n  <priority>" + P + "</priority>\n</url>\n";
     }
   }
   return result;
-}
-
-async function doRequest(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, (resp) => {
-      let data = '';
-      resp.on('data', (chunk) => {
-        data += chunk;
-      });
-      resp.on('end', () => {
-        resolve(data);
-      });
-    }).on("error", (error) => {
-      reject(error);
-    });
-  });
 }
 
 async function generateSiteMap() {
@@ -97,15 +84,26 @@ async function generateWpr() {
   const raw = await doRequest(EventsUrl);
   const json = JSON.parse(raw);
   json.forEach((post) => {
-    result += "<url><loc>" + post.link + "</loc><lastmod>"
-      + TimeStamp + "</lastmod><priority>" + p + "</priority></url>\n";
+    result += "<url>\n  <loc>" + post.link + "</loc>\n  <lastmod>"
+      + TimeStamp + "</lastmod>\n  <priority>" + p + "</priority>\n</url>\n";
   });
   return result;
 }
 
-/* 
-(async function() {
-  let json = 
-  console.log(json, 'done');
-})() */
+async function doRequest(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, (resp) => {
+      let data = '';
+      resp.on('data', (chunk) => {
+        data += chunk;
+      });
+      resp.on('end', () => {
+        resolve(data);
+      });
+    }).on("error", (error) => {
+      reject(error);
+    });
+  });
+}
+
 generateSiteMap();
