@@ -157,7 +157,7 @@
       },
       {
         "name": "Paper: SIGGRAPH 2018 ",
-        "target": "res/pdfs/dfs/AdvertisingPositions2018.pdf"
+        "target": "res/pdfs/AdvertisingPositions2018.pdf"
       }
     ]
   },
@@ -338,7 +338,7 @@
       },
       {
         "name": "Full PDF of the Work",
-        "target": "res/pdfs/dfs/hiiict.pdf"
+        "target": "res/pdfs/hiiict.pdf"
       },
       {
         "name": "On the 'Top 10 Radical Books' list",
@@ -381,11 +381,11 @@
       },
       {
         "name": "The Readers Paper (II)",
-        "target": "res/pdfs/dfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
+        "target": "res/pdfs/the_readers_project-reading_writing_resisting-howe_cayley.pdf"
       },
       {
         "name": "The Readers Paper (I)",
-        "target": "res/pdfs/dfs/LEON4404_pp317-324.pdf"
+        "target": "res/pdfs/LEON4404_pp317-324.pdf"
       },
       {
         "name": "The Real Story of Ah-Q",
@@ -519,7 +519,7 @@
       },
       {
         "name": "The Original RiTa paper",
-        "target": "res/pdfs/dfs/rita2009.pdf"
+        "target": "res/pdfs/rita2009.pdf"
       },
       {
         "name": "RiTa & Generative Lit. (with A.B. Soderman)",
@@ -615,7 +615,7 @@
     "links": [
       {
         "name": "The TrackMeNot paper",
-        "target": "res/pdfs/dfs/trackmenot2009.pdf"
+        "target": "res/pdfs/trackmenot2009.pdf"
       },
       {
         "name": "TrackMeNot for Chrome",
@@ -831,7 +831,7 @@
       },
       {
         "text": "<i>Theoretical Architectures</i> in Telluride Film Festival. Telluride, Colorado, USA. Aug 29–Sep1, 2014",
-        "target": "res/pdfs/dfs/41st_TFF_program_guide_FINAL.pdf"
+        "target": "res/pdfs/41st_TFF_program_guide_FINAL.pdf"
       },
       {
         "text": "<i>Theoretical Architectures</i> in PROJECTIONS, the New York Film Festival 52, New York, USA. Oct 3, 2014",
@@ -933,7 +933,7 @@
     "exhibitions": [
       {
         "text": "<i>The Burning Edge</i>. School of Creative Media, Kowloon Tong, Hong Kong. Jan 1–Mar 31, 2012",
-        "target": "res/pdfs/dfs/faculty_brochure_FINAL_online2.pdf"
+        "target": "res/pdfs/faculty_brochure_FINAL_online2.pdf"
       }
     ],
     "links": [
@@ -1006,7 +1006,7 @@
       },
       {
         "text": "<i>Left to Chance: Accident and intentionality in the work of eight contemporary artists from the United States and Europe</i>. Firehouse 13 Gallery / Providence, RI, USA. Nov 20–28, 2009",
-        "target": "res/pdfs/dfs/Left-To-Chance-FH13.pdf"
+        "target": "res/pdfs/Left-To-Chance-FH13.pdf"
       },
       {
         "text": "<i>POESIS : Language Games</i>. Academy of the Arts, Berlin, Germany. Jun 27–Jul 5, 2009",
