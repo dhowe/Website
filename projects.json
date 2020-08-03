@@ -605,7 +605,7 @@
         "src": "res/img/tmn_l.jpg"
       }
     ],
-    "longdesc": "<i>TrackMeNot</i> blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TMN works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
+    "longdesc": "<i>TrackMeNot</i> blends software tool and artware intervention in a browser extension to protect users from data profiling and intervene in the power dynamic between searchers and the corporations controlling our data. Unlike most privacy tools, TrackMeNot works not by means of concealment or encryption, but via noise and obfuscation, periodically issuing algorithmically-generated decoy queries to search engines  so that users' real searches, lost in a cloud of false data, are hidden in plain view.",
     "quotes": [
       {
         "text": "Developed by tech activists at New York University, <i>TrackMeNot</i>  is a web browser extension that hides web searches in a ‘stream of decoy queries’. Like other technologies of resistance, TrackMeNot self-consciously integrates values into its design&hellip; TrackMeNot thus builds on the critical constructivist tradition that regards technology as a site of political contestation. A good example of critical making, TrackMeNot belongs to a ‘class of technical tools’ that helps amplify ‘social resistance or political voice’.",
