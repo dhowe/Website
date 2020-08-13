@@ -5,7 +5,7 @@ var featured = [
   "The Readers Project"   // min image size 1100px @2x
   // "Radical of the Vertical Heart 忄", "Automatype",
 ];
-const EXTRASPACE = 270; //for events col
+const EXTRASPACE = 110; //for events col
 
 function createGrid(projects) {
 
@@ -60,7 +60,7 @@ function createEventCol(url) {
         html += "</p></a>";
         $('#projects .events .wrapper').append(html);
         bottomMark = $('.wrapper')[0].offsetTop + $('.wrapper').height();
-        if (i != 0 && bottomMark > $(window).height() - EXTRASPACE) {
+        if (i != 0 && bottomMark > $(window).height() - EXTRASPACE - inViewport($('.footer'))) {
           $('#projects .events .wrapper a:last-child').addClass("hide");
         }
         maxEntriesShown--;
@@ -78,9 +78,18 @@ function updateEventsLayout() {
   $('#projects .events .wrapper a').removeClass("hide");
   // make sure there is at least one visible
   $(".events .wrapper a:not(:first-child)").addClass(function () {
-    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - EXTRASPACE;
+    const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - inViewport($('.footer')) - EXTRASPACE;
     return toHide ? "hide" : "";
   })
+
+}
+
+function inViewport($el) {
+  console.log($el);
+    var elH = $el.outerHeight(),
+        H   = $(window).height(),
+        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
 }
 
 function betterImage(src) {
@@ -516,6 +525,10 @@ $(window).resize(function () {
     //    adjustItemHeight();
     //  adjustFooterSpace();
   }
+  updateEventsLayout();
+});
+
+$(window).scroll(function() {
   updateEventsLayout();
 });
 
