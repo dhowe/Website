@@ -85,7 +85,6 @@ function updateEventsLayout() {
 }
 
 function inViewport($el) {
-  console.log($el);
     var elH = $el.outerHeight(),
         H   = $(window).height(),
         r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
@@ -157,6 +156,7 @@ function createDetail(projects, id) {
   $('meta[name=title], meta[name=description]').remove();
   $('head').append('<meta name="description" content="' + current.longtitle
     + ', by Daniel Howe"><meta name="title" content="' + current.longtitle + '">');
+  $('head').append('<title> ' + current.longtitle + '</title>');
 
   // if the div is already created, show the div
   if ($('.projectlong#' + id).length > 0) {
@@ -319,7 +319,7 @@ function createDetail(projects, id) {
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
-  html += "<p class='nextPage'><span>next</span><a href='#" +
+  html += "<p class='nextPage'><span>next</span><a href='https://rednoise.org/daniel/" +
     detailUrl(projects[(next) % projects.length].shorttitle) +
     "'>" + projects[(next) % projects.length].longtitle + "</a></p>";
 
