@@ -148,8 +148,9 @@ function createDetail(projects, id) {
 
   // wrong id or no id
   if (!current) {
-    console.log(window.location.href + " => 'index.html' current=", current);
-    //window.location.href = 'index.html';
+    console.log("[ERROR] "+window.location.href);// + " => 'index.html' current=", current);
+    // what is supposed to happen here?
+    return;
   }
 
   // update meta tags for current project
@@ -280,12 +281,16 @@ function createDetail(projects, id) {
 
       var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_" + j + "_video'>";
-      html += "<img src='" + current.videos[j].poster + "' /><div class='play'></div></a>";
+      html += "<img src='" + current.videos[j].poster + "'/>"
+      html += "<div class='play'></div>"
+      html += "</a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
-      html += '<div id="' + id + "_" + j + '_video" class="fancybox-video"><video controls width="640px" height="auto">';
+      html += '<div id="' + id + "_" + j + '_video" class="fancybox-video  fancybox.iframe">';
+      html += '<video controls width="640px" height="auto">';
       html += '<source src="' + current.videos[j].src + '.mp4" type="video/mp4">';
       html += '<source src="' + current.videos[j].src + '.webm" type="video/webm">';
-      html += '</video></div>';
+      html += '</video>';
+      html += '</div>';
     }
   }
 

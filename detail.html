@@ -10,7 +10,7 @@
   <meta name="page-type" content="portfolio">
   <meta name="audience" content="All">
   <meta name="robots" content="INDEX,FOLLOW">
-  <meta name="description" content="Daniel C Howe's Projects">
+  <meta name="description" content="Daniel Howe: Projects">
   <meta name="keywords"
     content="daniel howe, daniel c. howe, artist, writing, digital writing, natural language, creative coding, art, values, design, new media, rita, trackmenot, adnauseam, advertising positions, automatype, how it is, text.curtain, adlipo, pataclysm, readers, watermelon eating cat">
 
@@ -22,7 +22,7 @@
   <script type="text/javascript" src="res/fancybox/jquery.fancybox.pack.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      //all fancyboxes
+      // all fancyboxes
       $(".fancybox").fancybox({
         beforeShow: function () {
           var alt = this.element.find('img').attr('alt');
@@ -30,18 +30,19 @@
           this.title = alt;
         }
       });
-      //only for video
+      // only for video
       $(".fancybox.video").fancybox({
         afterShow: function () {
           this.content.find('video').trigger('play');
           // mute sketch
-          if (document.getElementsByTagName("iframe").length > 0)
-            document.getElementsByTagName("iframe")[0].contentWindow.document.
-              getElementsByTagName("button")[0].click();
+          var ifrms = document.getElementsByTagName("iframe");
+          if (ifrms.length > 0)
+            var doc = ifrms[0].contentWindow.document;
+            if (doc) doc.getElementsByTagName("button")[0].click();
         },
         afterClose: function () {
-          this.content.find('video').trigger('pause');
           var v = this.content.find('video');
+          v.trigger('pause');
           v[0].currentTime = 0; // reset video
         },
       });
