@@ -1,11 +1,10 @@
 var lastCols = 0;
 var featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is",
-  "Advertising Positions",
-  "The Readers Project"   // min image size 1100px @2x
-  // "Radical of the Vertical Heart 忄", "Automatype",
-];
-const EXTRASPACE = 110; //for events col
+  "Advertising Positions", "The Readers Project" 
+];// min img size 1100px @2x
+
+const EXTRASPACE = 110; // for events col
 
 function createGrid(projects) {
 
@@ -29,7 +28,7 @@ function createGrid(projects) {
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
     html += "<div class='project gridSize-" + g + "'>";
     html += "<img data-rjs='2' class='" + (useHighResImage ? "highres" : "project")
-      + "' src='" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + "'>";
+      + "' src='/daniel/" + (useHighResImage ? betterImage(projects[i].thumb) : projects[i].thumb) + "'>";
     html += "<div class='project-description'>";
     html += "<h5" + fontCheck + ">" + projects[i].shorttitle + "</h5>";
     html += "<p>" + projects[i].shortdesc + "</p>";
@@ -50,7 +49,7 @@ function createEventCol(url) {
     data.forEach((post, i) => {
       if (maxEntriesShown) {
         //console.log(post.date, post.title, post.link);
-        html = "<a href='" + post.link + "'><p>"
+        html = "<a href='/daniel/" + post.link + "'><p>"
         const rawData = post.title.rendered.split(":");
         const [type, title] = rawData;
         // html += "<span class='date'>" + post.date +"</span>";
@@ -194,7 +193,7 @@ function createDetail(projects, id) {
   // IFRAME SKETCH
   if (current.sketch) {
     html += "<iframe id='" + current.shorttitle
-      + "_sketch' name='sketch' src='" + current.sketch + "'></iframe>";
+      + "_sketch' name='sketch' src='/daniel/" + current.sketch + "'></iframe>";
     // mute sketch whenever a link redirect is triggered on current detailed page
     html += "<script type='text/javascript'>if (getCurrentIdFromUrl($(location).attr('href')) == '"
       + current.shorttitle.toLowerCase() + "') $('a').click(function(){muteSketch()});</script>";
@@ -257,7 +256,7 @@ function createDetail(projects, id) {
 
   // DETAIL IMAGE
   if (current.largeDetailImage) {
-    html += "<img src='" + current.largeDetailImage.src + "' data-rjs='2' style='margin-left: 0px; max-width: 525px'/>";
+    html += "<img src='/daniel/" + current.largeDetailImage.src + "' data-rjs='2' style='margin-left: 0px; max-width: 525px'/>";
     if (current.largeDetailImage.title) {
       html += "<p style='font-size:10px; margin-top:-5px'>Fig. " + current.largeDetailImage.title + "<strong/></p>";
     }
@@ -270,7 +269,7 @@ function createDetail(projects, id) {
   if (current.images) {
     var bestImage = getBestImage(current.images[0].src);
     var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
-    html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='"
+    html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='/daniel/"
       + current.images[0].src + "' title='" + altInfo + "' alt='" + altInfo + "' ></a>";
   }
 
@@ -281,14 +280,14 @@ function createDetail(projects, id) {
 
       var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_" + j + "_video'>";
-      html += "<img src='" + current.videos[j].poster + "'/>"
+      html += "<img src='/daniel/" + current.videos[j].poster + "'/>"
       html += "<div class='play'></div>"
       html += "</a>";
       if (current.videos[j].title) html += "<p>" + current.videos[j].title + "</p>";
       html += '<div id="' + id + "_" + j + '_video" class="fancybox-video  fancybox.iframe">';
       html += '<video controls width="640px" height="auto">';
-      html += '<source src="' + current.videos[j].src + '.mp4" type="video/mp4">';
-      html += '<source src="' + current.videos[j].src + '.webm" type="video/webm">';
+      html += '<source src="/daniel/' + current.videos[j].src + '.mp4" type="video/mp4">';
+      html += '<source src="/daniel/' + current.videos[j].src + '.webm" type="video/webm">';
       html += '</video>';
       html += '</div>';
     }
@@ -301,7 +300,7 @@ function createDetail(projects, id) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
-        + "'><img data-rjs='2' src='" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+        + "'><img data-rjs='2' src='/daniel/" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
@@ -538,7 +537,7 @@ $(window).scroll(function() {
 });
 
 const EVENTS = "https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2&per_page=20";
-$.getJSON("projects.json").done((json) => {
+$.getJSON("/daniel/projects.json").done((json) => {
 
   if ($('#projects').length > 0) {
     json = pickFeatureProjects(json);
