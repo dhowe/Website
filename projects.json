@@ -572,7 +572,7 @@
     "thumb": "res/img/dialogic.jpg",
     "shortdesc": "A scripting language and toolkit for interactive generative dialog in games and conversational interfaces. Dialogic organically integrates generative and scripted content, allowing characters to respond naturally to game events and arbitrary inputs from users.",
     "longtitle": "Dialogic",
-    "directLink": "https://github.com/dhowe/dialogic#dialogic-fish"
+    "directLink": "/dialogic"
   },
   {
     "shorttitle": "ChinaEye",

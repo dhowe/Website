@@ -49,7 +49,7 @@ function createEventCol(url) {
     data.forEach((post, i) => {
       if (maxEntriesShown) {
         //console.log(post.date, post.title, post.link);
-        html = "<a href='/daniel/" + post.link + "'><p>"
+        html = "<a href='" + post.link + "'><p>"
         const rawData = post.title.rendered.split(":");
         const [type, title] = rawData;
         // html += "<span class='date'>" + post.date +"</span>";
