@@ -107,7 +107,7 @@ nav>ul>li>a:hover {
 /****** Footer ******/
 
 .footer {
-  position:relative;
+  position: relative;
   width: 100%;
   background-color: #39465A;
   color: #DDD;
@@ -275,6 +275,14 @@ nav>ul>li>a:hover {
 
 .project-description p {
   font-size: 12px;
+}
+
+.project>img {
+  filter: grayscale(40%);
+}
+
+.project>img:hover {
+  filter: grayscale(0%) !important;
 }
 
 h5.smallerTitle {
@@ -570,31 +578,35 @@ video {
   width: 210px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .events .wrapper {
   overflow: hidden;
   padding-left: 3px;
 }
+
 .events p {
   padding: 5px;
   margin-bottom: -1em;
   margin-left: -.6em;
 }
+
 .events .button {
   margin-top: 20px;
-  width:40px;
+  width: 40px;
   font-size: 10px;
   font-weight: 400;
   text-align: center;
   background-color: #2E3C51;
-  color:white;
+  color: white;
   text-transform: uppercase;
-  cursor:pointer;
+  cursor: pointer;
   padding: 1px 0;
 }
-.events .button:hover{
-  background-color:#45536F;
 
+.events .button:hover {
+  background-color: #45536F;
 }
+
 .events p:hover {
   background-color: rgba(57, 70, 90, .06);
 }
@@ -618,9 +630,11 @@ video {
   line-height: 18px;
   font-size: 13px;
 }
+
 .events a.hide {
-  display:none;
+  display: none;
 }
+
 .events .type {
   font-weight: 500;
   color: #222;
@@ -1098,7 +1112,7 @@ body {
 
 @media only screen and (min-height: 1000px) {
   .footer {
-    position:fixed;
+    position: fixed;
     bottom: 0;
   }
   #projects {
