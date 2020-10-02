@@ -899,6 +899,10 @@ body {
   width: 75%;
 }
 
+.col-bio {
+  width: 72%;
+}
+
 .col-5-12 {
   width: 41.66%;
 }
@@ -1008,6 +1012,9 @@ body {
     display: none !important;
     width: 0;
     height: 0;
+  }
+  .mobile-col-bio {
+    width: 65%;
   }
   .projectlong img {
     max-width: 400px;
