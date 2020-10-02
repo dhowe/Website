@@ -872,7 +872,7 @@
   {
     "shorttitle": "Roulette",
     "thumb": "res/img/rl_s.jpg",
-    "shortdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the interactive 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
+    "shortdesc": "<i>Roulette</i> is a work of recombinant narrative featuring a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the interactive 3D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
     "collaborators": "Bebe Molina",
     "longtitle": "Roulette",
     "videos": [
@@ -881,10 +881,11 @@
         "poster": "res/img/roulette_poster.jpg"
       }
     ],
-    "longdesc": "<i>Roulette</i> is a work of recombinant narrative that offers a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3-D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
+    "longdesc": "<i>Roulette</i> is a novel work of recombinant narrative featuring a novel interactive reading experience. As lines of text shift and fade in response to user manipulation of the 3D interface, a fractured collection of stories is revealed, shifting in mood and meaning with each reading.",
     "exhibitions": [
       {
-        "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016"
+        "text": "<i>The Age of Experience</i>, Angewandte Innovation Lab, Vienna, Austria, Dec 2–20, 2016",
+        "target": "http://www.ailab.at/archive/the-age-of-experience/"
       },
       {
         "text": "<i>NT2: Nouvelles echnologies</i>, Nouvelles Textualities. Université du Québec à Montréal, Canada. Online exhibit, Feb 1, 2012",
