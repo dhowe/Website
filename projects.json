@@ -234,16 +234,28 @@
         "poster": "res/img/fuckzuck.jpg"
       },
       {
+        "src": "res/video/duchamp",
+        "poster": "res/video/duchamp.png"
+      },
+      {
+        "src": "res/video/kardashian",
+        "poster": "res/video/kardashian.png"
+      },
+      {
+        "src": "res/video/abramovic",
+        "poster": "res/video/abramovic.png"
+      },
+      {
         "src": "res/video/artists_create_deepfake",
         "poster": "res/img/spec_vid.png"
       }
     ],
     "images": [
       {
-        "src": "res/img/mjorn.jpg"
+        "src": "res/img/tbv.jpg"
       },
       {
-        "src": "res/img/tbv.jpg"
+        "src": "res/img/mjorn.jpg"
       }
     ],
     "quotes": [

@@ -201,20 +201,16 @@ function createDetail(projects, id) {
 
   // RELATED PROJECTS
   if (current.projects) {
-
     html += "<ul class='projects'>PROJECTS";
     for (var j = 0; j < current.projects.length; j++) {
-
       html += "<li><a target='_blank' href='" + current.projects[j].target +
         "'>" + current.projects[j].name + "</a></li>";
-
     }
     html += "</ul>";
   }
 
   // LINKS
   if (current.links) {
-
     html += "<ul class='links'>LINKS";
     for (var j = 0; j < current.links.length; j++) {
       var link = current.links[j];
