@@ -199,6 +199,10 @@
     "longdesc": "The newest in the <em>Atomic Language Machines</em> series, this reading machine searches the the Chinese lexicon by repeatedly making minimal changes (stroke-by-stroke) to the sub-components of characters, in order to arrrive at a new  word. Rather than evaluating letters, as in alphabetic machines, this logographic reader analyses the radicals, components and strokes of characters. When the machine lands on sensitive words, such as those disallowed by China's Great Firewall (or those now illegal in Hong Kong), a break occurs and the machine jumps from traditional to simplified.<!--br/><br/>In order to realize the work, extensive research was required into the potential decompositions of simplified and traditional Chinese characters, and on the various measures of distance between them, the latter leading to a novel algorithm for logographic edit distance. Radical of the Vertical Heart is the second piece in the Atomic Language Machines series, following Automatype, a machine which traverses the English lexicon via minimum-edit (or Levenshtein) distance.-->",
     "links": [
       {
+        "name": "Radical of the Vertical Heart 忄Live",
+        "target": "https://rednoise.org/rotvh"
+      },
+      {
         "name": "The Project Home Page",
         "target": "pages/alms/index.html"
       },
