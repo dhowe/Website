@@ -24,7 +24,7 @@ html[xmlns] .clearfix {
 body {
   margin: 0;
   font-family: 'Andale Mono', monospace;
-  background-color: #80807F;
+  background-color: #444443;
   color: #EEE;
 /*  min-width: 950px;*/
   height:100vh;
@@ -166,7 +166,7 @@ q {
 .side {
   position: relative;
   left: 30px;
-  top: -515px;
+  top: 50px;
   width: 0px;
   float: right;
   margin: 0px -10px 0 -5px;
@@ -174,7 +174,7 @@ q {
 .side img {
   height: 120px;
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   border: #CCC;
   border-style: solid;
   border-width: 1px;
@@ -345,6 +345,7 @@ video {
 }
 .gallery {
   margin-bottom: 40px;
+  width: 800px;
 }
 .gallery img {
   height: 95px;

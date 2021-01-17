@@ -112,7 +112,7 @@
   {
     "shorttitle": "Advertising Positions",
     "thumb": "res/img/ap_s.jpg",
-    "shortdesc": "Participants in the <i>Advertising Positions</i> project were 3d-scanned and given custom software that collected the online ads they were served over several months. These ads were then applied, one-by-one, to the skin of the user's body and  animated in virtual space...",
+    "shortdesc": "Project participants are 3d-scanned and given custom software to collect the ads they are served over months of web browsing. These ads are then applied to the skin of their virtual body and animated according to their motions...",
     "longtitle": "Advertising Positions",
     "largeDetailImage": {
       "src": "res/img/bertha_still.jpg",
@@ -138,7 +138,7 @@
         "title": " The 2D UV map with quads (left) and matching advertisements (right)."
       }
     ],
-    "longdesc": "This series began with software agents trained to search the web, according to specific user profiles they have been assigned (age, gender, ethnicity, orientation, location, etc.) Driving a modified version of the Chrome browser, these agents periodically visited sites that they 'liked', and clicked links they selected, bringing them to new pages. This process continued over several months, during which all they collected all of the advertisements they were served, based on their profile. In more recent iterations, human volunteers are 3d-scanned and given custom software to collect the ads they receiveserved over several months  (generally several thousands of them). Each ad is then applied to a single polygon on the mesh skin of an avatar that we create and release into virtual space.",
+    "longdesc": "Human volunteers for the project are 3d-scanned in our lab and then given custom software to collect the advertisements they are served over several months of web browsing (generally several thousand or more). Each ad is then applied to a single polygon on the mesh skin of the 3d avatar we create for them, animated according to their specific style of movement.",
     "exhibitions": [
       {
         "text": "<a href='https://shufflingspaceandtime.com/'><i>Algorithmic Art: Shuffling Space and Time</i>, City Hall, Hong Kong<br/> Dec 27 - Jan 10, 2019</a>"
