@@ -118,7 +118,7 @@
       "src": "res/img/bertha_still.jpg",
       "title": "Rendered image for Bertha"
     },
-    "videos": [
+    "Xvideos": [
       {
         "src": "res/video/adverpos",
         "poster": "res/img/ap_poster.jpg"
@@ -134,8 +134,12 @@
         "title": "wireframe (bottom) view of scanned model (left) then recomposed (right)."
       },
       {
+        "src": "res/img/ap_poster.jpg",
+        "title": "Rendered image for Wilson"
+      },
+      {
         "src": "res/img/quads.jpg",
-        "title": " The 2D UV map with quads (left) and matching advertisements (right)."
+        "title": "2D UV map with quads (left) and matching advertisements (right)."
       }
     ],
     "longdesc": "Human volunteers for the project are 3d-scanned in our lab and then given custom software to collect the advertisements they are served over several months of web browsing (generally several thousand or more). Each ad is then applied to a single polygon on the mesh skin of the 3d avatar we create for them, animated according to their specific style of movement.",
@@ -156,11 +160,11 @@
         "target": "pages/adverpos/"
       },
       {
-        "name": "Video: SIGGRAPH 2018",
+        "name": "Video: SIGGRAPH Arts 2018",
         "target": "https://vimeo.com/279622110"
       },
       {
-        "name": "Paper: SIGGRAPH 2018 ",
+        "name": "Paper: SIGGRAPH Arts 2018 ",
         "target": "res/pdfs/AdvertisingPositions2018.pdf"
       }
     ]
