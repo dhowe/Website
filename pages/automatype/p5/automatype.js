@@ -17,11 +17,12 @@ function Automatype(wordCompleteCallback) {
   this.cursorWidth = textWidth('|');
   this.cursorHeight = textAscent() + textDescent();
   this.word = this.lex.randomWord(round
-    (this.minWordLen+(this.maxWordLen - this.minWordLen)/2));
+    (this.minWordLen + (this.maxWordLen - this.minWordLen) / 2));
 
   console.log(this.word);
 
-  this.draw = function() {
+  this.draw = function () {
+
     fill(255 - bg);
     text(this.word, width / 2, height / 2);
 
@@ -29,7 +30,7 @@ function Automatype(wordCompleteCallback) {
 
       noStroke();
       fill(0, 0, 200, 32);
-      rect(this.offset(), height/2 - this.cursorHeight/2,
+      rect(this.offset(), height / 2 - this.cursorHeight / 2,
         -this.cursorWidth, this.cursorHeight);
 
     } else {
@@ -41,7 +42,8 @@ function Automatype(wordCompleteCallback) {
     }
   };
 
-  this.step = function() {
+  this.step = function () {
+
     this.cursorLastMove = millis();
 
     if (!this.target) {
@@ -83,7 +85,7 @@ function Automatype(wordCompleteCallback) {
     }
   };
 
-  this.doAction = function() {
+  this.doAction = function () {
 
     switch (this.nextAction) {
       case DELETE_ACTION:
@@ -105,12 +107,12 @@ function Automatype(wordCompleteCallback) {
     }
   };
 
-  this.offset = function() {
+  this.offset = function () {
 
-    return width/2 - textWidth(this.word)/2 + (this.cursor * this.cursorWidth);
+    return width / 2 - textWidth(this.word) / 2 + (this.cursor * this.cursorWidth);
   };
 
-  this.pickNextTarget = function() {
+  this.pickNextTarget = function () {
 
     var result, prob;
 
@@ -134,36 +136,38 @@ function Automatype(wordCompleteCallback) {
 
     // try mutations
     if (!result) {
-      this.nextAction = REPLACE_ACTION; // is this always true??
+      this.nextAction = REPLACE_ACTION;
       result = this.lex.mutateWord(this.word);
     }
 
-    // add to hq and set this.target text
+    // add to hq and set target text
     this.lex.addToHistory(result);
     this.target = result;
 
-    console.log(this.target +'('+RiTa.minEditDistance
-      (this.word, this.target)+')');
+    console.log(this.target + '(' +
+      RiTa.minEditDistance(this.word, this.target) + ')');
 
   };
 
-  this.findNextEdit = function() {
+  this.findNextEdit = function () {
+
     if (this.target) {
       var minLength = Math.min(this.word.length, this.target.length);
-      while (this.cursor >= minLength) { // if cursor is past end of word
+      while (this.cursor >= minLength) {   // if cursor is past end of word
         this.cursor--;
       }
     }
-    if (this.word.length === this.target.length + 1) {      // delete
+    if (this.word.length === this.target.length + 1) {           // delete
       this.positionForDelete(this.word, this.target);
-    } else if (this.word.length === this.target.length - 1) { // insert
+    } else if (this.word.length === this.target.length - 1) {     // insert
       this.positionForInsert(this.word, this.target);
     } else {
       this.positionForReplace(this.cursor, this.word, this.target); // replace
     }
   };
 
-  this.positionForDelete = function(current, next) {
+  this.positionForDelete = function (current, next) {
+
     var idx = 0, a, b;
     for (; idx < next.length; idx++) {
       a = current.charAt(idx);
@@ -174,7 +178,8 @@ function Automatype(wordCompleteCallback) {
     this.nextChar = DELETE_ACTION;
   };
 
-  this.positionForInsert = function(current, next) {
+  this.positionForInsert = function (current, next) {
+
     var idx = 0, result = '~', a, b;
     for (; idx < current.length; idx++) {
       a = current.charAt(idx);
@@ -184,15 +189,12 @@ function Automatype(wordCompleteCallback) {
         break;
       }
     }
-    if (result === '~') {
-      //console.warn('TAKING last char!!');
-      result = next.charAt(idx);
-    }
+    if (result === '~') result = next.charAt(idx);
     this.nextPos = idx;
     this.nextChar = result;
   };
 
-  this.positionForReplace = function(cursIdx, current, next) {
+  this.positionForReplace = function (cursIdx, current, next) {
 
     var numChecks = 0, a = current.charAt(cursIdx),
       b = next.charAt(cursIdx);
@@ -210,7 +212,7 @@ function Automatype(wordCompleteCallback) {
 function HistoryQueue(sz) {
   this.q = [];
   this.capacity = sz;
-  this.add = function() {
+  this.add = function () {
     for (var i = 0; i < arguments.length; i++) {
       this.q.push(arguments[i]);
     }
@@ -218,34 +220,34 @@ function HistoryQueue(sz) {
       this.q.shift();
     }
   };
-  this.contains = function(w) {
+  this.contains = function (w) {
     return this.q.indexOf(w) > -1;
   };
-  this.newest = function() {
+  this.newest = function () {
     return this.q[this.q.length - 1];
   };
-  this.removeOldest = function() {
+  this.removeOldest = function () {
     return this.q.shift();
   };
-  this.empty = function() {
+  this.empty = function () {
     return this.q.length > 0;
   };
-  this.oldest = function() {
+  this.oldest = function () {
     return this.q[0];
   };
-  this.size = function() {
+  this.size = function () {
     return this.q.length;
   };
-  this.indexOf = function(e) {
+  this.indexOf = function (e) {
     return this.q.indexOf(e);
   };
-  this.shorten = function(n) {
+  this.shorten = function (n) {
     while (this.q.length > n) {
       this.removeOldest();
     }
     return this;
   };
-  this.clear = function() {
+  this.clear = function () {
     this.q = [];
     return this;
   };
@@ -258,23 +260,21 @@ function LexiconLookup() {
   this.hq = new HistoryQueue(20);
   this.minHistorySize = 10;
 
-  this.addToHistory = function(w) {
+  this.addToHistory = function (w) {
     this.hq.add(w);
   };
 
-  this.randomWord = function(len) {
-    // TODO: fix me
+  this.randomWord = function (len) {
     var w = this.lex.randomWord();
     while (w.length !== len) {
       w = this.lex.randomWord();
     }
-    this.addToHistory(w); // ?
+    this.addToHistory(w);
     return w;
   };
 
-  this.getDeletion = function(input) {
+  this.getDeletion = function (input) {
     var result = this.getDeletions(input);
-    // shuffle result ?
     for (var i = 0; i < result.length; i++) {
       if (!this.hq.contains(result[i])) {
         return result[i];
@@ -282,7 +282,7 @@ function LexiconLookup() {
     }
   };
 
-  this.getDeletions = function(input) {
+  this.getDeletions = function (input) {
     var result = [], len = input.length;
     for (var i = 0; i < len; i++) {
       var pre = input.substring(0, i), post = input.substring(i + 1);
@@ -293,7 +293,7 @@ function LexiconLookup() {
     return result;
   };
 
-  this.getInsertions = function(input) {
+  this.getInsertions = function (input) {
     var result = [], len = input.length;
     for (var i = 0; i <= len; i++) {
       var pre = input.substring(0, i), post = input.substring(i);
@@ -308,7 +308,7 @@ function LexiconLookup() {
     return result;
   };
 
-  this.getInsertion = function(input) {
+  this.getInsertion = function (input) {
     var result = this.getInsertions(input);
     for (var i = 0; i < result.length; i++) {
       if (!this.hq.contains(result[i])) {
@@ -317,28 +317,27 @@ function LexiconLookup() {
     }
   };
 
-  this.mutateWord = function(current) {
+  this.mutateWord = function (current) {
     return this.mutations(current)[0];
   };
 
-  // TODO: make sure we have tests for each below
   // a. check similars not in history (med=1)
   // b. compact history and retry
   // c. check similars with med relaxed (med=2..n)
   // d. check similars with any length
-  // e. pick random
-  this.mutations = function(input) {
+  // e. finally, give up & pick random (shouldn't happen)
+  this.mutations = function (input) {
     var result,
       dbug = this.dbug,
       med = 1,
       history = this.hq,
       tmp = this.lex.similarByLetter(input, med, true);
 
-    var notInHistory = function(w) {
+    var notInHistory = function (w) {
       return !history.contains(w);
     };
 
-    var fail = function(ll, m) {
+    var fail = function (ll, m) {
       console.error(
         "[WARN] similarByLetter failed for '" + input + "';",
         m + '\n',
@@ -349,10 +348,9 @@ function LexiconLookup() {
     };
 
     // Sort by minEditDistance; pick random if med is equal
-    var medShuffle = function(a, b) {
+    var medShuffle = function (a, b) {
       var amed = RiTa.minEditDistance(input, a),
         bmed = RiTa.minEditDistance(input, b);
-      //console.log(a,'=',amed,'\n',b,'=',bmed);
       return amed === bmed ? Math.random() - 0.5 : amed - bmed;
     };
 
@@ -384,7 +382,7 @@ function LexiconLookup() {
     }
 
     if (!result.length) {
-      // give up, print warning, pick a random input -- needed ??
+      // give up, print warning, pick random input (shouldn't happen)
       result = this.lex.similarByLetter(input, med, false).filter(notInHistory);
       console.log('7. Any-length(' + input + '): ', result);
     }
@@ -393,7 +391,6 @@ function LexiconLookup() {
       ? result.sort(medShuffle)
       : fail(this, '8. *** fail->random(' + input + '):');
   };
-
 }
 
 if (typeof module != 'undefined' && module.exports) {

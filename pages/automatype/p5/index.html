@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <title>Automatype</title>
   <style>
-    /*iframe*/
     @media only screen and (max-width: 600px) {
 
+      /*iframe*/
       html,
       body {
         overflow: hidden;
@@ -43,8 +43,8 @@
     button {
       position: absolute;
       top: 460px;
-      left: 630px;
-      width: 55px;
+      left: 620px;
+      width: 60px;
     }
   </style>
   <script src="lib/p5.min.js" type="text/javascript"></script>
@@ -54,9 +54,8 @@
   <script src="automatype.js" type="text/javascript"></script>
 
   <script>
-    var typer, bg = 245,
-      test = 0,
-      bell, type, button, muted = false;
+    var typer, bell, type, button;
+    var bg = 245, isFocused = true, muted = false;
 
     function preload() {
       bell = loadSound("res/bell.wav");
@@ -65,14 +64,12 @@
 
     function setup() {
 
-
-      //Window active
       window.addEventListener('focus', startFocus);
-
-      //Window inactive
       window.addEventListener('blur', stopFocus);
 
       createCanvas(680, 490);
+      textFont('courier', 150);
+      textAlign(CENTER, CENTER);
 
       if (window.innerWidth < 600) {
         var canvas = document.getElementById("defaultCanvas0");
@@ -80,65 +77,39 @@
         canvas.style.height = "";
       }
 
-      textFont('courier', 150);
-      textAlign(CENTER, CENTER);
-
       typer = new Automatype(onWordComplete);
       next();
     }
 
-    function toggleMute(event) {
-
-      if (typeof event === 'boolean') muted = event;
-      else muted = !muted;
-      console.log(muted);
-      document.getElementById("mute").innerText = muted ? 'unmute' : ' mute ';
-    }
-
     function draw() {
-
       background(bg < 245 ? bg += 4 : bg);
       typer.draw();
-      test && noLoop();
-
     }
 
     function next() {
-
       typer.step();
-      !test && setTimeout(next, random(500, 1200));
+      setTimeout(next, random(500, 1200));
+    }
+
+    function toggleMute(event) {
+      muted = typeof event === 'boolean' ? event : !muted;
+      document.getElementById("mute").innerText = muted ? 'unmute' : ' mute ';
     }
 
     function onWordComplete() {
-      !test && (bg = 0);
+      bg = 0;
       if (!muted) bell.play();
     }
 
-    function keyReleased() { // tmp
-
-      if (key === ' ') {
-        test = 1;
-        next();
-        draw();
-      }
-    }
-
-    var isFocused = true;
-
     function startFocus() {
-    //  console.log("Is Focused")
       isFocused = true;
       muted = false;
-      loop()
     }
 
     function stopFocus() {
-    //  console.log("not Focused")
       isFocused = false;
       muted = true;
-      noLoop();
     }
-
 
   </script>
 
