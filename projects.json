@@ -115,8 +115,8 @@
     "shortdesc": "Project participants are 3d-scanned and given custom software to collect the ads they are served over months of web browsing. These ads are then applied to the skin of their virtual body and animated according to their motions...",
     "longtitle": "Advertising Positions",
     "largeDetailImage": {
-      "src": "res/img/bertha_still.jpg",
-      "title": "Rendered image for Bertha"
+      "src": "res/img/wilson-medres.gif",
+      "title": "Animated image for Wilson"
     },
     "Xvideos": [
       {
@@ -140,6 +140,10 @@
       {
         "src": "res/img/quads.jpg",
         "title": "2D UV map with quads (left) and matching advertisements (right)."
+      },
+      {
+        "src": "res/img/bertha_still.jpg",
+        "title": "Rendered image for Bertha"
       }
     ],
     "longdesc": "Human volunteers for the project are 3d-scanned in our lab and then given custom software to collect the advertisements they are served over several months of web browsing (generally several thousand or more). Each ad is then applied to a single polygon on the mesh skin of the 3d avatar we create for them, animated according to their specific style of movement.",
@@ -166,6 +170,10 @@
       {
         "name": "Paper: SIGGRAPH Arts 2018 ",
         "target": "res/pdfs/AdvertisingPositions2018.pdf"
+      },
+      {
+        "name": "On HicEtNunc",
+        "target": "https://www.hicetnunc.xyz/tz/tz1LBrt4eYvv82VL1d5VsxX22wAE1pxjGcym"
       }
     ]
   },
