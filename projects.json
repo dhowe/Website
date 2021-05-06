@@ -984,6 +984,7 @@
     "thumb": "res/img/perceptualReader_s.png",
     "shortdesc": "The <i>Perceptual Reader</i> is an novel, experimental interface for reading on new digital devices. The interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. For the untrained reader, it can be fully exhausting.",
     "longtitle": "Perceptual Reader",
+    "collaborators": "John Cayley",
     "longdesc": "The <i>Perceptual Reader</i> is an experimental reading interface created as a component of <a href=\"./thereadersproject\">The Readers Project</a>. This novel interface explores the idea of a text that is always in motion, while the reader's eyes remain fixed on a single location in screen space. Unlike single line interfaces that have attempted similar approaches, here the <a target=\"new\" href=\"http://thereadersproject.org/neighborhood.html\">typographic neighborhood</a> of the current line is always maintained.",
     "sketch": "pages/perceptualReader/",
     "links": [
