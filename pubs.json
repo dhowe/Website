@@ -132,6 +132,11 @@
   {
     "section": "Other Publications",
     "items": [
+        {
+          "year": 2021,
+          "detail": "&ldquo;Spectre, Deepfakes and the Contamination of Contamination.&rdquo; Howe, Daniel C. Edited by Nuria Kramer. <em>C/O Magazine</em>, Vienna, 2021-08-01",
+          "link": "res/pdfs/Spectre_Deepfakes_and_the_Contamination_of_Contamination-Howe.pdf"
+      },
       {
         "year": 2017,
         "detail": "&ldquo;Obfuscation Workshop Report.&rdquo; Brunton, F., Nissenbaum, H., Howe, D, et al. <em>Report for the National Science Foundation</em>, 2017-09-01",
