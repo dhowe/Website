@@ -1,7 +1,7 @@
 var lastCols = 0;
 var featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is",
-  "Advertising Positions", "The Readers Project" 
+  "Advertising Positions", "The Readers Project"
 ];// min img size 1100px @2x
 
 const EXTRASPACE = 110; // for events col
@@ -84,10 +84,10 @@ function updateEventsLayout() {
 }
 
 function inViewport($el) {
-    var elH = $el.outerHeight(),
-        H   = $(window).height(),
-        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
-    return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
+  var elH = $el.outerHeight(),
+    H = $(window).height(),
+    r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
+  return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
 }
 
 function betterImage(src) {
@@ -147,7 +147,7 @@ function createDetail(projects, id) {
 
   // wrong id or no id
   if (!current) {
-    console.log("[ERROR] "+window.location.href);// + " => 'index.html' current=", current);
+    console.log("[ERROR] " + window.location.href);// + " => 'index.html' current=", current);
     // what is supposed to happen here?
     return;
   }
@@ -221,15 +221,18 @@ function createDetail(projects, id) {
     html += "</ul>";
   }
 
+  // AWARDS
   if (current.awards) {
     html += "<ul class='awards'>AWARDS";
     for (var j = 0; j < current.awards.length; j++) {
       html += "<li class='hanging'>";
-      if (current.awards[j].target)
+      if (current.awards[j].target) {
         html += "<a target='_blank' href='" + current.awards[j].target +
           "'>" + current.awards[j].text + "</a></li>";
-      else
+      }
+      else {
         html += current.awards[j].text + "</li>";
+      }
     }
     html += "</ul>";
 
@@ -241,11 +244,13 @@ function createDetail(projects, id) {
     html += "<ul class='exhibitions'>EXHIBITIONS";
     for (var j = 0; j < current.exhibitions.length; j++) {
       html += "<li class='hanging'>";
-      if (current.exhibitions[j].target)
+      if (current.exhibitions[j].target) {
         html += "<a target='_blank' href='" + current.exhibitions[j].target +
           "'>" + current.exhibitions[j].text + "</a></li>";
-      else
+      }
+      else {
         html += current.exhibitions[j].text + "</li>";
+      }
     }
     html += "</ul>";
   }
@@ -290,13 +295,29 @@ function createDetail(projects, id) {
   }
 
   // OTHER IMAGES
-  if (current.images) {
+  if (0 && current.images) {
 
     for (var j = 1; j < current.images.length; j++) {
       var bestImage = getBestImage(current.images[j].src);
       var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
         + "'><img data-rjs='2' src='/daniel/" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
+    }
+  }
+
+  if (current.images) {
+    var attr, bestImage, altInfo;
+    for (var j = 1; j < current.images.length; j++) {
+      altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
+      if (current.images[j].target) {
+        attr = "href='" + current.images[j].target + "'";
+      }
+      else {
+        bestImage = getBestImage(current.images[j].src);
+        attr = "href='" + bestImage + "' class='fancybox'";
+      }
+      html += "<a title='" + altInfo + "' " + attr + "><img data-rjs='2' src='/daniel/"
+        + current.images[j].src + "' alt='" + altInfo + "'></a>";
     }
   }
 
@@ -528,7 +549,7 @@ $(window).resize(function () {
   updateEventsLayout();
 });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   updateEventsLayout();
 });
 

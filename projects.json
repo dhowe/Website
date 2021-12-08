@@ -17,10 +17,17 @@
     ],
     "images": [
       {
-        "src": "res/img/spectre-blue_l.png"
+        "src": "res/img/spectre-blue_l.png",
+        "title": "Spectre Knows"
       },
       {
-        "src": "res/img/spec2.jpg"
+        "src": "res/img/contam.jpg",
+        "target": "https://rednoise.org/wpr/archives/737",
+        "title": "Spectre in C/O Magazine"
+      },
+      {
+        "src": "res/img/spec2.jpg",
+        "title": "Spectre installation mockup"
       }
     ],
     "longdesc": "Winner of the <span style=\"decoration:none !important\"><a href=\"https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/\" target=\"_new\">2019 Alternate Realities Commission</a></span>, <em>Spectre</em> is an interactive installation that reveals the secrets of the Digital Influence Industry as you pray to Dataism and the Gods of Silicon Valley. With the help of 'deep-fake' celebrities including Mark Zuckerberg, Marcel Duchamp, Marina Abramović, and Freddie Mercury, Spectre tells a cautionary tale of technology, democracy and society, curated by algorithms and powered by visitors’ data.",
@@ -80,6 +87,10 @@
     ],
     "links": [
       {
+        "name": "Spectre, Deepfakes and the Contamination of ... [PDF]",
+        "target": "https://rednoise.org/wpr/archives/737"
+      },
+      {
         "name": "Deepfakery #1: Web Series [video]",
         "target": "https://www.youtube.com/watch?v=yff_IAWW57E"
       },
@@ -102,7 +113,9 @@
       {
         "name": "Alternate Realities Commission",
         "target": "https://www.sitegallery.org/news/alternate-realities-artist-commission-winner-announced/"
-      },
+      }
+    ],
+    "unused": [
       {
         "name": "Spectre added to MIT Docubase Lab",
         "target": "https://docubase.mit.edu/project/spectre/"
