@@ -105,7 +105,7 @@ function createImageCol(url) {
           }
       });
   }).done(function() {
-      console.log("done"); // append a 'more' button
+      // append a 'more' button
       let mb = "<a href='https://rednoise.org/wpr/'><div class='button'>More</div></a>"
       $('#project-col .events-imgs').append(mb);
   });
