@@ -198,6 +198,43 @@ nav>ul>li>a:hover {
   margin-bottom: .5em;
   margin-left: -1.25em;
 }
+  
+.left-col { grid-area: 1 / 1 / 2 / 2; }
+.right-col { grid-area: 1 / 2 / 2 / 3; }
+
+/****** Publication Page Right Column ******/
+.events-imgs{
+  width: 45%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  min-width: 350px;
+  }
+
+.events-imgs .button {
+  margin-top: 20px;
+  width: 50px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #2E3C51;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1px 0;
+}
+
+.grid-img {
+  width: 360px;
+  height: 250px;
+  overflow: hidden;
+  padding: 30px 10px 20px 0px;
+}
+
+.grid-img img{
+  width: 360px;
+}
+
+/****** End of Right Column ******/
 
 /****** Projects ******/
 
