@@ -41,6 +41,13 @@ function createGrid(projects) {
   adjustItemContent();
 }
 
+const getImgSrc = (imgStr) => {
+  const div = document.createElement('div')
+  div.innerHTML = imgStr
+  const img = div.querySelector('img')
+  if (img) return img.src; //outerHTML
+}
+
 function createEventCol(url) {
   let maxEntriesShown = 20, bottomMark = 0;
   $('#projects .events').remove();
@@ -72,15 +79,51 @@ function createEventCol(url) {
   });
 }
 
+function createImageCol(url) {
+  let maxEntriesShown = 10;
+  $('#project-col .events-imgs').remove();
+  $('#project-col').append("<div class='events-imgs'><div class='wrapper'></div></div>");
+
+  $("#project-col").addClass(function() {
+      const toHide = $(window).width() <= 1350;
+      return toHide ? "hide-on-mobile" : "";
+  })
+  $.getJSON(url, (data) => {
+      data.forEach((post) => {
+          if (maxEntriesShown) {
+              // console.log(post.link, post.content.rendered);
+              const imgSrc = getImgSrc(post.content.rendered);
+              // console.log(imgSrc.src);
+              if (imgSrc != undefined) {
+                  html = "<div class = \"grid-img\">"
+                  html += "<a href='" + post.link + "'>";
+                  html += "<img src='" + imgSrc + "' alt=\"\" width=\"350\"></img>";
+                  html += "</a></div>";
+                  $('#project-col .events-imgs .wrapper').append(html);
+              }
+              maxEntriesShown--;
+          }
+      });
+  }).done(function() {
+      // append a 'more' button
+      let mb = "<a href='https://rednoise.org/wpr/'><div class='button'>More</div></a>"
+      $('#project-col .events-imgs').append(mb);
+  });
+}
+
 function updateEventsLayout() {
   let bottomMark = 0;
   $('#projects .events .wrapper a').removeClass("hide");
+  $('#project-col .events-imgs').removeClass("hide-on-mobile");
   // make sure there is at least one visible
   $(".events .wrapper a:not(:first-child)").addClass(function () {
     const toHide = $(this)[0].offsetTop + $(this).find("p").outerHeight() > $(window).height() - inViewport($('.footer')) - EXTRASPACE;
     return toHide ? "hide" : "";
   })
-
+  $("#project-col").addClass(function () {
+    const toHide = $(window).width() <= 1350;
+    return toHide ? "hide-on-mobile" : "";
+  })
 }
 
 function inViewport($el) {
@@ -561,7 +604,9 @@ $.getJSON("/daniel/projects.json").done((json) => {
     createGrid(json);
     createEventCol(EVENTS);
   }
-
+  if ($('#project-col').length > 0) { 
+    createImageCol(EVENTS);
+  }
   const images = $('img.project');
   if (typeof window.retinajs === 'function') window.retinajs(images);
 
