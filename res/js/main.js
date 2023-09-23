@@ -217,7 +217,7 @@ function createDetail(projects, id) {
     detailUrl(current.shorttitle) + "'><div class='grid'>";
   html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
   html += "<h4>" + current.longtitle + "</h4>";
-  if (projects[i].collaborators) {
+  if (projects[idk].collaborators) {
     html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
   }
 
@@ -372,7 +372,7 @@ function createDetail(projects, id) {
 
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
-  if (i != 0) {
+  if (idk != 0) {
     let last = idk - 1;
     if (projects[last].longdesc === undefined) {
       last -= 1;
