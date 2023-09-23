@@ -1,5 +1,5 @@
-var lastCols = 0;
-var featured = [
+let lastCols = 0;
+let featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is",
   "Advertising Positions", "The Readers Project"
 ];// min img size 1100px @2x
@@ -8,22 +8,22 @@ const EXTRASPACE = 110; // for events col
 
 function createGrid(projects) {
 
-  var gridSmall = "s";
-  var gridLarge = "l";
-  var gridLargeRight = "lr";
-  var noOfSpecialLayout = 6;
+  let gridSmall = "s";
+  let gridLarge = "l";
+  let gridLargeRight = "lr";
+  let noOfSpecialLayout = 6;
 
   // create grid in html
-  for (var html, i = 0; i < projects.length; i++) {
-    var g = gridSmall;
+  for (let html, i = 0; i < projects.length; i++) {
+    let g = gridSmall;
     if (i % 6 === 0 && i < noOfSpecialLayout) {
       g = gridLarge;
     } else if (i % 6 === 3 && i < noOfSpecialLayout) {
       g = gridLargeRight;
     }
 
-    var fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
-    var useHighResImage = (g === gridLarge || g === gridLargeRight);
+    let fontCheck = projects[i].shorttitle.length > 28 ? " class='smallerTitle'" : "";
+    let useHighResImage = (g === gridLarge || g === gridLargeRight);
 
     html = "<a href='" + projLink(projects[i]) + "'>"; // need encodeURIComponent?
     html += "<div class='project gridSize-" + g + "'>";
@@ -127,15 +127,15 @@ function updateEventsLayout() {
 }
 
 function inViewport($el) {
-  var elH = $el.outerHeight(),
+  let elH = $el.outerHeight(),
     H = $(window).height(),
     r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
   return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
 }
 
 function betterImage(src) {
-  var srcReplace = /(\.[A-z]{3,4}\/?(\?.*)?)$/;
-  var newSrc = src.replace(srcReplace, '@2x$1');
+  let srcReplace = /(\.[A-z]{3,4}\/?(\?.*)?)$/;
+  let newSrc = src.replace(srcReplace, '@2x$1');
   return newSrc;
 }
 
@@ -149,7 +149,7 @@ function afterGridCreated(projects) {
 
 function selectNavigation() { // custom navigation for various portfolios
 
-  var $navlist = $('#navlist');
+  let $navlist = $('#navlist');
   if (location.href.indexOf('/mit/') > -1)
     $navlist.html('<li><a class="current" href="index.html">ACM/MIT: Selected Projects</a></li>');
   else if (location.href.indexOf('/saic/') > -1)
@@ -178,9 +178,9 @@ function createDetail(projects, id) {
   // hide the previous
   $('.projectlong').hide();
 
-  var current, idk = 0;
-  for (var i = 0; i < projects.length; i++) {
-    var title = projects[i].shorttitle.toLowerCase().replace(/[ .-\W]+/g, '');
+  let current, idk = 0;
+  for (let i = 0; i < projects.length; i++) {
+    let title = projects[i].shorttitle.toLowerCase().replace(/[ .-\W]+/g, '');
     if (title === id) {
       current = projects[i];
       idk = i;
@@ -208,7 +208,7 @@ function createDetail(projects, id) {
   }
 
   // if not, create the div
-  var html = "";
+  let html = "";
   html += "<div class='projectlong' id='" +
     detailUrl(current.shorttitle) + "'><div class='grid'>";
   html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
@@ -225,7 +225,7 @@ function createDetail(projects, id) {
   // QUOTES
   if (current.quotes) {
     html += "<div class='quotes'>";
-    for (var j = 0; j < current.quotes.length; j++) {
+    for (let j = 0; j < current.quotes.length; j++) {
       //<li><a href="">XXX</a></li>
       html += "<p>&quot<i>" + current.quotes[j].text + "</i>&quot";
       html += "<span>- " + current.quotes[j].from + "</span></p>";
@@ -245,7 +245,7 @@ function createDetail(projects, id) {
   // RELATED PROJECTS
   if (current.projects) {
     html += "<ul class='projects'>PROJECTS";
-    for (var j = 0; j < current.projects.length; j++) {
+    for (let j = 0; j < current.projects.length; j++) {
       html += "<li><a target='_blank' href='" + current.projects[j].target +
         "'>" + current.projects[j].name + "</a></li>";
     }
@@ -255,8 +255,8 @@ function createDetail(projects, id) {
   // LINKS
   if (current.links) {
     html += "<ul class='links'>LINKS";
-    for (var j = 0; j < current.links.length; j++) {
-      var link = current.links[j];
+    for (let j = 0; j < current.links.length; j++) {
+      let link = current.links[j];
       // if (link.target === "automatype/p5/")
       html += "<li><a target='_blank' href='" + link.target +
         "'>" + link.name + "</a></li>";
@@ -267,7 +267,7 @@ function createDetail(projects, id) {
   // AWARDS
   if (current.awards) {
     html += "<ul class='awards'>AWARDS";
-    for (var j = 0; j < current.awards.length; j++) {
+    for (let j = 0; j < current.awards.length; j++) {
       html += "<li class='hanging'>";
       if (current.awards[j].target) {
         html += "<a target='_blank' href='" + current.awards[j].target +
@@ -285,7 +285,7 @@ function createDetail(projects, id) {
   if (current.exhibitions) {
 
     html += "<ul class='exhibitions'>EXHIBITIONS";
-    for (var j = 0; j < current.exhibitions.length; j++) {
+    for (let j = 0; j < current.exhibitions.length; j++) {
       html += "<li class='hanging'>";
       if (current.exhibitions[j].target) {
         html += "<a target='_blank' href='" + current.exhibitions[j].target +
@@ -311,8 +311,8 @@ function createDetail(projects, id) {
 
   // MAIN IMAGE
   if (current.images) {
-    var bestImage = getBestImage(current.images[0].src);
-    var altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
+    let bestImage = getBestImage(current.images[0].src);
+    let altInfo = current.images[0].title ? current.images[0].title : current.longtitle;
     html += "<a class='fancybox' href='" + bestImage + "'><img data-rjs='2' src='/daniel/"
       + current.images[0].src + "' title='" + altInfo + "' alt='" + altInfo + "' ></a>";
   }
@@ -320,9 +320,9 @@ function createDetail(projects, id) {
   // VIDEO
   if (current.videos) {
 
-    for (var j = 0; j < current.videos.length; j++) {
+    for (let j = 0; j < current.videos.length; j++) {
 
-      var id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
+      let id = current.shorttitle.toLowerCase().replace(/[ .-]+/g, '');
       html += "<a class='fancybox video clearfix' href='#" + id + "_" + j + "_video'>";
       html += "<img src='/daniel/" + current.videos[j].poster + "'/>"
       html += "<div class='play'></div>"
@@ -340,17 +340,17 @@ function createDetail(projects, id) {
   // OTHER IMAGES
   if (0 && current.images) {
 
-    for (var j = 1; j < current.images.length; j++) {
-      var bestImage = getBestImage(current.images[j].src);
-      var altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
+    for (let j = 1; j < current.images.length; j++) {
+      let bestImage = getBestImage(current.images[j].src);
+      let altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       html += "<a class='fancybox' title='" + altInfo + "' href='" + bestImage
         + "'><img data-rjs='2' src='/daniel/" + current.images[j].src + "' alt='" + altInfo + "' ></a>";
     }
   }
 
   if (current.images) {
-    var attr, bestImage, altInfo;
-    for (var j = 1; j < current.images.length; j++) {
+    let attr, bestImage, altInfo;
+    for (let j = 1; j < current.images.length; j++) {
       altInfo = current.images[j].title || current.images[j].hoverTitle || current.longtitle;
       if (current.images[j].target) {
         attr = "href='" + current.images[j].target + "'";
@@ -369,7 +369,7 @@ function createDetail(projects, id) {
   // DETAIL PAGE: BOTTOM NAV
   html += "<div class='bottomNav'>";
   if (i != 0) {
-    var last = idk - 1;
+    let last = idk - 1;
     if (projects[last].longdesc === undefined) {
       last -= 1;
     }
@@ -379,7 +379,7 @@ function createDetail(projects, id) {
 
   }
 
-  var next = (idk + 1) % projects.length;
+  let next = (idk + 1) % projects.length;
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
@@ -398,9 +398,9 @@ function createDetail(projects, id) {
 function adjustItemContent() {
   $('.project p').each(function () {
     while ($(this).height() > 115) {
-      var text = $(this).text();
-      var lastIndex = text.lastIndexOf(" ");
-      var newText = text.substring(0, lastIndex);
+      let text = $(this).text();
+      let lastIndex = text.lastIndexOf(" ");
+      let newText = text.substring(0, lastIndex);
       $(this).text(newText + "...");
       // console.log($(this).height());
     }
@@ -420,7 +420,7 @@ function adjustItemHeight(projects) {
   // max-width 768     - 2
   // max-width 400     - 1
 
-  var total = $('.project').length,
+  let total = $('.project').length,
     cols = 4,
     windowWidth = $(window).width();
 
@@ -439,16 +439,16 @@ function adjustItemHeight(projects) {
   //no need to adjust Height if cols is 1
   if (cols === 1) return;
 
-  var lines = Math.ceil(total / cols);
+  let lines = Math.ceil(total / cols);
 
   // adjust the height to maxH for each line
-  for (var j = 0; j < lines; j++) {
+  for (let j = 0; j < lines; j++) {
 
-    var maxH = 0,
+    let maxH = 0,
       classname = 'row' + j;
-    for (var i = 0; i < cols; i++) {
-      var index = j * cols + i;
-      var current = $('.project').eq(index).outerHeight();
+    for (let i = 0; i < cols; i++) {
+      let index = j * cols + i;
+      let current = $('.project').eq(index).outerHeight();
       // console.log(i,j);
       if (current > maxH) maxH = current;
       if (projects) {
@@ -496,7 +496,7 @@ function openNewWindow(url, name, feats) {
 
 function imageExists(image_url) {
 
-  var http = new XMLHttpRequest();
+  let http = new XMLHttpRequest();
   http.open('HEAD', image_url, false);
   http.send();
   return http.status != 404;
@@ -543,7 +543,7 @@ function stopFocus() {
 }
 
 Array.prototype.swap = function (x, y) {
-  var b = this[x];
+  let b = this[x];
   this[x] = this[y];
   this[y] = b;
   return this;
@@ -596,7 +596,8 @@ $(window).scroll(function () {
   updateEventsLayout();
 });
 
-const EVENTS = "https://rednoise.org/wpr/wp-json/wp/v2/posts?categories=2&per_page=20";
+let EVENTS = "/wpr/wp-json/wp/v2/posts?categories=2&per_page=20";
+if (location.href.startsWith('http://localhost/')) EVENTS = 'https://rednoise.org' + EVENTS;
 $.getJSON("/daniel/projects.json").done((json) => {
 
   if ($('#projects').length > 0) {
@@ -617,7 +618,7 @@ $.getJSON("/daniel/projects.json").done((json) => {
   }
 
   window.onhashchange = function () {
-    var id = getCurrentIdFromUrl(window.location);
+    let id = getCurrentIdFromUrl(window.location);
     createDetail(json, id);
   }
 });
