@@ -1,10 +1,14 @@
 let lastCols = 0;
+
 let featured = [
   "Spectre", "Big Dada", "AdNauseam", "How It Is",
   "Advertising Positions", "The Readers Project"
 ];// min img size 1100px @2x
 
-const EXTRASPACE = 110; // for events col
+let EVENTS = "/wpr/wp-json/wp/v2/posts?categories=2&per_page=20";
+if (location.href.startsWith('http://localhost/')) EVENTS = 'https://rednoise.org' + EVENTS;
+
+let EXTRASPACE = 110; // for events col
 
 function createGrid(projects) {
 
@@ -596,8 +600,7 @@ $(window).scroll(function () {
   updateEventsLayout();
 });
 
-let EVENTS = "/wpr/wp-json/wp/v2/posts?categories=2&per_page=20";
-if (location.href.startsWith('http://localhost/')) EVENTS = 'https://rednoise.org' + EVENTS;
+
 $.getJSON("/daniel/projects.json").done((json) => {
 
   if ($('#projects').length > 0) {
