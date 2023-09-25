@@ -218,7 +218,7 @@ function createDetail(projects, id) {
   html += "<div class='content clearfix'><div class='col-8-12 mobile-col-1-1 gap'>";
   html += "<h4>" + current.longtitle + "</h4>";
   if (projects[idk].collaborators) {
-    html += "<p class='collaborators'> w' " + projects[i].collaborators + "</p>";
+    html += "<p class='collaborators'> w' " + projects[idk].collaborators + "</p>";
   }
 
   // LONG TEXT
