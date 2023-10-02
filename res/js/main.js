@@ -387,7 +387,7 @@ function createDetail(projects, id) {
   if (projects[next].longdesc === undefined) {
     next += 1;
   }
-  html += "<p class='nextPage'><span>next</span><a href='https://rednoise.org/daniel/" +
+  html += "<p class='nextPage'><span>next</span><a href='/daniel/" +
     detailUrl(projects[(next) % projects.length].shorttitle) +
     "'>" + projects[(next) % projects.length].longtitle + "</a></p>";
 
