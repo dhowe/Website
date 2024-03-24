@@ -334,7 +334,7 @@
   {
     "shorttitle": "How It Is",
     "thumb": "res/img/hiiiict.jpg",
-    "shortdesc": "A conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, quite closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors as found in Google Books&hellip;",
+    "shortdesc": "A conceptual novel and algorithmic provocation against the ongoing theft of the cultural commons by entities like Google. The novel, closely resembling Samuel Beckett's 'How It Is', is composed solely of fragments of text written by <i>other</i> authors as found in Google Books&hellip;",
     "collaborators": "John Cayley",
     "longtitle": "How It Is in Common Tongues",
     "images": [
@@ -348,7 +348,7 @@
         "src": "res/img/hiiict_l.jpg"
       }
     ],
-    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's How It Is in Google Books, attempting to find, in sequence, the <i>longest common phrases</i> from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and the total number of occurrences found). The result is a word-for-word remake of the original Beckett text, with every single phrase cited with its location in the largest linguistic commons in human history, as written by someone else.<br><br>How It Is in Common Tongues is one output of <i>the Readers Project</i> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
+    "longdesc": "<i>How It Is in Common Tongues</i> is a conceptual novel and provocation against copyright composed by searching for the text of Samuel Beckett's <i>How It Is</i> in Google Books, attempting to find, in sequence, the <i>longest common phrases</i> from the work composed by writers other than Beckett. Each phrase is then cited with a footnote providing the shortest URL found for the phrase (in addition to the date and total number of occurrences). The result is a word-for-word remake of the original Beckett text, with every phrase cited with its location in the largest linguistic commons in human history, where it was written by someone else.<br><br><i>How It Is in Common Tongues</i> is one output of <i>the Readers Project</i> (see link below), an aesthetically-oriented system of software entities that autonomously explore the culture of human reading in the face of ubiquitous networked services.",
     "exhibitions": [
       {
         "text": "<i>Author Function</i> Mass. Institute of Technology, Maihaugen Gallery. Massachusetts Institute of Technology, Maihaugen Gallery, Cambridge, USA. Jan 25-Mar 21, 2018",
