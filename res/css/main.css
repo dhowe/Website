@@ -160,6 +160,13 @@ nav>ul>li>a:hover {
   float: left;
 }
 
+.email-link {  background: url(/res/icons/email.png); }
+.twitter-link {  background: url(/res/icons/twitter.png); }
+.instagram-link {  background: url(/res/icons/instagram.png); }
+.mastodon-link {  background: url(/res/icons/mastodon.png); }
+.github-link {  background: url(/res/icons/github.png); }
+.soundcloud-link {  background: url(/res/icons/soundcloud.png); }
+
 /*#publication + .footer>.grid, #reference + .footer>.grid{
   margin:0 0 0 20px;
 }*/
