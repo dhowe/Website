@@ -224,10 +224,6 @@
         "target": "res/pdfs/Computational_Art_Explorations_of_Linguistic_Possibility_Spaces-Cayley_2023.pdf"
       },
       {
-        "name": "The Project Home Page",
-        "target": "pages/alms/index.html"
-      },
-      {
         "name": "The English Reader (Automatype)",
         "target": "./automatype"
       },

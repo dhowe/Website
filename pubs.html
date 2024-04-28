@@ -13,14 +13,12 @@
   <meta name="audience" content="All">
   <meta name="robots" content="INDEX,FOLLOW">
   <meta name="description" content="Daniel Howe: Publications">
-  <meta name="keywords"
-    content="daniel howe, daniel c. howe, digital writing, creative coding, art, new media">
+  <meta name="keywords" content="daniel howe, daniel c. howe, digital writing, creative coding, art, new media">
 
   <script src="res/js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
   <script type="text/javascript">
-    $.getJSON("pubs.json", (json) => {
-      projects = json.cells;
-    }).done(layout);
+
+    $.getJSON("pubs.json", json => projects = json.cells).done(layout);
 
     function layout(sections) {
       var items = [];
@@ -46,22 +44,6 @@
       }
       $('#publist').append(html);
     }
-
-    function layoutBySection(sections) { // old
-
-      for (var i = 0; i < sections.length; i++) {
-
-        var html = "<span class='pubhead'>" + sections[i].section + "</span>";
-        for (var j = 0; j < sections[i].items.length; j++) {
-
-          var item = sections[i].items[j];
-          html += '<div class="row"><div class="col-1-12"><p>' + item.year +
-            '</p></div><div class="col-11-12"><p>' + item.detail + '</p></div></div>';
-        }
-
-        $('#publist').append(html);
-      }
-    }
   </script>
   <script src="res/js/main.js" type="text/javascript"></script>
   <link href="res/css/main.css" rel="stylesheet" type="text/css" />
@@ -80,16 +62,13 @@
       </div>
     </a>
     <img class="menubutton showInMobile" src="res/css/menu-icon.svg">
-
-    <div class="name showInMobile">
-      daniel c. howe
-    </div>
+    <div class="name showInMobile">daniel c. howe</div>
     <nav>
       <ul>
         <li><a href="/daniel/index.html">Projects</a></li>
         <li><a class="current" href="/daniel/pubs.html">Publications</a></li>
         <!--li><a href="sketchpad/index.html">Sketchpad</a></li-->
-        <li><a href="/wpr">News / Events</a></li>
+        <li><a href="https://rednoise.org/wpr/">News / Events</a></li>
         <li><a class="showInMobile" href="/daniel/about.html">About</a></li>
       </ul>
     </nav>
@@ -98,38 +77,52 @@
   <!-- ****************************
             CONTENT
        **************************** -->
-        <div style="display: grid;">
-        <div class="left-col">
-            <div class="grid pad-large" style="margin-right: 0em;" id="publication">
-                <div class="col-11-12 mobile-1-1" id="publist">
-                </div>
-            </div>
+  <div style="display: grid;">
+    <div class="left-col">
+      <div class="grid pad-large" style="margin-right: 0em;" id="publication">
+        <div class="col-11-12 mobile-1-1" id="publist">
         </div>
-        <div id="project-col" class="right-col">
-               </div>
-        </div>
+      </div>
     </div>
+  </div>
+
   <!-- ****************************
           FOOTER
      **************************** -->
-
   <div class="footer">
-    <div class="grid">
+    <div class="grid h-card">
       <div class="col-bio mobile-col-bio">
-        <img src="res/img/photo.jpg" style="max-width: 83px; height: auto;" alt="">
-        <p style="padding-top: 5px;"><b>Daniel Howe</b> is an American artist and educator whose work examines the writing (and close reading) of computer algorithms. Addressing issues such as privacy, surveillance, disinformation and representation, his output spans a range of media, including installations, artist books, sound recordings and software interventions. He currently lives in Hong Kong where he teaches at the School of Creative Media.</p>
+        <img class="u-photo photo" src="/daniel/res/img/photo.jpg" style="max-width: 68px; height: auto;"
+          alt="headshot">
+        <p style="padding-top: 5px;" class="p-note"><span class="p-name" style="font-weight:bold;">Daniel C Howe</span>
+          is an American <span class="p-role">artist</span> and <span class="p-role">educator</span> working with
+          computer algorithms. Addressing issues such as privacy, surveillance,
+          disinformation and representation, his output spans a range of media, including installations, artist books,
+          sound recordings and software interventions.</p>
       </div>
       <div class="col-1-4 mobile-col-1-4" style="padding-top: 5px;">
         <ul>
           <li>Email: <a href="mail.html"
-              onmouseover="this.href='mai' + 'lto:' + 'daniel' + '@' + 'rednoise.org?subject=Re: contact link'">daniel&commat;rednoise&period;org</a>
+              onmouseover="this.href='mai' + 'lto:' + 'daniel' + '@' + 'rednoise.org?subject=Re: contact link'"><span>daniel&#64;rednoise&#46;org</span></a>
           </li>
-          <li>Twitter: <a href="#"
-              onclick='openInTab("https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.rednoise.org%2Fdaniel%2Findex.html&ref_src=twsrc%5Etfw&region=follow_link&screen_name=danielchowe&tw_p=followbutton")'>&commat;danielchowe</a>
+          <li>Web: <a href="">rednoise.org/daniel</a></li>
+          <li><a class="u-key nav" rel="pgpkey" type="application/pgp-keys" href="res/5C7C494.asc">My PGP Key</a></li>
+          <li style="display: none;" class="u-url" rel="me">https://rednoise.org/daniel</li>
+          <li style="display: none;"><a class="u-email">mailto:daniel&#64;rednoise&#46;org</a></li>
+          <li style="display: none;">
+            <a class="u-url" rel="me" target="new" href="https://github.com/dhowe">
+              <img src="res/icons/github.png" style="max-width: 18px; height: auto;"></a>
+            <a class="u-url" rel="me" target="new" href="https://instagram.com/danyelhao">
+              <img src="res/icons/instagram.png" style="max-width: 18px; height: auto;"></a>
+            <a class="u-url" rel="me" target="new" href="https://bsky.app/profile/danielchowe.bsky.social">
+              <img src="res/icons/bluesky.png" style="max-width: 18px; height: auto;"></a>
+            <!-- <a class="u-url" rel="me" target="new" href="https://soundcloud.com/danielchowe">
+                <img src="res/icons/soundcloud.png" style="max-width: 18px; height: auto;"></a> -->
+            <a class="u-url" rel="me" target="new" href="https://mastodon.com/danielchowe">
+              <img src="res/icons/mastodon.png" style="max-width: 18px; height: auto;"></a>
+            <a class="u-url" rel="me" target="new" href="https://twitter.com/danielchowe">
+              <img src="res/icons/twitter.png" style="max-width: 18px; height: auto;"></a>
           </li>
-          <li><a class="nav" href="https://keys.openpgp.org/search?q=daniel%40rednoise.org" target="_blank">My PGP
-              Key</a></li>
-          <li><a href="/daniel/refs.html">References</a></li>
         </ul>
       </div>
     </div>
