@@ -132,10 +132,15 @@
   {
     "section": "Other Publications",
     "items": [
-        {
-          "year": 2021,
-          "detail": "&ldquo;Spectre, Deepfakes and the Contamination of Contamination.&rdquo; Howe, Daniel C. Edited by Nuria Kramer. <em>C/O Magazine</em>, Vienna, 2021-08-01",
-          "link": "res/pdfs/Spectre_Deepfakes_and_the_Contamination_of_Contamination-Howe.pdf"
+      {
+        "year": 2024,
+        "detail": "&ldquo;On Growing an Ampersand.&rdquo; Howe, Daniel C. <em>International Writers Workshop</em>, Babptist University, Hong Kong, March 2024",
+        "link": "res/pdfs/Growing an Ampersand-Howe.pdf"
+      },
+      {
+        "year": 2021,
+        "detail": "&ldquo;Spectre, Deepfakes and the Contamination of Contamination.&rdquo; Howe, Daniel C. Edited by Nuria Kramer. <em>C/O Magazine</em>, Vienna, 2021-08-01",
+        "link": "res/pdfs/Spectre_Deepfakes_and_the_Contamination_of_Contamination-Howe.pdf"
       },
       {
         "year": 2017,
