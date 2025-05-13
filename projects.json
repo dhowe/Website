@@ -415,7 +415,7 @@
         "src": "res/img/hiiict_l.jpg"
       }
     ],
-    "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The Real Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
+    "longdesc": "<i>The Readers Project</i> is an aesthetically-oriented system of software entities that explores the culture of human reading and writing in the face of ubiquitous networked services. The ‘readers’ we create navigate texts according to strategies they derive from linguistic feature analysis and real-time probability data they harvest from search engines. Installations from the project have been featured and commissioned at a number of international venues, and papers have been published in peer-reviewed journals including Leonardo, Siggraph and ISEA. <br><br />A conceptual novel derived from the project, entitled <i>How It Is in Common Tongues</i>, presents a computational critique of copyright and the shrinking of the linguistic commons. The most recent installation of The Readers Project, <i>The True Story of Ah-Q</i>, premiered in October at ‘Connecting Spaces HK-Zurich’ and critically examined the role of language, narrative, and censorship in the context of contemporary China.",
     "exhibitions": [
       {
         "text": "Full list of exhibitions",
@@ -436,7 +436,7 @@
         "target": "res/pdfs/LEON4404_pp317-324.pdf"
       },
       {
-        "name": "The Real Story of Ah-Q",
+        "name": "The True Story of Ah-Q",
         "target": "http://thereadersproject.org/installations/ahq.html#ahqContent"
       },
       {
@@ -690,11 +690,11 @@
     ]
   },
   {
-    "shorttitle": "The Real Story of Ah-Q",
+    "shorttitle": "The True Story of Ah-Q",
     "thumb": "res/img/ahq_s.jpg",
-    "shortdesc": "The Chinese political allegory <i>The Real Story of Ah-Q</i> is read by an algorithm that searches online for  phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today, augmented with targeted advertising, images, and Great Firewall censorship&hellip;",
+    "shortdesc": "The Chinese political allegory <i>The True Story of Ah-Q</i> is read by an algorithm that searches online for  phrases from the text <i>not</i> written by or about its author, Lu Xun. Each phrase is searched and visualized, in real-time, as it would be read today, augmented with targeted advertising, images, and Great Firewall censorship&hellip;",
     "collaborators": "John Cayley",
-    "longtitle": "The Real Story of Ah-Q",
+    "longtitle": "The True Story of Ah-Q",
     "images": [
       {
         "src": "res/img/reader_l.jpg"
@@ -712,7 +712,7 @@
         "poster": "res/img/reader_poster.png"
       }
     ],
-    "longdesc": "Lu Xun's revolutionary <i>The Real Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
+    "longdesc": "Lu Xun's revolutionary <i>The True Story of Ah-Q</i> is read by an algorithmic process that finds phrases written by others - that is, phrases found on the Internet in documents not written by or about Lu Xun. Each phrase is sent to a search engines, showing how they would be read now, in real-time. This networked re-reading, augmented with targeted advertising, images, and even censorship, exists within an algorithmic framework still little-examined in terms of its effects on reading, and, indeed, its control of free inquiry itself.<br/><br/>This installation is driven by the artists' <i>Readers</i> software via which a typographic display moves through the words of the chosen text, phrase by phrase, and then sends these phrases to a search engine, allowing the search engine to provide viewers with its own reading of the phrases. A physical book, closed to us, is placed on a lectern nearby. The active digital reader (the iPad) is open to us in a new if now familiar way. </br></br>The work explores contemporary modes of reading, contrasting these modes with those of the past and with traditions of 'deep', as opposed to 'hyper', attention. Network services and censors read, for us, this still important work of Chinese cultural and political critique. What happens when the phrases themselves, regardless of their associations with any particular writer - and here: translated into English - are flagged as contentious by the indexed network services through which we all now read?",
     "exhibitions": [
       {
         "text": "<i>TRACING DATA: What you Read is Not What we Write</i>, Connecting Spaces Hong Kong – Zurich. Hong Kong, Oct 9–22. 2014",
