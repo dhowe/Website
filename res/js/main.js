@@ -567,7 +567,7 @@ function shuffle(arr) {
 }
 
 function pickFeatureProjects(projs) {
-  console.log(JSON.stringify(projs.map(p=>p.shorttitle).slice(0,6)));
+  //console.log(JSON.stringify(projs.map(p=>p.shorttitle).slice(0,6)));
 
   //const shuffled = featured.sort(() => 0.5 - Math.random());
   const shuffled = shuffle(featured);
@@ -581,10 +581,8 @@ function pickFeatureProjects(projs) {
       selectedIdx.push(i);
     }
   }
-  console.log(JSON.stringify(projs.map(p=>p.shorttitle)));
   projs.swap(0, selectedIdx[0]);
   projs.swap(3, selectedIdx[1]);
-  console.log(JSON.stringify(projs.map(p=>p.shorttitle)));
   return projs;
 }
 
