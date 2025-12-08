@@ -3,6 +3,11 @@
     "section": "Journal Articles",
     "items": [
       {
+        "year": 2025,
+        "detail": "&ldquo;Lyric Poetry in the Face of Posthumanism: An Analysis of Generative AI-Assisted Poetry Writing.&rdquo; Huang, Y., Shea, J., Howe, D., & Holopainen, J. <em>Proceedings of the 2025 Conference on Creativity and Cognition</em> 2025",
+        "link": ""
+      },
+      {
         "year": 2020,
         "detail": "&ldquo;Dialogic: A Toolkit for Generative Interactive Dialog.&rdquo; Howe, Daniel C. <em>Proceedings of Foundations of Digital Games</em>  (FDG) 2020, Association for Computing Machinery (ACM), New York, USA. <em>Awards: Exceptional Paper, Best Paper Nominee</em>",
         "link": "res/pdfs/dialogic_a_toolkit_for_generative_interactive_game_dialog-HOWE-2020.pdf"
